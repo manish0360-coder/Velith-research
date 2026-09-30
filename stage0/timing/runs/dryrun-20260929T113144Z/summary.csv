@@ -1,0 +1,12 @@
+﻿"id","label","num_ctx_sent","prompt_bytes","prompt_sha256","request_sha256","executed","http_status","q3_outcome","wall_time_ms","total_duration","load_duration","prompt_eval_count","prompt_eval_duration","eval_count","eval_duration","done_reason","prompt_tokens_per_s","gen_tokens_per_s","ps_size","ps_context_length","free_ram_bytes_after"
+"0","warmup-default",,"434","b966a3fec9328b03cdc7374c17e9ef2750e123bd383f9d256582c9e58b25eab2","bb70b1e1346104269e1157ae3ca9223d55c0a68a7520f5276931355a61734d43","False",,,,,,,,,,,,,,,
+"1","L1k-A",,"3415","5c907c72369e8a12262ecf58786ee369b8ced6e2e5bb1e6102ab8bc76370e6ef","4df55a905cf8a4d397c81a68aad7b0ad135e2bd2847a5d956fdb670f2297af41","False",,,,,,,,,,,,,,,
+"2","repeat-of-1",,"3415","5c907c72369e8a12262ecf58786ee369b8ced6e2e5bb1e6102ab8bc76370e6ef","4df55a905cf8a4d397c81a68aad7b0ad135e2bd2847a5d956fdb670f2297af41","False",,,,,,,,,,,,,,,
+"3","L3.5k-B",,"11949","176a20c7bc99519cfb45817f2e6df2ebdb70314434efb513aaac59961b392aeb","934baad873a4fbca9a5e92031a69e7f5c39ba46b25a13af4c0305e22ac87f3f1","False",,,,,,,,,,,,,,,
+"4","L8k-C-no-num_ctx",,"27237","0f2d87b4727a1c959f0a09793b31b1fb0267345b6c641de44f2945d031b6f118","09883e132cd134e1b9a5252bb28e1ae6aaa49a7626c7150997a7ed3dcc9113cc","False",,,,,,,,,,,,,,,
+"5","warmup-16k","16384","430","7ac97fe1a5d9178483be07ced50d60da94448efb0177f3b355ae71cbb006caa7","d3ddc207c8856f9214d8c40c67cd35e2d7bde5583ec36d09160efd2ba992afb4","False",,,,,,,,,,,,,,,
+"6","L8k-D","16384","27237","6d38f47656ab0d41edb0d40e3366fac65f090c68504a7d080e8305f71a177c5d","419335a534e2f2f1f393fc9bae1e5bd0c034d928ce5efb3ac3707347d4513ff0","False",,,,,,,,,,,,,,,
+"7","L16k-E","16384","54677","8c1144c3139fb0474e2ee1d969863d3b43c717ee9fcb278c7a91429d6cc7957c","46b20fd1616e7e858eeea0777f256f5889e81ef0d14fb6dee3e257b88865547d","False",,,,,,,,,,,,,,,
+"8","L8k-F","16384","27237","2e27762efabfa7c59e37520c1cc3fb0f8bea5810f24e29c33ee5dcc11971a8dd","0e31cdede28979713953496d7fd8f27788c02b76194339e5869ba82107dde03c","False",,,,,,,,,,,,,,,
+"9","warmup-32k","32768","430","3b6c1a5aef00ae778e5e33d4327b3091272bee8e770ff71b64ae86fc2b4fa209","f0d978a1784caafa20fd96f3e2dd19c82447d80e6fd2a3ba4b32f4bb778e77ed","False",,,,,,,,,,,,,,,
+"10","L30k-G","32768","101871","3aa48a713152692d0d093080776189619af1dfda4ec30bc05f55081752f13258","a6db60661cd975b3bb270a460ef21b6875f8dff7e73bd8e813a7309041e30ee2","False",,,,,,,,,,,,,,,

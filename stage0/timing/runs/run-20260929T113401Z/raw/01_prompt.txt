@@ -1,0 +1,148 @@
+# nonce: stage0-A
+# Synthetic Python code for a latency measurement. It is not a real project.
+
+def f_0(x_0, y_0):
+    """Synthetic function 0."""
+    return (x_0 * 1) + (y_0 // 1)
+
+def f_1(x_1, y_1):
+    """Synthetic function 1."""
+    return (x_1 * 2) + (y_1 // 2)
+
+def f_2(x_2, y_2):
+    """Synthetic function 2."""
+    return (x_2 * 3) + (y_2 // 3)
+
+def f_3(x_3, y_3):
+    """Synthetic function 3."""
+    return (x_3 * 4) + (y_3 // 4)
+
+def f_4(x_4, y_4):
+    """Synthetic function 4."""
+    return (x_4 * 5) + (y_4 // 5)
+
+def f_5(x_5, y_5):
+    """Synthetic function 5."""
+    return (x_5 * 6) + (y_5 // 1)
+
+def f_6(x_6, y_6):
+    """Synthetic function 6."""
+    return (x_6 * 7) + (y_6 // 2)
+
+def f_7(x_7, y_7):
+    """Synthetic function 7."""
+    return (x_7 * 1) + (y_7 // 3)
+
+def f_8(x_8, y_8):
+    """Synthetic function 8."""
+    return (x_8 * 2) + (y_8 // 4)
+
+def f_9(x_9, y_9):
+    """Synthetic function 9."""
+    return (x_9 * 3) + (y_9 // 5)
+
+def f_10(x_10, y_10):
+    """Synthetic function 10."""
+    return (x_10 * 4) + (y_10 // 1)
+
+def f_11(x_11, y_11):
+    """Synthetic function 11."""
+    return (x_11 * 5) + (y_11 // 2)
+
+def f_12(x_12, y_12):
+    """Synthetic function 12."""
+    return (x_12 * 6) + (y_12 // 3)
+
+def f_13(x_13, y_13):
+    """Synthetic function 13."""
+    return (x_13 * 7) + (y_13 // 4)
+
+def f_14(x_14, y_14):
+    """Synthetic function 14."""
+    return (x_14 * 1) + (y_14 // 5)
+
+def f_15(x_15, y_15):
+    """Synthetic function 15."""
+    return (x_15 * 2) + (y_15 // 1)
+
+def f_16(x_16, y_16):
+    """Synthetic function 16."""
+    return (x_16 * 3) + (y_16 // 2)
+
+def f_17(x_17, y_17):
+    """Synthetic function 17."""
+    return (x_17 * 4) + (y_17 // 3)
+
+def f_18(x_18, y_18):
+    """Synthetic function 18."""
+    return (x_18 * 5) + (y_18 // 4)
+
+def f_19(x_19, y_19):
+    """Synthetic function 19."""
+    return (x_19 * 6) + (y_19 // 5)
+
+def f_20(x_20, y_20):
+    """Synthetic function 20."""
+    return (x_20 * 7) + (y_20 // 1)
+
+def f_21(x_21, y_21):
+    """Synthetic function 21."""
+    return (x_21 * 1) + (y_21 // 2)
+
+def f_22(x_22, y_22):
+    """Synthetic function 22."""
+    return (x_22 * 2) + (y_22 // 3)
+
+def f_23(x_23, y_23):
+    """Synthetic function 23."""
+    return (x_23 * 3) + (y_23 // 4)
+
+def f_24(x_24, y_24):
+    """Synthetic function 24."""
+    return (x_24 * 4) + (y_24 // 5)
+
+def f_25(x_25, y_25):
+    """Synthetic function 25."""
+    return (x_25 * 5) + (y_25 // 1)
+
+def f_26(x_26, y_26):
+    """Synthetic function 26."""
+    return (x_26 * 6) + (y_26 // 2)
+
+def f_27(x_27, y_27):
+    """Synthetic function 27."""
+    return (x_27 * 7) + (y_27 // 3)
+
+def f_28(x_28, y_28):
+    """Synthetic function 28."""
+    return (x_28 * 1) + (y_28 // 4)
+
+def f_29(x_29, y_29):
+    """Synthetic function 29."""
+    return (x_29 * 2) + (y_29 // 5)
+
+def f_30(x_30, y_30):
+    """Synthetic function 30."""
+    return (x_30 * 3) + (y_30 // 1)
+
+def f_31(x_31, y_31):
+    """Synthetic function 31."""
+    return (x_31 * 4) + (y_31 // 2)
+
+def f_32(x_32, y_32):
+    """Synthetic function 32."""
+    return (x_32 * 5) + (y_32 // 3)
+
+def f_33(x_33, y_33):
+    """Synthetic function 33."""
+    return (x_33 * 6) + (y_33 // 4)
+
+def f_34(x_34, y_34):
+    """Synthetic function 34."""
+    return (x_34 * 7) + (y_34 // 5)
+
+def f_35(x_35, y_35):
+    """Synthetic function 35."""
+    return (x_35 * 1) + (y_35 // 1)
+
+# Task: continue writing more functions in exactly the same style.

@@ -1,0 +1,14 @@
+[PASS] images: identical ID set
+[PASS] images: identical tags per ID
+[PASS] containers: identical (id, name, image)
+[PASS] volumes: identical names
+[PASS] volumes: identical content tree hash
+[PASS] networks: identical names
+[PASS] engine: same version/snapshotter/cgroup
+[PASS] velith: all checks exit 0 (post)
+[PASS] velith: same HEAD, clean before/after
+[PASS] velith: same image ID
+[PASS] velith: identical pytest outcome (all passed, 0 skipped)
+[PASS] space rule: C: free >= 25,442,795,777 B  (free=33,088,524,288 B; vhdx length=45,613,056,000 B allocated=45,613,056,000 B)
+VERDICT: GO (P1 image admission may be authorized)
+

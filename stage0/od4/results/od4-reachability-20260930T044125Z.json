@@ -1,0 +1,25 @@
+﻿{
+    "utc":  "2026-09-30T04:41:24.5888089Z",
+    "endpoint":  "http://127.0.0.1:11434",
+    "host":  "LAPTOP-BKSNR343",
+    "ps_version":  "5.1.26100.9549",
+    "reachable":  true,
+    "version":  "0.34.4",
+    "models":  [
+                   {
+                       "name":  "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+                       "digest":  "e196dcd918e4f54307db79c9fada1ff261c564e1df1624e20ae65d1ff0a4c45c",
+                       "size":  8905125714
+                   },
+                   {
+                       "name":  "deepseek-coder-v2:16b",
+                       "digest":  "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+                       "size":  8905126121
+                   }
+               ],
+    "check_version":  true,
+    "check_p1_present":  true,
+    "check_p1_digest":  true,
+    "check_base_digest":  true,
+    "verdict":  "PASS"
+}

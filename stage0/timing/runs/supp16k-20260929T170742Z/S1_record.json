@@ -1,0 +1,92 @@
+{
+    "experiment":  "velith-stage0-timing-supplemental-S1",
+    "basis":  "R2 run-20260929T113401Z (run #7 HTTP 400); design stage0/TIMING_EXPERIMENT_DESIGN_DRAFT.md",
+    "mode":  "supp16k",
+    "status":  "COMPLETED",
+    "started_utc":  "2026-09-29T17:07:42.7445533Z",
+    "script_sha256":  "75ce8bee5f17fc88d4c48090342805385b92ef1e6dec7a8a091f96202964ca2f",
+    "generator_sha256":  "3d9fc3ffe012e7d5f52609c51703d122d9820ffa47645266c331cd6c5e6f63a1",
+    "model":  "deepseek-coder-v2:16b",
+    "num_ctx_sent":  16384,
+    "temperature":  0,
+    "seed":  0,
+    "num_predict":  256,
+    "request_timeout_sec":  1800,
+    "nonce":  "stage0-H",
+    "num_functions":  304,
+    "prompt_bytes":  29295,
+    "prompt_sha256":  "f7a55df344640304449392b7a25718adb1a46380eeed905a6f6b4a95cdce2bbd",
+    "request_sha256":  "efc3b13a86575db396defa72ed39a8a10f3895d8faf7ef4239a2336b532814d0",
+    "predicted_prompt_tokens":  16108,
+    "predicted_total_tokens_max":  16364,
+    "advertised_context_length":  163840,
+    "od3_values_selected":  false,
+    "error":  null,
+    "model_digest":  "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+    "ollama_version":  "0.34.4",
+    "server_processes_start":  [
+                                   {
+                                       "pid":  29896,
+                                       "parent_pid":  9956,
+                                       "name":  "ollama.exe",
+                                       "creation_utc":  "2026-09-29T09:51:32.4546200Z",
+                                       "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" serve"
+                                   },
+                                   {
+                                       "pid":  22788,
+                                       "parent_pid":  29896,
+                                       "name":  "llama-server.exe",
+                                       "creation_utc":  "2026-09-29T16:58:17.9222680Z",
+                                       "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe\" --model D:\\ollama\\models\\blobs\\sha256-5ff0abeeac1d2dbdd5455c0b49ba3b29a9ce3c1fb181b2eef2e948689d55d046 --port 64252 --host 127.0.0.1 --no-webui --offline -c 16384 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --load-mode none --flash-attn auto -b 1024 -ub 1024"
+                                   }
+                               ],
+    "free_ram_bytes_before":  4426317824,
+    "preloaded_context_length":  16384,
+    "wall_time_ms":  225869,
+    "http_status":  200,
+    "done":  true,
+    "done_reason":  "length",
+    "total_duration":  225705981400,
+    "load_duration":  3746200,
+    "prompt_eval_count":  16108,
+    "prompt_eval_duration":  126181602000,
+    "eval_count":  256,
+    "eval_duration":  95074667000,
+    "prompt_tokens_per_s":  127.65727922839338,
+    "gen_tokens_per_s":  2.6926205274008477,
+    "prompt_tokens_minus_predicted":  0,
+    "ps_size":  13632976976,
+    "ps_context_length":  16384,
+    "ollama_processes":  [
+                             {
+                                 "name":  "llama-server",
+                                 "id":  22788,
+                                 "working_set":  13689171968,
+                                 "private_bytes":  13777690624
+                             },
+                             {
+                                 "name":  "ollama",
+                                 "id":  29896,
+                                 "working_set":  37634048,
+                                 "private_bytes":  64438272
+                             }
+                         ],
+    "free_ram_bytes_after":  4668682240,
+    "server_processes_end":  [
+                                 {
+                                     "pid":  29896,
+                                     "parent_pid":  9956,
+                                     "name":  "ollama.exe",
+                                     "creation_utc":  "2026-09-29T09:51:32.4546200Z",
+                                     "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" serve"
+                                 },
+                                 {
+                                     "pid":  22788,
+                                     "parent_pid":  29896,
+                                     "name":  "llama-server.exe",
+                                     "creation_utc":  "2026-09-29T16:58:17.9222680Z",
+                                     "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe\" --model D:\\ollama\\models\\blobs\\sha256-5ff0abeeac1d2dbdd5455c0b49ba3b29a9ce3c1fb181b2eef2e948689d55d046 --port 64252 --host 127.0.0.1 --no-webui --offline -c 16384 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --load-mode none --flash-attn auto -b 1024 -ub 1024"
+                                 }
+                             ],
+    "finished_utc":  "2026-09-29T17:11:29.7105730Z"
+}

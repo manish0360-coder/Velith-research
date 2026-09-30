@@ -1,0 +1,86 @@
+**S-R1 ACKNOWLEDGEMENT**
+
+The SRC formally acknowledges and confirms the settled S-R1 corrections as absolute baseline constraints for this and all future steps:
+
+* Primary cells are exactly {A0@0, A2@K}.
+* A1 and intermediate A2 observations cannot affect primary GO/NO-GO.
+* Secondary GEE/statistical failures cannot affect primary GO/NO-GO.
+* A1 outcomes must never be decoded, routed, or reported in Stage-1.
+* Only identities explicitly allowed by the successor pre-registration may be tolerated.
+* Foreign/unexpected identities must retain structural-integrity protection.
+* Global-incomplete remains a run-level disposition.
+* D31's retained VOID cases remain retained.
+* Primary-first ordering is required.
+* Secondary result-record structure is an engineering/RD issue, not an SRC statistical decision.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+### Q1 — COMPLETED PRIMARY-SWEEP INVARIANT
+
+1. **SRC RULING:**
+ACCEPT
+2. **EXACT RULE:**
+The M9/M10 successor SHALL strictly preserve the completed primary-sweep invariant. A completed primary sweep SHALL produce the required primary record for every admitted task. Any primary execution or evaluation failure SHALL halt the sweep and prevent it from being treated as complete. A partial primary sweep SHALL NOT be analyzed as though complete; it remains run-level global-incomplete and therefore VOID. Consequently, MCAR (Missing Completely At Random) assumptions are mathematically unnecessary and SHALL NOT be assumed. There SHALL be no separate post-execution statistical missing-cell branch. For a completed primary sweep, $n_{cc} = n_{admitted}$. `INFRA_ERROR` is an explicitly observed failure record (verdict 0) and SHALL NOT be classified as a missing cell.
+3. **RATIONALE:**
+Initial logic and parameters are validated. By structurally enforcing the M8 invariant, outcome-dependent missingness is impossible. The statistical analysis set perfectly mirrors the outcome-blind admission set.
+4. **WHAT BECOMES FROZEN:**
+The preservation of the M8 sweep invariant, the strict equality of $n_{cc} = n_{admitted}$, and the absolute prohibition on statistical missing-data assumptions for primary cells.
+5. **WHAT REMAINS OPEN:**
+
+* **SRC:** None.
+* **RD:** None.
+
+6. **IMPACT ON M9/M10 SUCCESSOR:**
+The statistical executor requires no internal complete-case filtering logic for primary cells. It strictly verifies the run-level completion boolean and proceeds directly to the exact test.
+7. **WHETHER ANY EXISTING RULE MUST BE SUPERSEDED:**
+This supersedes and re-scopes the historical M9 §3.5.1 cell-level complete-case logic, fully enforcing completeness at the structural run-level.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+### Q2 — EXACT power_plan(n) AND n_conf
+
+1. **SRC RULING:**
+ACCEPT Option B
+2. **EXACT RULE:**
+$power\_plan(n) = \min_{p_0 \in \text{95\% CP CI}} \text{ExactPower}(n; p_0, \Delta_{true}, \text{discordance\_scenario}, \delta, \alpha, \gamma, \epsilon, \eta)$.
+$n_{conf}$ SHALL be defined as the smallest integer $n \le N_{avail}$ such that $power\_plan(m) \ge 0.80$ for every integer $m$ from $n$ through $N_{avail}$. If no such $n \le N_{avail}$ satisfies this condition, the design is VOID before execution.
+3. **RATIONALE:**
+Standard processing applied. Option B resolves discrete saw-tooth instability by guaranteeing that power does not dip below the 0.80 threshold at any realized $n \ge n_{conf}$. Option A permits critical power failures if $n_{admitted}$ happens to land in a saw-tooth trough above $n_{conf}$.
+4. **WHAT BECOMES FROZEN:**
+The exact definition of $power\_plan(n)$ and the Option B monotonic threshold definition for $n_{conf}$.
+5. **WHAT REMAINS OPEN:**
+
+* **SRC:** None.
+* **RD:** The specific numerical parameters ($\delta$, $\Delta_{true}$, planning discordance scenario, $N_{avail}$) and the configuration of the pilot to generate the 95% CP interval.
+
+6. **IMPACT ON M9/M10 SUCCESSOR:**
+Power planning tools must evaluate the exact power function iteratively up to $N_{avail}$ to verify the condition holds globally above $n_{conf}$, rather than stopping at the first local crossing.
+7. **WHETHER ANY EXISTING RULE MUST BE SUPERSEDED:**
+None. This precisely mathematically operationalizes D31 decision 9.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+### Q4 — OVER-ENROLLMENT / ANALYSIS SET
+
+1. **SRC RULING:**
+ACCEPT WITH CORRECTION
+2. **EXACT RULE:**
+Given the Q1 invariant ($n_{cc} = n_{admitted}$), an over-enrollment buffer is strictly OPTIONAL engineering planning and is statistically unnecessary. $n_{analyzed}$ SHALL exactly equal all admitted tasks ($n_{analyzed} = n_{admitted}$). The analysis SHALL NOT truncate or subset admitted tasks down to $n_{conf}$ under any circumstances. Admission buffers SHALL operate prior to—and completely independent of—any A0/A2 outcome generation, ensuring they remain strictly outcome-blind.
+3. **RATIONALE:**
+Initial logic and parameters are validated. Because post-execution cell loss is structurally impossible (Q1), truncating the admitted set post-execution introduces arbitrary selection bias and invalidates the exact Type-I error control.
+4. **WHAT BECOMES FROZEN:**
+The strict equality $n_{analyzed} = n_{admitted}$, the prohibition on analytical truncation to $n_{conf}$, and the classification of over-enrollment as a purely pre-execution engineering option.
+5. **WHAT REMAINS OPEN:**
+
+* **SRC:** None.
+* **RD:** Whether to utilize a pre-execution admission buffer, and its numerical size.
+
+6. **IMPACT ON M9/M10 SUCCESSOR:**
+The statistical pipeline analyzes the entire array of structurally verified $n_{admitted}$ tuples. No subsetting or truncation logic is permitted in the executor.
+7. **WHETHER ANY EXISTING RULE MUST BE SUPERSEDED:**
+The previous SRC phrasing ("ensure P(n_cc ≥ n_conf) is high") is officially withdrawn as mathematically obsolete given the Q1 invariant.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+**OVERALL RESULT:**
+READY FOR RD FREEZE

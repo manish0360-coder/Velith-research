@@ -1,0 +1,15 @@
+﻿{
+    "AutoStart":  false,
+    "DisplayedOnboarding":  true,
+    "EnableDockerAI":  true,
+    "EnableIntegrationWithDefaultWslDistro":  true,
+    "IntegratedWslDistros":  [
+                                 "Ubuntu"
+                             ],
+    "LastContainerdSnapshotterEnable":  1781961849,
+    "LicenseTermsVersion":  2,
+    "SettingsVersion":  44,
+    "UpdateInstallTime":  0,
+    "UpdatePreviousVersion":  "",
+    "UseContainerdSnapshotter":  true
+}

@@ -1,0 +1,5 @@
+$ docker compose run --rm -T --pull never --no-deps verifier ruff check .
+ Container velith-verifier-run-5d1b6336a377 Creating 
+ Container velith-verifier-run-5d1b6336a377 Created 
+All checks passed!
+[exit 0]

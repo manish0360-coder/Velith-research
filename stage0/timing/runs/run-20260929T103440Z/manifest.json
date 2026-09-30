@@ -1,0 +1,49 @@
+{
+    "experiment":  "velith-stage0-timing-only",
+    "design":  "stage0/TIMING_EXPERIMENT_DESIGN_DRAFT.md",
+    "mode":  "run",
+    "status":  "ABORTED",
+    "started_utc":  "2026-09-29T10:34:42.3333551Z",
+    "runner_sha256":  "0fdd8b3eeafd247f14668be3bfd2c4554ca1e9af1288d017df193184785eaa8f",
+    "generator_sha256":  "3d9fc3ffe012e7d5f52609c51703d122d9820ffa47645266c331cd6c5e6f63a1",
+    "generator_selftest":  "PASSED",
+    "powershell_version":  "5.1.26100.9549",
+    "host":  {
+                 "os":  "Microsoft Windows 11 Home Single Language",
+                 "os_version":  "10.0.26200",
+                 "cpu":  "AMD Ryzen 5 5500U with Radeon Graphics         ",
+                 "logical_processors":  12,
+                 "total_physical_memory":  33635815424
+             },
+    "ollama_url":  "http://127.0.0.1:11434",
+    "model":  "deepseek-coder-v2:16b",
+    "expected_id_prefix":  "63fb193b3a9b",
+    "constants":  {
+                      "temperature":  0,
+                      "seed":  0,
+                      "num_predict":  256,
+                      "request_timeout_sec":  1800,
+                      "assumed_bytes_per_token_for_run1":  3.5,
+                      "size_safety_factor":  0.97,
+                      "stop_max_model_bytes_16k":  17179869184,
+                      "stop_min_free_ram_bytes":  4294967296
+                  },
+    "context_note":  {
+                         "advertised_context_length":  163840,
+                         "advertised_source":  "ollama show deepseek-coder-v2:16b (context length 163840) - model maximum, NOT effective",
+                         "expected_default_num_ctx":  4096,
+                         "expected_default_source":  "server.log 2026-09-26T11:25:41 vram-based default context default_num_ctx=4096 (Stage-0 evidence section 11); verified or refuted by run #4"
+                     },
+    "od3_values_selected":  false,
+    "server_log_path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server.log",
+    "optional_32k":  "PENDING",
+    "optional_32k_reason":  "",
+    "error":  "The remote server returned an error: (400) Bad Request.",
+    "ollama_version":  "0.34.4",
+    "model_digest":  "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+    "server_log_start_line":  93,
+    "free_ram_bytes_at_start":  16641830912,
+    "bytes_per_token_measured_run1":  1.9492009132420092,
+    "finished_utc":  "2026-09-29T10:40:27.9266066Z",
+    "server_log_segment_lines":  0
+}

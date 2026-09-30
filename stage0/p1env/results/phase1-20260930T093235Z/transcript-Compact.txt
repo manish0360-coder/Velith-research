@@ -1,0 +1,286 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260930151255
+Username: LAPTOP-BKSNR343\Manish Raj
+RunAs User: LAPTOP-BKSNR343\Manish Raj
+Configuration Name: 
+Machine: LAPTOP-BKSNR343 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File E:\Projects\OpenSourceLab\repos\Velith-research\stage0\p1env\Phase1-Execute.ps1 -Phase Compact
+Process ID: 25892
+PSVersion: 5.1.26100.9549
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9549
+BuildVersion: 10.0.26100.9549
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+=== ACTION: Verify stopped; diskpart select vdisk + compact vdisk (detached)
+
+Microsoft DiskPart version 10.0.26100.1150
+
+Copyright (C) Microsoft Corporation.
+On computer: LAPTOP-BKSNR343
+
+DiskPart successfully selected the virtual disk file.
+
+
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   10 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   11 percent completed
+   13 percent completed
+   20 percent completed
+   20 percent completed
+   20 percent completed
+   25 percent completed
+   30 percent completed
+   30 percent completed
+   92 percent completed
+   92 percent completed
+   92 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+   98 percent completed
+  100 percent completed
+
+
+DiskPart successfully compacted the virtual disk file.
+
+Leaving DiskPart...
+RESULT: VHDX 60,76,39,30,624 -> 45,61,30,56,000 B; C: free 18,07,92,40,192 -> 33,49,06,85,952 B
+PASS
+NEXT ACTION: Close this admin window; in a NORMAL PowerShell run -Phase Verify
+**********************
+Windows PowerShell transcript end
+End time: 20260930151412
+**********************

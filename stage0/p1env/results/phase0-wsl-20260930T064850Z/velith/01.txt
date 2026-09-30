@@ -1,0 +1,5 @@
+$ docker compose run --rm -T --pull never --no-deps verifier ruff --version
+ Container velith-verifier-run-323428046fa3 Creating 
+ Container velith-verifier-run-323428046fa3 Created 
+ruff 0.6.9
+[exit 0]

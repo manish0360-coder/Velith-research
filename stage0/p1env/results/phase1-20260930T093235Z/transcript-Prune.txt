@@ -1,0 +1,69 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260930150236
+Username: LAPTOP-BKSNR343\Manish Raj
+RunAs User: LAPTOP-BKSNR343\Manish Raj
+Configuration Name: 
+Machine: LAPTOP-BKSNR343 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File E:\Projects\OpenSourceLab\repos\Velith-research\stage0\p1env\Phase1-Execute.ps1 -Phase Prune
+Process ID: 23916
+PSVersion: 5.1.26100.9549
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9549
+BuildVersion: 10.0.26100.9549
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+=== ACTION: Precondition: Docker/WSL stopped; backup copies intact (full SHA-256)
+RESULT: backups intact; VHDX 60763930624 B; C: free 18079240192 B
+PASS
+
+=== ACTION: Start Docker Desktop; wait for engine 29.5.3
+docker.exe : failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is 
+correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+At E:\Projects\OpenSourceLab\repos\Velith-research\stage0\p1env\Phase1-Execute.ps1:42 char:61
++ ... ++) { $v = (& docker version --format '{{.Server.Version}}' 2>$null); ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (failed to conne...file specified.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+docker.exe : failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is 
+correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+At E:\Projects\OpenSourceLab\repos\Velith-research\stage0\p1env\Phase1-Execute.ps1:42 char:61
++ ... ++) { $v = (& docker version --format '{{.Server.Version}}' 2>$null); ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (failed to conne...file specified.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+RESULT: engine 29.5.3
+PASS
+
+=== ACTION: Velith check; DistriCore DB stopped; P1 images absent; volumes present; inventory == B0
+velith HEAD=5452efc44274c575c781673eb9c6287facfb94e6 clean=true
+districore-db-1: was=exited now=exited 0
+PASS engine 29.5.3
+PASS P1 images absent (0 swebench/*)
+PASS six DistriCore volumes present
+PASS inventory unchanged (pre): 40 images, 5 containers, 6 volumes, 6 networks
+RESULT: precheck passed
+PASS
+
+=== ACTION: docker buildx prune --builder default --force (build cache only), then verify
+PASS inventory unchanged (post): 40 images, 5 containers, 6 volumes, 6 networks
+cache: private 15.47GB -> 42.68MB ; shared 16.59GB -> 16.59GB ; prune reported Total 15.43GB
+internal used: 46744547328 -> 31343775744 bytes (freed 15400771584)
+RESULT: cache: private 15.47GB -> 42.68MB ; shared 16.59GB -> 16.59GB ; prune reported Total 15.43GB
+internal used: 46744547328 -> 31343775744 bytes (freed 15400771584)
+PASS
+
+=== ACTION: Stop Docker Desktop (graceful), then wsl --shutdown; verify stopped and staying stopped
+districore-db-1: was=exited now=exited 0
+Γ£ô Stopping Docker Desktop
+RESULT: fully stopped; VHDX 60763930624 B
+PASS
+NEXT ACTION: Open PowerShell AS ADMINISTRATOR and run -Phase Compact
+**********************
+Windows PowerShell transcript end
+End time: 20260930150819
+**********************

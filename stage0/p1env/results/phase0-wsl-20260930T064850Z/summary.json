@@ -1,0 +1,135 @@
+{
+  "velith_git_head": "5452efc44274c575c781673eb9c6287facfb94e6",
+  "velith_git_clean_pre": true,
+  "velith_git_clean_post": true,
+  "velith_image": "sha256:36c4c00bc85bf99203e3aa277540e8b68926b8bf183edd07af8ea84e46afcfab 2026-09-28T11:45:19.675320472Z",
+  "velith_checks": {
+    "01.txt": {
+      "cmd": "docker compose run --rm -T --pull never --no-deps verifier ruff --version",
+      "exit": 0,
+      "last_line": "ruff 0.6.9"
+    },
+    "02.txt": {
+      "cmd": "docker compose run --rm -T --pull never --no-deps verifier ruff check .",
+      "exit": 0,
+      "last_line": "All checks passed!"
+    },
+    "03.txt": {
+      "cmd": "docker compose run --rm -T --pull never --no-deps verifier ruff format --check .",
+      "exit": 0,
+      "last_line": "132 files already formatted"
+    },
+    "04.txt": {
+      "cmd": "docker compose run --rm -T --pull never --no-deps verifier mypy src tests",
+      "exit": 0,
+      "last_line": "Success: no issues found in 132 source files"
+    },
+    "05.txt": {
+      "cmd": "docker compose run --rm -T --pull never --no-deps verifier pytest -q -rs",
+      "exit": 0,
+      "last_line": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html"
+    }
+  },
+  "velith_pytest_skips": [],
+  "internal_fs": {
+    "size_bytes": 1081101176832,
+    "used_bytes": 46745739264,
+    "avail_bytes": 979363082240
+  },
+  "system_df": "TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE\nImages          40        5         41.43GB   15.21GB (36%)\nContainers      5         0         323.6kB   323.6kB (100%)\nLocal Volumes   6         6         270.5MB   0B (0%)\nBuild Cache     438       0         32.06GB   21.13GB",
+  "buildx_du_total": [
+    "Shared:\t\t10.92GB",
+    "Private:\t21.13GB",
+    "Reclaimable:\t32.06GB",
+    "Total:\t\t32.06GB"
+  ],
+  "n_images": 40,
+  "n_containers": 5,
+  "volumes": [
+    {
+      "volume": "districore_backup_data",
+      "used_by": "districore-app-1:exited ",
+      "metadata": {
+        "files": 0,
+        "dirs": 0,
+        "symlinks": 0,
+        "other": 0,
+        "total_file_bytes": 0,
+        "tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "errors": [],
+        "n_errors": 0
+      }
+    },
+    {
+      "volume": "districore_caddy_config_dev",
+      "used_by": "districore-caddy-1:exited ",
+      "metadata": {
+        "files": 1,
+        "dirs": 1,
+        "symlinks": 0,
+        "other": 0,
+        "total_file_bytes": 1253,
+        "tree_sha256": "4ef538b3ae1d83c1bd1637c11a91cc0cdfeb70814929c3217a05917d78993cc2",
+        "errors": [],
+        "n_errors": 0
+      }
+    },
+    {
+      "volume": "districore_caddy_data_dev",
+      "used_by": "districore-caddy-1:exited ",
+      "metadata": {
+        "files": 9,
+        "dirs": 8,
+        "symlinks": 0,
+        "other": 0,
+        "total_file_bytes": 3523,
+        "tree_sha256": "ac27b0be0382b9eb2cc67720c35a9f8c439980e93252eae81d18e4dfd5d66346",
+        "errors": [],
+        "n_errors": 0
+      }
+    },
+    {
+      "volume": "districore_db_data",
+      "used_by": "districore-db-1:exited ",
+      "metadata": {
+        "files": 1698,
+        "dirs": 26,
+        "symlinks": 0,
+        "other": 0,
+        "total_file_bytes": 102684323,
+        "tree_sha256": "2dbde21ab9993544be9c9cbc9e74ee86aadaf86b6a22db614239ceee10c31547",
+        "errors": [],
+        "n_errors": 0
+      }
+    },
+    {
+      "volume": "districore_media_data",
+      "used_by": "districore-app-1:exited districore-caddy-1:exited ",
+      "metadata": {
+        "files": 0,
+        "dirs": 0,
+        "symlinks": 0,
+        "other": 0,
+        "total_file_bytes": 0,
+        "tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "errors": [],
+        "n_errors": 0
+      }
+    },
+    {
+      "volume": "districore_wal_archive",
+      "used_by": "districore-db-1:exited ",
+      "metadata": {
+        "files": 10,
+        "dirs": 0,
+        "symlinks": 0,
+        "other": 0,
+        "total_file_bytes": 167772160,
+        "tree_sha256": "fc51b63449134ec593d8918ce7690b08414fd8d4148f19d384482cf69ed765b4",
+        "errors": [],
+        "n_errors": 0
+      }
+    }
+  ],
+  "networks_changed": false
+}

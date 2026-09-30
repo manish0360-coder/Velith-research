@@ -1,0 +1,2 @@
+cache: private 15.47GB -> 42.68MB ; shared 16.59GB -> 16.59GB ; prune reported Total 15.43GB
+internal used: 46744547328 -> 31343775744 bytes (freed 15400771584)

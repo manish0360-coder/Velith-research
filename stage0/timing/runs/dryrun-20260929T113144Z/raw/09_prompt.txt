@@ -1,0 +1,16 @@
+# nonce: stage0-warmup-32k
+# Synthetic Python code for a latency measurement. It is not a real project.
+
+def f_0(x_0, y_0):
+    """Synthetic function 0."""
+    return (x_0 * 1) + (y_0 // 1)
+
+def f_1(x_1, y_1):
+    """Synthetic function 1."""
+    return (x_1 * 2) + (y_1 // 2)
+
+def f_2(x_2, y_2):
+    """Synthetic function 2."""
+    return (x_2 * 3) + (y_2 // 3)
+
+# Task: continue writing more functions in exactly the same style.

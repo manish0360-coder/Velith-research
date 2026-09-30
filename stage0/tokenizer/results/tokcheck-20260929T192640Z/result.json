@@ -1,0 +1,538 @@
+{
+  "verdict": "PASS",
+  "rule": "PASS iff one pre-declared config reproduces server prompt token IDs exactly for all 4 gating prompts AND prompt_eval_count - hf_len is one constant across them",
+  "chosen_config": "messages_branch|add_special_tokens=False",
+  "all_passing_configs": [
+    "messages_branch|add_special_tokens=False",
+    "messages_branch|add_special_tokens=True"
+  ],
+  "counting_rule": "predicted_prompt_eval_count = len(hf_ids) + 1",
+  "offset": 1,
+  "count_offset_spread_by_config": {
+    "messages_branch|add_special_tokens=False": {
+      "min_offset": 1,
+      "max_offset": 1,
+      "spread": 0
+    },
+    "messages_branch|add_special_tokens=True": {
+      "min_offset": 1,
+      "max_offset": 1,
+      "spread": 0
+    },
+    "messages_branch_no_bos_text|add_special_tokens=False": {
+      "min_offset": 2,
+      "max_offset": 2,
+      "spread": 0
+    },
+    "messages_branch_no_bos_text|add_special_tokens=True": {
+      "min_offset": 2,
+      "max_offset": 2,
+      "spread": 0
+    },
+    "else_branch|add_special_tokens=False": {
+      "min_offset": 4,
+      "max_offset": 4,
+      "spread": 0
+    },
+    "else_branch|add_special_tokens=True": {
+      "min_offset": 4,
+      "max_offset": 4,
+      "spread": 0
+    }
+  },
+  "provenance": {
+    "repo_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "source": "huggingface_hub",
+    "requested_revision": "main",
+    "resolved_commit": "e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11",
+    "huggingface_hub_version": "1.33.0",
+    "tokenizer_json_sha256": "091b9dadb9845f0e8386c38bdb87e98db8adc7b0aacf36cb9257c00d0a668714",
+    "tokenizers_version": "0.23.2",
+    "bos_text_id": 100000
+  },
+  "host": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43"
+  },
+  "manifest_sha256": "4d0575a471e2ae8836740ef92da4fbb6255008ef2e9e6c37fae87b67decde76c",
+  "script_sha256": "d8ea15764c6e4d340cda2b108ac73e3f79fef2f06fbc5e4121ae2f24b00b9507",
+  "gguf": {
+    "gguf_path": "/mnt/d/ollama/models/blobs/sha256-5ff0abeeac1d2dbdd5455c0b49ba3b29a9ce3c1fb181b2eef2e948689d55d046",
+    "gguf_lib_version": "unknown",
+    "gguf_pre": "deepseek-llm",
+    "gguf_n_tokens": 102400,
+    "hf_n_tokens": 100018,
+    "hf_ids_missing_in_gguf": 0,
+    "gguf_ids_not_in_hf": 2382,
+    "token_mismatches_on_common_ids": 0,
+    "first_token_mismatches": [],
+    "merges_equal": true,
+    "hf_n_merges": 99757,
+    "gguf_n_merges": 99757,
+    "vocab_equal_on_hf_ids": true
+  },
+  "rows": [
+    {
+      "label": "R2#1_pec1752",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 1751,
+      "server_prompt_len": 1751,
+      "prompt_eval_count": 1752,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#1_pec1752",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 1751,
+      "server_prompt_len": 1751,
+      "prompt_eval_count": 1752,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#1_pec1752",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 1750,
+      "server_prompt_len": 1751,
+      "prompt_eval_count": 1752,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#1_pec1752",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 1750,
+      "server_prompt_len": 1751,
+      "prompt_eval_count": 1752,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#1_pec1752",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 1748,
+      "server_prompt_len": 1751,
+      "prompt_eval_count": 1752,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#1_pec1752",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 1748,
+      "server_prompt_len": 1751,
+      "prompt_eval_count": 1752,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#3_pec3467",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 3466,
+      "server_prompt_len": 3466,
+      "prompt_eval_count": 3467,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#3_pec3467",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 3466,
+      "server_prompt_len": 3466,
+      "prompt_eval_count": 3467,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#3_pec3467",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 3465,
+      "server_prompt_len": 3466,
+      "prompt_eval_count": 3467,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#3_pec3467",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 3465,
+      "server_prompt_len": 3466,
+      "prompt_eval_count": 3467,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#3_pec3467",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 3463,
+      "server_prompt_len": 3466,
+      "prompt_eval_count": 3467,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#3_pec3467",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 3463,
+      "server_prompt_len": 3466,
+      "prompt_eval_count": 3467,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#6_pec8188",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 8187,
+      "server_prompt_len": 8187,
+      "prompt_eval_count": 8188,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#6_pec8188",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 8187,
+      "server_prompt_len": 8187,
+      "prompt_eval_count": 8188,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#6_pec8188",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 8186,
+      "server_prompt_len": 8187,
+      "prompt_eval_count": 8188,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#6_pec8188",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 8186,
+      "server_prompt_len": 8187,
+      "prompt_eval_count": 8188,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#6_pec8188",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 8184,
+      "server_prompt_len": 8187,
+      "prompt_eval_count": 8188,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#6_pec8188",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 8184,
+      "server_prompt_len": 8187,
+      "prompt_eval_count": 8188,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "S2b_pec16108",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 16107,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "S2b_pec16108",
+      "gating": true,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 16107,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "S2b_pec16108",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 16106,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "S2b_pec16108",
+      "gating": true,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 16106,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "S2b_pec16108",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 16104,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "S2b_pec16108",
+      "gating": true,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 16104,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#0_pec180",
+      "gating": false,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 179,
+      "server_prompt_len": 179,
+      "prompt_eval_count": 180,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#0_pec180",
+      "gating": false,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 179,
+      "server_prompt_len": 179,
+      "prompt_eval_count": 180,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#0_pec180",
+      "gating": false,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 178,
+      "server_prompt_len": 179,
+      "prompt_eval_count": 180,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#0_pec180",
+      "gating": false,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 178,
+      "server_prompt_len": 179,
+      "prompt_eval_count": 180,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#0_pec180",
+      "gating": false,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 176,
+      "server_prompt_len": 179,
+      "prompt_eval_count": 180,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#0_pec180",
+      "gating": false,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 176,
+      "server_prompt_len": 179,
+      "prompt_eval_count": 180,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#5_pec182",
+      "gating": false,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 181,
+      "server_prompt_len": 181,
+      "prompt_eval_count": 182,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#5_pec182",
+      "gating": false,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 181,
+      "server_prompt_len": 181,
+      "prompt_eval_count": 182,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "R2#5_pec182",
+      "gating": false,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 180,
+      "server_prompt_len": 181,
+      "prompt_eval_count": 182,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#5_pec182",
+      "gating": false,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 180,
+      "server_prompt_len": 181,
+      "prompt_eval_count": 182,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "R2#5_pec182",
+      "gating": false,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 178,
+      "server_prompt_len": 181,
+      "prompt_eval_count": 182,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "R2#5_pec182",
+      "gating": false,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 178,
+      "server_prompt_len": 181,
+      "prompt_eval_count": 182,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "S1_pec16108",
+      "gating": false,
+      "config": "messages_branch|add_special_tokens=False",
+      "hf_len": 16107,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "S1_pec16108",
+      "gating": false,
+      "config": "messages_branch|add_special_tokens=True",
+      "hf_len": 16107,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": true,
+      "first_diff_index": null,
+      "pec_minus_hf_len": 1
+    },
+    {
+      "label": "S1_pec16108",
+      "gating": false,
+      "config": "messages_branch_no_bos_text|add_special_tokens=False",
+      "hf_len": 16106,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "S1_pec16108",
+      "gating": false,
+      "config": "messages_branch_no_bos_text|add_special_tokens=True",
+      "hf_len": 16106,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 2
+    },
+    {
+      "label": "S1_pec16108",
+      "gating": false,
+      "config": "else_branch|add_special_tokens=False",
+      "hf_len": 16104,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    },
+    {
+      "label": "S1_pec16108",
+      "gating": false,
+      "config": "else_branch|add_special_tokens=True",
+      "hf_len": 16104,
+      "server_prompt_len": 16107,
+      "prompt_eval_count": 16108,
+      "exact_id_match": false,
+      "first_diff_index": 0,
+      "pec_minus_hf_len": 4
+    }
+  ]
+}

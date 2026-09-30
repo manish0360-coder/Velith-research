@@ -1,0 +1,17 @@
+﻿{
+    "backup_sha256":  {
+                          "docker_data_vhdx":  "C4EBE6D915B182C1A24F25BFF081F52630A584B19E8985E4977DA4FE7926BE4D",
+                          "ext4_vhdx":  "CE7339208404904419D28BD1527A94D603AE768764E1DB0B16A7FC27EA52F6FE"
+                      },
+    "vhdx_before_bytes":  60763930624,
+    "c_free_before_bytes":  18079240192,
+    "prune_numbers":  "cache: private 15.47GB -\u003e 42.68MB ; shared 16.59GB -\u003e 16.59GB ; prune reported Total 15.43GB\ninternal used: 46744547328 -\u003e 31343775744 bytes (freed 15400771584)",
+    "vhdx_after_prune_bytes":  60763930624,
+    "vhdx_after_compact_bytes":  45613056000,
+    "c_free_after_bytes":  33490685952,
+    "b1":  "phase0-wsl-20260930T111607Z",
+    "w1":  "phase0-windows-20260930T111605Z",
+    "compare":  "[PASS] images: identical ID set\r\n[PASS] images: identical tags per ID\r\n[PASS] containers: identical (id, name, image)\r\n[PASS] volumes: identical names\r\n[PASS] volumes: identical content tree hash\r\n[PASS] networks: identical names\r\n[PASS] engine: same version/snapshotter/cgroup\r\n[PASS] velith: all checks exit 0 (post)\r\n[PASS] velith: same HEAD, clean before/after\r\n[PASS] velith: same image ID\r\n[PASS] velith: identical pytest outcome (all passed, 0 skipped)\r\n[PASS] space rule: C: free \u003e= 25,442,795,777 B  (free=33,088,524,288 B; vhdx length=45,613,056,000 B allocated=45,613,056,000 B)\r\nVERDICT: GO (P1 image admission may be authorized)",
+    "verdict":  "GO",
+    "finished_utc":  "2026-09-30T11:19:23.1917116Z"
+}

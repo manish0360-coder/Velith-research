@@ -1,0 +1,155 @@
+{
+  "images": {
+    "T1": {
+      "image": "swebench/sweb.eval.x86_64.pallets_1776_flask-5014:latest",
+      "exit": "0",
+      "manifest_digest": "sha256:eaf597005c159361cb8ee26018fb3741b320f331065f0c95726d83ccf2f1fba4",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "n_layers": 10,
+      "compressed_bytes": 1145538311,
+      "config_digest": "sha256:bf8242431f5c177d67996b3c888a0f51e4bb7bd0b67009bee6c70842baca1241",
+      "multi_platform_index": true,
+      "layer_digests": [
+        "sha256:39a945af8df2ad9343f141c82355d3f2c4b576d432eda34c460d630607462b60",
+        "sha256:fd3f01088aa854fa99907bd918d9bc8146064c2f452aae3e07d61a6244ca9968",
+        "sha256:079027039e9d5fa1677dd462c60fd9240097243a87ff8a124fffbd16f909c266",
+        "sha256:407de719c2d3bde9e1d31481e451ac465ef6cdcf90f48b446b000dd907979233",
+        "sha256:0ddda5039dab8b2772d0f65857071df489438384259b8fabd0a7882656cf8ca0",
+        "sha256:53752545c9b26814a5dadb2ac5d26e71ee039f17d72ee04fbc55e8e14a42966e",
+        "sha256:360f7d768fa7cb59b27b2b615d6dbe35549aec2e6c1898bb3a9b31c0e790bd74",
+        "sha256:a8bb24be479693455e88bca35c72c31247886910b84647d71a879060a7bdb6ef",
+        "sha256:40a6daff0f1b9711747096290e90c2b26f7f53562e42bbfa0d0ceab92bdd3eff",
+        "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+      ],
+      "present_locally": false,
+      "matches_m2_digest": true
+    },
+    "T2": {
+      "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24570:latest",
+      "exit": "0",
+      "manifest_digest": "sha256:5d93272292526ed727fdbf8fcad24e751965c5d62d66f91c64be7119339b323c",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "n_layers": 10,
+      "compressed_bytes": 3137932335,
+      "config_digest": "sha256:8da2231416051efd2623424be2140945aac9e30c6c8f69a82703a42a580f8ba5",
+      "multi_platform_index": true,
+      "layer_digests": [
+        "sha256:39a945af8df2ad9343f141c82355d3f2c4b576d432eda34c460d630607462b60",
+        "sha256:fd3f01088aa854fa99907bd918d9bc8146064c2f452aae3e07d61a6244ca9968",
+        "sha256:079027039e9d5fa1677dd462c60fd9240097243a87ff8a124fffbd16f909c266",
+        "sha256:407de719c2d3bde9e1d31481e451ac465ef6cdcf90f48b446b000dd907979233",
+        "sha256:0ddda5039dab8b2772d0f65857071df489438384259b8fabd0a7882656cf8ca0",
+        "sha256:53752545c9b26814a5dadb2ac5d26e71ee039f17d72ee04fbc55e8e14a42966e",
+        "sha256:0d991d4152fdb6686ccda902060f3d7d53abcfb176e251e279a0fc96d027618f",
+        "sha256:0f473daa8ac909e4cf92abb892d57b70888243c0854d530e9ef664d54c981bc1",
+        "sha256:1566f13cc317d524f191d3cba3e5aa55c4c637f806368de8664189f73708af96",
+        "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+      ],
+      "present_locally": false
+    },
+    "T3": {
+      "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14629:latest",
+      "exit": "0",
+      "manifest_digest": "sha256:de0579911863656a0331adc8d2dd6080ccc2543d0a5fd2bd68d753c8df1ec7c8",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "n_layers": 10,
+      "compressed_bytes": 1495941692,
+      "config_digest": "sha256:ef188267fdee8526c64b76d0fb767f17be1652f629bf47f12a5d6da6fc96e01b",
+      "multi_platform_index": true,
+      "layer_digests": [
+        "sha256:39a945af8df2ad9343f141c82355d3f2c4b576d432eda34c460d630607462b60",
+        "sha256:fd3f01088aa854fa99907bd918d9bc8146064c2f452aae3e07d61a6244ca9968",
+        "sha256:079027039e9d5fa1677dd462c60fd9240097243a87ff8a124fffbd16f909c266",
+        "sha256:407de719c2d3bde9e1d31481e451ac465ef6cdcf90f48b446b000dd907979233",
+        "sha256:0ddda5039dab8b2772d0f65857071df489438384259b8fabd0a7882656cf8ca0",
+        "sha256:53752545c9b26814a5dadb2ac5d26e71ee039f17d72ee04fbc55e8e14a42966e",
+        "sha256:e365bf2da4e86ec99e76157fc0820c8f5cf4da63d07bddcfc3f59b088913e840",
+        "sha256:f77db298c31fdbec4d227ef4c4368233d4cd342757dc1dc49c112ecf2056f9c3",
+        "sha256:c89d0f0e1c281e47ce35b810fc55119fd7e28c3b985708b87995a41cda3f5c42",
+        "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+      ],
+      "present_locally": false
+    },
+    "T4": {
+      "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-7336:latest",
+      "exit": "0",
+      "manifest_digest": "sha256:481ebd12ef496853db01765b1dd57d9aebdedd056c22656b9f483fc1c8379da9",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "n_layers": 10,
+      "compressed_bytes": 1113006597,
+      "config_digest": "sha256:7721dedd07ff58d11785bf17b431efe0f5dc7ce01f4eff30067eeafc4f3c34ff",
+      "multi_platform_index": true,
+      "layer_digests": [
+        "sha256:39a945af8df2ad9343f141c82355d3f2c4b576d432eda34c460d630607462b60",
+        "sha256:fd3f01088aa854fa99907bd918d9bc8146064c2f452aae3e07d61a6244ca9968",
+        "sha256:079027039e9d5fa1677dd462c60fd9240097243a87ff8a124fffbd16f909c266",
+        "sha256:407de719c2d3bde9e1d31481e451ac465ef6cdcf90f48b446b000dd907979233",
+        "sha256:0ddda5039dab8b2772d0f65857071df489438384259b8fabd0a7882656cf8ca0",
+        "sha256:53752545c9b26814a5dadb2ac5d26e71ee039f17d72ee04fbc55e8e14a42966e",
+        "sha256:103089961f8ea64487a65e770df219d23965f38aa8a4545f88fdd3fc4bfda1ac",
+        "sha256:5c1896964a33a076a186a627cead7f065f03eafd17655bbcea53e4d175cd2d94",
+        "sha256:8556f73161f0f398dddd635e4b000a916b6043ea9c8a16612bbf60a1dbfe194d",
+        "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+      ],
+      "present_locally": false
+    },
+    "T5": {
+      "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-6721:latest",
+      "exit": "0",
+      "manifest_digest": "sha256:58c7f4ada7f3cbcfcde50e0b55157701100cf694faa87978c672e368c0531898",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "n_layers": 10,
+      "compressed_bytes": 1925618712,
+      "config_digest": "sha256:855880ce6241af2349762fe34b893eb277216c9d053d08e1372c8dd6eb066021",
+      "multi_platform_index": true,
+      "layer_digests": [
+        "sha256:39a945af8df2ad9343f141c82355d3f2c4b576d432eda34c460d630607462b60",
+        "sha256:fd3f01088aa854fa99907bd918d9bc8146064c2f452aae3e07d61a6244ca9968",
+        "sha256:079027039e9d5fa1677dd462c60fd9240097243a87ff8a124fffbd16f909c266",
+        "sha256:407de719c2d3bde9e1d31481e451ac465ef6cdcf90f48b446b000dd907979233",
+        "sha256:0ddda5039dab8b2772d0f65857071df489438384259b8fabd0a7882656cf8ca0",
+        "sha256:53752545c9b26814a5dadb2ac5d26e71ee039f17d72ee04fbc55e8e14a42966e",
+        "sha256:66178a8e85883045ce4457f0730294f611d56c824ad05ec79b87421eb6c8c658",
+        "sha256:71c86efe9fb49994832a2bbf69a064c0e141d1754766fcf2ccc94444039179bb",
+        "sha256:fce0ac328f9853f91986dd8fafeb5c0f8099f4f4ff3171f13607f838cb6d35f7",
+        "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+      ],
+      "present_locally": false
+    }
+  },
+  "compressed_bytes_sum_per_image": 8818037647,
+  "compressed_bytes_unique_layers": 6177118311,
+  "shared_layer_savings_bytes": 2640919336,
+  "note": "Registry sizes are COMPRESSED. On-disk size after pull is larger (not measurable without pulling). With the containerd image store, both compressed blobs and unpacked snapshots are kept.",
+  "docker": {
+    "ServerVersion": "29.5.3",
+    "OperatingSystem": "Docker Desktop",
+    "KernelVersion": "6.18.33.1-microsoft-standard-WSL2",
+    "Driver": "overlayfs",
+    "DockerRootDir": "/var/lib/docker",
+    "MemTotal": 16410882048,
+    "NCPU": 12,
+    "CgroupVersion": "2",
+    "SecurityOptions": [
+      "name=seccomp,profile=builtin",
+      "name=cgroupns"
+    ],
+    "driver_type": "io.containerd.snapshotter.v1",
+    "containerd_snapshotter": true
+  }
+}

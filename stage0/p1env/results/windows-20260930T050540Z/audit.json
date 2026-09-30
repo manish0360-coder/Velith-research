@@ -1,0 +1,88 @@
+﻿{
+    "utc":  "2026-09-30T05:05:40.7864722Z",
+    "host":  "LAPTOP-BKSNR343",
+    "ps_version":  "5.1.26100.9549",
+    "os":  {
+               "caption":  "Microsoft Windows 11 Home Single Language",
+               "version":  "10.0.26200",
+               "build":  "26200",
+               "ram_total_bytes":  33635815424,
+               "ram_free_bytes":  17893445632
+           },
+    "drives":  [
+                   {
+                       "drive":  "C",
+                       "free_bytes":  18091028480,
+                       "used_bytes":  232765046784
+                   },
+                   {
+                       "drive":  "D",
+                       "free_bytes":  29353271296,
+                       "used_bytes":  78777978880
+                   },
+                   {
+                       "drive":  "E",
+                       "free_bytes":  71814627328,
+                       "used_bytes":  79536828416
+                   }
+               ],
+    "python":  {
+                   "py_launcher_list":  "py : Installed Pythons found by C:\\WINDOWS\\py.exe Launcher for Windows *\r\nAt E:\\Projects\\OpenSourceLab\\repos\\Velith-research\\stage0\\p1env\\Audit-P1Env\r\n-Windows.ps1:35 char:82\r\n+ ...  { if (Get-Command py -ErrorAction SilentlyContinue) { py -0p } else \r\n ...\r\n+                                                            ~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Installed Pytho...r for Windo \r\n   ws *:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n\r\n -3.10-64       C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+                   "interpreters":  [
+                                        {
+                                            "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+                                            "info":  "3.10.7 64bit C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Python\\Python310"
+                                        },
+                                        {
+                                            "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+                                            "note":  "App Execution Alias stub (not executed)"
+                                        },
+                                        {
+                                            "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe",
+                                            "note":  "App Execution Alias stub (not executed)"
+                                        }
+                                    ],
+                   "has_312":  false
+               },
+    "proxy":  {
+                  "wininet_ProxyEnable":  0,
+                  "wininet_ProxyServer":  null,
+                  "wininet_ProxyOverride":  null,
+                  "wininet_AutoConfigURL":  null,
+                  "winhttp":  "Current WinHTTP proxy settings:\r\n\r\n    Direct access (no proxy server).",
+                  "env":  {
+
+                          }
+              },
+    "git":  {
+                "version":  "git version 2.39.0.windows.2",
+                "autocrlf_global":  "",
+                "autocrlf_system":  "true"
+            },
+    "docker":  {
+                   "version":  "{\"Client\":{\"Version\":\"29.5.3\",\"ApiVersion\":\"1.54\",\"DefaultAPIVersion\":\"1.54\",\"GitCommit\":\"d1c06ef\",\"GoVersion\":\"go1.26.4\",\"Os\":\"windows\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Jun  3 18:03:06 2026\",\"Context\":\"desktop-linux\"},\"Server\":{\"Platform\":{\"Name\":\"Docker Desktop 4.79.0 (230596)\"},\"Version\":\"29.5.3\",\"ApiVersion\":\"1.54\",\"MinAPIVersion\":\"1.40\",\"Os\":\"linux\",\"Arch\":\"amd64\",\"Components\":[{\"Name\":\"Engine\",\"Version\":\"29.5.3\",\"Details\":{\"ApiVersion\":\"1.54\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Jun  3 17:59:56 2026\",\"Experimental\":\"false\",\"GitCommit\":\"285b471\",\"GoVersion\":\"go1.26.4\",\"KernelVersion\":\"6.18.33.1-microsoft-standard-WSL2\",\"MinAPIVersion\":\"1.40\",\"Module\":\"github.com/moby/moby/v2\",\"ModuleVersion\":\"v2.0.0+unknown\",\"Os\":\"linux\"}},{\"Name\":\"containerd\",\"Version\":\"v2.2.5\",\"Details\":{\"GitCommit\":\"e53c7c1516c3b2bff98eb76f1f4117477e6f4e66\"}},{\"Name\":\"runc\",\"Version\":\"1.3.6\",\"Details\":{\"GitCommit\":\"v1.3.6-0-g491b69ba\"}},{\"Name\":\"docker-init\",\"Version\":\"0.19.0\",\"Details\":{\"GitCommit\":\"de40ad0\"}}],\"GitCommit\":\"285b471\",\"GoVersion\":\"go1.26.4\",\"KernelVersion\":\"6.18.33.1-microsoft-standard-WSL2\",\"BuildTime\":\"2026-06-03T17:59:56.000000000+00:00\"}}",
+                   "context":  "NAME              DESCRIPTION                               DOCKER ENDPOINT                             ERROR\r\ndefault           Current DOCKER_HOST based configuration   npipe:////./pipe/docker_engine              \r\ndesktop-linux *   Docker Desktop                            npipe:////./pipe/dockerDesktopLinuxEngine",
+                   "settings_file":  "C:\\Users\\Manish Raj\\AppData\\Roaming\\Docker\\settings-store.json",
+                   "settings_selected":  {
+                                             "EnableIntegrationWithDefaultWslDistro":  true,
+                                             "IntegratedWslDistros":  [
+                                                                          "Ubuntu"
+                                                                      ],
+                                             "LastContainerdSnapshotterEnable":  1781961849,
+                                             "UseContainerdSnapshotter":  true
+                                         },
+                   "vhdx":  [
+                                {
+                                    "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Docker\\wsl\\disk\\docker_data.vhdx",
+                                    "size_bytes":  60763930624,
+                                    "drive":  "C"
+                                },
+                                {
+                                    "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Docker\\wsl\\main\\ext4.vhdx",
+                                    "size_bytes":  100663296,
+                                    "drive":  "C"
+                                }
+                            ]
+               },
+    "wslconfig":  "absent"
+}

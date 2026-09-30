@@ -1,0 +1,512 @@
+# nonce: stage0-B
+# Synthetic Python code for a latency measurement. It is not a real project.
+
+def f_0(x_0, y_0):
+    """Synthetic function 0."""
+    return (x_0 * 1) + (y_0 // 1)
+
+def f_1(x_1, y_1):
+    """Synthetic function 1."""
+    return (x_1 * 2) + (y_1 // 2)
+
+def f_2(x_2, y_2):
+    """Synthetic function 2."""
+    return (x_2 * 3) + (y_2 // 3)
+
+def f_3(x_3, y_3):
+    """Synthetic function 3."""
+    return (x_3 * 4) + (y_3 // 4)
+
+def f_4(x_4, y_4):
+    """Synthetic function 4."""
+    return (x_4 * 5) + (y_4 // 5)
+
+def f_5(x_5, y_5):
+    """Synthetic function 5."""
+    return (x_5 * 6) + (y_5 // 1)
+
+def f_6(x_6, y_6):
+    """Synthetic function 6."""
+    return (x_6 * 7) + (y_6 // 2)
+
+def f_7(x_7, y_7):
+    """Synthetic function 7."""
+    return (x_7 * 1) + (y_7 // 3)
+
+def f_8(x_8, y_8):
+    """Synthetic function 8."""
+    return (x_8 * 2) + (y_8 // 4)
+
+def f_9(x_9, y_9):
+    """Synthetic function 9."""
+    return (x_9 * 3) + (y_9 // 5)
+
+def f_10(x_10, y_10):
+    """Synthetic function 10."""
+    return (x_10 * 4) + (y_10 // 1)
+
+def f_11(x_11, y_11):
+    """Synthetic function 11."""
+    return (x_11 * 5) + (y_11 // 2)
+
+def f_12(x_12, y_12):
+    """Synthetic function 12."""
+    return (x_12 * 6) + (y_12 // 3)
+
+def f_13(x_13, y_13):
+    """Synthetic function 13."""
+    return (x_13 * 7) + (y_13 // 4)
+
+def f_14(x_14, y_14):
+    """Synthetic function 14."""
+    return (x_14 * 1) + (y_14 // 5)
+
+def f_15(x_15, y_15):
+    """Synthetic function 15."""
+    return (x_15 * 2) + (y_15 // 1)
+
+def f_16(x_16, y_16):
+    """Synthetic function 16."""
+    return (x_16 * 3) + (y_16 // 2)
+
+def f_17(x_17, y_17):
+    """Synthetic function 17."""
+    return (x_17 * 4) + (y_17 // 3)
+
+def f_18(x_18, y_18):
+    """Synthetic function 18."""
+    return (x_18 * 5) + (y_18 // 4)
+
+def f_19(x_19, y_19):
+    """Synthetic function 19."""
+    return (x_19 * 6) + (y_19 // 5)
+
+def f_20(x_20, y_20):
+    """Synthetic function 20."""
+    return (x_20 * 7) + (y_20 // 1)
+
+def f_21(x_21, y_21):
+    """Synthetic function 21."""
+    return (x_21 * 1) + (y_21 // 2)
+
+def f_22(x_22, y_22):
+    """Synthetic function 22."""
+    return (x_22 * 2) + (y_22 // 3)
+
+def f_23(x_23, y_23):
+    """Synthetic function 23."""
+    return (x_23 * 3) + (y_23 // 4)
+
+def f_24(x_24, y_24):
+    """Synthetic function 24."""
+    return (x_24 * 4) + (y_24 // 5)
+
+def f_25(x_25, y_25):
+    """Synthetic function 25."""
+    return (x_25 * 5) + (y_25 // 1)
+
+def f_26(x_26, y_26):
+    """Synthetic function 26."""
+    return (x_26 * 6) + (y_26 // 2)
+
+def f_27(x_27, y_27):
+    """Synthetic function 27."""
+    return (x_27 * 7) + (y_27 // 3)
+
+def f_28(x_28, y_28):
+    """Synthetic function 28."""
+    return (x_28 * 1) + (y_28 // 4)
+
+def f_29(x_29, y_29):
+    """Synthetic function 29."""
+    return (x_29 * 2) + (y_29 // 5)
+
+def f_30(x_30, y_30):
+    """Synthetic function 30."""
+    return (x_30 * 3) + (y_30 // 1)
+
+def f_31(x_31, y_31):
+    """Synthetic function 31."""
+    return (x_31 * 4) + (y_31 // 2)
+
+def f_32(x_32, y_32):
+    """Synthetic function 32."""
+    return (x_32 * 5) + (y_32 // 3)
+
+def f_33(x_33, y_33):
+    """Synthetic function 33."""
+    return (x_33 * 6) + (y_33 // 4)
+
+def f_34(x_34, y_34):
+    """Synthetic function 34."""
+    return (x_34 * 7) + (y_34 // 5)
+
+def f_35(x_35, y_35):
+    """Synthetic function 35."""
+    return (x_35 * 1) + (y_35 // 1)
+
+def f_36(x_36, y_36):
+    """Synthetic function 36."""
+    return (x_36 * 2) + (y_36 // 2)
+
+def f_37(x_37, y_37):
+    """Synthetic function 37."""
+    return (x_37 * 3) + (y_37 // 3)
+
+def f_38(x_38, y_38):
+    """Synthetic function 38."""
+    return (x_38 * 4) + (y_38 // 4)
+
+def f_39(x_39, y_39):
+    """Synthetic function 39."""
+    return (x_39 * 5) + (y_39 // 5)
+
+def f_40(x_40, y_40):
+    """Synthetic function 40."""
+    return (x_40 * 6) + (y_40 // 1)
+
+def f_41(x_41, y_41):
+    """Synthetic function 41."""
+    return (x_41 * 7) + (y_41 // 2)
+
+def f_42(x_42, y_42):
+    """Synthetic function 42."""
+    return (x_42 * 1) + (y_42 // 3)
+
+def f_43(x_43, y_43):
+    """Synthetic function 43."""
+    return (x_43 * 2) + (y_43 // 4)
+
+def f_44(x_44, y_44):
+    """Synthetic function 44."""
+    return (x_44 * 3) + (y_44 // 5)
+
+def f_45(x_45, y_45):
+    """Synthetic function 45."""
+    return (x_45 * 4) + (y_45 // 1)
+
+def f_46(x_46, y_46):
+    """Synthetic function 46."""
+    return (x_46 * 5) + (y_46 // 2)
+
+def f_47(x_47, y_47):
+    """Synthetic function 47."""
+    return (x_47 * 6) + (y_47 // 3)
+
+def f_48(x_48, y_48):
+    """Synthetic function 48."""
+    return (x_48 * 7) + (y_48 // 4)
+
+def f_49(x_49, y_49):
+    """Synthetic function 49."""
+    return (x_49 * 1) + (y_49 // 5)
+
+def f_50(x_50, y_50):
+    """Synthetic function 50."""
+    return (x_50 * 2) + (y_50 // 1)
+
+def f_51(x_51, y_51):
+    """Synthetic function 51."""
+    return (x_51 * 3) + (y_51 // 2)
+
+def f_52(x_52, y_52):
+    """Synthetic function 52."""
+    return (x_52 * 4) + (y_52 // 3)
+
+def f_53(x_53, y_53):
+    """Synthetic function 53."""
+    return (x_53 * 5) + (y_53 // 4)
+
+def f_54(x_54, y_54):
+    """Synthetic function 54."""
+    return (x_54 * 6) + (y_54 // 5)
+
+def f_55(x_55, y_55):
+    """Synthetic function 55."""
+    return (x_55 * 7) + (y_55 // 1)
+
+def f_56(x_56, y_56):
+    """Synthetic function 56."""
+    return (x_56 * 1) + (y_56 // 2)
+
+def f_57(x_57, y_57):
+    """Synthetic function 57."""
+    return (x_57 * 2) + (y_57 // 3)
+
+def f_58(x_58, y_58):
+    """Synthetic function 58."""
+    return (x_58 * 3) + (y_58 // 4)
+
+def f_59(x_59, y_59):
+    """Synthetic function 59."""
+    return (x_59 * 4) + (y_59 // 5)
+
+def f_60(x_60, y_60):
+    """Synthetic function 60."""
+    return (x_60 * 5) + (y_60 // 1)
+
+def f_61(x_61, y_61):
+    """Synthetic function 61."""
+    return (x_61 * 6) + (y_61 // 2)
+
+def f_62(x_62, y_62):
+    """Synthetic function 62."""
+    return (x_62 * 7) + (y_62 // 3)
+
+def f_63(x_63, y_63):
+    """Synthetic function 63."""
+    return (x_63 * 1) + (y_63 // 4)
+
+def f_64(x_64, y_64):
+    """Synthetic function 64."""
+    return (x_64 * 2) + (y_64 // 5)
+
+def f_65(x_65, y_65):
+    """Synthetic function 65."""
+    return (x_65 * 3) + (y_65 // 1)
+
+def f_66(x_66, y_66):
+    """Synthetic function 66."""
+    return (x_66 * 4) + (y_66 // 2)
+
+def f_67(x_67, y_67):
+    """Synthetic function 67."""
+    return (x_67 * 5) + (y_67 // 3)
+
+def f_68(x_68, y_68):
+    """Synthetic function 68."""
+    return (x_68 * 6) + (y_68 // 4)
+
+def f_69(x_69, y_69):
+    """Synthetic function 69."""
+    return (x_69 * 7) + (y_69 // 5)
+
+def f_70(x_70, y_70):
+    """Synthetic function 70."""
+    return (x_70 * 1) + (y_70 // 1)
+
+def f_71(x_71, y_71):
+    """Synthetic function 71."""
+    return (x_71 * 2) + (y_71 // 2)
+
+def f_72(x_72, y_72):
+    """Synthetic function 72."""
+    return (x_72 * 3) + (y_72 // 3)
+
+def f_73(x_73, y_73):
+    """Synthetic function 73."""
+    return (x_73 * 4) + (y_73 // 4)
+
+def f_74(x_74, y_74):
+    """Synthetic function 74."""
+    return (x_74 * 5) + (y_74 // 5)
+
+def f_75(x_75, y_75):
+    """Synthetic function 75."""
+    return (x_75 * 6) + (y_75 // 1)
+
+def f_76(x_76, y_76):
+    """Synthetic function 76."""
+    return (x_76 * 7) + (y_76 // 2)
+
+def f_77(x_77, y_77):
+    """Synthetic function 77."""
+    return (x_77 * 1) + (y_77 // 3)
+
+def f_78(x_78, y_78):
+    """Synthetic function 78."""
+    return (x_78 * 2) + (y_78 // 4)
+
+def f_79(x_79, y_79):
+    """Synthetic function 79."""
+    return (x_79 * 3) + (y_79 // 5)
+
+def f_80(x_80, y_80):
+    """Synthetic function 80."""
+    return (x_80 * 4) + (y_80 // 1)
+
+def f_81(x_81, y_81):
+    """Synthetic function 81."""
+    return (x_81 * 5) + (y_81 // 2)
+
+def f_82(x_82, y_82):
+    """Synthetic function 82."""
+    return (x_82 * 6) + (y_82 // 3)
+
+def f_83(x_83, y_83):
+    """Synthetic function 83."""
+    return (x_83 * 7) + (y_83 // 4)
+
+def f_84(x_84, y_84):
+    """Synthetic function 84."""
+    return (x_84 * 1) + (y_84 // 5)
+
+def f_85(x_85, y_85):
+    """Synthetic function 85."""
+    return (x_85 * 2) + (y_85 // 1)
+
+def f_86(x_86, y_86):
+    """Synthetic function 86."""
+    return (x_86 * 3) + (y_86 // 2)
+
+def f_87(x_87, y_87):
+    """Synthetic function 87."""
+    return (x_87 * 4) + (y_87 // 3)
+
+def f_88(x_88, y_88):
+    """Synthetic function 88."""
+    return (x_88 * 5) + (y_88 // 4)
+
+def f_89(x_89, y_89):
+    """Synthetic function 89."""
+    return (x_89 * 6) + (y_89 // 5)
+
+def f_90(x_90, y_90):
+    """Synthetic function 90."""
+    return (x_90 * 7) + (y_90 // 1)
+
+def f_91(x_91, y_91):
+    """Synthetic function 91."""
+    return (x_91 * 1) + (y_91 // 2)
+
+def f_92(x_92, y_92):
+    """Synthetic function 92."""
+    return (x_92 * 2) + (y_92 // 3)
+
+def f_93(x_93, y_93):
+    """Synthetic function 93."""
+    return (x_93 * 3) + (y_93 // 4)
+
+def f_94(x_94, y_94):
+    """Synthetic function 94."""
+    return (x_94 * 4) + (y_94 // 5)
+
+def f_95(x_95, y_95):
+    """Synthetic function 95."""
+    return (x_95 * 5) + (y_95 // 1)
+
+def f_96(x_96, y_96):
+    """Synthetic function 96."""
+    return (x_96 * 6) + (y_96 // 2)
+
+def f_97(x_97, y_97):
+    """Synthetic function 97."""
+    return (x_97 * 7) + (y_97 // 3)
+
+def f_98(x_98, y_98):
+    """Synthetic function 98."""
+    return (x_98 * 1) + (y_98 // 4)
+
+def f_99(x_99, y_99):
+    """Synthetic function 99."""
+    return (x_99 * 2) + (y_99 // 5)
+
+def f_100(x_100, y_100):
+    """Synthetic function 100."""
+    return (x_100 * 3) + (y_100 // 1)
+
+def f_101(x_101, y_101):
+    """Synthetic function 101."""
+    return (x_101 * 4) + (y_101 // 2)
+
+def f_102(x_102, y_102):
+    """Synthetic function 102."""
+    return (x_102 * 5) + (y_102 // 3)
+
+def f_103(x_103, y_103):
+    """Synthetic function 103."""
+    return (x_103 * 6) + (y_103 // 4)
+
+def f_104(x_104, y_104):
+    """Synthetic function 104."""
+    return (x_104 * 7) + (y_104 // 5)
+
+def f_105(x_105, y_105):
+    """Synthetic function 105."""
+    return (x_105 * 1) + (y_105 // 1)
+
+def f_106(x_106, y_106):
+    """Synthetic function 106."""
+    return (x_106 * 2) + (y_106 // 2)
+
+def f_107(x_107, y_107):
+    """Synthetic function 107."""
+    return (x_107 * 3) + (y_107 // 3)
+
+def f_108(x_108, y_108):
+    """Synthetic function 108."""
+    return (x_108 * 4) + (y_108 // 4)
+
+def f_109(x_109, y_109):
+    """Synthetic function 109."""
+    return (x_109 * 5) + (y_109 // 5)
+
+def f_110(x_110, y_110):
+    """Synthetic function 110."""
+    return (x_110 * 6) + (y_110 // 1)
+
+def f_111(x_111, y_111):
+    """Synthetic function 111."""
+    return (x_111 * 7) + (y_111 // 2)
+
+def f_112(x_112, y_112):
+    """Synthetic function 112."""
+    return (x_112 * 1) + (y_112 // 3)
+
+def f_113(x_113, y_113):
+    """Synthetic function 113."""
+    return (x_113 * 2) + (y_113 // 4)
+
+def f_114(x_114, y_114):
+    """Synthetic function 114."""
+    return (x_114 * 3) + (y_114 // 5)
+
+def f_115(x_115, y_115):
+    """Synthetic function 115."""
+    return (x_115 * 4) + (y_115 // 1)
+
+def f_116(x_116, y_116):
+    """Synthetic function 116."""
+    return (x_116 * 5) + (y_116 // 2)
+
+def f_117(x_117, y_117):
+    """Synthetic function 117."""
+    return (x_117 * 6) + (y_117 // 3)
+
+def f_118(x_118, y_118):
+    """Synthetic function 118."""
+    return (x_118 * 7) + (y_118 // 4)
+
+def f_119(x_119, y_119):
+    """Synthetic function 119."""
+    return (x_119 * 1) + (y_119 // 5)
+
+def f_120(x_120, y_120):
+    """Synthetic function 120."""
+    return (x_120 * 2) + (y_120 // 1)
+
+def f_121(x_121, y_121):
+    """Synthetic function 121."""
+    return (x_121 * 3) + (y_121 // 2)
+
+def f_122(x_122, y_122):
+    """Synthetic function 122."""
+    return (x_122 * 4) + (y_122 // 3)
+
+def f_123(x_123, y_123):
+    """Synthetic function 123."""
+    return (x_123 * 5) + (y_123 // 4)
+
+def f_124(x_124, y_124):
+    """Synthetic function 124."""
+    return (x_124 * 6) + (y_124 // 5)
+
+def f_125(x_125, y_125):
+    """Synthetic function 125."""
+    return (x_125 * 7) + (y_125 // 1)
+
+def f_126(x_126, y_126):
+    """Synthetic function 126."""
+    return (x_126 * 1) + (y_126 // 2)
+
+# Task: continue writing more functions in exactly the same style.

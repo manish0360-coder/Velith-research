@@ -1,0 +1,5 @@
+$ docker compose run --rm -T --pull never --no-deps verifier ruff format --check .
+ Container velith-verifier-run-28cb0d83b36a Creating 
+ Container velith-verifier-run-28cb0d83b36a Created 
+132 files already formatted
+[exit 0]

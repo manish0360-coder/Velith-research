@@ -1,0 +1,5 @@
+$ docker compose run --rm -T --pull never --no-deps verifier mypy src tests
+ Container velith-verifier-run-0366c91fb986 Creating 
+ Container velith-verifier-run-0366c91fb986 Created 
+Success: no issues found in 132 source files
+[exit 0]

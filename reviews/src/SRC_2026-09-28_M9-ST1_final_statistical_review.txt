@@ -1,0 +1,64 @@
+### 1. CERTIFIED B-ii OPTIMIZATION
+
+1. **SRC RULING:** ACCEPT
+2. **Exact mathematical specification:**
+The supremum of the null tail probability SHALL be bounded above by a deterministic certified branch-and-bound procedure using monotone-factor interval upper bounds: $U[a,b] = \sum_R \frac{n!}{x!y!z!} (b+\delta)^x b^y (1-2a-\delta)^z$.
+The procedure terminates when $\max(U) - L \le \epsilon = 10^{-7}$. The reported p-value is $p = \min(1, U_{certified} + \eta + \gamma)$, with float allowance $\eta = 10^{-9}$. Local optimizers may only raise the lower bound $L$.
+3. **Rationale:** Global unimodality of the exact unconditional binomial tail is unproven. Initial logic relying on grid/Brent solvers is rejected as they cannot guarantee Type-I error control. Branch-and-bound provides a certified supremum.
+4. **FROZEN:** The B&B certification procedure, $\epsilon = 10^{-7}$, and $\eta = 10^{-9}$.
+5. **OPEN:** None.
+
+### 2. BERGER–BOOS CORRECTIONS
+
+1. **SRC RULING:** ACCEPT
+2. **Exact mathematical specification:**
+$0 < \delta < 1$.
+Nuisance $p_{01} \in [0, (1-\delta)/2]$.
+$p_{10} = p_{01} + \delta$.
+$p_{00} = 1 - 2p_{01} - \delta$.
+Berger–Boos set: two-sided $(1-\gamma)$ Clopper–Pearson interval $[\psi_L, \psi_U]$ mapped to $p_{01} \in [\max(0, (\psi_L-\delta)/2), (\psi_U-\delta)/2]$.
+$\gamma = 0.001$.
+Boundary shortcut: If $\hat{\Delta}_{20} \le \delta$, return $p=1.0$ without search.
+3. **Rationale:** Standard domain boundaries and CP constraints applied. The $\hat{\Delta}_{20} \le \delta$ shortcut correctly prevents undefined sets and empty domains.
+4. **FROZEN:** Corrected parameter boundaries, two-sided CP interval usage, and the $\hat{\Delta}_{20} \le \delta$ shortcut.
+5. **OPEN:** None.
+
+### 3. REPRODUCIBILITY
+
+1. **SRC RULING:** ACCEPT
+2. **Exact mathematical specification:**
+(i) strict mathematical determinism;
+(ii) byte-identical results strictly within the recorded pinned environment;
+(iii) cross-platform numerical agreement within $\epsilon + \eta + 10^{-12}$ for the certified p-value, and identical GO/NO-GO decisions whenever $\vert{}p - \alpha\vert{} > 10^{-6}$.
+3. **Rationale:** Float64 fused multiply-add operations prevent universal byte identity. The three-tier model properly anchors reproducibility.
+4. **FROZEN:** The three-tier reproducibility standard and tolerance thresholds.
+5. **OPEN:** None.
+
+### 4. POWER / DISCORDANCE
+
+1. **SRC RULING:** ACCEPT
+2. **Exact mathematical specification:**
+Primary planning assumption: conditional independence of A0/A2 outcomes within tasks, $\psi_{plan} = p_0(1-p_2) + p_2(1-p_0)$, where $p_2 = p_0 + \Delta_{true}$.
+Power is computed exactly via trinomial sum over the certified rejection region.
+Planning $p_0$ is the specific value within the pilot's confidence interval that minimizes exact power.
+Mandatory sensitivity grid: (a) independence, (b) Fréchet max discordance, (c) two positive-correlation scenarios.
+3. **Rationale:** Independence is an empirical assumption, not a mathematical maximum-variance bound. Exact power minimization over the pilot interval establishes the correct worst-case planning baseline.
+4. **FROZEN:** Exact power calculation, the planning $p_0$ search mechanism, and the mandatory sensitivity grid.
+5. **OPEN:** $\Delta_{true}$, and the Research Director's designation of the governing sensitivity scenario for the adequacy gate (SRC concurs with the CSE proposal to use independence as the gate).
+
+### 5. PILOT ADEQUACY
+
+1. **SRC RULING:** ACCEPT WITH CORRECTION
+2. **Exact mathematical specification:**
+Dependency chain: Pilot observation $\to$ $p_0$ two-sided Clopper-Pearson CI $\to$ $\delta$ setup $\to$ $\Delta_{true}$ $\to$ planning discordance $\to$ exact power minimization $\to$ required $n_{conf} \to$ comparison vs. $N_{avail} \to$ VOID if $n_{conf} > N_{avail}$.
+Correction: The pilot CI must use $\gamma_{pilot} = 0.05$ (95% CI). The pilot must use identical confirmatory A0 configurations.
+3. **Rationale:** The arbitrary $n=30$ is rescinded. The dependency sequence properly restricts confirmatory execution. $\gamma=0.001$ is too statistically penalizing for an initial nuisance-parameter pilot; a standard 95% CI bounds the planning risk appropriately.
+4. **FROZEN:** The design dependency chain and configuration equivalence constraint.
+5. **OPEN:** Pilot size, pilot scope, $N_{avail}$, $\delta$, and $\Delta_{true}$.
+
+---
+
+**OVERALL RESULT:**
+READY FOR RD FREEZE
+
+*Note: The SRC authorizes the CSE to archive the Gemini reviews to the research folder as proposed. The statistical framework is strictly verified.*

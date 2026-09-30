@@ -1,0 +1,71 @@
+﻿{
+    "utc":  "2026-09-30T05:32:32.3369701Z",
+    "host":  "LAPTOP-BKSNR343",
+    "drives":  [
+                   {
+                       "drive":  "C",
+                       "free_bytes":  18078765056,
+                       "used_bytes":  232777310208
+                   },
+                   {
+                       "drive":  "D",
+                       "free_bytes":  29353271296,
+                       "used_bytes":  78777978880
+                   },
+                   {
+                       "drive":  "E",
+                       "free_bytes":  71814492160,
+                       "used_bytes":  79536963584
+                   }
+               ],
+    "docker_vhdx":  [
+                        {
+                            "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Docker\\wsl\\disk\\docker_data.vhdx",
+                            "length_bytes":  60763930624,
+                            "allocated_bytes":  60763930624,
+                            "sparse":  false,
+                            "attributes":  "Archive",
+                            "last_write_utc":  "2026-09-30T05:32:32.5989595Z"
+                        },
+                        {
+                            "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Docker\\wsl\\main\\ext4.vhdx",
+                            "length_bytes":  100663296,
+                            "allocated_bytes":  100663296,
+                            "sparse":  false,
+                            "attributes":  "Archive",
+                            "last_write_utc":  "2026-09-27T06:10:02.9629021Z"
+                        }
+                    ],
+    "wsl_list":  "NAME              STATE           VERSION\r\n* Ubuntu            Running         2\r\n  docker-desktop    Running         2",
+    "wsl_distros":  [
+                        {
+                            "name":  "docker-desktop",
+                            "base_path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Docker\\wsl\\main",
+                            "version":  2,
+                            "vhdx":  {
+                                         "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Docker\\wsl\\main\\ext4.vhdx",
+                                         "length_bytes":  100663296,
+                                         "allocated_bytes":  100663296,
+                                         "sparse":  false,
+                                         "attributes":  "Archive",
+                                         "last_write_utc":  "2026-09-27T06:10:02.9629021Z"
+                                     }
+                        },
+                        {
+                            "name":  "Ubuntu",
+                            "base_path":  "C:\\Users\\Manish Raj\\AppData\\Local\\wsl\\{f84c6a01-6e00-4d8e-a15a-840074da7b53}",
+                            "version":  2,
+                            "vhdx":  {
+                                         "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\wsl\\{f84c6a01-6e00-4d8e-a15a-840074da7b53}\\ext4.vhdx",
+                                         "length_bytes":  6582960128,
+                                         "allocated_bytes":  6582960128,
+                                         "sparse":  false,
+                                         "attributes":  "Archive",
+                                         "last_write_utc":  "2026-09-30T05:32:22.4839106Z"
+                                     }
+                        }
+                    ],
+    "docker_settings_disk_keys":  {
+
+                                  }
+}

@@ -1,0 +1,12 @@
+# Velith P1 derived model (variant F1, the RD-frozen D-A). DRAFT: NOT CREATED.
+# Target name: velith-p1-deepseek-coder-v2:16b-c16384-np1024
+# Base: deepseek-coder-v2:16b, manifest digest 63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5
+# Weights blob (reused, not copied): sha256-5ff0abeeac1d2dbdd5455c0b49ba3b29a9ce3c1fb181b2eef2e948689d55d046
+# The TEMPLATE is inherited from the base, unchanged. There is no SYSTEM directive.
+# Stops are restated explicitly, so the derived identity does not depend on how Ollama merges parameters.
+# Open blocking item D-F (stop policy): see ../OD3_OD7_FREEZE_DECISION_INPUT.md §5.
+FROM deepseek-coder-v2:16b
+PARAMETER num_ctx 16384
+PARAMETER num_predict 1024
+PARAMETER stop "User:"
+PARAMETER stop "Assistant:"

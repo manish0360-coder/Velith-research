@@ -1,0 +1,176 @@
+{
+    "experiment":  "velith-stage0-timing-only",
+    "design":  "stage0/TIMING_EXPERIMENT_DESIGN_DRAFT.md",
+    "mode":  "run",
+    "status":  "ABORTED",
+    "started_utc":  "2026-09-29T11:34:03.1901327Z",
+    "runner_sha256":  "ce2fb7f62d79535ca812646b10461bb55185ba1e396859ea31f3caf5d57dd00d",
+    "generator_sha256":  "3d9fc3ffe012e7d5f52609c51703d122d9820ffa47645266c331cd6c5e6f63a1",
+    "generator_selftest":  "PASSED",
+    "powershell_version":  "5.1.26100.9549",
+    "host":  {
+                 "os":  "Microsoft Windows 11 Home Single Language",
+                 "os_version":  "10.0.26200",
+                 "cpu":  "AMD Ryzen 5 5500U with Radeon Graphics         ",
+                 "logical_processors":  12,
+                 "total_physical_memory":  33635815424
+             },
+    "ollama_url":  "http://127.0.0.1:11434",
+    "model":  "deepseek-coder-v2:16b",
+    "expected_id_prefix":  "63fb193b3a9b",
+    "constants":  {
+                      "temperature":  0,
+                      "seed":  0,
+                      "num_predict":  256,
+                      "request_timeout_sec":  1800,
+                      "assumed_bytes_per_token_for_run1":  3.5,
+                      "size_safety_factor":  0.97,
+                      "stop_max_model_bytes_16k":  17179869184,
+                      "stop_min_free_ram_bytes":  4294967296
+                  },
+    "context_note":  {
+                         "advertised_context_length":  163840,
+                         "advertised_source":  "ollama show deepseek-coder-v2:16b (context length 163840) - model maximum, NOT effective",
+                         "expected_default_num_ctx":  4096,
+                         "expected_default_source":  "server.log 2026-09-26T11:25:41 vram-based default context default_num_ctx=4096 (Stage-0 evidence section 11); verified or refuted by run #4"
+                     },
+    "od3_values_selected":  false,
+    "server_log_candidates":  [
+                                  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-1.log",
+                                  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-2.log",
+                                  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-3.log",
+                                  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-4.log",
+                                  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-5.log",
+                                  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server.log"
+                              ],
+    "server_log_status":  "CAPTURED",
+    "optional_32k":  "SKIPPED",
+    "optional_32k_reason":  "projected free RAM at 32768 (4229722112 - 3510768763 B) below 4 GB",
+    "error":  "/api/generate failed on run #7 (HTTP 400): The remote server returned an error: (400) Bad Request.",
+    "ollama_version":  "0.34.4",
+    "model_digest":  "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+    "server_processes_start":  {
+                                   "pid":  29896,
+                                   "parent_pid":  9956,
+                                   "name":  "ollama.exe",
+                                   "creation_utc":  "2026-09-29T09:51:32.4546200Z",
+                                   "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" serve",
+                                   "executable":  "C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\ollama.exe"
+                               },
+    "server_log_snapshot_start":  [
+                                      {
+                                          "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-1.log",
+                                          "length":  3058,
+                                          "last_write_utc":  "2026-09-26T05:51:57.5413743Z"
+                                      },
+                                      {
+                                          "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-2.log",
+                                          "length":  5841,
+                                          "last_write_utc":  "2026-09-25T23:07:07.2479363Z"
+                                      },
+                                      {
+                                          "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-3.log",
+                                          "length":  8795,
+                                          "last_write_utc":  "2026-09-24T05:27:27.8446912Z"
+                                      },
+                                      {
+                                          "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-4.log",
+                                          "length":  3219,
+                                          "last_write_utc":  "2026-09-22T09:28:06.0484868Z"
+                                      },
+                                      {
+                                          "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-5.log",
+                                          "length":  47302,
+                                          "last_write_utc":  "2026-09-22T09:19:14.7197649Z"
+                                      },
+                                      {
+                                          "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server.log",
+                                          "length":  14097,
+                                          "last_write_utc":  "2026-09-29T09:35:11.6271282Z"
+                                      }
+                                  ],
+    "free_ram_bytes_at_start":  16567328768,
+    "bytes_per_token_measured_run1":  1.9492009132420092,
+    "finished_utc":  "2026-09-29T11:48:20.8412424Z",
+    "server_processes_end":  [
+                                 {
+                                     "pid":  29896,
+                                     "parent_pid":  9956,
+                                     "name":  "ollama.exe",
+                                     "creation_utc":  "2026-09-29T09:51:32.4546200Z",
+                                     "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" serve",
+                                     "executable":  "C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\ollama.exe"
+                                 },
+                                 {
+                                     "pid":  15380,
+                                     "parent_pid":  29896,
+                                     "name":  "llama-server.exe",
+                                     "creation_utc":  "2026-09-29T11:39:56.4479550Z",
+                                     "command_line":  "\"C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe\" --model D:\\ollama\\models\\blobs\\sha256-5ff0abeeac1d2dbdd5455c0b49ba3b29a9ce3c1fb181b2eef2e948689d55d046 --port 51448 --host 127.0.0.1 --no-webui --offline -c 16384 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --load-mode none --flash-attn auto -b 1024 -ub 1024",
+                                     "executable":  "C:\\Users\\Manish Raj\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe"
+                                 }
+                             ],
+    "server_log_snapshot_end":  [
+                                    {
+                                        "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-1.log",
+                                        "length":  3058,
+                                        "last_write_utc":  "2026-09-26T05:51:57.5413743Z"
+                                    },
+                                    {
+                                        "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-2.log",
+                                        "length":  5841,
+                                        "last_write_utc":  "2026-09-25T23:07:07.2479363Z"
+                                    },
+                                    {
+                                        "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-3.log",
+                                        "length":  8795,
+                                        "last_write_utc":  "2026-09-24T05:27:27.8446912Z"
+                                    },
+                                    {
+                                        "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-4.log",
+                                        "length":  3219,
+                                        "last_write_utc":  "2026-09-22T09:28:06.0484868Z"
+                                    },
+                                    {
+                                        "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-5.log",
+                                        "length":  47302,
+                                        "last_write_utc":  "2026-09-22T09:19:14.7197649Z"
+                                    },
+                                    {
+                                        "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server.log",
+                                        "length":  14097,
+                                        "last_write_utc":  "2026-09-29T09:35:11.6271282Z"
+                                    }
+                                ],
+    "server_log_window_utc":  {
+                                  "from":  "2026-09-29T11:33:58.4011304Z",
+                                  "to":  "2026-09-29T11:48:26.1049898Z"
+                              },
+    "server_log_files":  [
+                             {
+                                 "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-1.log",
+                                 "lines_in_window":  1
+                             },
+                             {
+                                 "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-2.log",
+                                 "lines_in_window":  1
+                             },
+                             {
+                                 "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-3.log",
+                                 "lines_in_window":  1
+                             },
+                             {
+                                 "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-4.log",
+                                 "lines_in_window":  1
+                             },
+                             {
+                                 "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server-5.log",
+                                 "lines_in_window":  1
+                             },
+                             {
+                                 "path":  "C:\\Users\\Manish Raj\\AppData\\Local\\Ollama\\server.log",
+                                 "lines_in_window":  1
+                             }
+                         ],
+    "server_log_segment_lines":  6
+}

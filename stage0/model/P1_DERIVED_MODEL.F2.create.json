@@ -1,0 +1,1 @@
+{"model":"velith-p1-deepseek-coder-v2:16b-c16384-np1024","from":"deepseek-coder-v2:16b","parameters":{"num_ctx":16384,"num_predict":1024,"stop":["\nUser:","\nAssistant:"]},"stream":false}

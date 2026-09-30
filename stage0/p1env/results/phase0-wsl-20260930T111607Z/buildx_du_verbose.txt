@@ -1,0 +1,1811 @@
+ID:           ygzqj3tgxsb4fahkpq1hctnkv
+Parents:
+ - 5bas2ukqu4xqhzle1or94mdpm
+Created at:   2026-09-18 05:20:16.853592451 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         249B
+Usage count:  1
+Last used:    12 days ago
+Type:         regular
+
+ID:           l9awl5e04c4ulapyjannlf0z5
+Parents:
+ - bv34afuuhb0mmnjvlumjy6kmn
+Created at:   2026-09-25 10:39:55.983419852 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         4.128kB
+Description:  [runtime 8/8] WORKDIR /app/backend
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           89u9bu5kl497gdxqysh3ew3no
+Parents:
+ - uq9bp9eacw9b2zhd2yrv6vyvn
+Created at:   2026-09-25 10:39:38.535085579 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         8.285kB
+Description:  [runtime 4/8] WORKDIR /app
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           kqwe1igg55dvmsb7hvipjvt7k
+Parents:
+ - ygzqj3tgxsb4fahkpq1hctnkv
+Created at:   2026-09-18 05:20:16.928273118 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         8.285kB
+Description:  [2/8] WORKDIR /app
+Usage count:  14
+Last used:    8 days ago
+Type:         regular
+
+ID:           u6n6pksnggf2hke0nz0n1z9tb
+Parents:
+ - srkbjdljf2ygr0zo5g95ac9dc
+Created at:   2026-09-26 17:52:42.4036629 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         8.285kB
+Description:  [2/7] WORKDIR /app
+Usage count:  12
+Last used:    2 days ago
+Type:         regular
+
+ID:           u0ptgpoeugpvjhw279jhmh9cd
+Parents:
+ - 22dyv2tw7xs5q0q2bqntrgd77
+Created at:   2026-09-25 10:39:42.298918834 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         13.24kB
+Description:  [runtime 6/8] COPY --chown=app:app docker/entrypoint.sh /app/entrypoint.sh
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           ve1m22bacb7aykh4bisq6v96s
+Parents:
+ - isxz6m7kditns2u6hh0bxo3kk
+Created at:   2026-09-27 06:08:18.780176871 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           j6zxvw4cowd36lg3nt6i59gmm
+Parents:
+ - qr7s1v8lzssvri3jdbbl5rfp8
+Created at:   2026-09-27 21:10:17.751127082 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           rtz6gef0ubcmrszmt1z7cb7gj
+Parents:
+ - 38q5yflyuwh1p86qefrkfyfkn
+Created at:   2026-09-27 05:14:13.397629413 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           waaf218i88lozoa0gn6atcdih
+Parents:
+ - nsqfnksp6iv5zlw7jnsgxdzac
+Created at:   2026-09-27 17:27:33.932741213 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           ed2dvfifx1qucsd1h0y7un91j
+Parents:
+ - ff43ypprp085l2m9fp4snwkr6
+Created at:   2026-09-27 11:15:09.207498398 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           lunymtaik4ox7shrp87w82txj
+Parents:
+ - fm9o6nt990sk2j9e6o3hqskyi
+Created at:   2026-09-27 06:04:58.680263472 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           l4et6w46vimhjcrcwrf9wizf0
+Parents:
+ - tqkyvfg50937wn5ytp2ty3qhs
+Created at:   2026-09-27 11:09:28.544560369 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           u8ajy7lniitcn84z24wdilsd4
+Parents:
+ - xybr1stfnbj2538sjow66lnow
+Created at:   2026-09-27 16:31:08.112759657 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.57kB
+Description:  [6/8] COPY distribution/ ./distribution/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           srkbjdljf2ygr0zo5g95ac9dc
+Parents:
+ - u46iniwvz114gow8jo30vsv5x
+Created at:   2026-09-26 17:52:08.755076991 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.63kB
+Description:  pulled from docker.io/library/python:3.11-slim-bookworm@sha256:a36c24f9cbdf4fd0f52d67f0823eeac19c2028c637cecc392d97f980d4fec56b
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           ywdvlteufsrshpoa01t7fbqqg
+Parents:
+ - ri1qzoyn7h2bpy9qvywnewdwj
+Created at:   2026-09-25 10:37:05.185420512 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         16.63kB
+Description:  pulled from docker.io/library/python:3.12-slim-bookworm@sha256:392307d22300de8b5986851a12d9176dfc0fc073e65bf6523ebd7dcbeb23564e
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           bpczlw72xxq8abba1nmao2e5l
+Parents:
+ - fkqgdx53qynju89ulfla5291z
+Created at:   2026-09-27 21:08:20.564078286 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         17.43kB
+Description:  [5/8] COPY constraints/ ./constraints/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           xbfz7yknyfzdt1ntpxgemgzs5
+Parents:
+ - xw32hji6sb528uoxrn0kfc0gc
+Created at:   2026-09-27 18:58:04.85443574 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         17.44kB
+Description:  [5/8] COPY constraints/ ./constraints/
+Usage count:  2
+Last used:    2 days ago
+Type:         regular
+
+ID:           jby9scwqugehiz3wrp47s59k7
+Parents:
+ - 2beh73a4dezoz07e8l0hememr
+Created at:   2026-09-28 11:42:23.819651101 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         17.45kB
+Description:  [5/8] COPY constraints/ ./constraints/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           lx1hmp7y7218v8y2zwn5ytg4m
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-26 19:11:28.119125432 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         18.37kB
+Description:  [3/7] COPY pyproject.toml ./
+Usage count:  4
+Last used:    3 days ago
+Type:         regular
+
+ID:           tjgu3285ry2o35o6mqmf3y8vz
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-26 19:57:35.866924078 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         18.37kB
+Description:  [3/7] COPY pyproject.toml ./
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           vi2a2zt3xozrvsipd9ewsfcmx
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-26 18:29:33.741714554 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         18.37kB
+Description:  [3/7] COPY pyproject.toml ./
+Usage count:  4
+Last used:    3 days ago
+Type:         regular
+
+ID:           yd5vb8c9fkrx07lfku9gta9l0
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-26 17:58:29.63740896 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         18.38kB
+Description:  [3/7] COPY pyproject.toml ./
+Usage count:  3
+Last used:    3 days ago
+Type:         regular
+
+ID:           m73k40x8jefbjgkh7prxmksv5
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 04:15:27.215830476 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         18.73kB
+Description:  [3/7] COPY pyproject.toml ./
+Usage count:  4
+Last used:    3 days ago
+Type:         regular
+
+ID:           ro8z2xgspl0vfc4ps2bt3sj7o
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 05:10:45.902153881 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         19.08kB
+Description:  [3/7] COPY pyproject.toml ./
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           n0nb4r1cb6qruwh1jkndjvday
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 11:00:02.096026663 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         19.1kB
+Description:  [3/8] COPY pyproject.toml ./
+Usage count:  3
+Last used:    3 days ago
+Type:         regular
+
+ID:           zl52hfil68zj1xnwwqmahggzj
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 05:57:53.158805185 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         19.1kB
+Description:  [3/8] COPY pyproject.toml ./
+Usage count:  3
+Last used:    3 days ago
+Type:         regular
+
+ID:           0kskn3gmuv96a6ciivlx1dkbv
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 17:27:33.5588031 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         19.14kB
+Description:  [3/8] COPY pyproject.toml ./
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           ayrtxny7oyhsnfb3bix0ttb7o
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 15:43:05.687138938 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         19.15kB
+Description:  [3/8] COPY pyproject.toml ./
+Usage count:  3
+Last used:    2 days ago
+Type:         regular
+
+ID:           4fhx0ycwngtzztnda5ubmivxp
+Parents:
+ - u6n6pksnggf2hke0nz0n1z9tb
+Created at:   2026-09-27 21:10:17.4021103 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         19.17kB
+Description:  [3/8] COPY pyproject.toml ./
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           xw32hji6sb528uoxrn0kfc0gc
+Parents:
+ - eoo4vao0j9qrbh8spphms91td
+Created at:   2026-09-27 18:58:04.760423641 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         57.22kB
+Description:  [4/8] COPY pyproject.toml README.md ./
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           fkqgdx53qynju89ulfla5291z
+Parents:
+ - eoo4vao0j9qrbh8spphms91td
+Created at:   2026-09-27 21:08:20.478129868 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         57.49kB
+Description:  [4/8] COPY pyproject.toml README.md ./
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           2beh73a4dezoz07e8l0hememr
+Parents:
+ - k6fkuiwo8rrhzlwbpu98o438q
+Created at:   2026-09-28 11:42:23.73231319 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         57.49kB
+Description:  [4/8] COPY pyproject.toml README.md ./
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           qr7s1v8lzssvri3jdbbl5rfp8
+Parents:
+ - f3jhsr4mb1ui9pqn1c9bmzdqt
+Created at:   2026-09-27 21:10:17.660595773 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           ff43ypprp085l2m9fp4snwkr6
+Parents:
+ - hhw11qpfqumjw3e1t98ftwmfc
+Created at:   2026-09-27 11:15:09.110092057 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           isxz6m7kditns2u6hh0bxo3kk
+Parents:
+ - ctti67p797mrk24luostosi2e
+Created at:   2026-09-27 06:08:18.716961934 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           o26ssr49otc639nu09ffw7t74
+Parents:
+ - 9mky2zg8o0qt46sn5za7iweb5
+Created at:   2026-09-26 20:05:47.592799864 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           38q5yflyuwh1p86qefrkfyfkn
+Parents:
+ - mhzp6kqt445lzdeu30rfomnx2
+Created at:   2026-09-27 05:14:13.304788377 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           ebtidn9pb23l87zwve3xc34d7
+Parents:
+ - tlpde9o9mc77aa37kgunekwud
+Created at:   2026-09-26 18:41:55.972882009 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           mhck7yi3hebcs9yrgqfvdyx30
+Parents:
+ - 6apnztzx4zm7lyypl1m1ie2w5
+Created at:   2026-09-26 19:16:46.432073924 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           v0q65ulen9t4627alv4vkz2pe
+Parents:
+ - xy6tmr0ak2pp3s3o1c0ii6gez
+Created at:   2026-09-27 04:39:58.37340438 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           nsqfnksp6iv5zlw7jnsgxdzac
+Parents:
+ - n36y2e6iwb6s0e57hiaa2w0tq
+Created at:   2026-09-27 17:27:33.805375702 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           ag615693guss01u7e4bv4o8od
+Parents:
+ - xo5hwsmi9ky2rhorjoxiv6bb8
+Created at:   2026-09-26 18:00:48.547215899 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           3cund7dcz1msc9oanyu23s1xh
+Parents:
+ - l1awdqd29ltvhh6862onozzhz
+Created at:   2026-09-26 17:58:29.870646759 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.3kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           e952ifttkscyh8sjn9c87b8st
+Parents:
+ - rylzonrki1joqulg0fg2dv7ws
+Created at:   2026-09-26 18:34:53.797721758 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           y604t07wpvr8zhd1a00vb80ma
+Parents:
+ - lqqb92lpgtgkkboei2ch06gzu
+Created at:   2026-09-27 04:26:30.542641513 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           fm9o6nt990sk2j9e6o3hqskyi
+Parents:
+ - o18p66sgkd087nclbq2mks94j
+Created at:   2026-09-27 06:04:58.62786237 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           t8kfar2wswvtgyacsvi8fom5v
+Parents:
+ - la7mxjis4r1p2haeoyg535y8u
+Created at:   2026-09-26 19:11:28.248862533 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           tqkyvfg50937wn5ytp2ty3qhs
+Parents:
+ - 3pwynqdx8ks74hf6rmkf4keem
+Created at:   2026-09-27 11:09:28.458214133 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           x9k768ktwp2wbx7ls1e4vp6pt
+Parents:
+ - 4688864b7jp56uk6svm6mtf9j
+Created at:   2026-09-26 19:57:35.992362849 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/7] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           xybr1stfnbj2538sjow66lnow
+Parents:
+ - wmhx5ajgsh21eqrd0wf80k3r6
+Created at:   2026-09-27 16:31:08.005698607 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         255.4kB
+Description:  [5/8] COPY contracts/ ./contracts/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           l1awdqd29ltvhh6862onozzhz
+Parents:
+ - yd5vb8c9fkrx07lfku9gta9l0
+Created at:   2026-09-26 17:58:29.756698436 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         336kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           xo5hwsmi9ky2rhorjoxiv6bb8
+Parents:
+ - yd5vb8c9fkrx07lfku9gta9l0
+Created at:   2026-09-26 18:00:48.426571284 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         341.5kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           tlpde9o9mc77aa37kgunekwud
+Parents:
+ - vi2a2zt3xozrvsipd9ewsfcmx
+Created at:   2026-09-26 18:41:55.85253762 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         351.4kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           rylzonrki1joqulg0fg2dv7ws
+Parents:
+ - vi2a2zt3xozrvsipd9ewsfcmx
+Created at:   2026-09-26 18:34:53.669993937 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         356.4kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           6apnztzx4zm7lyypl1m1ie2w5
+Parents:
+ - lx1hmp7y7218v8y2zwn5ytg4m
+Created at:   2026-09-26 19:16:46.370176047 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         362kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           la7mxjis4r1p2haeoyg535y8u
+Parents:
+ - lx1hmp7y7218v8y2zwn5ytg4m
+Created at:   2026-09-26 19:11:28.185318368 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         367kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           9mky2zg8o0qt46sn5za7iweb5
+Parents:
+ - tjgu3285ry2o35o6mqmf3y8vz
+Created at:   2026-09-26 20:05:47.528961802 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         372.6kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           4688864b7jp56uk6svm6mtf9j
+Parents:
+ - tjgu3285ry2o35o6mqmf3y8vz
+Created at:   2026-09-26 19:57:35.929704275 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         377.5kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           mhzp6kqt445lzdeu30rfomnx2
+Parents:
+ - ro8z2xgspl0vfc4ps2bt3sj7o
+Created at:   2026-09-27 05:14:13.181125895 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         444.9kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           xy6tmr0ak2pp3s3o1c0ii6gez
+Parents:
+ - m73k40x8jefbjgkh7prxmksv5
+Created at:   2026-09-27 04:39:58.255558386 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         444.9kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           lqqb92lpgtgkkboei2ch06gzu
+Parents:
+ - m73k40x8jefbjgkh7prxmksv5
+Created at:   2026-09-27 04:26:30.42722509 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         450.1kB
+Description:  [4/7] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           ctti67p797mrk24luostosi2e
+Parents:
+ - zl52hfil68zj1xnwwqmahggzj
+Created at:   2026-09-27 06:08:18.641390239 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         474.9kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           hhw11qpfqumjw3e1t98ftwmfc
+Parents:
+ - n0nb4r1cb6qruwh1jkndjvday
+Created at:   2026-09-27 11:15:08.991378779 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         476.1kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           o18p66sgkd087nclbq2mks94j
+Parents:
+ - zl52hfil68zj1xnwwqmahggzj
+Created at:   2026-09-27 06:04:58.562243163 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         480.1kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           3pwynqdx8ks74hf6rmkf4keem
+Parents:
+ - n0nb4r1cb6qruwh1jkndjvday
+Created at:   2026-09-27 11:09:28.34562739 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         481.3kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           f3jhsr4mb1ui9pqn1c9bmzdqt
+Parents:
+ - 4fhx0ycwngtzztnda5ubmivxp
+Created at:   2026-09-27 21:10:17.541269318 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         525.7kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           n36y2e6iwb6s0e57hiaa2w0tq
+Parents:
+ - 0kskn3gmuv96a6ciivlx1dkbv
+Created at:   2026-09-27 17:27:33.688739685 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         525.7kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           wmhx5ajgsh21eqrd0wf80k3r6
+Parents:
+ - ayrtxny7oyhsnfb3bix0ttb7o
+Created at:   2026-09-27 16:31:07.873953092 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         531.1kB
+Description:  [4/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           xw8a857hcjou7tmrxu117noh6
+Parents:
+ - bpczlw72xxq8abba1nmao2e5l
+Created at:   2026-09-27 21:08:20.690919296 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         593.5kB
+Description:  [6/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           k2ttit6sgtl087mo8b3j4mq4y
+Parents:
+ - xbfz7yknyfzdt1ntpxgemgzs5
+Created at:   2026-09-27 20:50:30.357272622 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         593.5kB
+Description:  [6/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           3s9fc9a9kueg54qodlzqejrxy
+Parents:
+ - tdxs8h7kriqjior4jo19l69ji
+Created at:   2026-09-27 20:52:45.434991008 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         729.9kB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           j8kds86xbzb6e2g16jwhfh6uc
+Parents:
+ - v3semcvmh9gxs5yxc2iknfu00
+Created at:   2026-09-27 21:10:14.303316073 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         729.9kB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           8r53xtutxbo95k7n5xiz1yj6b
+Parents:
+ - xbfz7yknyfzdt1ntpxgemgzs5
+Created at:   2026-09-27 18:58:05.083417549 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         1.062MB
+Description:  [6/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           gmonbb5rv3pgif2wqlqarsanv
+Parents:
+ - jby9scwqugehiz3wrp47s59k7
+Created at:   2026-09-28 11:42:24.064201332 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         1.062MB
+Description:  [6/8] COPY src/ ./src/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           tszoisa8yul0719k387hbs0it
+Parents:
+ - jkestydq1oztqj2nenqcpwobk
+Created at:   2026-09-27 18:59:58.906831849 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         1.877MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           zjts8o0yfd7sgl1w8rgtnuujr
+Parents:
+ - 2xxsksmi0exmfa9rdarxgchsr
+Created at:   2026-09-28 11:45:19.675320472 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         1.877MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           056pacy8q30noct407bip9tgn
+Parents:
+ - gzv4tgjvvhksh060ekr1tspsx
+Created at:   2026-09-26 17:59:20.426562467 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         2.499MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           z20gckqf2ib21qfy0yo6xyrpz
+Parents:
+ - ld0wmp757d4aufakaa3jvsr4m
+Created at:   2026-09-26 18:01:39.995789927 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         2.504MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           ojyzdsfqrdi4gulap65jg8x54
+Parents:
+ - deh7zgwwqytykwbjvf1twe9ov
+Created at:   2026-09-18 05:20:16.802523312 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.317MB
+Usage count:  1
+Last used:    12 days ago
+Type:         regular
+
+ID:           sg0hlknvwmrwst5ptpp0tlor7
+Parents:
+ - 2x969sm4jcikceq2zwkk6h6ij
+Created at:   2026-09-26 18:43:00.636233737 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.325MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           jszi4k53e1nrqzx49ki5a3uri
+Parents:
+ - t0u4nr3uae47vy88qrhsmaz9d
+Created at:   2026-09-26 18:36:02.446386664 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.326MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           tf5ky0wfksiq42q4nav086t8b
+Parents:
+ - l4ojkvpsaiabozbnbx1yocvwe
+Created at:   2026-09-26 19:17:27.692169667 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.358MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           lzc8x3pp7spz9akrue27zihxx
+Parents:
+ - cjkzuijpus332x4jmvytm6188
+Created at:   2026-09-26 19:11:59.792225195 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.358MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           x8sn3bnpe3zby2gmw0xtebzyz
+Parents:
+ - 8hd7n0r3eiertpdn5o9ecjj11
+Created at:   2026-09-27 02:52:37.160460383 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.405MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           rx3bn7sn3m0dup7hbpchoytup
+Parents:
+ - cgsrsi9x4jao434km8xzpiqk1
+Created at:   2026-09-26 19:59:23.782695957 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.406MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           om8n5xw18mpqj374373361xqz
+Parents:
+ - d58jnmyu9hl3hj0d76fe0eap9
+Created at:   2026-09-27 04:41:17.761267008 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.501MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           mq2giay5dx25m3q0n3hz8cbhl
+Parents:
+ - qd6eiiozuo1slo8kpqja1t2zi
+Created at:   2026-09-27 04:27:19.147211494 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.502MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           47lr2acxuxur2gc7gl4i7m28p
+Parents:
+ - 66ontxih6wmd6532bzqf0hjf9
+Created at:   2026-09-27 05:15:05.299986169 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.507MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           w2fk7o47o8ydxpdgvusaht0py
+Parents:
+ - 66ontxih6wmd6532bzqf0hjf9
+Created at:   2026-09-27 05:19:39.180928894 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.507MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           obe48wuwz69ag9108g6g4onf2
+Parents:
+ - d58jnmyu9hl3hj0d76fe0eap9
+Created at:   2026-09-27 05:52:03.538289249 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.51MB
+Description:  [7/7] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           pbig6rqwyhchga0cc3081fred
+Parents:
+ - 0lzjdi7tkoqj23mqbyo2ta6i1
+Created at:   2026-09-27 06:08:49.483309785 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.648MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           v0156cvxeydpfoh38n2fvm1l4
+Parents:
+ - vaw9qv9hb31ebv7ednzd7ro4p
+Created at:   2026-09-27 06:05:29.709059284 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.649MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           rtfkdfe7z6lmqv0fzop3cpg7l
+Parents:
+ - hsssjfwknoqv2szngqelehp4w
+Created at:   2026-09-27 11:17:59.292487325 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.77MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           i3gutak9sfioz6soo9qxgufr2
+Parents:
+ - quq6ucs1d4jext6wm2untka2v
+Created at:   2026-09-27 11:12:17.819945337 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.771MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           7bkql4xtod1ovyfgpbu0pa8pc
+Parents:
+ - z5w0imjtb3bft5upkfyaca8po
+Created at:   2026-09-27 17:28:35.031901579 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.884MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           0myyu4wdsf6wj4spvcufmdc6y
+Parents:
+ - dry9kl5l1xvonyg7koilo7hpn
+Created at:   2026-09-27 21:11:12.832795607 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.884MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           oe9km2kwycygtbixvfpgwtqqm
+Parents:
+ - w6xjlwsqmr1az13zdj1jf9nxn
+Created at:   2026-09-27 16:32:05.944485264 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         3.885MB
+Description:  [8/8] COPY tests/ ./tests/
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           5bas2ukqu4xqhzle1or94mdpm
+Parents:
+ - ojyzdsfqrdi4gulap65jg8x54
+Created at:   2026-09-18 05:20:16.829154238 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         13.63MB
+Usage count:  1
+Last used:    12 days ago
+Type:         regular
+
+ID:           53cif240isydpbop0efia6en8
+Parents:
+ - sncd20cteiohjpvfmw85bnoc7
+Created at:   2026-09-25 10:37:05.104438523 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         13.98MB
+Description:  pulled from docker.io/library/python:3.12-slim-bookworm@sha256:392307d22300de8b5986851a12d9176dfc0fc073e65bf6523ebd7dcbeb23564e
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           s2az6i300z5xgt9gig4un6jm1
+Parents:
+ - sncd20cteiohjpvfmw85bnoc7
+Created at:   2026-09-26 17:52:08.631305145 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         13.98MB
+Description:  pulled from docker.io/library/python:3.11-slim-bookworm@sha256:a36c24f9cbdf4fd0f52d67f0823eeac19c2028c637cecc392d97f980d4fec56b
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           deh7zgwwqytykwbjvf1twe9ov
+Created at:   2026-09-18 05:20:16.782377585 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         28.23MB
+Usage count:  1
+Last used:    12 days ago
+Type:         regular
+
+ID:           l9h3qcy1ha3pyxd2rj5p81b91
+Created at:   2026-09-04 07:37:58.875609045 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         28.23MB
+Usage count:  2
+Last used:    3 weeks ago
+Type:         regular
+
+ID:           szy1m5ej6ycr8x5jzk1k9j9xf
+Created at:   2026-09-04 15:12:13.072579347 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       false
+Size:         42.68MB
+Description:  pulled from docker.io/docker/dockerfile:1@sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32
+Usage count:  53
+Last used:    5 days ago
+Type:         frontend
+
+ID:           bv34afuuhb0mmnjvlumjy6kmn
+Parents:
+ - u0ptgpoeugpvjhw279jhmh9cd
+Created at:   2026-09-25 10:39:55.825363276 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         51.05MB
+Description:  mount / from exec /bin/sh -c chmod +x /app/entrypoint.sh     && mkdir -p /srv/media /srv/backups /app/staticfiles     && chown -R app:app /app /srv/media /srv/backups
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           22dyv2tw7xs5q0q2bqntrgd77
+Parents:
+ - 89u9bu5kl497gdxqysh3ew3no
+Created at:   2026-09-25 10:39:42.137357739 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         52.79MB
+Description:  [runtime 5/8] COPY --chown=app:app backend/ /app/backend/
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           ri1qzoyn7h2bpy9qvywnewdwj
+Parents:
+ - 53cif240isydpbop0efia6en8
+Created at:   2026-09-25 10:37:05.144571961 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         58.65MB
+Description:  pulled from docker.io/library/python:3.12-slim-bookworm@sha256:392307d22300de8b5986851a12d9176dfc0fc073e65bf6523ebd7dcbeb23564e
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           u46iniwvz114gow8jo30vsv5x
+Parents:
+ - s2az6i300z5xgt9gig4un6jm1
+Created at:   2026-09-26 17:52:08.690964304 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         68.47MB
+Description:  pulled from docker.io/library/python:3.11-slim-bookworm@sha256:a36c24f9cbdf4fd0f52d67f0823eeac19c2028c637cecc392d97f980d4fec56b
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           ts3zij9jvbi7ec70br588eoc2
+Parents:
+ - ywdvlteufsrshpoa01t7fbqqg
+Created at:   2026-09-25 10:38:10.748514694 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         101MB
+Description:  mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends         libpq5 curl         libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libfribidi0         libcairo2 libgdk-pixbuf-2.0-0 libffi8 fonts-dejavu-core     && rm -rf /var/lib/apt/lists/*     && groupadd --gid 1000 app     && useradd --uid 1000 --gid app --create-home --shell /usr/sbin/nologin app
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           sncd20cteiohjpvfmw85bnoc7
+Created at:   2026-09-25 10:37:05.071096362 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         113.5MB
+Description:  pulled from docker.io/library/python:3.12-slim-bookworm@sha256:392307d22300de8b5986851a12d9176dfc0fc073e65bf6523ebd7dcbeb23564e
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           eoo4vao0j9qrbh8spphms91td
+Parents:
+ - kqwe1igg55dvmsb7hvipjvt7k
+Created at:   2026-09-25 21:30:12.445895346 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         132.4MB
+Description:  mount / from exec /bin/sh -c apt-get update     && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+Usage count:  1
+Last used:    4 days ago
+Type:         regular
+
+ID:           k6fkuiwo8rrhzlwbpu98o438q
+Parents:
+ - kqwe1igg55dvmsb7hvipjvt7k
+Created at:   2026-09-28 11:42:23.572535604 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         132.4MB
+Description:  mount / from exec /bin/sh -c apt-get update     && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           amhut7rrzke2jbw1nolftmm1n
+Parents:
+ - l9h3qcy1ha3pyxd2rj5p81b91
+Created at:   2026-09-04 07:38:20.171600789 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         140.1MB
+Description:  mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends         ca-certificates         curl         git         libsqlite3-0         unzip         xz-utils     && rm -rf /var/lib/apt/lists/*
+Usage count:  1
+Last used:    3 weeks ago
+Type:         regular
+
+ID:           uq9bp9eacw9b2zhd2yrv6vyvn
+Parents:
+ - ts3zij9jvbi7ec70br588eoc2
+Created at:   2026-09-25 10:39:38.230230376 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         161.3MB
+Description:  [runtime 3/8] COPY --from=builder /opt/venv /opt/venv
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           gzv4tgjvvhksh060ekr1tspsx
+Parents:
+ - 3cund7dcz1msc9oanyu23s1xh
+Created at:   2026-09-26 17:59:20.225324731 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           ld0wmp757d4aufakaa3jvsr4m
+Parents:
+ - ag615693guss01u7e4bv4o8od
+Created at:   2026-09-26 18:01:39.804738009 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           2x969sm4jcikceq2zwkk6h6ij
+Parents:
+ - ebtidn9pb23l87zwve3xc34d7
+Created at:   2026-09-26 18:43:00.44464784 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           t0u4nr3uae47vy88qrhsmaz9d
+Parents:
+ - e952ifttkscyh8sjn9c87b8st
+Created at:   2026-09-26 18:36:02.248529857 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           l4ojkvpsaiabozbnbx1yocvwe
+Parents:
+ - mhck7yi3hebcs9yrgqfvdyx30
+Created at:   2026-09-26 19:17:27.587913649 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           cjkzuijpus332x4jmvytm6188
+Parents:
+ - t8kfar2wswvtgyacsvi8fom5v
+Created at:   2026-09-26 19:11:59.670044061 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           8hd7n0r3eiertpdn5o9ecjj11
+Parents:
+ - o26ssr49otc639nu09ffw7t74
+Created at:   2026-09-27 02:52:36.966215108 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           cgsrsi9x4jao434km8xzpiqk1
+Parents:
+ - x9k768ktwp2wbx7ls1e4vp6pt
+Created at:   2026-09-26 19:59:23.681822016 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.1MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           d58jnmyu9hl3hj0d76fe0eap9
+Parents:
+ - v0q65ulen9t4627alv4vkz2pe
+Created at:   2026-09-27 04:41:17.546618817 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.3MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           qd6eiiozuo1slo8kpqja1t2zi
+Parents:
+ - y604t07wpvr8zhd1a00vb80ma
+Created at:   2026-09-27 04:27:18.918467987 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.3MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           66ontxih6wmd6532bzqf0hjf9
+Parents:
+ - rtz6gef0ubcmrszmt1z7cb7gj
+Created at:   2026-09-27 05:15:04.995503799 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.7MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  2
+Last used:    3 days ago
+Type:         regular
+
+ID:           0lzjdi7tkoqj23mqbyo2ta6i1
+Parents:
+ - ve1m22bacb7aykh4bisq6v96s
+Created at:   2026-09-27 06:08:49.359763426 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.8MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           vaw9qv9hb31ebv7ednzd7ro4p
+Parents:
+ - lunymtaik4ox7shrp87w82txj
+Created at:   2026-09-27 06:05:29.588935005 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.8MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           hsssjfwknoqv2szngqelehp4w
+Parents:
+ - ed2dvfifx1qucsd1h0y7un91j
+Created at:   2026-09-27 11:17:59.082428799 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.8MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           quq6ucs1d4jext6wm2untka2v
+Parents:
+ - l4et6w46vimhjcrcwrf9wizf0
+Created at:   2026-09-27 11:12:17.592924947 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.8MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    3 days ago
+Type:         regular
+
+ID:           z5w0imjtb3bft5upkfyaca8po
+Parents:
+ - waaf218i88lozoa0gn6atcdih
+Created at:   2026-09-27 17:28:34.793381892 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.9MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           dry9kl5l1xvonyg7koilo7hpn
+Parents:
+ - j6zxvw4cowd36lg3nt6i59gmm
+Created at:   2026-09-27 21:11:12.550896182 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.9MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           w6xjlwsqmr1az13zdj1jf9nxn
+Parents:
+ - u8ajy7lniitcn84z24wdilsd4
+Created at:   2026-09-27 16:32:05.732718063 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         192.9MB
+Description:  mount / from exec /bin/sh -c pip install ".[dev]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           ueenkgudqe2jskcdceo4ccz9v
+Parents:
+ - l9awl5e04c4ulapyjannlf0z5
+Created at:   2026-09-25 10:40:06.832772129 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         328.2MB
+Description:  [dev 1/2] COPY --from=builder-dev /opt/venv /opt/venv
+Usage count:  1
+Last used:    5 days ago
+Type:         regular
+
+ID:           pydh9cq762snif4b2ug2eyb2o
+Parents:
+ - ueenkgudqe2jskcdceo4ccz9v
+Created at:   2026-09-25 10:41:12.860654387 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         419.9MB
+Description:  mount / from exec /bin/sh -c chown -R app:app /opt/venv /app
+Usage count:  2
+Last used:    5 days ago
+Type:         regular
+
+ID:           jkestydq1oztqj2nenqcpwobk
+Parents:
+ - 8r53xtutxbo95k7n5xiz1yj6b
+Created at:   2026-09-27 18:59:58.471485965 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         632.5MB
+Description:  mount / from exec /bin/sh -c pip install -c constraints/analysis-py312.txt ".[dev,analysis]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           v3semcvmh9gxs5yxc2iknfu00
+Parents:
+ - xw8a857hcjou7tmrxu117noh6
+Created at:   2026-09-27 21:10:13.90409698 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         632.5MB
+Description:  mount / from exec /bin/sh -c pip install -c constraints/analysis-py312.txt ".[dev,analysis]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           tdxs8h7kriqjior4jo19l69ji
+Parents:
+ - k2ttit6sgtl087mo8b3j4mq4y
+Created at:   2026-09-27 20:52:45.052693969 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         632.5MB
+Description:  mount / from exec /bin/sh -c pip install -c constraints/analysis-py312.txt ".[dev,analysis]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           2xxsksmi0exmfa9rdarxgchsr
+Parents:
+ - gmonbb5rv3pgif2wqlqarsanv
+Created at:   2026-09-28 11:45:19.134936634 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         632.5MB
+Description:  mount / from exec /bin/sh -c pip install -c constraints/analysis-py312.txt ".[dev,analysis]"
+Usage count:  1
+Last used:    2 days ago
+Type:         regular
+
+ID:           8z2370ll3pcrcvm124sh7d61o
+Parents:
+ - amhut7rrzke2jbw1nolftmm1n
+Created at:   2026-09-04 07:47:14.30785704 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         4.294GB
+Description:  mount / from exec /bin/sh -c test -n "$FLUTTER_VERSION"       || { echo "FLUTTER_VERSION build-arg is required; it comes from mobile/.flutter-version"; exit 1; }     && curl -fsSL -o /tmp/flutter.tar.xz         "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz"     && if [ -n "$FLUTTER_SHA256" ]; then          echo "${FLUTTER_SHA256}  /tmp/flutter.tar.xz" | sha256sum -c -;        else          echo "WARNING: FLUTTER_SHA256 unset — version pinned, bytes not (TD-38).";          echo "  sha256: $(sha256sum /tmp/flutter.tar.xz | cut -d' ' -f1)";        fi     && tar -xJf /tmp/flutter.tar.xz -C /opt     && rm /tmp/flutter.tar.xz
+Usage count:  1
+Last used:    3 weeks ago
+Type:         regular
+
+ID:           ihix7c0fplzfaa710zktfnque
+Parents:
+ - 8z2370ll3pcrcvm124sh7d61o
+Created at:   2026-09-04 07:48:13.921905205 +0000 UTC
+Mutable:      false
+Reclaimable:  true
+Shared:       true
+Size:         4.348GB
+Description:  mount / from exec /bin/sh -c git config --system --add safe.directory /opt/flutter     && mkdir -p /tmp/pub-cache     && flutter --version     && chmod -R a+rwX /opt/flutter /tmp/pub-cache
+Usage count:  21
+Last used:    2 weeks ago
+Type:         regular
+
+Shared:		16.59GB
+Private:	42.68MB
+Reclaimable:	16.63GB
+Total:		16.63GB

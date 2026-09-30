@@ -1,0 +1,7 @@
+# Python / tooling caches
+__pycache__/
+*.pyc
+.venv/
+# OS noise
+Thumbs.db
+desktop.ini

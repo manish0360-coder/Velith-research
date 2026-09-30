@@ -1,0 +1,206 @@
+Images space usage:
+
+REPOSITORY                 TAG           IMAGE ID       CREATED         SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+velith-verifier            m0            36c4c00bc85b   2 days ago      952MB     185MB         766.5MB       0
+mp-verifier                i1-commit     09a0702ef818   2 days ago      394MB     196MB         197.6MB       0
+velith-gate                i1            a4fb114bd08f   2 days ago      950MB     316.1MB       633.9MB       0
+velith-gate                phaseA        fcb529756dff   2 days ago      950MB     316.2MB       633.8MB       0
+velith-audit               i0            5b811da08e93   2 days ago      952MB     316.2MB       635.4MB       0
+mp-verifier                rm14-commit   c5b501f5a7ff   2 days ago      394MB     196MB         197.6MB       0
+mp-verifier                rm14-dev      3d33629079bc   2 days ago      394MB     196MB         197.6MB       0
+mp-verifier                rm13-pre      b11524035e2e   3 days ago      393MB     393.3MB       1.848kB       0
+mp-verifier                rm13-commit   5eb685349a3e   3 days ago      393MB     393.3MB       1.851kB       0
+mp-verifier                rm13-dev      af02e9063e22   3 days ago      393MB     196MB         197.3MB       0
+mp-verifier                rm12-pre      3ff10dc68552   3 days ago      393MB     393.1MB       1.848kB       0
+mp-verifier                rm12-commit   10fbbd67de7e   3 days ago      393MB     393.1MB       1.851kB       0
+mp-verifier                rm12-dev      f7c75318519f   3 days ago      393MB     196MB         197.1MB       0
+mp-verifier                rm11-golden   94c2a51d4d8b   3 days ago      393MB     389MB         3.522MB       0
+mp-verifier                pkg-pre       9c5970716a31   3 days ago      393MB     392.9MB       1.847kB       0
+mp-verifier                pkg-commit    8445cba58e15   3 days ago      393MB     392.9MB       1.85kB        0
+mp-verifier                pkg-dev       5d85207f85d0   3 days ago      393MB     389.4MB       3.518MB       0
+mp-verifier                rm11-commit   bc0f7c5a7da3   3 days ago      392MB     389MB         3.513MB       0
+mp-verifier                rm11-dev      716de5ae47af   3 days ago      393MB     196MB         196.5MB       0
+mp-verifier                rm10-commit   ac1e45d035a6   3 days ago      392MB     196MB         196.1MB       0
+mp-verifier                rm10          4411bed2b483   3 days ago      392MB     196MB         196.2MB       0
+mp-verifier                rm9-commit    9e39c6973a9f   3 days ago      392MB     196MB         196.1MB       0
+mp-verifier                rm9           5dafaac7feb6   3 days ago      392MB     196MB         196.1MB       0
+mp-verifier                rm8-commit    f651c9cd1d50   3 days ago      392MB     196MB         196MB         0
+mp-verifier                rm8           e1b30652807e   3 days ago      392MB     196MB         196MB         0
+mp-verifier                c1            63c072a87352   3 days ago      391MB     196MB         195.1MB       0
+mp-verifier                rm5           9c087a02c4fe   3 days ago      391MB     196MB         195.1MB       0
+districore-app             latest        88eb7872664f   5 days ago      1.04GB    113.5MB       930.7MB       1
+python                     3.10-slim     31dd4d9529d0   11 days ago     186MB     117.5MB       68.41MB       0
+python                     3.13-slim     7c61056e61ac   11 days ago     178MB     117.5MB       60.77MB       0
+python                     3.12-slim     f77ac9e44ae9   11 days ago     179MB     117.5MB       61.93MB       0
+python                     3.11-slim     e41613d42d48   11 days ago     189MB     117.5MB       71.76MB       0
+python                     3.14-slim     51dafde81dbd   11 days ago     180MB     117.5MB       62.79MB       0
+districore/flutter         3.44.7        ebbd62791b69   3 weeks ago     8.88GB    0B            8.879GB       0
+mini-prometheus-verifier   rm4           eb71d4287934   8 weeks ago     388MB     0B            387.7MB       0
+postgres                   16-alpine     57c72fd2a128   2 months ago    420MB     0B            419.6MB       1
+caddy                      2-alpine      5f5c8640aae0   3 months ago    88.7MB    32B           88.68MB       1
+<none>                     <none>        96498ffd522e   6 months ago    25.9kB    25.87kB       0B            2
+hello-world                latest        7f4da0fc94bc   6 months ago    25.9kB    25.87kB       0B            2
+python                     3.9-slim      2d97f6910b16   11 months ago   185MB     0B            185.2MB       0
+
+Containers space usage:
+
+CONTAINER ID   IMAGE                COMMAND                  LOCAL VOLUMES   SIZE      CREATED        STATUS                    NAMES
+0cd74018877d   districore-app       "/app/entrypoint.sh …"   2               32.8kB    5 days ago     Exited (127) 3 days ago   districore-app-1
+4d3b0fabfdab   caddy:2-alpine       "caddy run --config …"   3               258kB     5 days ago     Exited (255) 3 days ago   districore-caddy-1
+0bc5d5fe8bab   postgres:16-alpine   "/bin/sh -ec 'mkdir …"   2               24.6kB    5 days ago     Exited (0) 5 hours ago    districore-db-1
+a6bbcbab1d2f   96498ffd522e         "/hello"                 0               4.1kB     8 weeks ago    Exited (0) 8 weeks ago    goofy_haibt
+f270785475c7   96498ffd522e         "/hello"                 0               4.1kB     3 months ago   Exited (0) 3 months ago   flamboyant_jackson
+
+Local Volumes space usage:
+
+VOLUME NAME                   LINKS     SIZE
+districore_caddy_data_dev     1         3.523kB
+districore_db_data            1         102.7MB
+districore_media_data         2         0B
+districore_wal_archive        1         167.8MB
+districore_backup_data        1         0B
+districore_caddy_config_dev   1         1.253kB
+
+Build cache usage: 16.63GB
+
+CACHE ID       CACHE TYPE   SIZE      CREATED       LAST USED     USAGE     SHARED
+amhut7rrzke2   regular      140MB     3 weeks ago   3 weeks ago   1         true
+8z2370ll3pcr   regular      4.29GB    3 weeks ago   3 weeks ago   1         true
+l9h3qcy1ha3p   regular      28.2MB    3 weeks ago   3 weeks ago   2         true
+ihix7c0fplzf   regular      4.35GB    3 weeks ago   2 weeks ago   21        true
+deh7zgwwqyty   regular      28.2MB    12 days ago   12 days ago   1         true
+ojyzdsfqrdi4   regular      3.32MB    12 days ago   12 days ago   1         true
+5bas2ukqu4xq   regular      13.6MB    12 days ago   12 days ago   1         true
+ygzqj3tgxsb4   regular      249B      12 days ago   12 days ago   1         true
+kqwe1igg55dv   regular      8.29kB    12 days ago   8 days ago    14        true
+sncd20cteioh   regular      113MB     5 days ago    5 days ago    1         true
+53cif240isyd   regular      14MB      5 days ago    5 days ago    1         true
+ri1qzoyn7h2b   regular      58.6MB    5 days ago    5 days ago    1         true
+89u9bu5kl497   regular      8.29kB    5 days ago    5 days ago    1         true
+bv34afuuhb0m   regular      51MB      5 days ago    5 days ago    1         true
+ueenkgudqe2j   regular      328MB     5 days ago    5 days ago    1         true
+uq9bp9eacw9b   regular      161MB     5 days ago    5 days ago    1         true
+22dyv2tw7xs5   regular      52.8MB    5 days ago    5 days ago    1         true
+ts3zij9jvbi7   regular      101MB     5 days ago    5 days ago    1         true
+ywdvlteufsrs   regular      16.6kB    5 days ago    5 days ago    1         true
+u0ptgpoeugpv   regular      13.2kB    5 days ago    5 days ago    1         true
+l9awl5e04c4u   regular      4.13kB    5 days ago    5 days ago    1         true
+szy1m5ej6ycr   frontend     42.7MB    3 weeks ago   5 days ago    53        false
+pydh9cq762sn   regular      420MB     5 days ago    5 days ago    2         true
+eoo4vao0j9qr   regular      132MB     4 days ago    4 days ago    1         true
+s2az6i300z5x   regular      14MB      3 days ago    3 days ago    1         true
+u46iniwvz114   regular      68.5MB    3 days ago    3 days ago    1         true
+srkbjdljf2yg   regular      16.6kB    3 days ago    3 days ago    1         true
+l1awdqd29ltv   regular      336kB     3 days ago    3 days ago    1         true
+gzv4tgjvvhks   regular      192MB     3 days ago    3 days ago    1         true
+056pacy8q30n   regular      2.5MB     3 days ago    3 days ago    1         true
+3cund7dcz1ms   regular      255kB     3 days ago    3 days ago    1         true
+ld0wmp757d4a   regular      192MB     3 days ago    3 days ago    1         true
+z20gckqf2ib2   regular      2.5MB     3 days ago    3 days ago    1         true
+xo5hwsmi9ky2   regular      341kB     3 days ago    3 days ago    1         true
+ag615693guss   regular      255kB     3 days ago    3 days ago    1         true
+yd5vb8c9fkrx   regular      18.4kB    3 days ago    3 days ago    3         true
+rylzonrki1jo   regular      356kB     3 days ago    3 days ago    1         true
+e952ifttkscy   regular      255kB     3 days ago    3 days ago    1         true
+jszi4k53e1nr   regular      3.33MB    3 days ago    3 days ago    1         true
+t0u4nr3uae47   regular      192MB     3 days ago    3 days ago    1         true
+ebtidn9pb23l   regular      255kB     3 days ago    3 days ago    1         true
+sg0hlknvwmrw   regular      3.32MB    3 days ago    3 days ago    1         true
+tlpde9o9mc77   regular      351kB     3 days ago    3 days ago    1         true
+2x969sm4jcik   regular      192MB     3 days ago    3 days ago    1         true
+vi2a2zt3xozr   regular      18.4kB    3 days ago    3 days ago    4         true
+la7mxjis4r1p   regular      367kB     3 days ago    3 days ago    1         true
+t8kfar2wswvt   regular      255kB     3 days ago    3 days ago    1         true
+cjkzuijpus33   regular      192MB     3 days ago    3 days ago    1         true
+lzc8x3pp7spz   regular      3.36MB    3 days ago    3 days ago    1         true
+6apnztzx4zm7   regular      362kB     3 days ago    3 days ago    1         true
+tf5ky0wfksiq   regular      3.36MB    3 days ago    3 days ago    1         true
+mhck7yi3hebc   regular      255kB     3 days ago    3 days ago    1         true
+l4ojkvpsaiab   regular      192MB     3 days ago    3 days ago    1         true
+lx1hmp7y7218   regular      18.4kB    3 days ago    3 days ago    4         true
+x9k768ktwp2w   regular      255kB     3 days ago    3 days ago    1         true
+cgsrsi9x4jao   regular      192MB     3 days ago    3 days ago    1         true
+4688864b7jp5   regular      378kB     3 days ago    3 days ago    1         true
+rx3bn7sn3m0d   regular      3.41MB    3 days ago    3 days ago    1         true
+tjgu3285ry2o   regular      18.4kB    3 days ago    3 days ago    2         true
+9mky2zg8o0qt   regular      373kB     3 days ago    3 days ago    1         true
+o26ssr49otc6   regular      255kB     3 days ago    3 days ago    2         true
+x8sn3bnpe3zb   regular      3.41MB    3 days ago    3 days ago    1         true
+8hd7n0r3eier   regular      192MB     3 days ago    3 days ago    1         true
+mq2giay5dx25   regular      3.5MB     3 days ago    3 days ago    1         true
+y604t07wpvr8   regular      255kB     3 days ago    3 days ago    1         true
+lqqb92lpgtgk   regular      450kB     3 days ago    3 days ago    1         true
+qd6eiiozuo1s   regular      192MB     3 days ago    3 days ago    1         true
+xy6tmr0ak2pp   regular      445kB     3 days ago    3 days ago    1         true
+v0q65ulen9t4   regular      255kB     3 days ago    3 days ago    1         true
+om8n5xw18mpq   regular      3.5MB     3 days ago    3 days ago    1         true
+m73k40x8jefb   regular      18.7kB    3 days ago    3 days ago    4         true
+ro8z2xgspl0v   regular      19.1kB    3 days ago    3 days ago    2         true
+47lr2acxuxur   regular      3.51MB    3 days ago    3 days ago    1         true
+38q5yflyuwh1   regular      255kB     3 days ago    3 days ago    1         true
+mhzp6kqt445l   regular      445kB     3 days ago    3 days ago    1         true
+rtz6gef0ubcm   regular      16.6kB    3 days ago    3 days ago    1         true
+66ontxih6wmd   regular      193MB     3 days ago    3 days ago    2         true
+w2fk7o47o8yd   regular      3.51MB    3 days ago    3 days ago    2         true
+d58jnmyu9hl3   regular      192MB     3 days ago    3 days ago    2         true
+obe48wuwz69a   regular      3.51MB    3 days ago    3 days ago    1         true
+o18p66sgkd08   regular      480kB     3 days ago    3 days ago    1         true
+lunymtaik4ox   regular      16.6kB    3 days ago    3 days ago    1         true
+fm9o6nt990sk   regular      255kB     3 days ago    3 days ago    1         true
+vaw9qv9hb31e   regular      193MB     3 days ago    3 days ago    1         true
+v0156cvxeydp   regular      3.65MB    3 days ago    3 days ago    1         true
+ctti67p797mr   regular      475kB     3 days ago    3 days ago    1         true
+ve1m22bacb7a   regular      16.6kB    3 days ago    3 days ago    1         true
+0lzjdi7tkoqj   regular      193MB     3 days ago    3 days ago    1         true
+zl52hfil68zj   regular      19.1kB    3 days ago    3 days ago    3         true
+isxz6m7kditn   regular      255kB     3 days ago    3 days ago    1         true
+pbig6rqwyhch   regular      3.65MB    3 days ago    3 days ago    2         true
+l4et6w46vimh   regular      16.6kB    3 days ago    3 days ago    1         true
+tqkyvfg50937   regular      255kB     3 days ago    3 days ago    1         true
+3pwynqdx8ks7   regular      481kB     3 days ago    3 days ago    1         true
+quq6ucs1d4je   regular      193MB     3 days ago    3 days ago    1         true
+i3gutak9sfio   regular      3.77MB    3 days ago    3 days ago    1         true
+hhw11qpfqumj   regular      476kB     3 days ago    3 days ago    1         true
+ff43ypprp085   regular      255kB     3 days ago    3 days ago    1         true
+hsssjfwknoqv   regular      193MB     3 days ago    3 days ago    1         true
+n0nb4r1cb6qr   regular      19.1kB    3 days ago    3 days ago    3         true
+ed2dvfifx1qu   regular      16.6kB    3 days ago    3 days ago    1         true
+rtfkdfe7z6lm   regular      3.77MB    3 days ago    3 days ago    2         true
+oe9km2kwycyg   regular      3.88MB    2 days ago    2 days ago    1         true
+ayrtxny7oyhs   regular      19.2kB    2 days ago    2 days ago    3         true
+wmhx5ajgsh21   regular      531kB     2 days ago    2 days ago    1         true
+xybr1stfnbj2   regular      255kB     2 days ago    2 days ago    1         true
+u8ajy7lniitc   regular      16.6kB    2 days ago    2 days ago    1         true
+w6xjlwsqmr1a   regular      193MB     2 days ago    2 days ago    1         true
+0kskn3gmuv96   regular      19.1kB    2 days ago    2 days ago    1         true
+z5w0imjtb3bf   regular      193MB     2 days ago    2 days ago    1         true
+7bkql4xtod1o   regular      3.88MB    2 days ago    2 days ago    1         true
+n36y2e6iwb6s   regular      526kB     2 days ago    2 days ago    1         true
+nsqfnksp6iv5   regular      255kB     2 days ago    2 days ago    1         true
+waaf218i88lo   regular      16.6kB    2 days ago    2 days ago    1         true
+tszoisa8yul0   regular      1.88MB    2 days ago    2 days ago    1         true
+8r53xtutxbo9   regular      1.06MB    2 days ago    2 days ago    1         true
+jkestydq1ozt   regular      632MB     2 days ago    2 days ago    1         true
+xw32hji6sb52   regular      57.2kB    2 days ago    2 days ago    1         true
+k2ttit6sgtl0   regular      593kB     2 days ago    2 days ago    1         true
+xbfz7yknyfzd   regular      17.4kB    2 days ago    2 days ago    2         true
+tdxs8h7kriqj   regular      632MB     2 days ago    2 days ago    1         true
+3s9fc9a9kueg   regular      730kB     2 days ago    2 days ago    1         true
+xw8a857hcjou   regular      593kB     2 days ago    2 days ago    1         true
+j8kds86xbzb6   regular      730kB     2 days ago    2 days ago    1         true
+fkqgdx53qynj   regular      57.5kB    2 days ago    2 days ago    1         true
+v3semcvmh9gx   regular      632MB     2 days ago    2 days ago    1         true
+bpczlw72xxq8   regular      17.4kB    2 days ago    2 days ago    1         true
+u6n6pksnggf2   regular      8.29kB    3 days ago    2 days ago    12        true
+qr7s1v8lzssv   regular      255kB     2 days ago    2 days ago    1         true
+dry9kl5l1xvo   regular      193MB     2 days ago    2 days ago    1         true
+4fhx0ycwngtz   regular      19.2kB    2 days ago    2 days ago    1         true
+f3jhsr4mb1ui   regular      526kB     2 days ago    2 days ago    1         true
+j6zxvw4cowd3   regular      16.6kB    2 days ago    2 days ago    1         true
+0myyu4wdsf6w   regular      3.88MB    2 days ago    2 days ago    1         true
+k6fkuiwo8rrh   regular      132MB     2 days ago    2 days ago    1         true
+gmonbb5rv3pg   regular      1.06MB    2 days ago    2 days ago    1         true
+2xxsksmi0exm   regular      632MB     2 days ago    2 days ago    1         true
+zjts8o0yfd7s   regular      1.88MB    2 days ago    2 days ago    1         true
+jby9scwqugeh   regular      17.4kB    2 days ago    2 days ago    1         true
+2beh73a4dezo   regular      57.5kB    2 days ago    2 days ago    1         true

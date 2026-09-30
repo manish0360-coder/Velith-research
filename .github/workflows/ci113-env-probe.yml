@@ -1,0 +1,41 @@
+# Temporary diagnostic for Velith CI run #113 (GEE SINGULAR_ROBUST_COVARIANCE on GitHub only).
+# Lives in Velith-research: Velith itself is NOT modified (no ci.yml, test, fit_gee or M9 change).
+# It builds Velith's UNCHANGED verifier image at 5452efc on the same runner image (ubuntu-24.04),
+# then records host CPU, NumPy/SciPy OpenBLAS cores, versions, the fixture's robust-covariance
+# eigenvalues, and the pass/fail of the two GEE test files, on 8 independent runners (the hosted
+# CPU pool varies per job; run #113's own CPU was not logged and cannot be recovered).
+# Manual trigger only. Delete after the diagnosis.
+name: ci113-env-probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        rep: [1, 2, 3, 4, 5, 6, 7, 8]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: research
+      - uses: actions/checkout@v4
+        with:
+          repository: manish0360-coder/Velith
+          ref: 5452efc44274c575c781673eb9c6287facfb94e6
+          path: velith
+      - name: Host CPU and runner image
+        run: |
+          lscpu | grep -E 'Model name|Vendor ID|^Flags'
+          echo "ImageOS=$ImageOS ImageVersion=$ImageVersion"
+      - name: Build Velith verifier image (unchanged Dockerfile)
+        working-directory: velith
+        run: docker compose build verifier
+      - name: Probe (CPU, BLAS cores, versions, eigenvalues, fit_gee)
+        working-directory: velith
+        run: docker compose run --rm -T verifier python - < ../research/ci113_eig_probe.py
+      - name: GEE test files (pass/fail on this runner)
+        working-directory: velith
+        run: docker compose run --rm -T verifier pytest -q -rf tests/unit/test_analysis_gee.py tests/integration/test_m9_analysis_pipeline.py

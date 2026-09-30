@@ -1,0 +1,82 @@
+### Part 1 — S-R1: primary completeness and VOID isolation
+
+1. **SRC RULING:** ACCEPT
+The CSE expectations are mathematically and procedurally correct. The primary exact test must be absolutely isolated from all secondary longitudinal and non-gating data.
+2. **EXACT RULE:**
+
+* **1. Primary data set:** The Stage-1 primary decision SHALL compute exactly one paired contrast per held-out task, using strictly the cells $\{A_0\text{ at checkpoint } 0,\; A_2\text{ at final checkpoint } K\}$.
+* **2. Isolation:**
+* (a) Missing $A_1$ observations SHALL NOT block, invalidate, exclude tasks from, or VOID the primary test.
+* (b) Present $A_1$ observations SHALL NOT abort the run; the binder and executor must ignore them for primary gating.
+* (c) Missing intermediate $A_2$ checkpoints ($k < K$) SHALL NOT block, invalidate, exclude tasks from, or VOID the primary test.
+* (d, e, f, g) Any secondary statistical failure, non-estimability, environment/library missingness, or undefined p-value SHALL NOT block, abort, void, or alter the primary exact test.
+
+
+* **3. Exact rules required:**
+* *Primary completeness:* A task enters the primary analyzable set (contributing to $n_{cc}$) if and only if valid evaluation records exist for both $A_0\text{@}0$ and $A_2\text{@}K$.
+* *Primary VOID:* The primary decision is VOID if and only if the primary analyzable set $n_{cc}$ fails to meet the minimum powered sample threshold (defined in S-R2), or if the VerificationManifest is empty. The "global incomplete" disposition SHALL be re-scoped to evaluate completeness strictly over the expected primary $\{A_0\text{@}0, A_2\text{@}K\}$ cells of the admitted target set.
+* *Secondary failure/non-estimability:* Any such failure SHALL be caught, isolated, and recorded exclusively as `secondary_status = NOT_ESTIMABLE(reason)` in the `AnalysisResultRecord`.
+* *Influence:* Secondary machinery SHALL NEVER affect the primary GO/NO-GO decision.
+
+
+* **5. Ordering:** The primary GO/NO-GO decision SHALL be computed, locked, and recorded before any secondary GEE computation is initiated. The primary result record SHALL be written even if all secondary computation structurally aborts.
+
+3. **RATIONALE:**
+The statistical hypothesis mandated by D31 is a cross-sectional paired contrast at the final checkpoint. Linking the validity of this test to the longitudinal (GEE) observability or the A1 baseline control creates a false structural dependency. A missing intermediate checkpoint reduces longitudinal resolution but does not erase the final mathematical outcome of the $A_2$ agent.
+4. **WHAT BECOMES FROZEN:**
+The absolute logical and computational isolation of the primary gate from all secondary observations and statistical machinery, including the strict computation ordering.
+5. **WHAT REMAINS OPEN:**
+
+* **SRC:** None.
+* **RD:** None.
+
+6. **IMPACT ON THE M9/M10 SUCCESSOR:**
+The executor architecture must be bifurcated into a `PrimaryGate` pipeline that enforces strict completeness on the $\{A_0, A_2\text{@}K\}$ paired tuples, followed by a `SecondaryExploratory` pipeline wrapped in a global exception handler that logs failures without raising execution aborts.
+7. **WHETHER ANY CURRENT FROZEN CODE PATH MUST BE SUPERSEDED:**
+All supersessions below rely explicitly on D31 decisions 3-4 (authorizing a versioned M9/M10 successor).
+
+* **P1 (GEE failure gives NO-GO):** SUPERSEDED. Must not touch primary GO.
+* **P2 (statsmodels absence aborts):** SUPERSEDED. Must catch, log as `NOT_ESTIMABLE(environment)`, and proceed to write record.
+* **P3 (Completeness includes all):** RE-SCOPED. Primary completeness requires only $\{A_0\text{@}0, A_2\text{@}K\}$.
+* **P4 (K>1 family includes secondary):** SUPERSEDED. The primary exact test acts completely independently of the secondary models.
+* **P5 (GEE validation aborts):** SUPERSEDED. Must catch and log as `NOT_ESTIMABLE(validation)`.
+* **P6/P7 (unexpected cells abort):** RE-SCOPED. The primary binder must gracefully ignore (or route to secondary) $A_1$ or intermediate $A_2$ records without raising `ExecutionError` or `BinderError`.
+
+---
+
+### Part 2 — S-R2: realized n < planned n_conf
+
+1. **SRC RULING:** ACCEPT WITH CORRECTION
+The rules below strictly mathematically reconcile the power bounds with D8.6 and D31#9.
+2. **EXACT RULE:**
+
+* **1. Pre-execution Disposition ($n_{admitted} < n_{conf}$):** If the number of admitted tasks is less than the frozen $n_{conf}$, the design SHALL be declared VOID prior to execution. This is strictly outcome-blind.
+* **2. Post-execution Disposition ($n_{cc} < n_{conf}$):** If post-execution cell losses result in $n_{cc} < n_{conf}$, the exact statistical power SHALL be recomputed at $n_{cc}$.
+* If Recomputed Power $\ge 0.80$: The primary exact test proceeds. The test is analyzable, and achieved power is reported.
+* If Recomputed Power $< 0.80$: The test is strictly VOID.
+
+
+* **3. Recomputation:** Power recomputation SHALL use exclusively the pre-registered (frozen) planning parameters: the planning $p_0$, $\Delta_{true}$, planning discordance scenario, and $\delta$. Any recomputation using observed, post-hoc parameters is strictly FORBIDDEN.
+* **4. Buffer:** The design pre-registration SHALL explicitly include an over-enrolment rule defining $n_{target} \ge n_{conf}$ based on a pre-declared expected-loss allowance, ensuring $P(n_{cc} \ge n_{conf})$ is high.
+* **5. Post-hoc reduction of $n_{conf}$:** Any post-hoc reduction of the target $n_{conf}$ based on observed variance, discordance, or base rates is strictly FORBIDDEN.
+* **6. Informative missingness:** Because `INFRA_ERROR` equates to an observed zero (failure), a missing cell indicates a complete infrastructure loss (no record). Pre-execution admission loss is blind; post-execution loss is treated as Missing Completely At Random (MCAR) with respect to the strict exact gate. The power threshold rule governs both equivalently.
+* **7. Minimum $n$:** The threshold is defined dynamically and strictly as $\min \{ n \in \mathbb{Z}^+ \mid \text{ExactPower}(n, \text{planning params}) \ge 0.80 \}$.
+
+3. **RATIONALE:**
+Type-I error (false positive) control holds unconditionally at any $n$ for the certified exact test. However, D8.6 states an underpowered positive is uninterpretable, and D31#9 forbids an underpowered design from producing a NO-GO (to prevent false negatives from terminating the program). Therefore, any sample size $n_{cc}$ that yields $<0.80$ power under the frozen planning assumptions fundamentally cannot produce a governance-compliant GO *or* NO-GO. It must be VOID. Recomputing power solely with frozen planning assumptions guarantees the decision to VOID remains outcome-blind and immune to p-hacking.
+4. **WHAT BECOMES FROZEN:**
+The absolute prohibition on post-hoc parameter adjustments, the over-enrolment buffer requirement, the dynamic minimum-$n$ power derivation, and the strict rule rendering underpowered $n_{cc}$ outcomes VOID.
+5. **WHAT REMAINS OPEN:**
+
+* **SRC:** None.
+* **RD:** The specific numerical expected-loss allowance (buffer size) bridging $n_{conf}$ and $n_{target}$.
+
+6. **IMPACT ON THE M9/M10 SUCCESSOR:**
+The M10 executor must feature a power-verification function that executes immediately after the complete-case filter is applied, evaluating $n_{cc}$ against the frozen planning power function. If it evaluates to $<0.80$, the executor must short-circuit to `VOID_UNDERPOWERED`.
+7. **WHETHER ANY CURRENT FROZEN CODE PATH MUST BE SUPERSEDED:**
+
+* **OED-7 ($n=0$ gives VOID):** RE-SCOPED (via D31 decisions 3-4). Replaced by: $n_{cc} < \text{minimum powered } n$ gives VOID.
+
+---
+
+**OVERALL RESULT:** READY FOR RD FREEZE
