@@ -8,6 +8,11 @@
 name: ci113-env-probe
 on:
   workflow_dispatch:
+    inputs:
+      velith_ref:
+        description: "Velith commit SHA to test"
+        required: true
+        default: "5452efc44274c575c781673eb9c6287facfb94e6"
 permissions:
   contents: read
 jobs:
@@ -24,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: manish0360-coder/Velith
-          ref: 5452efc44274c575c781673eb9c6287facfb94e6
+          ref: ${{ inputs.velith_ref }}
           path: velith
       - name: Host CPU and runner image
         run: |

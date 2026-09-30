@@ -93,3 +93,51 @@ cd /mnt/e/Projects/OpenSourceLab/repos/Velith && docker compose run --rm -T --pu
 - Each job builds Velith's **unchanged** image at `5452efc` and runs `ci113_eig_probe.py` (CPU model and flags, NumPy SIMD features, numpy and scipy OpenBLAS cores, versions, eigenvalues, `fit_gee`).
 - Each job then runs the two GEE test files.
 - It pairs CPU/core with pass/fail. Velith itself is not modified.
+
+## Update 3: ROOT CAUSE ESTABLISHED on real GitHub runners (ci113-env-probe run #2; logs `stage0/logs_99522463703.zip`)
+
+**Setup:** 8 jobs, `ubuntu-24.04`, Velith `5452efc` built with its unchanged image. In every job: Python 3.12.7, numpy 2.5.3, scipy 1.18.1, statsmodels 0.15.0, `*_NUM_THREADS=1`.
+
+| Job | CPU | AVX-512 exposed | numpy / scipy OpenBLAS core | min eigenvalue of `cov_robust` | `fit_gee` | 5 GEE tests |
+|---|---|---|---|---|---|---|
+| 1, 2, 7 | EPYC 7763 | no | Haswell / Haswell | +4.16e-16 | GeeFit | pass |
+| 6, 8 | EPYC 9V74 | no | Haswell / Haswell | +4.16e-16 | GeeFit | pass |
+| 3, 4, 5 | EPYC 9V74 | **yes** | **SkylakeX / SkylakeX** | **−9.71e-17** | **GeeFailure** | **fail** |
+
+**The correlation is 8/8.** When the runner exposes AVX-512, OpenBLAS selects SkylakeX kernels and numpy selects its AVX-512 SIMD paths. The rounding sign of the near-zero eigenvalue then turns negative, Cholesky fails, and the rule returns `SINGULAR_ROBUST_COVARIANCE`. Runners without AVX-512 exposed get Haswell kernels, a positive sign, and a pass.
+
+The EPYC 9V74 appears both with and without AVX-512 exposed, so the determinant is **AVX-512 exposure**, not the CPU model. Run #1 of the probe (2/8 failures) and CI #113 are consistent with this. Across both probe runs, 5 of 16 jobs failed.
+
+**Classification (final):**
+- not dependency drift (identical pinned versions everywhere);
+- **platform numerical behavior**: the AVX-512 dispatch path;
+- exposed by a **degenerate test fixture**: the true smallest eigenvalue is 0.
+
+The frozen production rule behaves as specified: SINGULAR is mathematically correct for this matrix.
+
+**Unresolved (not needed for the verdict):** the split of contribution between OpenBLAS SkylakeX and numpy's AVX-512 SIMD. Both switch together.
+
+**Implication:** on any genuinely degenerate input, M9 classification is not cross-machine deterministic. This is observed counter-evidence to the D27 cross-machine determinism acceptance requirement. It is an RD/SRC item.
+
+## Governance record: SRC ruling and test-only repair (2026-09-30)
+
+**SRC ruling:** archived as `reviews/src/SRC_2026-09-30_CI113_GEE_SINGULARITY_ruling.txt`. The SRC finds:
+- the behavior is a **demonstrated violation of D27** at the singular boundary;
+- D27 is not amended;
+- `fit_gee` and the frozen M9 rules stay unchanged;
+- a future, focused spec amendment will be required to define a singularity tolerance before any production execution.
+
+**RD authorization:** a TEST-ONLY repair implementing SRC acceptance criteria 1–3.
+
+**Repair, uncommitted in Velith main.** Changed files: `tests/unit/test_analysis_gee.py` and `tests/integration/test_m9_analysis_pipeline.py` (+82/−11). No production, spec, CI or Docker change.
+- **Criterion 1:** new well-conditioned fixtures.
+  - Unit: `_a1_vs_a0_trend` (A1 passes iff `t % 6 < index + 2`).
+  - Integration: `_kgt1_trend_rule`, the same A1 rule, with A0 and A2 unchanged.
+  - They are used by exactly the five failing tests. Measured: checkpoint effect 0.79, smallest eigenvalue of `cov_robust` 5.0e-2 (ratio 0.11). A2_VS_A1 under the trend rule has smallest eigenvalue 2.0e-2.
+  - The unit fit test now also asserts |β_checkpoint| > 0.5 and smallest eigenvalue > 1e-3.
+- **Criteria 2–3:** permanent `test_singular_boundary_outcome_is_documented_as_hardware_dependent`, on the degenerate `_a1_vs_a0()`:
+  - it asserts equal A1 pass counts per checkpoint (a data property);
+  - it then accepts GeeFit (with β_checkpoint ≈ 0) **or** `SINGULAR_ROBUST_COVARIANCE`.
+- **Unresolved, and NOT satisfied by a green CI:** production determinism at the singular boundary (D27 cross-machine).
+
+**Additional finding, not in SRC scope, no change made:** `test_gee_failure_contributes_p_one_and_yields_no_go` asserts GeeFailure on a *rank-deficient* one-task design. That is the mirror-image knife-edge. It passed on all 16 GitHub jobs and locally with the pinned stack. In the CSE sandbox (numpy 2.2.6, auto/Haswell) it returned GeeFit. This is recommended for SRC review.

@@ -1,0 +1,25 @@
+**A. Proven facts**
+
+* The frozen M9 GEE implementation utilizes a Cholesky decomposition without a numerical tolerance for singularity.
+* In cases where the mathematical checkpoint effect is exactly zero (a degenerate matrix), hardware-level BLAS dispatch (specifically AVX-512 FMA instruction sets on SkylakeX vs. Haswell) alters floating-point rounding at the scale of machine epsilon ($\approx 10^{-16}$).
+* Because the current threshold strictly checks against exact zero, these sub-epsilon variations push the smallest eigenvalue to either strictly positive ($+4.2 \times 10^{-16}$) or strictly negative ($-9.7 \times 10^{-17}$), resulting in a divergent execution path (PASS vs. `GeeFailureReason.SINGULAR_ROBUST_COVARIANCE`) across compliant hardware.
+
+**B. Scientific interpretation**
+
+1. **Violation of D27:** Yes. This constitutes a demonstrated violation of the frozen cross-machine determinism requirement. Mathematically identical inputs evaluated in identical Docker environments are yielding different structural classifications strictly due to underlying host hardware vectorization.
+2. **Hiding Production Vulnerability:** Yes. Implementing a test-only repair (replacing the fixtures to make CI green) without preserving the boundary case would dangerously mask a production vulnerability. If a real SWE-bench evaluation yields a near-zero learning effect over $K$ checkpoints, the production verifier will exhibit the exact same non-deterministic behavior, silently corrupting the reliability of the exploratory GEE reporting across different cloud execution nodes.
+
+**C. Required governance/spec action**
+The immediate finding does **not** require an amendment to D27, as D27 already correctly mandates determinism; it is the implementation that is failing the mandate at the boundary. Furthermore, the implementation of `fit_gee` and the M9 frozen classification rules must remain unchanged for now.
+
+However, because fixing this defect requires introducing a mathematical tolerance (which alters frozen M9 semantics), a future, focused specification amendment will eventually be required to define the exact numerical singularity tolerance (e.g., bounded by a specific machine epsilon multiple) before any production execution.
+
+**D. Whether Option 1 is authorized in principle**
+Replacing the five degenerate fixtures with mathematically well-conditioned, non-degenerate fixtures is authorized in principle as a **TEST-ONLY** repair. This is scientifically acceptable to restore CI pipeline stability so that standard GEE logic can be verified without being held hostage by a known numerical edge case. However, it is fundamentally insufficient on its own.
+
+**E. Exact acceptance criteria for the next engineering change**
+Before any test-only modification is committed, the following acceptance criteria must be met:
+
+1. **Test Suite Separation:** The five failing degenerate fixtures SHALL be replaced with well-conditioned fixtures (where the checkpoint effect is demonstrably non-zero) that deterministically PASS on all hardware architectures.
+2. **Permanent Boundary Test:** A new, dedicated singular-boundary test fixture (where the true checkpoint effect is mathematically zero) SHALL be permanently retained in the test suite.
+3. **Expected Behavior of Boundary Test:** Without altering frozen M9 semantics or adding a tolerance to `fit_gee`, this singular-boundary test SHALL explicitly assert that the result is **either** PASS **or** `SINGULAR_ROBUST_COVARIANCE`. By explicitly encoding this OR-condition, the test suite actively documents and tracks the unresolved cross-machine hardware variance without artificially failing the CI pipeline.
