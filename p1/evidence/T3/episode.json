@@ -1,0 +1,31 @@
+{
+  "code": "PATCH_DOES_NOT_APPLY",
+  "context_length_assertion": true,
+  "flags": [],
+  "gen_attempts": 1,
+  "identity": "115f516e2519e2acbb4cae28b43bb2857da70bd2e9e9f1f34516f13402cbcb48",
+  "instance_id": "scikit-learn__scikit-learn-14629",
+  "interpretable": true,
+  "measurements": {
+    "latency": 927.850669853,
+    "patch_applies": false,
+    "patch_produced": true,
+    "token_count": {
+      "completion_tokens": 154,
+      "prompt_tokens": 14892
+    },
+    "verified_outcome": {
+      "classification": "PATCH_APPLY_FAILED",
+      "detail": "",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY"
+    }
+  },
+  "patch_sha256": "1a8b91d8bcbe7914398efa88c053eabe3dc81283c5d35e726c4d0dc781e0b015",
+  "pilot_set_sha256": "0f0e8715511ad262c7c50ba7ece857e98077b87a119e7e6c647480b7ead23371",
+  "predicted_prompt_eval_count": 14892,
+  "seed": 5174882623180139665,
+  "slot": "T3",
+  "token_count_assertion": true,
+  "utc": "2026-10-02T13:33:49Z",
+  "x_code": "PATCH_DOES_NOT_APPLY"
+}

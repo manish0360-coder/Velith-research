@@ -1,0 +1,11 @@
+--- a/sklearn/model_selection/_validation.py
++++ b/sklearn/model_selection/_validation.py
+@@ -857,7 +857,7 @@
+         for i in range(len(estimator.estimators_)):
+             y_prob[:, i] = estimator.estimators_[i].predict_proba(X)[:, 1]
+ 
+-    classes_ = estimator.classes_
++    classes_ = estimator.estimators_[0].classes_
+     if len(classes_) == 2:
+         y_prob = np.hstack([1 - y_prob, y_prob])
+     else:
