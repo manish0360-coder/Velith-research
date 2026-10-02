@@ -1,0 +1,144 @@
+VELITH_HEAD f1bdcc256af128d74589f7adcd59e4929fea5539
+VELITH_PARENT 732d89c2940156bdc0e200bb36dc38b5e424bcba
+VELITH_SURFACE be25ddfa509d2650c90158e1034f7d0236e6fc8dff0a5298a1e34cb75bde4936  astropy/conftest.py
+VELITH_SURFACE 262a417e55354a6c13990fecb8b3a6dcb028ecb031c4e01b8c02d74e36d75bff  astropy/units/tests/test_quantity_annotations.py
+VELITH_SURFACE 5ef4da387f275c281837c2fd2bfea627fe815b06dfe67d6f0b080e68a9fdb6e3  astropy/units/tests/test_quantity_decorator.py
+VELITH_SURFACE 2c630f38c06b25a303ca9298b0a3734ceedca96283a08633dc5ba741c8a7eae5  conftest.py
+VELITH_SURFACE 9d921690f7d561c3c5bda8ed7e2859b79a292a3503ba93b39c7cb6838d01ab7c  setup.cfg
+============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-3.3.1, py-1.11.0, pluggy-0.6.0
+
+Running tests with Astropy version 3.1.dev21682.
+Running tests in astropy/units/tests/test_quantity_annotations.py astropy/units/tests/test_quantity_decorator.py.
+
+Date: 2026-10-02T16:37:22
+
+Platform: Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-debian-bookworm-sid
+
+Executable: /opt/miniconda3/envs/testbed/bin/python
+
+Full Python Version: 
+3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) 
+[GCC 7.5.0]
+
+encodings: sys: utf-8, locale: ANSI_X3.4-1968, filesystem: ascii
+byteorder: little
+float info: dig: 15, mant_dig: 15
+
+Numpy: 1.16.0
+Scipy: not available
+Matplotlib: not available
+h5py: not available
+Pandas: not available
+Cython: 0.27.3
+Using Astropy options: remote_data: none.
+
+rootdir: /testbed, inifile: setup.cfg
+plugins: xdist-1.20.1, remotedata-0.2.0, openfiles-0.2.0, mock-1.6.3, forked-0.2, filter-subpackage-0.1, doctestplus-0.1.2, cov-2.5.1, astropy-header-0.1, arraydiff-0.1, hypothesis-3.44.2
+collected 340 items
+
+astropy/units/tests/test_quantity_annotations.py ....................... [  6%]
+...F                                                                     [  7%]
+astropy/units/tests/test_quantity_decorator.py ......................... [ 15%]
+........................................................................ [ 36%]
+........................................................................ [ 57%]
+........................................................................ [ 78%]
+........................................................................ [100%]
+
+------------------ generated xml file: /tmp/velith-junit.xml -------------------
+=================================== FAILURES ===================================
+_________________________ test_return_annotation_none __________________________
+
+    def test_return_annotation_none():
+        @u.quantity_input
+        def myfunc_args(solarx: u.arcsec) -> None:
+            pass
+    
+>       solarx = myfunc_args(1*u.arcsec)
+
+astropy/units/tests/test_quantity_annotations.py:223: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/utils/decorators.py:824: in myfunc_args
+    func = make_function_with_signature(func, name=name, **wrapped_args)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+func_args = (<Quantity 1. arcsec>,), func_kwargs = {}
+bound_args = <BoundArguments (solarx=<Quantity 1. arcsec>)>
+param = <Parameter "solarx:Unit("arcsec")">, arg = <Quantity 1. arcsec>
+targets = Unit("arcsec"), valid_targets = [Unit("arcsec")], return_ = None
+
+    @wraps(wrapped_function)
+    def wrapper(*func_args, **func_kwargs):
+        # Bind the arguments to our new function to the signature of the original.
+        bound_args = wrapped_signature.bind(*func_args, **func_kwargs)
+    
+        # Iterate through the parameters of the original signature
+        for param in wrapped_signature.parameters.values():
+            # We do not support variable arguments (*args, **kwargs)
+            if param.kind in (inspect.Parameter.VAR_KEYWORD,
+                              inspect.Parameter.VAR_POSITIONAL):
+                continue
+    
+            # Catch the (never triggered) case where bind relied on a default value.
+            if param.name not in bound_args.arguments and param.default is not param.empty:
+                bound_args.arguments[param.name] = param.default
+    
+            # Get the value of this parameter (argument to new function)
+            arg = bound_args.arguments[param.name]
+    
+            # Get target unit or physical type, either from decorator kwargs
+            #   or annotations
+            if param.name in self.decorator_kwargs:
+                targets = self.decorator_kwargs[param.name]
+            else:
+                targets = param.annotation
+    
+            # If the targets is empty, then no target units or physical
+            #   types were specified so we can continue to the next arg
+            if targets is inspect.Parameter.empty:
+                continue
+    
+            # If the argument value is None, and the default value is None,
+            #   pass through the None even if there is a target unit
+            if arg is None and param.default is None:
+                continue
+    
+            # Here, we check whether multiple target unit/physical type's
+            #   were specified in the decorator/annotation, or whether a
+            #   single string (unit or physical type) or a Unit object was
+            #   specified
+            if isinstance(targets, str) or not isiterable(targets):
+                valid_targets = [targets]
+    
+            # Check for None in the supplied list of allowed units and, if
+            #   present and the passed value is also None, ignore.
+            elif None in targets:
+                if arg is None:
+                    continue
+                else:
+                    valid_targets = [t for t in targets if t is not None]
+    
+            else:
+                valid_targets = targets
+    
+            # Now we loop over the allowed units/physical types and validate
+            #   the value of the argument:
+            _validate_arg_value(param.name, wrapped_function.__name__,
+                                arg, valid_targets, self.equivalencies)
+    
+        # Call the original function with any equivalencies in force.
+        with add_enabled_equivalencies(self.equivalencies):
+            return_ = wrapped_function(*func_args, **func_kwargs)
+        if wrapped_signature.return_annotation is not inspect.Signature.empty:
+>           return return_.to(wrapped_signature.return_annotation)
+E           AttributeError: 'NoneType' object has no attribute 'to'
+
+astropy/units/decorators.py:224: AttributeError
+=============================== warnings summary ===============================
+None
+  Module already imported so cannot be rewritten: astropy.tests.plugins.display
+
+-- Docs: http://doc.pytest.org/en/latest/warnings.html
+=============== 1 failed, 339 passed, 1 warnings in 6.06 seconds ===============
+VELITH_PYTEST_EXIT 1
+VELITH_NET blocked OSError 101

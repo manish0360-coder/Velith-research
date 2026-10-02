@@ -1,0 +1,10 @@
+ ```diff
+--- a/astropy/units/decorators.py
++++ b/astropy/units/decorators.py
+@@ -224,7 +224,7 @@ def wrapper(*args, **kwargs):
+                 return_.to(wrapped_signature.return_annotation)
+             else:
+                 return return_
+-        return wrapper
++        return return_.to(wrapped_signature.return_annotation) if wrapped_signature.return_annotation is not inspect.Signature.empty else wrapper
+```

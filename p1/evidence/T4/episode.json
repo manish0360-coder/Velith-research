@@ -1,0 +1,31 @@
+{
+  "code": "MALFORMED_PATCH",
+  "context_length_assertion": true,
+  "flags": [],
+  "gen_attempts": 1,
+  "identity": "4d82ad4344dd94e4d2664fb8688e8cd78d15e226a4b7bde0e79919ce0ae886f7",
+  "instance_id": "astropy__astropy-7336",
+  "interpretable": true,
+  "measurements": {
+    "latency": 933.3365294089999,
+    "patch_applies": false,
+    "patch_produced": true,
+    "token_count": {
+      "completion_tokens": 116,
+      "prompt_tokens": 15227
+    },
+    "verified_outcome": {
+      "classification": "PATCH_APPLY_FAILED",
+      "detail": "",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY"
+    }
+  },
+  "patch_sha256": "54273a36cab2ed2efec363880a8f6580ee9fc6c81c75c440d846f504ca1519e7",
+  "pilot_set_sha256": "0f0e8715511ad262c7c50ba7ece857e98077b87a119e7e6c647480b7ead23371",
+  "predicted_prompt_eval_count": 15227,
+  "seed": 2676707852901449598,
+  "slot": "T4",
+  "token_count_assertion": true,
+  "utc": "2026-10-02T16:37:31Z",
+  "x_code": "MALFORMED_PATCH"
+}
