@@ -1,0 +1,11 @@
+--- a/lib/matplotlib/colors.py
++++ b/lib/matplotlib/colors.py
+@@ -727,7 +727,7 @@ def get_cmap()(np.empty((0, ), dtype=np.uint8))
+         xa[xa < 0] = self._i_under
+         xa[mask_bad] = self._i_bad
+ 
+-        if self._is_colored:
++        if self._is_colored and self._i_over is not None:
+             xa[xa > self.N - 1] = self._i_over
+         else:
+             xa[xa > self.N - 1] = self._i_over

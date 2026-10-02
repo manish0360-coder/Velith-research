@@ -1,0 +1,4 @@
+VELITH_HEAD 0b6aeb76163bb36a6d94940f53e745901cfb95a7
+VELITH_PARENT a3011dfd1aaa2487cce8aa7369475533133ef777
+error: patch failed: lib/matplotlib/colors.py:727
+error: lib/matplotlib/colors.py: patch does not apply

@@ -1,0 +1,31 @@
+{
+  "code": "PATCH_DOES_NOT_APPLY",
+  "context_length_assertion": true,
+  "flags": [],
+  "gen_attempts": 1,
+  "identity": "fe8e73c9bc08ac4e68d965f5a6b0fbb3b88cd3cc7591d5abd7c19635a1eb6683",
+  "instance_id": "matplotlib__matplotlib-24970",
+  "interpretable": true,
+  "measurements": {
+    "latency": 962.4532358760007,
+    "patch_applies": false,
+    "patch_produced": true,
+    "token_count": {
+      "completion_tokens": 171,
+      "prompt_tokens": 15129
+    },
+    "verified_outcome": {
+      "classification": "PATCH_APPLY_FAILED",
+      "detail": "",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY"
+    }
+  },
+  "patch_sha256": "f9d63f09cc031385b9973c47f6ab5d4e5093f1ef146183ba459c4b6aa6546c3a",
+  "pilot_set_sha256": "0f0e8715511ad262c7c50ba7ece857e98077b87a119e7e6c647480b7ead23371",
+  "predicted_prompt_eval_count": 15129,
+  "seed": 6363229982489726258,
+  "slot": "T2",
+  "token_count_assertion": true,
+  "utc": "2026-10-02T17:54:56Z",
+  "x_code": "PATCH_DOES_NOT_APPLY"
+}
