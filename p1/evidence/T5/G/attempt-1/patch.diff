@@ -1,0 +1,11 @@
+--- a/xarray/core/dataset.py
++++ b/xarray/core/dataset.py
+@@ -1239,7 +1239,7 @@
+         if dim is None:
+             dim = list(self.dims)
+         if axis is not None:
+-            dim = normalize_axis_tuple(dim, self.ndim)
++            dim = normalize_axis_tuple(dim, self.ndim, self.dims)
+         if keep_attrs is None:
+             keep_attrs = OPTIONS["keep_attrs"]
+         if keep_attrs is True:

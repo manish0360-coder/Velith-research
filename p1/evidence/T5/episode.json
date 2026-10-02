@@ -1,0 +1,31 @@
+{
+  "code": "PATCH_DOES_NOT_APPLY",
+  "context_length_assertion": true,
+  "flags": [],
+  "gen_attempts": 1,
+  "identity": "c3109b06e90f948038e972811605c6f054e5de834d59288f79d099a453ebb392",
+  "instance_id": "pydata__xarray-7393",
+  "interpretable": true,
+  "measurements": {
+    "latency": 852.2168059420001,
+    "patch_applies": false,
+    "patch_produced": true,
+    "token_count": {
+      "completion_tokens": 143,
+      "prompt_tokens": 14953
+    },
+    "verified_outcome": {
+      "classification": "PATCH_APPLY_FAILED",
+      "detail": "",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY"
+    }
+  },
+  "patch_sha256": "9dae249b6fb21420aee73e143a8826c83e2b897e42a4ac931d5aadf44c353ae2",
+  "pilot_set_sha256": "0f0e8715511ad262c7c50ba7ece857e98077b87a119e7e6c647480b7ead23371",
+  "predicted_prompt_eval_count": 14953,
+  "seed": 5007947557582598968,
+  "slot": "T5",
+  "token_count_assertion": true,
+  "utc": "2026-10-02T18:41:13Z",
+  "x_code": "PATCH_DOES_NOT_APPLY"
+}
