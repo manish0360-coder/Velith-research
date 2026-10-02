@@ -1,0 +1,1041 @@
+{
+  "base_commit": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a",
+  "fit_trace": [
+    {
+      "decision": "included",
+      "path": "setup.py",
+      "score": 95.00169143382517,
+      "tokens_if_included": 3726
+    },
+    {
+      "decision": "included",
+      "path": "sklearn/utils/testing.py",
+      "score": 90.94927239633515,
+      "tokens_if_included": 12204
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/model_selection/_search.py",
+      "score": 84.62323920092336,
+      "tokens_if_included": 28086
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/gradient_boosting.py",
+      "score": 84.28863921525277,
+      "tokens_if_included": 38945
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/estimator_checks.py",
+      "score": 83.80493376483385,
+      "tokens_if_included": 40975
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/multioutput.py",
+      "score": 83.30901835990052,
+      "tokens_if_included": 19146
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/base.py",
+      "score": 81.13524746596632,
+      "tokens_if_included": 18285
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/multiclass.py",
+      "score": 80.67185750664665,
+      "tokens_if_included": 19956
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "doc/conf.py",
+      "score": 80.64510461743295,
+      "tokens_if_included": 15390
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/__init__.py",
+      "score": 79.40647353683954,
+      "tokens_if_included": 21895
+    },
+    {
+      "decision": "included",
+      "path": "sklearn/utils/_show_versions.py",
+      "score": 76.92410987145581,
+      "tokens_if_included": 12743
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/weight_boosting.py",
+      "score": 74.88916781430922,
+      "tokens_if_included": 23628
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/forest.py",
+      "score": 74.2207814196584,
+      "tokens_if_included": 34875
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/datasets/base.py",
+      "score": 73.43301731757462,
+      "tokens_if_included": 21800
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/discriminant_analysis.py",
+      "score": 73.01294485316744,
+      "tokens_if_included": 20772
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/datasets/openml.py",
+      "score": 71.92397661115889,
+      "tokens_if_included": 21056
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/voting.py",
+      "score": 71.83408710999316,
+      "tokens_if_included": 17624
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/feature_extraction/text.py",
+      "score": 71.28388781973608,
+      "tokens_if_included": 29699
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/tree/tree.py",
+      "score": 70.93804504790697,
+      "tokens_if_included": 29565
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/feature_selection/rfe.py",
+      "score": 70.42722169188957,
+      "tokens_if_included": 18283
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/model_selection/_validation.py",
+      "score": 70.31735195328937,
+      "tokens_if_included": 29045
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/linear_model/logistic.py",
+      "score": 70.0046524092288,
+      "tokens_if_included": 38680
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/gaussian_process/gpc.py",
+      "score": 69.93596762723034,
+      "tokens_if_included": 21543
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/manifold/t_sne.py",
+      "score": 69.65380195978703,
+      "tokens_if_included": 22762
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "doc/tutorial/machine_learning_map/pyparsing.py",
+      "score": 68.16929567067777,
+      "tokens_if_included": 81179
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/linear_model/ridge.py",
+      "score": 67.21061393700174,
+      "tokens_if_included": 33322
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/svm/base.py",
+      "score": 67.02955515046861,
+      "tokens_if_included": 22933
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/bagging.py",
+      "score": 66.97700829276677,
+      "tokens_if_included": 22805
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/linear_model/least_angle.py",
+      "score": 66.54632249848376,
+      "tokens_if_included": 31991
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/datasets/kddcup99.py",
+      "score": 66.32788903438352,
+      "tokens_if_included": 16115
+    },
+    {
+      "decision": "included",
+      "path": "sklearn/exceptions.py",
+      "score": 66.26699258203628,
+      "tokens_if_included": 14122
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/manifold/spectral_embedding_.py",
+      "score": 65.02959179909938,
+      "tokens_if_included": 19967
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/_build_utils/openmp_helpers.py",
+      "score": 62.86998900542949,
+      "tokens_if_included": 15472
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/calibration.py",
+      "score": 62.62196177601721,
+      "tokens_if_included": 20143
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/validation.py",
+      "score": 62.49196299461566,
+      "tokens_if_included": 25035
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/naive_bayes.py",
+      "score": 62.42869075121129,
+      "tokens_if_included": 24577
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/linear_model/stochastic_gradient.py",
+      "score": 61.21114343227946,
+      "tokens_if_included": 30887
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "build_tools/generate_authors_table.py",
+      "score": 61.06999984957663,
+      "tokens_if_included": 15758
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/pipeline.py",
+      "score": 60.50462393312245,
+      "tokens_if_included": 23457
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/inspection/partial_dependence.py",
+      "score": 60.34173744008119,
+      "tokens_if_included": 21919
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/neighbors/lof.py",
+      "score": 59.84132732539878,
+      "tokens_if_included": 19283
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/metrics/classification.py",
+      "score": 59.0712794979373,
+      "tokens_if_included": 40180
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+      "score": 58.81850354487099,
+      "tokens_if_included": 25744
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/cluster/optics_.py",
+      "score": 58.690339631600715,
+      "tokens_if_included": 24065
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/preprocessing/label.py",
+      "score": 58.58594472365765,
+      "tokens_if_included": 23518
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/_pprint.py",
+      "score": 58.52702155506048,
+      "tokens_if_included": 18957
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/metrics/pairwise.py",
+      "score": 58.526821563794236,
+      "tokens_if_included": 32049
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/svm/classes.py",
+      "score": 57.93693670277112,
+      "tokens_if_included": 27545
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/linear_assignment_.py",
+      "score": 57.86320273322427,
+      "tokens_if_included": 17023
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/datasets/svmlight_format.py",
+      "score": 57.51149502275489,
+      "tokens_if_included": 19482
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/_unittest_backport.py",
+      "score": 56.178334871362054,
+      "tokens_if_included": 16240
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/covariance/graph_lasso_.py",
+      "score": 56.16187223646349,
+      "tokens_if_included": 22365
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/calibration/plot_calibration.py",
+      "score": 56.079770781936446,
+      "tokens_if_included": 15725
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/metrics/scorer.py",
+      "score": 56.077094452691426,
+      "tokens_if_included": 20230
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/linear_model/omp.py",
+      "score": 55.50616348343651,
+      "tokens_if_included": 24051
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/preprocessing/data.py",
+      "score": 55.334085682840524,
+      "tokens_if_included": 44944
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/model_selection/plot_cv_indices.py",
+      "score": 55.246083694903476,
+      "tokens_if_included": 15824
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/metrics/ranking.py",
+      "score": 55.22540511137058,
+      "tokens_if_included": 29662
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/cluster/dbscan_.py",
+      "score": 54.61183952622927,
+      "tokens_if_included": 18350
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/neighbors/classification.py",
+      "score": 54.43445813756932,
+      "tokens_if_included": 20082
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/ensemble/iforest.py",
+      "score": 54.19976444040771,
+      "tokens_if_included": 18934
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/model_selection/_split.py",
+      "score": 54.171694461308334,
+      "tokens_if_included": 36502
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/fixes.py",
+      "score": 53.58735495419695,
+      "tokens_if_included": 16600
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/decomposition/online_lda.py",
+      "score": 53.51127639170751,
+      "tokens_if_included": 22390
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/extmath.py",
+      "score": 53.50757473633797,
+      "tokens_if_included": 21756
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/impute/_base.py",
+      "score": 53.244707740135986,
+      "tokens_if_included": 21114
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/feature_extraction/dict_vectorizer.py",
+      "score": 53.22635992130898,
+      "tokens_if_included": 17452
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/linear_model/coordinate_descent.py",
+      "score": 52.617579293123555,
+      "tokens_if_included": 38533
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/cluster/k_means_.py",
+      "score": 52.283466821632636,
+      "tokens_if_included": 32759
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "doc/sphinxext/custom_references_resolver.py",
+      "score": 52.279728700541554,
+      "tokens_if_included": 15496
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/feature_extraction/image.py",
+      "score": 52.25265063559466,
+      "tokens_if_included": 19928
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/preprocessing/_encoders.py",
+      "score": 51.85274698604184,
+      "tokens_if_included": 20750
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/utils/multiclass.py",
+      "score": 51.33902640348624,
+      "tokens_if_included": 18882
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/compose/_column_transformer.py",
+      "score": 51.27677515935095,
+      "tokens_if_included": 21536
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/neural_network/multilayer_perceptron.py",
+      "score": 51.05870188081351,
+      "tokens_if_included": 28564
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/decomposition/pca.py",
+      "score": 50.983004819389805,
+      "tokens_if_included": 20605
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/datasets/lfw.py",
+      "score": 50.93353485334409,
+      "tokens_if_included": 19894
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/feature_extraction/hashing.py",
+      "score": 50.56746332205125,
+      "tokens_if_included": 15916
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "sklearn/__init__.py",
+      "score": 50.478833896689416,
+      "tokens_if_included": 15257
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/svm/plot_rbf_parameters.py",
+      "score": 50.07519458429236,
+      "tokens_if_included": 16485
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "benchmarks/bench_plot_nmf.py",
+      "score": 49.94403589525902,
+      "tokens_if_included": 19054
+    },
+    {
+      "decision": "included",
+      "path": "examples/compose/plot_digits_pipe.py",
+      "score": 49.64854276081655,
+      "tokens_if_included": 14892
+    }
+  ],
+  "included": [
+    {
+      "bytes": 11002,
+      "oid": "d3b2494432f8199dd693cfad81cd74689f53f35d",
+      "path": "setup.py"
+    },
+    {
+      "bytes": 31939,
+      "oid": "666ef0e95837d08aaece4a09398eef646475b2a2",
+      "path": "sklearn/utils/testing.py"
+    },
+    {
+      "bytes": 1704,
+      "oid": "75243caeab1a2431b611e8d25346846234e34813",
+      "path": "sklearn/utils/_show_versions.py"
+    },
+    {
+      "bytes": 5227,
+      "oid": "3480e3caaa25907f827ba31241b390490686a1b1",
+      "path": "sklearn/exceptions.py"
+    },
+    {
+      "bytes": 2349,
+      "oid": "0e2c626f58aa68a93dbc393078a5f558035594fb",
+      "path": "examples/compose/plot_digits_pipe.py"
+    }
+  ],
+  "instance_id": "scikit-learn__scikit-learn-14629",
+  "pool": {
+    "counts": {
+      "excluded_non_utf8": 0,
+      "excluded_test": 214,
+      "excluded_vendored": 9,
+      "pool": 516,
+      "py": 739,
+      "tracked": 1213
+    },
+    "non_utf8": []
+  },
+  "ranked_count": 515,
+  "ranked_top100": [
+    {
+      "oid": "d3b2494432f8199dd693cfad81cd74689f53f35d",
+      "path": "setup.py",
+      "score": 95.00169143382517
+    },
+    {
+      "oid": "666ef0e95837d08aaece4a09398eef646475b2a2",
+      "path": "sklearn/utils/testing.py",
+      "score": 90.94927239633515
+    },
+    {
+      "oid": "02380722d0d954dfdb91d325a4e52e23f9906bdf",
+      "path": "sklearn/model_selection/_search.py",
+      "score": 84.62323920092336
+    },
+    {
+      "oid": "43c4dae31f66e3446e57ae09f33880f4481193b8",
+      "path": "sklearn/ensemble/gradient_boosting.py",
+      "score": 84.28863921525277
+    },
+    {
+      "oid": "23109e32a45494be5ce009f1a3dde5aa51acb0cc",
+      "path": "sklearn/utils/estimator_checks.py",
+      "score": 83.80493376483385
+    },
+    {
+      "oid": "463b72d40f47ad87b75f4f9c9824e8e78ca14264",
+      "path": "sklearn/multioutput.py",
+      "score": 83.30901835990052
+    },
+    {
+      "oid": "dfc334a0efdc312bdf54039a395250d0c30013aa",
+      "path": "sklearn/base.py",
+      "score": 81.13524746596632
+    },
+    {
+      "oid": "5a8dcebd4170b82ab9319379ec9f8cef935b6670",
+      "path": "sklearn/multiclass.py",
+      "score": 80.67185750664665
+    },
+    {
+      "oid": "0408c46ae41515847c350f61cf67c1e4cf2037ec",
+      "path": "doc/conf.py",
+      "score": 80.64510461743295
+    },
+    {
+      "oid": "f95a0d6cccc57ba9b9bbf9d274350169fe5b038a",
+      "path": "sklearn/utils/__init__.py",
+      "score": 79.40647353683954
+    },
+    {
+      "oid": "75243caeab1a2431b611e8d25346846234e34813",
+      "path": "sklearn/utils/_show_versions.py",
+      "score": 76.92410987145581
+    },
+    {
+      "oid": "9d3f1611a9d70b871799d713341fb95f2806aea9",
+      "path": "sklearn/ensemble/weight_boosting.py",
+      "score": 74.88916781430922
+    },
+    {
+      "oid": "911b16b67df5f88a560671f065962c2deec83ee8",
+      "path": "sklearn/ensemble/forest.py",
+      "score": 74.2207814196584
+    },
+    {
+      "oid": "c353746c1c3269e718e0f22b0bf1ab568e444117",
+      "path": "sklearn/datasets/base.py",
+      "score": 73.43301731757462
+    },
+    {
+      "oid": "efe39b8c3fb9acf29cf64fa721420696e7bf017a",
+      "path": "sklearn/discriminant_analysis.py",
+      "score": 73.01294485316744
+    },
+    {
+      "oid": "d0197537949d91701c3087c19153b316002b4173",
+      "path": "sklearn/datasets/openml.py",
+      "score": 71.92397661115889
+    },
+    {
+      "oid": "69381a39d9ce3516024c0f930a0968ec1271d950",
+      "path": "sklearn/ensemble/voting.py",
+      "score": 71.83408710999316
+    },
+    {
+      "oid": "0c794d8a3776e2678bd520f07282ad3544967b6c",
+      "path": "sklearn/feature_extraction/text.py",
+      "score": 71.28388781973608
+    },
+    {
+      "oid": "9f6bf979717cf1a029ee5b833382aa5e475bd03c",
+      "path": "sklearn/tree/tree.py",
+      "score": 70.93804504790697
+    },
+    {
+      "oid": "4e957e8463a7c25c8abcba748864fd1eda1d326b",
+      "path": "sklearn/feature_selection/rfe.py",
+      "score": 70.42722169188957
+    },
+    {
+      "oid": "95669a212c8efdc0a70726b9b9f21c039d9558a7",
+      "path": "sklearn/model_selection/_validation.py",
+      "score": 70.31735195328937
+    },
+    {
+      "oid": "432a5a7db3c0d07014a30a551afa83e27efcdd40",
+      "path": "sklearn/linear_model/logistic.py",
+      "score": 70.0046524092288
+    },
+    {
+      "oid": "5421f7e408472f810ce7f70133df51b3947165b0",
+      "path": "sklearn/gaussian_process/gpc.py",
+      "score": 69.93596762723034
+    },
+    {
+      "oid": "987f3af05a941590894ad65c0f045f7ce087758b",
+      "path": "sklearn/manifold/t_sne.py",
+      "score": 69.65380195978703
+    },
+    {
+      "oid": "20690df7aec471015163ef26122c193e16f509b8",
+      "path": "doc/tutorial/machine_learning_map/pyparsing.py",
+      "score": 68.16929567067777
+    },
+    {
+      "oid": "138af14c93608b1334e07cc6ea1ddedeaedae85b",
+      "path": "sklearn/linear_model/ridge.py",
+      "score": 67.21061393700174
+    },
+    {
+      "oid": "b2723cc7e0c2b49308bd9f0b2fbb6422543ae0d0",
+      "path": "sklearn/svm/base.py",
+      "score": 67.02955515046861
+    },
+    {
+      "oid": "7829b99b050f1dfad8c82615a0fad49672e436c1",
+      "path": "sklearn/ensemble/bagging.py",
+      "score": 66.97700829276677
+    },
+    {
+      "oid": "e767a8f4c05f5fa3c29863a8bb34c10c94b345ae",
+      "path": "sklearn/linear_model/least_angle.py",
+      "score": 66.54632249848376
+    },
+    {
+      "oid": "f50f49f85ab6f7ab18e4f78bacb144263a4fbe1f",
+      "path": "sklearn/datasets/kddcup99.py",
+      "score": 66.32788903438352
+    },
+    {
+      "oid": "3480e3caaa25907f827ba31241b390490686a1b1",
+      "path": "sklearn/exceptions.py",
+      "score": 66.26699258203628
+    },
+    {
+      "oid": "1af8b9f610535d02eeec2a5e4ec63ea18b5f3f4f",
+      "path": "sklearn/manifold/spectral_embedding_.py",
+      "score": 65.02959179909938
+    },
+    {
+      "oid": "8b7b3c78a67be1beefd4ec6bf9e346b1ca543f8c",
+      "path": "sklearn/_build_utils/openmp_helpers.py",
+      "score": 62.86998900542949
+    },
+    {
+      "oid": "b88a8b8eb37efd176dd28dd825e36f42260b4696",
+      "path": "sklearn/calibration.py",
+      "score": 62.62196177601721
+    },
+    {
+      "oid": "5de790701aaaa89ccf6f02f157856761de77cb38",
+      "path": "sklearn/utils/validation.py",
+      "score": 62.49196299461566
+    },
+    {
+      "oid": "aa14a7f085828bbcad06a8c9247a03709b1af960",
+      "path": "sklearn/naive_bayes.py",
+      "score": 62.42869075121129
+    },
+    {
+      "oid": "50c91513c12db57a3f83ffff09e13a5f4f1f239f",
+      "path": "sklearn/linear_model/stochastic_gradient.py",
+      "score": 61.21114343227946
+    },
+    {
+      "oid": "3627875cc5656584b14fedb4653ee485b01aeb4f",
+      "path": "build_tools/generate_authors_table.py",
+      "score": 61.06999984957663
+    },
+    {
+      "oid": "3d0207a4c16fcfa4a542addbb901d444772e9a0a",
+      "path": "sklearn/pipeline.py",
+      "score": 60.50462393312245
+    },
+    {
+      "oid": "692736cb56d704f40e9ab8bf042e773390d93355",
+      "path": "sklearn/inspection/partial_dependence.py",
+      "score": 60.34173744008119
+    },
+    {
+      "oid": "f4f697565cd3e4e0be90291bb38aa0bd595dfc4e",
+      "path": "sklearn/neighbors/lof.py",
+      "score": 59.84132732539878
+    },
+    {
+      "oid": "a76cf6d8a6684d16d1e023ce4b42ec9d229bb9d5",
+      "path": "sklearn/metrics/classification.py",
+      "score": 59.0712794979373
+    },
+    {
+      "oid": "4c40f662d06561b6a292d84c26e31dfbac19f613",
+      "path": "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+      "score": 58.81850354487099
+    },
+    {
+      "oid": "ecf5fa6a2bcc0ea3c8cb14088bbcddc8431fa58a",
+      "path": "sklearn/cluster/optics_.py",
+      "score": 58.690339631600715
+    },
+    {
+      "oid": "118fc22fa7f11d417901d2d9cdc7bdf84a6efc3e",
+      "path": "sklearn/preprocessing/label.py",
+      "score": 58.58594472365765
+    },
+    {
+      "oid": "91e4abd8f7f49f42f5ac3cd4c683861179899edf",
+      "path": "sklearn/utils/_pprint.py",
+      "score": 58.52702155506048
+    },
+    {
+      "oid": "b25c428da9e432da449ce4f300d00a1bd3bf9702",
+      "path": "sklearn/metrics/pairwise.py",
+      "score": 58.526821563794236
+    },
+    {
+      "oid": "e721577e133494c2c84fe0fb4f00c16d3975c5a8",
+      "path": "sklearn/svm/classes.py",
+      "score": 57.93693670277112
+    },
+    {
+      "oid": "dd4981dbd1deb0835a3a5cd7ef46c26b5abd13d5",
+      "path": "sklearn/utils/linear_assignment_.py",
+      "score": 57.86320273322427
+    },
+    {
+      "oid": "c85d4e91749b67b762e96e85a1af6e77d6888234",
+      "path": "sklearn/datasets/svmlight_format.py",
+      "score": 57.51149502275489
+    },
+    {
+      "oid": "90de7e9c9bac3d6cdd2c0e7300d835be20145b2f",
+      "path": "sklearn/utils/_unittest_backport.py",
+      "score": 56.178334871362054
+    },
+    {
+      "oid": "e78950bd6042102238f878588fd8b69cef0ba070",
+      "path": "sklearn/covariance/graph_lasso_.py",
+      "score": 56.16187223646349
+    },
+    {
+      "oid": "4f21daef352befaa90d6e272954ed6decac6de1f",
+      "path": "examples/calibration/plot_calibration.py",
+      "score": 56.079770781936446
+    },
+    {
+      "oid": "bf2892bdf83a2a74727432d32c8c750df8232021",
+      "path": "sklearn/metrics/scorer.py",
+      "score": 56.077094452691426
+    },
+    {
+      "oid": "df6e44f5708e09223a918541c8bd5964b8c362f6",
+      "path": "sklearn/linear_model/omp.py",
+      "score": 55.50616348343651
+    },
+    {
+      "oid": "b3f09664f025dad5aa42e0697f9ed7229ebacfde",
+      "path": "sklearn/preprocessing/data.py",
+      "score": 55.334085682840524
+    },
+    {
+      "oid": "078c3f5e54d196fdfe13a593c6a75473fe360b21",
+      "path": "examples/model_selection/plot_cv_indices.py",
+      "score": 55.246083694903476
+    },
+    {
+      "oid": "5c88072b395d5ba27e9516a8f2ed398854bd92be",
+      "path": "sklearn/metrics/ranking.py",
+      "score": 55.22540511137058
+    },
+    {
+      "oid": "9f4a55d3ad5b3bb1075243b5460df59a63d250b0",
+      "path": "sklearn/cluster/dbscan_.py",
+      "score": 54.61183952622927
+    },
+    {
+      "oid": "a72f710ae57ea69d08c7758dfc7b5a766c0a2439",
+      "path": "sklearn/neighbors/classification.py",
+      "score": 54.43445813756932
+    },
+    {
+      "oid": "4cdeb9673ccdbd1d24c52774e212229b1265faf6",
+      "path": "sklearn/ensemble/iforest.py",
+      "score": 54.19976444040771
+    },
+    {
+      "oid": "8d2dedbce843c4f15a8515c9f9528d1b19929b83",
+      "path": "sklearn/model_selection/_split.py",
+      "score": 54.171694461308334
+    },
+    {
+      "oid": "83ace7d2e76c6d98d7c9f3d6b7112302bc8051b8",
+      "path": "sklearn/utils/fixes.py",
+      "score": 53.58735495419695
+    },
+    {
+      "oid": "503cc24692e2510601c0cdef2debf7f92078bc96",
+      "path": "sklearn/decomposition/online_lda.py",
+      "score": 53.51127639170751
+    },
+    {
+      "oid": "924d50ee56de73440d9ca9f0629385cc32947111",
+      "path": "sklearn/utils/extmath.py",
+      "score": 53.50757473633797
+    },
+    {
+      "oid": "e56802bc74326970962e4a4b1870d93bb7325f88",
+      "path": "sklearn/impute/_base.py",
+      "score": 53.244707740135986
+    },
+    {
+      "oid": "4a2aa58189c93d30e95aa05567f9160d645e6239",
+      "path": "sklearn/feature_extraction/dict_vectorizer.py",
+      "score": 53.22635992130898
+    },
+    {
+      "oid": "042b645b3a599d198d25f56dca9bacbf35653fed",
+      "path": "sklearn/linear_model/coordinate_descent.py",
+      "score": 52.617579293123555
+    },
+    {
+      "oid": "27bdc934e4c0da140f3ee3aa149eadeb2b32dcb3",
+      "path": "sklearn/cluster/k_means_.py",
+      "score": 52.283466821632636
+    },
+    {
+      "oid": "2fd32b7da785e9fd24f31032663ba2471df6b9cc",
+      "path": "doc/sphinxext/custom_references_resolver.py",
+      "score": 52.279728700541554
+    },
+    {
+      "oid": "aa0f445fd3ee8abecc3bb992df11f872852020b9",
+      "path": "sklearn/feature_extraction/image.py",
+      "score": 52.25265063559466
+    },
+    {
+      "oid": "6a16b484ad56364e0b4c25f444735cd81f9e04f0",
+      "path": "sklearn/preprocessing/_encoders.py",
+      "score": 51.85274698604184
+    },
+    {
+      "oid": "1dd71b31f7a3dd4d2a94b4df36a7c0720a8f774a",
+      "path": "sklearn/utils/multiclass.py",
+      "score": 51.33902640348624
+    },
+    {
+      "oid": "ab5b4f941f4c7571bfdaebbeca17d7c93eada56f",
+      "path": "sklearn/compose/_column_transformer.py",
+      "score": 51.27677515935095
+    },
+    {
+      "oid": "0cb94de71b3a6dd8eb919c81955246453756d148",
+      "path": "sklearn/neural_network/multilayer_perceptron.py",
+      "score": 51.05870188081351
+    },
+    {
+      "oid": "1bf3d6e6b19e6e7b7c29b29079ad5a0e5b12d74d",
+      "path": "sklearn/decomposition/pca.py",
+      "score": 50.983004819389805
+    },
+    {
+      "oid": "535967b84ce41414a3ce2cef9b28141227144af8",
+      "path": "sklearn/datasets/lfw.py",
+      "score": 50.93353485334409
+    },
+    {
+      "oid": "b141d114f9fd8705514480cdec1096ad78788711",
+      "path": "sklearn/feature_extraction/hashing.py",
+      "score": 50.56746332205125
+    },
+    {
+      "oid": "4f8c5d6d780dd4668f78812eb9f5b221820c6f91",
+      "path": "sklearn/__init__.py",
+      "score": 50.478833896689416
+    },
+    {
+      "oid": "fedee7d4b4e6744d7f433d687b40fb704e5e5139",
+      "path": "examples/svm/plot_rbf_parameters.py",
+      "score": 50.07519458429236
+    },
+    {
+      "oid": "d8d34d8f952ce7e45bd601a55fe7ace1881c1dba",
+      "path": "benchmarks/bench_plot_nmf.py",
+      "score": 49.94403589525902
+    },
+    {
+      "oid": "0e2c626f58aa68a93dbc393078a5f558035594fb",
+      "path": "examples/compose/plot_digits_pipe.py",
+      "score": 49.64854276081655
+    },
+    {
+      "oid": "3c6c76292507d2a10495197801e4a49218b13854",
+      "path": "sklearn/decomposition/nmf.py",
+      "score": 49.61427717732443
+    },
+    {
+      "oid": "067a956f6435d5272442cf348a6e8cfcab8d6b54",
+      "path": "sklearn/dummy.py",
+      "score": 49.58816628898125
+    },
+    {
+      "oid": "0398ec0df006f5aba297d2e9030455baab6911e1",
+      "path": "sklearn/cluster/spectral.py",
+      "score": 48.82800646432317
+    },
+    {
+      "oid": "cc9806cd1c41ed98c1e54b058086d219d338e94e",
+      "path": "sklearn/gaussian_process/gpr.py",
+      "score": 48.6180929722774
+    },
+    {
+      "oid": "f42eb9d83798c452212806e80fb662338d853ae1",
+      "path": "sklearn/datasets/samples_generator.py",
+      "score": 48.57573358735622
+    },
+    {
+      "oid": "654b3e1fdb5af24024f0ac3f38787df9ea0339b8",
+      "path": "examples/applications/plot_out_of_core_classification.py",
+      "score": 48.447799908987335
+    },
+    {
+      "oid": "5b1cae1823e9c9e85d6c48963aaa98a1532b9889",
+      "path": "sklearn/feature_selection/univariate_selection.py",
+      "score": 48.16079004411898
+    },
+    {
+      "oid": "05e2f1484fccf59ba2dc1bc09c2004971b274369",
+      "path": "sklearn/impute/_iterative.py",
+      "score": 48.108502398511455
+    },
+    {
+      "oid": "5957019a06ad36dd2c2e4e6e2e0277143599e7dc",
+      "path": "sklearn/metrics/cluster/supervised.py",
+      "score": 47.95171902190235
+    },
+    {
+      "oid": "173794e5340c29628afff1fd6221cb924948a828",
+      "path": "sklearn/covariance/robust_covariance.py",
+      "score": 47.82006752082201
+    },
+    {
+      "oid": "d2af98d07ac09f826a80deea3b2160d615887550",
+      "path": "sklearn/linear_model/base.py",
+      "score": 47.79098027752404
+    },
+    {
+      "oid": "ba624140ce1fcd6b74dd011b9b452cc76732226f",
+      "path": "sklearn/decomposition/factor_analysis.py",
+      "score": 47.71398473089708
+    },
+    {
+      "oid": "639d697e25fd99b593b8e35060b577346b68db3b",
+      "path": "examples/preprocessing/plot_map_data_to_normal.py",
+      "score": 47.35262445106403
+    },
+    {
+      "oid": "e588ccd6df1c87ba205c81d25dbe794d17c2af0b",
+      "path": "sklearn/cluster/mean_shift_.py",
+      "score": 47.319143001220155
+    },
+    {
+      "oid": "cce79342c393f3a1904fd5ab63c02e12da0aea19",
+      "path": "sklearn/ensemble/partial_dependence.py",
+      "score": 47.210207653025805
+    },
+    {
+      "oid": "35b7ed6af962ae390508a90a84e72bacb1ab965d",
+      "path": "sklearn/compose/_target.py",
+      "score": 46.83639984142932
+    },
+    {
+      "oid": "f5fb2ded45120d51b606488b24c6ead64708c61d",
+      "path": "examples/mixture/plot_gmm_sin.py",
+      "score": 46.20355564959557
+    },
+    {
+      "oid": "40beb3abcab73ec5ba372cbb6ef10877d6e24a6f",
+      "path": "sklearn/isotonic.py",
+      "score": 46.03828366406974
+    }
+  ],
+  "repo": "scikit-learn/scikit-learn",
+  "slot": "T3"
+}

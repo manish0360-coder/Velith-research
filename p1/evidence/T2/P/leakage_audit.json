@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "gold_hunk_lines": {
+      "needles": 11,
+      "needles_found": 0,
+      "non_exempt": [],
+      "occurrences_by_region": {}
+    },
+    "gold_patch_full_text": false,
+    "hints_windows_41": {
+      "needles": 1795,
+      "needles_found": 1,
+      "non_exempt": [],
+      "occurrences_by_region": {
+        "file": 1
+      }
+    },
+    "test_ids": {
+      "needles": 254,
+      "needles_found": 0,
+      "non_exempt": [],
+      "occurrences_by_region": {}
+    },
+    "test_patch_full_text": false,
+    "test_patch_hunk_lines": {
+      "needles": 5,
+      "needles_found": 0,
+      "non_exempt": [],
+      "occurrences_by_region": {}
+    },
+    "test_patch_paths_in_pool": [],
+    "test_patch_paths_in_prompt": []
+  },
+  "hints_text_sha256": "c5351fef7f375bd1d1c8fac2d2a11ab0532fa48f9f5e8348d453213f87a22c68",
+  "verdict": "PASS"
+}

@@ -1,0 +1,1465 @@
+You are fixing a bug in the Python repository `matplotlib/matplotlib` at a fixed commit.
+You cannot run code or see any files other than those shown below.
+
+## Issue
+[Bug]: NumPy 1.24 deprecation warnings
+### Bug summary
+
+Starting NumPy 1.24 I observe several deprecation warnings.
+
+
+### Code for reproduction
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.get_cmap()(np.empty((0, ), dtype=np.uint8))
+```
+
+
+### Actual outcome
+
+```
+/usr/lib/python3.10/site-packages/matplotlib/colors.py:730: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 257 to uint8 will fail in the future.
+For the old behavior, usually:
+    np.array(value).astype(dtype)`
+will give the desired result (the cast overflows).
+  xa[xa > self.N - 1] = self._i_over
+/usr/lib/python3.10/site-packages/matplotlib/colors.py:731: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 256 to uint8 will fail in the future.
+For the old behavior, usually:
+    np.array(value).astype(dtype)`
+will give the desired result (the cast overflows).
+  xa[xa < 0] = self._i_under
+/usr/lib/python3.10/site-packages/matplotlib/colors.py:732: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 258 to uint8 will fail in the future.
+For the old behavior, usually:
+    np.array(value).astype(dtype)`
+will give the desired result (the cast overflows).
+  xa[mask_bad] = self._i_bad
+```
+
+### Expected outcome
+
+No warnings.
+
+### Additional information
+
+_No response_
+
+### Operating system
+
+ArchLinux
+
+### Matplotlib Version
+
+3.6.2
+
+### Matplotlib Backend
+
+QtAgg
+
+### Python version
+
+Python 3.10.9
+
+### Jupyter version
+
+_No response_
+
+### Installation
+
+Linux package manager
+
+
+## Source files (retrieved automatically from the repository; may be incomplete)
+=== FILE: lib/matplotlib/_api/deprecation.py ===
+"""
+Helper functions for deprecating parts of the Matplotlib API.
+
+This documentation is only relevant for Matplotlib developers, not for users.
+
+.. warning::
+
+    This module is for internal use only.  Do not use it in your own code.
+    We may change the API at any time with no warning.
+
+"""
+
+import contextlib
+import functools
+import inspect
+import math
+import warnings
+
+
+class MatplotlibDeprecationWarning(DeprecationWarning):
+    """A class for issuing deprecation warnings for Matplotlib users."""
+
+
+def _generate_deprecation_warning(
+        since, message='', name='', alternative='', pending=False, obj_type='',
+        addendum='', *, removal=''):
+    if pending:
+        if removal:
+            raise ValueError(
+                "A pending deprecation cannot have a scheduled removal")
+    else:
+        removal = f"in {removal}" if removal else "two minor releases later"
+    if not message:
+        message = (
+            ("The %(name)s %(obj_type)s" if obj_type else "%(name)s")
+            + (" will be deprecated in a future version"
+               if pending else
+               (" was deprecated in Matplotlib %(since)s"
+                + (" and will be removed %(removal)s" if removal else "")))
+            + "."
+            + (" Use %(alternative)s instead." if alternative else "")
+            + (" %(addendum)s" if addendum else ""))
+    warning_cls = (PendingDeprecationWarning if pending
+                   else MatplotlibDeprecationWarning)
+    return warning_cls(message % dict(
+        func=name, name=name, obj_type=obj_type, since=since, removal=removal,
+        alternative=alternative, addendum=addendum))
+
+
+def warn_deprecated(
+        since, *, message='', name='', alternative='', pending=False,
+        obj_type='', addendum='', removal=''):
+    """
+    Display a standardized deprecation.
+
+    Parameters
+    ----------
+    since : str
+        The release at which this API became deprecated.
+    message : str, optional
+        Override the default deprecation message.  The ``%(since)s``,
+        ``%(name)s``, ``%(alternative)s``, ``%(obj_type)s``, ``%(addendum)s``,
+        and ``%(removal)s`` format specifiers will be replaced by the values
+        of the respective arguments passed to this function.
+    name : str, optional
+        The name of the deprecated object.
+    alternative : str, optional
+        An alternative API that the user may use in place of the deprecated
+        API.  The deprecation warning will tell the user about this alternative
+        if provided.
+    pending : bool, optional
+        If True, uses a PendingDeprecationWarning instead of a
+        DeprecationWarning.  Cannot be used together with *removal*.
+    obj_type : str, optional
+        The object type being deprecated.
+    addendum : str, optional
+        Additional text appended directly to the final message.
+    removal : str, optional
+        The expected removal version.  With the default (an empty string), a
+        removal version is automatically computed from *since*.  Set to other
+        Falsy values to not schedule a removal date.  Cannot be used together
+        with *pending*.
+
+    Examples
+    --------
+    ::
+
+        # To warn of the deprecation of "matplotlib.name_of_module"
+        warn_deprecated('1.4.0', name='matplotlib.name_of_module',
+                        obj_type='module')
+    """
+    warning = _generate_deprecation_warning(
+        since, message, name, alternative, pending, obj_type, addendum,
+        removal=removal)
+    from . import warn_external
+    warn_external(warning, category=MatplotlibDeprecationWarning)
+
+
+def deprecated(since, *, message='', name='', alternative='', pending=False,
+               obj_type=None, addendum='', removal=''):
+    """
+    Decorator to mark a function, a class, or a property as deprecated.
+
+    When deprecating a classmethod, a staticmethod, or a property, the
+    ``@deprecated`` decorator should go *under* ``@classmethod`` and
+    ``@staticmethod`` (i.e., `deprecated` should directly decorate the
+    underlying callable), but *over* ``@property``.
+
+    When deprecating a class ``C`` intended to be used as a base class in a
+    multiple inheritance hierarchy, ``C`` *must* define an ``__init__`` method
+    (if ``C`` instead inherited its ``__init__`` from its own base class, then
+    ``@deprecated`` would mess up ``__init__`` inheritance when installing its
+    own (deprecation-emitting) ``C.__init__``).
+
+    Parameters are the same as for `warn_deprecated`, except that *obj_type*
+    defaults to 'class' if decorating a class, 'attribute' if decorating a
+    property, and 'function' otherwise.
+
+    Examples
+    --------
+    ::
+
+        @deprecated('1.4.0')
+        def the_function_to_deprecate():
+            pass
+    """
+
+    def deprecate(obj, message=message, name=name, alternative=alternative,
+                  pending=pending, obj_type=obj_type, addendum=addendum):
+        from matplotlib._api import classproperty
+
+        if isinstance(obj, type):
+            if obj_type is None:
+                obj_type = "class"
+            func = obj.__init__
+            name = name or obj.__name__
+            old_doc = obj.__doc__
+
+            def finalize(wrapper, new_doc):
+                try:
+                    obj.__doc__ = new_doc
+                except AttributeError:  # Can't set on some extension objects.
+                    pass
+                obj.__init__ = functools.wraps(obj.__init__)(wrapper)
+                return obj
+
+        elif isinstance(obj, (property, classproperty)):
+            if obj_type is None:
+                obj_type = "attribute"
+            func = None
+            name = name or obj.fget.__name__
+            old_doc = obj.__doc__
+
+            class _deprecated_property(type(obj)):
+                def __get__(self, instance, owner=None):
+                    if instance is not None or owner is not None \
+                            and isinstance(self, classproperty):
+                        emit_warning()
+                    return super().__get__(instance, owner)
+
+                def __set__(self, instance, value):
+                    if instance is not None:
+                        emit_warning()
+                    return super().__set__(instance, value)
+
+                def __delete__(self, instance):
+                    if instance is not None:
+                        emit_warning()
+                    return super().__delete__(instance)
+
+                def __set_name__(self, owner, set_name):
+                    nonlocal name
+                    if name == "<lambda>":
+                        name = set_name
+
+            def finalize(_, new_doc):
+                return _deprecated_property(
+                    fget=obj.fget, fset=obj.fset, fdel=obj.fdel, doc=new_doc)
+
+        else:
+            if obj_type is None:
+                obj_type = "function"
+            func = obj
+            name = name or obj.__name__
+            old_doc = func.__doc__
+
+            def finalize(wrapper, new_doc):
+                wrapper = functools.wraps(func)(wrapper)
+                wrapper.__doc__ = new_doc
+                return wrapper
+
+        def emit_warning():
+            warn_deprecated(
+                since, message=message, name=name, alternative=alternative,
+                pending=pending, obj_type=obj_type, addendum=addendum,
+                removal=removal)
+
+        def wrapper(*args, **kwargs):
+            emit_warning()
+            return func(*args, **kwargs)
+
+        old_doc = inspect.cleandoc(old_doc or '').strip('\n')
+
+        notes_header = '\nNotes\n-----'
+        second_arg = ' '.join([t.strip() for t in
+                               (message, f"Use {alternative} instead."
+                                if alternative else "", addendum) if t])
+        new_doc = (f"[*Deprecated*] {old_doc}\n"
+                   f"{notes_header if notes_header not in old_doc else ''}\n"
+                   f".. deprecated:: {since}\n"
+                   f"   {second_arg}")
+
+        if not old_doc:
+            # This is to prevent a spurious 'unexpected unindent' warning from
+            # docutils when the original docstring was blank.
+            new_doc += r'\ '
+
+        return finalize(wrapper, new_doc)
+
+    return deprecate
+
+
+class deprecate_privatize_attribute:
+    """
+    Helper to deprecate public access to an attribute (or method).
+
+    This helper should only be used at class scope, as follows::
+
+        class Foo:
+            attr = _deprecate_privatize_attribute(*args, **kwargs)
+
+    where *all* parameters are forwarded to `deprecated`.  This form makes
+    ``attr`` a property which forwards read and write access to ``self._attr``
+    (same name but with a leading underscore), with a deprecation warning.
+    Note that the attribute name is derived from *the name this helper is
+    assigned to*.  This helper also works for deprecating methods.
+    """
+
+    def __init__(self, *args, **kwargs):
+        self.deprecator = deprecated(*args, **kwargs)
+
+    def __set_name__(self, owner, name):
+        setattr(owner, name, self.deprecator(
+            property(lambda self: getattr(self, f"_{name}"),
+                     lambda self, value: setattr(self, f"_{name}", value)),
+            name=name))
+
+
+# Used by _copy_docstring_and_deprecators to redecorate pyplot wrappers and
+# boilerplate.py to retrieve original signatures.  It may seem natural to store
+# this information as an attribute on the wrapper, but if the wrapper gets
+# itself functools.wraps()ed, then such attributes are silently propagated to
+# the outer wrapper, which is not desired.
+DECORATORS = {}
+
+
+def rename_parameter(since, old, new, func=None):
+    """
+    Decorator indicating that parameter *old* of *func* is renamed to *new*.
+
+    The actual implementation of *func* should use *new*, not *old*.  If *old*
+    is passed to *func*, a DeprecationWarning is emitted, and its value is
+    used, even if *new* is also passed by keyword (this is to simplify pyplot
+    wrapper functions, which always pass *new* explicitly to the Axes method).
+    If *new* is also passed but positionally, a TypeError will be raised by the
+    underlying function during argument binding.
+
+    Examples
+    --------
+    ::
+
+        @_api.rename_parameter("3.1", "bad_name", "good_name")
+        def func(good_name): ...
+    """
+
+    decorator = functools.partial(rename_parameter, since, old, new)
+
+    if func is None:
+        return decorator
+
+    signature = inspect.signature(func)
+    assert old not in signature.parameters, (
+        f"Matplotlib internal error: {old!r} cannot be a parameter for "
+        f"{func.__name__}()")
+    assert new in signature.parameters, (
+        f"Matplotlib internal error: {new!r} must be a parameter for "
+        f"{func.__name__}()")
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        if old in kwargs:
+            warn_deprecated(
+                since, message=f"The {old!r} parameter of {func.__name__}() "
+                f"has been renamed {new!r} since Matplotlib {since}; support "
+                f"for the old name will be dropped %(removal)s.")
+            kwargs[new] = kwargs.pop(old)
+        return func(*args, **kwargs)
+
+    # wrapper() must keep the same documented signature as func(): if we
+    # instead made both *old* and *new* appear in wrapper()'s signature, they
+    # would both show up in the pyplot function for an Axes method as well and
+    # pyplot would explicitly pass both arguments to the Axes method.
+
+    DECORATORS[wrapper] = decorator
+    return wrapper
+
+
+class _deprecated_parameter_class:
+    def __repr__(self):
+        return "<deprecated parameter>"
+
+
+_deprecated_parameter = _deprecated_parameter_class()
+
+
+def delete_parameter(since, name, func=None, **kwargs):
+    """
+    Decorator indicating that parameter *name* of *func* is being deprecated.
+
+    The actual implementation of *func* should keep the *name* parameter in its
+    signature, or accept a ``**kwargs`` argument (through which *name* would be
+    passed).
+
+    Parameters that come after the deprecated parameter effectively become
+    keyword-only (as they cannot be passed positionally without triggering the
+    DeprecationWarning on the deprecated parameter), and should be marked as
+    such after the deprecation period has passed and the deprecated parameter
+    is removed.
+
+    Parameters other than *since*, *name*, and *func* are keyword-only and
+    forwarded to `.warn_deprecated`.
+
+    Examples
+    --------
+    ::
+
+        @_api.delete_parameter("3.1", "unused")
+        def func(used_arg, other_arg, unused, more_args): ...
+    """
+
+    decorator = functools.partial(delete_parameter, since, name, **kwargs)
+
+    if func is None:
+        return decorator
+
+    signature = inspect.signature(func)
+    # Name of `**kwargs` parameter of the decorated function, typically
+    # "kwargs" if such a parameter exists, or None if the decorated function
+    # doesn't accept `**kwargs`.
+    kwargs_name = next((param.name for param in signature.parameters.values()
+                        if param.kind == inspect.Parameter.VAR_KEYWORD), None)
+    if name in signature.parameters:
+        kind = signature.parameters[name].kind
+        is_varargs = kind is inspect.Parameter.VAR_POSITIONAL
+        is_varkwargs = kind is inspect.Parameter.VAR_KEYWORD
+        if not is_varargs and not is_varkwargs:
+            name_idx = (
+                # Deprecated parameter can't be passed positionally.
+                math.inf if kind is inspect.Parameter.KEYWORD_ONLY
+                # If call site has no more than this number of parameters, the
+                # deprecated parameter can't have been passed positionally.
+                else [*signature.parameters].index(name))
+            func.__signature__ = signature = signature.replace(parameters=[
+                param.replace(default=_deprecated_parameter)
+                if param.name == name else param
+                for param in signature.parameters.values()])
+        else:
+            name_idx = -1  # Deprecated parameter can always have been passed.
+    else:
+        is_varargs = is_varkwargs = False
+        # Deprecated parameter can't be passed positionally.
+        name_idx = math.inf
+        assert kwargs_name, (
+            f"Matplotlib internal error: {name!r} must be a parameter for "
+            f"{func.__name__}()")
+
+    addendum = kwargs.pop('addendum', None)
+
+    @functools.wraps(func)
+    def wrapper(*inner_args, **inner_kwargs):
+        if len(inner_args) <= name_idx and name not in inner_kwargs:
+            # Early return in the simple, non-deprecated case (much faster than
+            # calling bind()).
+            return func(*inner_args, **inner_kwargs)
+        arguments = signature.bind(*inner_args, **inner_kwargs).arguments
+        if is_varargs and arguments.get(name):
+            warn_deprecated(
+                since, message=f"Additional positional arguments to "
+                f"{func.__name__}() are deprecated since %(since)s and "
+                f"support for them will be removed %(removal)s.")
+        elif is_varkwargs and arguments.get(name):
+            warn_deprecated(
+                since, message=f"Additional keyword arguments to "
+                f"{func.__name__}() are deprecated since %(since)s and "
+                f"support for them will be removed %(removal)s.")
+        # We cannot just check `name not in arguments` because the pyplot
+        # wrappers always pass all arguments explicitly.
+        elif any(name in d and d[name] != _deprecated_parameter
+                 for d in [arguments, arguments.get(kwargs_name, {})]):
+            deprecation_addendum = (
+                f"If any parameter follows {name!r}, they should be passed as "
+                f"keyword, not positionally.")
+            warn_deprecated(
+                since,
+                name=repr(name),
+                obj_type=f"parameter of {func.__name__}()",
+                addendum=(addendum + " " + deprecation_addendum) if addendum
+                         else deprecation_addendum,
+                **kwargs)
+        return func(*inner_args, **inner_kwargs)
+
+    DECORATORS[wrapper] = decorator
+    return wrapper
+
+
+def make_keyword_only(since, name, func=None):
+    """
+    Decorator indicating that passing parameter *name* (or any of the following
+    ones) positionally to *func* is being deprecated.
+
+    When used on a method that has a pyplot wrapper, this should be the
+    outermost decorator, so that :file:`boilerplate.py` can access the original
+    signature.
+    """
+
+    decorator = functools.partial(make_keyword_only, since, name)
+
+    if func is None:
+        return decorator
+
+    signature = inspect.signature(func)
+    POK = inspect.Parameter.POSITIONAL_OR_KEYWORD
+    KWO = inspect.Parameter.KEYWORD_ONLY
+    assert (name in signature.parameters
+            and signature.parameters[name].kind == POK), (
+        f"Matplotlib internal error: {name!r} must be a positional-or-keyword "
+        f"parameter for {func.__name__}()")
+    names = [*signature.parameters]
+    name_idx = names.index(name)
+    kwonly = [name for name in names[name_idx:]
+              if signature.parameters[name].kind == POK]
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        # Don't use signature.bind here, as it would fail when stacked with
+        # rename_parameter and an "old" argument name is passed in
+        # (signature.bind would fail, but the actual call would succeed).
+        if len(args) > name_idx:
+            warn_deprecated(
+                since, message="Passing the %(name)s %(obj_type)s "
+                "positionally is deprecated since Matplotlib %(since)s; the "
+                "parameter will become keyword-only %(removal)s.",
+                name=name, obj_type=f"parameter of {func.__name__}()")
+        return func(*args, **kwargs)
+
+    # Don't modify *func*'s signature, as boilerplate.py needs it.
+    wrapper.__signature__ = signature.replace(parameters=[
+        param.replace(kind=KWO) if param.name in kwonly else param
+        for param in signature.parameters.values()])
+    DECORATORS[wrapper] = decorator
+    return wrapper
+
+
+def deprecate_method_override(method, obj, *, allow_empty=False, **kwargs):
+    """
+    Return ``obj.method`` with a deprecation if it was overridden, else None.
+
+    Parameters
+    ----------
+    method
+        An unbound method, i.e. an expression of the form
+        ``Class.method_name``.  Remember that within the body of a method, one
+        can always use ``__class__`` to refer to the class that is currently
+        being defined.
+    obj
+        Either an object of the class where *method* is defined, or a subclass
+        of that class.
+    allow_empty : bool, default: False
+        Whether to allow overrides by "empty" methods without emitting a
+        warning.
+    **kwargs
+        Additional parameters passed to `warn_deprecated` to generate the
+        deprecation warning; must at least include the "since" key.
+    """
+
+    def empty(): pass
+    def empty_with_docstring(): """doc"""
+
+    name = method.__name__
+    bound_child = getattr(obj, name)
+    bound_base = (
+        method  # If obj is a class, then we need to use unbound methods.
+        if isinstance(bound_child, type(empty)) and isinstance(obj, type)
+        else method.__get__(obj))
+    if (bound_child != bound_base
+            and (not allow_empty
+                 or (getattr(getattr(bound_child, "__code__", None),
+                             "co_code", None)
+                     not in [empty.__code__.co_code,
+                             empty_with_docstring.__code__.co_code]))):
+        warn_deprecated(**{"name": name, "obj_type": "method", **kwargs})
+        return bound_child
+    return None
+
+
+@contextlib.contextmanager
+def suppress_matplotlib_deprecation_warning():
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", MatplotlibDeprecationWarning)
+        yield
+=== END FILE: lib/matplotlib/_api/deprecation.py ===
+
+=== FILE: setup.py ===
+"""
+The Matplotlib build options can be modified with a mplsetup.cfg file. See
+mplsetup.cfg.template for more information.
+"""
+
+# NOTE: This file must remain Python 2 compatible for the foreseeable future,
+# to ensure that we error out properly for people with outdated setuptools
+# and/or pip.
+import sys
+
+py_min_version = (3, 9)  # minimal supported python version
+since_mpl_version = (3, 8)  # py_min_version is required since this mpl version
+
+if sys.version_info < py_min_version:
+    error = """
+Beginning with Matplotlib {0}, Python {1} or above is required.
+You are using Python {2}.
+
+This may be due to an out of date pip.
+
+Make sure you have pip >= 9.0.1.
+""".format('.'.join(str(n) for n in since_mpl_version),
+           '.'.join(str(n) for n in py_min_version),
+           '.'.join(str(n) for n in sys.version_info[:3]))
+    sys.exit(error)
+
+import os
+from pathlib import Path
+import shutil
+import subprocess
+
+from setuptools import setup, find_packages, Distribution, Extension
+import setuptools.command.build_ext
+import setuptools.command.build_py
+import setuptools.command.sdist
+
+# sys.path modified to find setupext.py during pyproject.toml builds.
+sys.path.append(str(Path(__file__).resolve().parent))
+
+import setupext
+from setupext import print_raw, print_status
+
+
+# These are the packages in the order we want to display them.
+mpl_packages = [
+    setupext.Matplotlib(),
+    setupext.Python(),
+    setupext.Platform(),
+    setupext.FreeType(),
+    setupext.Qhull(),
+    setupext.Tests(),
+    setupext.BackendMacOSX(),
+    ]
+
+
+# From https://bugs.python.org/issue26689
+def has_flag(self, flagname):
+    """Return whether a flag name is supported on the specified compiler."""
+    import tempfile
+    with tempfile.NamedTemporaryFile('w', suffix='.cpp') as f:
+        f.write('int main (int argc, char **argv) { return 0; }')
+        try:
+            self.compile([f.name], extra_postargs=[flagname])
+        except Exception as exc:
+            # https://github.com/pypa/setuptools/issues/2698
+            if type(exc).__name__ != "CompileError":
+                raise
+            return False
+    return True
+
+
+class BuildExtraLibraries(setuptools.command.build_ext.build_ext):
+    def finalize_options(self):
+        # If coverage is enabled then need to keep the .o and .gcno files in a
+        # non-temporary directory otherwise coverage info not collected.
+        cppflags = os.getenv('CPPFLAGS')
+        if cppflags and '--coverage' in cppflags:
+            self.build_temp = 'build'
+
+        self.distribution.ext_modules[:] = [
+            ext
+            for package in good_packages
+            for ext in package.get_extensions()
+        ]
+        super().finalize_options()
+
+    def add_optimization_flags(self):
+        """
+        Add optional optimization flags to extension.
+
+        This adds flags for LTO and hidden visibility to both compiled
+        extensions, and to the environment variables so that vendored libraries
+        will also use them. If the compiler does not support these flags, then
+        none are added.
+        """
+
+        env = os.environ.copy()
+        if sys.platform == 'win32':
+            return env
+        enable_lto = setupext.config.getboolean('libs', 'enable_lto',
+                                                fallback=None)
+
+        def prepare_flags(name, enable_lto):
+            """
+            Prepare *FLAGS from the environment.
+
+            If set, return them, and also check whether LTO is disabled in each
+            one, raising an error if Matplotlib config explicitly enabled LTO.
+            """
+            if name in os.environ:
+                if '-fno-lto' in os.environ[name]:
+                    if enable_lto is True:
+                        raise ValueError('Configuration enable_lto=True, but '
+                                         '{0} contains -fno-lto'.format(name))
+                    enable_lto = False
+                return [os.environ[name]], enable_lto
+            return [], enable_lto
+
+        _, enable_lto = prepare_flags('CFLAGS', enable_lto)  # Only check lto.
+        cppflags, enable_lto = prepare_flags('CPPFLAGS', enable_lto)
+        cxxflags, enable_lto = prepare_flags('CXXFLAGS', enable_lto)
+        ldflags, enable_lto = prepare_flags('LDFLAGS', enable_lto)
+
+        if enable_lto is False:
+            return env
+
+        if has_flag(self.compiler, '-fvisibility=hidden'):
+            for ext in self.extensions:
+                ext.extra_compile_args.append('-fvisibility=hidden')
+            cppflags.append('-fvisibility=hidden')
+        if has_flag(self.compiler, '-fvisibility-inlines-hidden'):
+            for ext in self.extensions:
+                if self.compiler.detect_language(ext.sources) != 'cpp':
+                    continue
+                ext.extra_compile_args.append('-fvisibility-inlines-hidden')
+            cxxflags.append('-fvisibility-inlines-hidden')
+        ranlib = 'RANLIB' in env
+        if not ranlib and self.compiler.compiler_type == 'unix':
+            try:
+                result = subprocess.run(self.compiler.compiler +
+                                        ['--version'],
+                                        stdout=subprocess.PIPE,
+                                        stderr=subprocess.STDOUT,
+                                        universal_newlines=True)
+            except Exception:
+                pass
+            else:
+                version = result.stdout.lower()
+                if 'gcc' in version:
+                    ranlib = shutil.which('gcc-ranlib')
+                elif 'clang' in version:
+                    if sys.platform == 'darwin':
+                        ranlib = True
+                    else:
+                        ranlib = shutil.which('llvm-ranlib')
+        if ranlib and has_flag(self.compiler, '-flto'):
+            for ext in self.extensions:
+                ext.extra_compile_args.append('-flto')
+            cppflags.append('-flto')
+            ldflags.append('-flto')
+            # Needed so FreeType static library doesn't lose its LTO objects.
+            if isinstance(ranlib, str):
+                env['RANLIB'] = ranlib
+
+        env['CPPFLAGS'] = ' '.join(cppflags)
+        env['CXXFLAGS'] = ' '.join(cxxflags)
+        env['LDFLAGS'] = ' '.join(ldflags)
+
+        return env
+
+    def build_extensions(self):
+        if (self.compiler.compiler_type == 'msvc' and
+                os.environ.get('MPL_DISABLE_FH4')):
+            # Disable FH4 Exception Handling implementation so that we don't
+            # require VCRUNTIME140_1.dll. For more details, see:
+            # https://devblogs.microsoft.com/cppblog/making-cpp-exception-handling-smaller-x64/
+            # https://github.com/joerick/cibuildwheel/issues/423#issuecomment-677763904
+            for ext in self.extensions:
+                ext.extra_compile_args.append('/d2FH4-')
+
+        env = self.add_optimization_flags()
+        for package in good_packages:
+            package.do_custom_build(env)
+        return super().build_extensions()
+
+    def build_extension(self, ext):
+        # When C coverage is enabled, the path to the object file is saved.
+        # Since we re-use source files in multiple extensions, libgcov will
+        # complain at runtime that it is trying to save coverage for the same
+        # object file at different timestamps (since each source is compiled
+        # again for each extension). Thus, we need to use unique temporary
+        # build directories to store object files for each extension.
+        orig_build_temp = self.build_temp
+        self.build_temp = os.path.join(self.build_temp, ext.name)
+        try:
+            super().build_extension(ext)
+        finally:
+            self.build_temp = orig_build_temp
+
+
+def update_matplotlibrc(path):
+    # If packagers want to change the default backend, insert a `#backend: ...`
+    # line.  Otherwise, use the default `##backend: Agg` which has no effect
+    # even after decommenting, which allows _auto_backend_sentinel to be filled
+    # in at import time.
+    template_lines = path.read_text(encoding="utf-8").splitlines(True)
+    backend_line_idx, = [  # Also asserts that there is a single such line.
+        idx for idx, line in enumerate(template_lines)
+        if "#backend:" in line]
+    template_lines[backend_line_idx] = (
+        "#backend: {}\n".format(setupext.options["backend"])
+        if setupext.options["backend"]
+        else "##backend: Agg\n")
+    path.write_text("".join(template_lines), encoding="utf-8")
+
+
+class BuildPy(setuptools.command.build_py.build_py):
+    def run(self):
+        super().run()
+        if not getattr(self, 'editable_mode', False):
+            update_matplotlibrc(
+                Path(self.build_lib, "matplotlib/mpl-data/matplotlibrc"))
+
+
+class Sdist(setuptools.command.sdist.sdist):
+    def make_release_tree(self, base_dir, files):
+        super().make_release_tree(base_dir, files)
+        update_matplotlibrc(
+            Path(base_dir, "lib/matplotlib/mpl-data/matplotlibrc"))
+
+
+package_data = {}  # Will be filled below by the various components.
+
+# If the user just queries for information, don't bother figuring out which
+# packages to build or install.
+if not (any('--' + opt in sys.argv
+            for opt in Distribution.display_option_names + ['help'])
+        or 'clean' in sys.argv):
+    # Go through all of the packages and figure out which ones we are
+    # going to build/install.
+    print_raw()
+    print_raw("Edit mplsetup.cfg to change the build options; "
+              "suppress output with --quiet.")
+    print_raw()
+    print_raw("BUILDING MATPLOTLIB")
+
+    good_packages = []
+    for package in mpl_packages:
+        try:
+            message = package.check()
+        except setupext.Skipped as e:
+            print_status(package.name, "no  [{e}]".format(e=e))
+            continue
+        if message is not None:
+            print_status(package.name,
+                         "yes [{message}]".format(message=message))
+        good_packages.append(package)
+
+    print_raw()
+
+    # Now collect all of the information we need to build all of the packages.
+    for package in good_packages:
+        # Extension modules only get added in build_ext, as numpy will have
+        # been installed (as setup_requires) at that point.
+        data = package.get_package_data()
+        for key, val in data.items():
+            package_data.setdefault(key, [])
+            package_data[key] = list(set(val + package_data[key]))
+
+setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
+    name="matplotlib",
+    description="Python plotting package",
+    author="John D. Hunter, Michael Droettboom",
+    author_email="matplotlib-users@python.org",
+    url="https://matplotlib.org",
+    download_url="https://matplotlib.org/stable/users/installing/index.html",
+    project_urls={
+        'Documentation': 'https://matplotlib.org',
+        'Source Code': 'https://github.com/matplotlib/matplotlib',
+        'Bug Tracker': 'https://github.com/matplotlib/matplotlib/issues',
+        'Forum': 'https://discourse.matplotlib.org/',
+        'Donate': 'https://numfocus.org/donate-to-matplotlib'
+    },
+    long_description=Path("README.md").read_text(encoding="utf-8"),
+    long_description_content_type="text/markdown",
+    license="PSF",
+    platforms="any",
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Framework :: Matplotlib',
+        'Intended Audience :: Science/Research',
+        'Intended Audience :: Education',
+        'License :: OSI Approved :: Python Software Foundation License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Topic :: Scientific/Engineering :: Visualization',
+    ],
+
+    package_dir={"": "lib"},
+    packages=find_packages("lib"),
+    namespace_packages=["mpl_toolkits"],
+    py_modules=["pylab"],
+    # Dummy extension to trigger build_ext, which will swap it out with
+    # real extensions that can depend on numpy for the build.
+    ext_modules=[Extension("", [])],
+    package_data=package_data,
+
+    python_requires='>={}'.format('.'.join(str(n) for n in py_min_version)),
+    # When updating the list of dependencies, add an api_changes/development
+    # entry and also update the following places:
+    # - lib/matplotlib/__init__.py (matplotlib._check_versions())
+    # - requirements/testing/minver.txt
+    # - doc/devel/dependencies.rst
+    # - .github/workflows/tests.yml
+    # - environment.yml
+    install_requires=[
+        "contourpy>=1.0.1",
+        "cycler>=0.10",
+        "fonttools>=4.22.0",
+        "kiwisolver>=1.0.1",
+        "numpy>=1.20",
+        "packaging>=20.0",
+        "pillow>=6.2.0",
+        "pyparsing>=2.3.1",
+        "python-dateutil>=2.7",
+    ] + (
+        # Installing from a git checkout that is not producing a wheel.
+        ["setuptools_scm>=7"] if (
+            Path(__file__).with_name(".git").exists() and
+            os.environ.get("CIBUILDWHEEL", "0") != "1"
+        ) else []
+    ),
+    extras_require={
+        ':python_version<"3.10"': [
+            "importlib-resources>=3.2.0",
+        ],
+    },
+    use_scm_version={
+        "version_scheme": "release-branch-semver",
+        "local_scheme": "node-and-date",
+        "write_to": "lib/matplotlib/_version.py",
+        "parentdir_prefix_version": "matplotlib-",
+        "fallback_version": "0.0+UNKNOWN",
+    },
+    cmdclass={
+        "build_ext": BuildExtraLibraries,
+        "build_py": BuildPy,
+        "sdist": Sdist,
+    },
+)
+=== END FILE: setup.py ===
+
+=== FILE: tutorials/introductory/customizing.py ===
+"""
+.. redirect-from:: /users/customizing
+
+=====================================================
+Customizing Matplotlib with style sheets and rcParams
+=====================================================
+
+Tips for customizing the properties and default styles of Matplotlib.
+
+There are three ways to customize Matplotlib:
+
+1. :ref:`Setting rcParams at runtime<customizing-with-dynamic-rc-settings>`.
+2. :ref:`Using style sheets<customizing-with-style-sheets>`.
+3. :ref:`Changing your matplotlibrc file<customizing-with-matplotlibrc-files>`.
+
+Setting rcParams at runtime takes precedence over style sheets, style
+sheets take precedence over :file:`matplotlibrc` files.
+
+.. _customizing-with-dynamic-rc-settings:
+
+Runtime rc settings
+===================
+
+You can dynamically change the default rc (runtime configuration)
+settings in a python script or interactively from the python shell. All
+rc settings are stored in a dictionary-like variable called
+:data:`matplotlib.rcParams`, which is global to the matplotlib package.
+See `matplotlib.rcParams` for a full list of configurable rcParams.
+rcParams can be modified directly, for example:
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+from cycler import cycler
+mpl.rcParams['lines.linewidth'] = 2
+mpl.rcParams['lines.linestyle'] = '--'
+data = np.random.randn(50)
+plt.plot(data)
+
+###############################################################################
+# Note, that in order to change the usual `~.Axes.plot` color you have to
+# change the *prop_cycle* property of *axes*:
+
+mpl.rcParams['axes.prop_cycle'] = cycler(color=['r', 'g', 'b', 'y'])
+plt.plot(data)  # first color is red
+
+###############################################################################
+# Matplotlib also provides a couple of convenience functions for modifying rc
+# settings. `matplotlib.rc` can be used to modify multiple
+# settings in a single group at once, using keyword arguments:
+
+mpl.rc('lines', linewidth=4, linestyle='-.')
+plt.plot(data)
+
+###############################################################################
+# Temporary rc settings
+# ---------------------
+#
+# The :data:`matplotlib.rcParams` object can also be changed temporarily using
+# the `matplotlib.rc_context` context manager:
+
+with mpl.rc_context({'lines.linewidth': 2, 'lines.linestyle': ':'}):
+    plt.plot(data)
+
+###############################################################################
+# `matplotlib.rc_context` can also be used as a decorator to modify the
+# defaults within a function:
+
+
+@mpl.rc_context({'lines.linewidth': 3, 'lines.linestyle': '-'})
+def plotting_function():
+    plt.plot(data)
+
+plotting_function()
+
+###############################################################################
+# `matplotlib.rcdefaults` will restore the standard Matplotlib
+# default settings.
+#
+# There is some degree of validation when setting the values of rcParams, see
+# :mod:`matplotlib.rcsetup` for details.
+
+###############################################################################
+# .. _customizing-with-style-sheets:
+#
+# Using style sheets
+# ==================
+#
+# Another way to change the visual appearance of plots is to set the
+# rcParams in a so-called style sheet and import that style sheet with
+# `matplotlib.style.use`. In this way you can switch easily between
+# different styles by simply changing the imported style sheet. A style
+# sheets looks the same as a :ref:`matplotlibrc<matplotlibrc-sample>`
+# file, but in a style sheet you can only set rcParams that are related
+# to the actual style of a plot. Other rcParams, like *backend*, will be
+# ignored. :file:`matplotlibrc` files support all rcParams. The
+# rationale behind this is to make style sheets portable between
+# different machines without having to worry about dependencies which
+# might or might not be installed on another machine. For a full list of
+# rcParams see `matplotlib.rcParams`. For a list of rcParams that are
+# ignored in style sheets see `matplotlib.style.use`.
+#
+# There are a number of pre-defined styles :doc:`provided by Matplotlib
+# </gallery/style_sheets/style_sheets_reference>`. For
+# example, there's a pre-defined style called "ggplot", which emulates the
+# aesthetics of ggplot_ (a popular plotting package for R_). To use this
+# style, add:
+
+plt.style.use('ggplot')
+
+###############################################################################
+# To list all available styles, use:
+
+print(plt.style.available)
+
+###############################################################################
+# Defining your own style
+# -----------------------
+#
+# You can create custom styles and use them by calling `.style.use` with
+# the path or URL to the style sheet.
+#
+# For example, you might want to create
+# ``./images/presentation.mplstyle`` with the following::
+#
+#    axes.titlesize : 24
+#    axes.labelsize : 20
+#    lines.linewidth : 3
+#    lines.markersize : 10
+#    xtick.labelsize : 16
+#    ytick.labelsize : 16
+#
+# Then, when you want to adapt a plot designed for a paper to one that looks
+# good in a presentation, you can just add::
+#
+#    >>> import matplotlib.pyplot as plt
+#    >>> plt.style.use('./images/presentation.mplstyle')
+#
+#
+# Distributing styles
+# -------------------
+#
+# You can include style sheets into standard importable Python packages (which
+# can be e.g. distributed on PyPI).  If your package is importable as
+# ``import mypackage``, with a ``mypackage/__init__.py`` module, and you add
+# a ``mypackage/presentation.mplstyle`` style sheet, then it can be used as
+# ``plt.style.use("mypackage.presentation")``.  Subpackages (e.g.
+# ``dotted.package.name``) are also supported.
+#
+# Alternatively, you can make your style known to Matplotlib by placing
+# your ``<style-name>.mplstyle`` file into ``mpl_configdir/stylelib``.  You
+# can then load your custom style sheet with a call to
+# ``style.use(<style-name>)``.  By default ``mpl_configdir`` should be
+# ``~/.config/matplotlib``, but you can check where yours is with
+# `matplotlib.get_configdir()`; you may need to create this directory. You
+# also can change the directory where Matplotlib looks for the stylelib/
+# folder by setting the :envvar:`MPLCONFIGDIR` environment variable, see
+# :ref:`locating-matplotlib-config-dir`.
+#
+# Note that a custom style sheet in ``mpl_configdir/stylelib`` will override a
+# style sheet defined by Matplotlib if the styles have the same name.
+#
+# Once your ``<style-name>.mplstyle`` file is in the appropriate
+# ``mpl_configdir`` you can specify your style with::
+#
+#    >>> import matplotlib.pyplot as plt
+#    >>> plt.style.use(<style-name>)
+#
+#
+# Composing styles
+# ----------------
+#
+# Style sheets are designed to be composed together. So you can have a style
+# sheet that customizes colors and a separate style sheet that alters element
+# sizes for presentations. These styles can easily be combined by passing
+# a list of styles::
+#
+#    >>> import matplotlib.pyplot as plt
+#    >>> plt.style.use(['dark_background', 'presentation'])
+#
+# Note that styles further to the right will overwrite values that are already
+# defined by styles on the left.
+#
+#
+# Temporary styling
+# -----------------
+#
+# If you only want to use a style for a specific block of code but don't want
+# to change the global styling, the style package provides a context manager
+# for limiting your changes to a specific scope. To isolate your styling
+# changes, you can write something like the following:
+
+with plt.style.context('dark_background'):
+    plt.plot(np.sin(np.linspace(0, 2 * np.pi)), 'r-o')
+plt.show()
+
+###############################################################################
+# .. _customizing-with-matplotlibrc-files:
+#
+# The :file:`matplotlibrc` file
+# =============================
+#
+# Matplotlib uses :file:`matplotlibrc` configuration files to customize all
+# kinds of properties, which we call 'rc settings' or 'rc parameters'. You can
+# control the defaults of almost every property in Matplotlib: figure size and
+# DPI, line width, color and style, axes, axis and grid properties, text and
+# font properties and so on. The :file:`matplotlibrc` is read at startup to
+# configure Matplotlib. Matplotlib looks for :file:`matplotlibrc` in four
+# locations, in the following order:
+#
+# 1. :file:`matplotlibrc` in the current working directory, usually used for
+#    specific customizations that you do not want to apply elsewhere.
+#
+# 2. :file:`$MATPLOTLIBRC` if it is a file, else
+#    :file:`$MATPLOTLIBRC/matplotlibrc`.
+#
+# 3. It next looks in a user-specific place, depending on your platform:
+#
+#    - On Linux and FreeBSD, it looks in
+#      :file:`.config/matplotlib/matplotlibrc` (or
+#      :file:`$XDG_CONFIG_HOME/matplotlib/matplotlibrc`) if you've customized
+#      your environment.
+#
+#    - On other platforms, it looks in :file:`.matplotlib/matplotlibrc`.
+#
+#    See :ref:`locating-matplotlib-config-dir`.
+#
+# 4. :file:`{INSTALL}/matplotlib/mpl-data/matplotlibrc`, where
+#    :file:`{INSTALL}` is something like
+#    :file:`/usr/lib/python3.9/site-packages` on Linux, and maybe
+#    :file:`C:\\Python39\\Lib\\site-packages` on Windows. Every time you
+#    install matplotlib, this file will be overwritten, so if you want
+#    your customizations to be saved, please move this file to your
+#    user-specific matplotlib directory.
+#
+# Once a :file:`matplotlibrc` file has been found, it will *not* search
+# any of the other paths. When a
+# :ref:`style sheet<customizing-with-style-sheets>` is given with
+# ``style.use('<path>/<style-name>.mplstyle')``, settings specified in
+# the style sheet take precedence over settings in the
+# :file:`matplotlibrc` file.
+#
+# To display where the currently active :file:`matplotlibrc` file was
+# loaded from, one can do the following::
+#
+#   >>> import matplotlib
+#   >>> matplotlib.matplotlib_fname()
+#   '/home/foo/.config/matplotlib/matplotlibrc'
+#
+# See below for a sample :ref:`matplotlibrc file<matplotlibrc-sample>`
+# and see `matplotlib.rcParams` for a full list of configurable rcParams.
+#
+# .. _matplotlibrc-sample:
+#
+# The default :file:`matplotlibrc` file
+# -------------------------------------
+#
+# .. literalinclude:: ../../../lib/matplotlib/mpl-data/matplotlibrc
+#
+#
+# .. _ggplot: https://ggplot2.tidyverse.org/
+# .. _R: https://www.r-project.org/
+=== END FILE: tutorials/introductory/customizing.py ===
+
+=== FILE: tutorials/text/pgf.py ===
+r"""
+************************************************************
+Text rendering with XeLaTeX/LuaLaTeX via the ``pgf`` backend
+************************************************************
+
+Using the ``pgf`` backend, Matplotlib can export figures as pgf drawing
+commands that can be processed with pdflatex, xelatex or lualatex. XeLaTeX and
+LuaLaTeX have full Unicode support and can use any font that is installed in
+the operating system, making use of advanced typographic features of OpenType,
+AAT and Graphite. Pgf pictures created by ``plt.savefig('figure.pgf')``
+can be embedded as raw commands in LaTeX documents. Figures can also be
+directly compiled and saved to PDF with ``plt.savefig('figure.pdf')`` by
+switching the backend ::
+
+    matplotlib.use('pgf')
+
+or by explicitly requesting the use of the ``pgf`` backend ::
+
+    plt.savefig('figure.pdf', backend='pgf')
+
+or by registering it for handling pdf output ::
+
+    from matplotlib.backends.backend_pgf import FigureCanvasPgf
+    matplotlib.backend_bases.register_backend('pdf', FigureCanvasPgf)
+
+The last method allows you to keep using regular interactive backends and to
+save xelatex, lualatex or pdflatex compiled PDF files from the graphical user
+interface.
+
+Matplotlib's pgf support requires a recent LaTeX_ installation that includes
+the TikZ/PGF packages (such as TeXLive_), preferably with XeLaTeX or LuaLaTeX
+installed. If either pdftocairo or ghostscript is present on your system,
+figures can optionally be saved to PNG images as well. The executables
+for all applications must be located on your :envvar:`PATH`.
+
+`.rcParams` that control the behavior of the pgf backend:
+
+    =================  =====================================================
+    Parameter          Documentation
+    =================  =====================================================
+    pgf.preamble       Lines to be included in the LaTeX preamble
+    pgf.rcfonts        Setup fonts from rc params using the fontspec package
+    pgf.texsystem      Either "xelatex" (default), "lualatex" or "pdflatex"
+    =================  =====================================================
+
+.. note::
+
+   TeX defines a set of special characters, such as::
+
+     # $ % & ~ _ ^ \ { }
+
+   Generally, these characters must be escaped correctly. For convenience,
+   some characters (_, ^, %) are automatically escaped outside of math
+   environments. Other characters are not escaped as they are commonly needed
+   in actual TeX expressions. However, one can configure TeX to treat them as
+   "normal" characters (known as "catcode 12" to TeX) via a custom preamble,
+   such as::
+
+     plt.rcParams["pgf.preamble"] = (
+         r"\AtBeginDocument{\catcode`\&=12\catcode`\#=12}")
+
+.. _pgf-rcfonts:
+
+
+Multi-Page PDF Files
+====================
+
+The pgf backend also supports multipage pdf files using
+`~.backend_pgf.PdfPages`
+
+.. code-block:: python
+
+    from matplotlib.backends.backend_pgf import PdfPages
+    import matplotlib.pyplot as plt
+
+    with PdfPages('multipage.pdf', metadata={'author': 'Me'}) as pdf:
+
+        fig1, ax1 = plt.subplots()
+        ax1.plot([1, 5, 3])
+        pdf.savefig(fig1)
+
+        fig2, ax2 = plt.subplots()
+        ax2.plot([1, 5, 3])
+        pdf.savefig(fig2)
+
+
+Font specification
+==================
+
+The fonts used for obtaining the size of text elements or when compiling
+figures to PDF are usually defined in the `.rcParams`. You can also use the
+LaTeX default Computer Modern fonts by clearing the lists for :rc:`font.serif`,
+:rc:`font.sans-serif` or :rc:`font.monospace`. Please note that the glyph
+coverage of these fonts is very limited. If you want to keep the Computer
+Modern font face but require extended Unicode support, consider installing the
+`Computer Modern Unicode`__ fonts *CMU Serif*, *CMU Sans Serif*, etc.
+
+__ https://sourceforge.net/projects/cm-unicode/
+
+When saving to ``.pgf``, the font configuration Matplotlib used for the
+layout of the figure is included in the header of the text file.
+
+.. literalinclude:: ../../gallery/userdemo/pgf_fonts.py
+   :end-before: fig.savefig
+
+
+.. _pgf-preamble:
+
+Custom preamble
+===============
+
+Full customization is possible by adding your own commands to the preamble.
+Use :rc:`pgf.preamble` if you want to configure the math fonts,
+using ``unicode-math`` for example, or for loading additional packages. Also,
+if you want to do the font configuration yourself instead of using the fonts
+specified in the rc parameters, make sure to disable :rc:`pgf.rcfonts`.
+
+.. only:: html
+
+    .. literalinclude:: ../../gallery/userdemo/pgf_preamble_sgskip.py
+        :end-before: fig.savefig
+
+.. only:: latex
+
+    .. literalinclude:: ../../gallery/userdemo/pgf_preamble_sgskip.py
+        :end-before: import matplotlib.pyplot as plt
+
+
+.. _pgf-texsystem:
+
+Choosing the TeX system
+=======================
+
+The TeX system to be used by Matplotlib is chosen by :rc:`pgf.texsystem`.
+Possible values are ``'xelatex'`` (default), ``'lualatex'`` and ``'pdflatex'``.
+Please note that when selecting pdflatex, the fonts and Unicode handling must
+be configured in the preamble.
+
+.. literalinclude:: ../../gallery/userdemo/pgf_texsystem.py
+   :end-before: fig.savefig
+
+
+.. _pgf-troubleshooting:
+
+Troubleshooting
+===============
+
+* Please note that the TeX packages found in some Linux distributions and
+  MiKTeX installations are dramatically outdated. Make sure to update your
+  package catalog and upgrade or install a recent TeX distribution.
+
+* On Windows, the :envvar:`PATH` environment variable may need to be modified
+  to include the directories containing the latex, dvipng and ghostscript
+  executables. See :ref:`environment-variables` and
+  :ref:`setting-windows-environment-variables` for details.
+
+* Sometimes the font rendering in figures that are saved to png images is
+  very bad. This happens when the pdftocairo tool is not available and
+  ghostscript is used for the pdf to png conversion.
+
+* Make sure what you are trying to do is possible in a LaTeX document,
+  that your LaTeX syntax is valid and that you are using raw strings
+  if necessary to avoid unintended escape sequences.
+
+* :rc:`pgf.preamble` provides lots of flexibility, and lots of
+  ways to cause problems. When experiencing problems, try to minimalize or
+  disable the custom preamble.
+
+* Configuring an ``unicode-math`` environment can be a bit tricky. The
+  TeXLive distribution for example provides a set of math fonts which are
+  usually not installed system-wide. XeTeX, unlike LuaLatex, cannot find
+  these fonts by their name, which is why you might have to specify
+  ``\setmathfont{xits-math.otf}`` instead of ``\setmathfont{XITS Math}`` or
+  alternatively make the fonts available to your OS. See this
+  `tex.stackexchange.com question`__ for more details.
+
+  __ https://tex.stackexchange.com/q/43642/
+
+* If the font configuration used by Matplotlib differs from the font setting
+  in yout LaTeX document, the alignment of text elements in imported figures
+  may be off. Check the header of your ``.pgf`` file if you are unsure about
+  the fonts Matplotlib used for the layout.
+
+* Vector images and hence ``.pgf`` files can become bloated if there are a lot
+  of objects in the graph. This can be the case for image processing or very
+  big scatter graphs.  In an extreme case this can cause TeX to run out of
+  memory: "TeX capacity exceeded, sorry"  You can configure latex to increase
+  the amount of memory available to generate the ``.pdf`` image as discussed on
+  `tex.stackexchange.com <https://tex.stackexchange.com/q/7953/>`_.
+  Another way would be to "rasterize" parts of the graph causing problems
+  using either the ``rasterized=True`` keyword, or ``.set_rasterized(True)`` as
+  per :doc:`this example </gallery/misc/rasterization_demo>`.
+
+* Various math fonts are compiled and rendered only if corresponding font
+  packages are loaded. Specifically, when using ``\mathbf{}`` on Greek letters,
+  the default computer modern font may not contain them, in which case the
+  letter is not rendered. In such scenarios, the ``lmodern`` package should be
+  loaded.
+
+* If you still need help, please see :ref:`reporting-problems`
+
+.. _LaTeX: http://www.tug.org
+.. _TeXLive: http://www.tug.org/texlive/
+"""
+=== END FILE: tutorials/text/pgf.py ===
+
+=== FILE: lib/matplotlib/backends/backend_wxcairo.py ===
+import wx.lib.wxcairo as wxcairo
+
+from .. import _api
+from .backend_cairo import cairo, FigureCanvasCairo
+from .backend_wx import _BackendWx, _FigureCanvasWxBase, FigureFrameWx
+from .backend_wx import (  # noqa: F401 # pylint: disable=W0611
+    NavigationToolbar2Wx as NavigationToolbar2WxCairo)
+
+
+@_api.deprecated(
+    "3.6", alternative="FigureFrameWx(..., canvas_class=FigureCanvasWxCairo)")
+class FigureFrameWxCairo(FigureFrameWx):
+    def get_canvas(self, fig):
+        return FigureCanvasWxCairo(self, -1, fig)
+
+
+class FigureCanvasWxCairo(FigureCanvasCairo, _FigureCanvasWxBase):
+    """
+    The FigureCanvas contains the figure and does event handling.
+
+    In the wxPython backend, it is derived from wxPanel, and (usually) lives
+    inside a frame instantiated by a FigureManagerWx. The parent window
+    probably implements a wxSizer to control the displayed control size - but
+    we give a hint as to our preferred minimum size.
+    """
+
+    def draw(self, drawDC=None):
+        size = self.figure.bbox.size.astype(int)
+        surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, *size)
+        self._renderer.set_context(cairo.Context(surface))
+        self._renderer.dpi = self.figure.dpi
+        self.figure.draw(self._renderer)
+        self.bitmap = wxcairo.BitmapFromImageSurface(surface)
+        self._isDrawn = True
+        self.gui_repaint(drawDC=drawDC)
+
+
+@_BackendWx.export
+class _BackendWxCairo(_BackendWx):
+    FigureCanvas = FigureCanvasWxCairo
+=== END FILE: lib/matplotlib/backends/backend_wxcairo.py ===
+
+## Instructions
+Reply with exactly one fenced ```diff block containing a single unified diff that fixes the issue.
+Use git-style paths relative to the repository root, prefixed a/ and b/
+(for example: --- a/pkg/module.py and +++ b/pkg/module.py).
+Copy unchanged context lines exactly as they appear in the files above.
+Do not modify or add test files. Do not include any text outside the diff block.

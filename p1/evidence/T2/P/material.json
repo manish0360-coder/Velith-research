@@ -1,0 +1,1202 @@
+{
+  "base_commit": "a3011dfd1aaa2487cce8aa7369475533133ef777",
+  "fit_trace": [
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/colors.py",
+      "score": 92.0105510139425,
+      "tokens_if_included": 29222
+    },
+    {
+      "decision": "included",
+      "path": "lib/matplotlib/_api/deprecation.py",
+      "score": 74.71946793900057,
+      "tokens_if_included": 5896
+    },
+    {
+      "decision": "included",
+      "path": "setup.py",
+      "score": 73.12088662958087,
+      "tokens_if_included": 9720
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/__init__.py",
+      "score": 71.99921536058969,
+      "tokens_if_included": 24299
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "setupext.py",
+      "score": 70.80237824221699,
+      "tokens_if_included": 18643
+    },
+    {
+      "decision": "included",
+      "path": "tutorials/introductory/customizing.py",
+      "score": 70.49086415609776,
+      "tokens_if_included": 12484
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/image.py",
+      "score": 68.46555024779424,
+      "tokens_if_included": 33231
+    },
+    {
+      "decision": "included",
+      "path": "tutorials/text/pgf.py",
+      "score": 63.63950694364824,
+      "tokens_if_included": 14642
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/path.py",
+      "score": 62.53364978548437,
+      "tokens_if_included": 25948
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "doc/conf.py",
+      "score": 62.210362989248914,
+      "tokens_if_included": 21539
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/pyplot.py",
+      "score": 59.18003423428508,
+      "tokens_if_included": 49198
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/mlab.py",
+      "score": 58.67005074294933,
+      "tokens_if_included": 24359
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/dates.py",
+      "score": 57.16692446280264,
+      "tokens_if_included": 35408
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/cbook.py",
+      "score": 56.27986211411563,
+      "tokens_if_included": 36674
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_pdf.py",
+      "score": 55.894829537032194,
+      "tokens_if_included": 44900
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backend_bases.py",
+      "score": 55.06704095844311,
+      "tokens_if_included": 49321
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/introductory/images.py",
+      "score": 54.01458109332188,
+      "tokens_if_included": 17268
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/cm.py",
+      "score": 53.82841574494776,
+      "tokens_if_included": 21597
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/axes/_axes.py",
+      "score": 52.73794450111207,
+      "tokens_if_included": 101743
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/style/core.py",
+      "score": 49.56892108288039,
+      "tokens_if_included": 17370
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/figure.py",
+      "score": 49.34047171124662,
+      "tokens_if_included": 49830
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/font_manager.py",
+      "score": 49.12835455466853,
+      "tokens_if_included": 29857
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/dviread.py",
+      "score": 48.7399062252761,
+      "tokens_if_included": 27432
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/mpl_toolkits/mplot3d/axes3d.py",
+      "score": 48.585784768904794,
+      "tokens_if_included": 51484
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/ticker.py",
+      "score": 47.45366520296743,
+      "tokens_if_included": 44882
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/quiver.py",
+      "score": 47.31180405767473,
+      "tokens_if_included": 27899
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_wx.py",
+      "score": 47.18849654913604,
+      "tokens_if_included": 30265
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/_backend_tk.py",
+      "score": 47.14066642690545,
+      "tokens_if_included": 26591
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/contour.py",
+      "score": 46.76342291490564,
+      "tokens_if_included": 34198
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/animation.py",
+      "score": 45.440552177483994,
+      "tokens_if_included": 32831
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/_api/__init__.py",
+      "score": 45.43606039855046,
+      "tokens_if_included": 18363
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/streamplot.py",
+      "score": 45.29839162457918,
+      "tokens_if_included": 21928
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/artist.py",
+      "score": 45.294646578049544,
+      "tokens_if_included": 31070
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/boilerplate.py",
+      "score": 44.04459382304128,
+      "tokens_if_included": 18239
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_template.py",
+      "score": 43.68769285777982,
+      "tokens_if_included": 16656
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/_type1font.py",
+      "score": 43.533258757423205,
+      "tokens_if_included": 22829
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_webagg_core.py",
+      "score": 43.33274074578404,
+      "tokens_if_included": 19816
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/category.py",
+      "score": 42.87665350287769,
+      "tokens_if_included": 16479
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/transforms.py",
+      "score": 42.696525525573044,
+      "tokens_if_included": 43053
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/colors/colormap-manipulation.py",
+      "score": 42.669147286666316,
+      "tokens_if_included": 18467
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/texmanager.py",
+      "score": 42.626467579512365,
+      "tokens_if_included": 18996
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_agg.py",
+      "score": 42.54951115408593,
+      "tokens_if_included": 20626
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_webagg.py",
+      "score": 42.398396510741556,
+      "tokens_if_included": 17750
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/sphinxext/plot_directive.py",
+      "score": 42.21268455895979,
+      "tokens_if_included": 22540
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/images_contours_and_fields/image_annotated_heatmap.py",
+      "score": 42.07392778181563,
+      "tokens_if_included": 18128
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/lines.py",
+      "score": 42.04860561651776,
+      "tokens_if_included": 29739
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_pgf.py",
+      "score": 42.008025981423465,
+      "tokens_if_included": 26609
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/collections.py",
+      "score": 41.21352996504273,
+      "tokens_if_included": 36026
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/gridspec.py",
+      "score": 41.16221556626669,
+      "tokens_if_included": 22300
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/tri/_triinterpolate.py",
+      "score": 40.87171235011094,
+      "tokens_if_included": 36303
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_ps.py",
+      "score": 40.43360363155431,
+      "tokens_if_included": 29826
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/mpl_toolkits/mplot3d/art3d.py",
+      "score": 40.02153094734145,
+      "tokens_if_included": 27246
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/rcsetup.py",
+      "score": 39.55030320520364,
+      "tokens_if_included": 28945
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/colors/colormapnorms.py",
+      "score": 39.325184397022255,
+      "tokens_if_included": 19040
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/introductory/quick_start.py",
+      "score": 38.65858757677073,
+      "tokens_if_included": 21710
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/_afm.py",
+      "score": 38.58997294202091,
+      "tokens_if_included": 19824
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/_mathtext.py",
+      "score": 38.58322023926236,
+      "tokens_if_included": 42152
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/qt_compat.py",
+      "score": 38.287533994083674,
+      "tokens_if_included": 17430
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/images_contours_and_fields/image_demo.py",
+      "score": 38.2026662050094,
+      "tokens_if_included": 16609
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/tri/_triangulation.py",
+      "score": 38.09229013411274,
+      "tokens_if_included": 17195
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/advanced/transforms_tutorial.py",
+      "score": 37.5213274179711,
+      "tokens_if_included": 22047
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/units/basic_units.py",
+      "score": 37.35023522008818,
+      "tokens_if_included": 17956
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/specialty_plots/leftventricle_bullseye.py",
+      "score": 37.26786032736497,
+      "tokens_if_included": 17384
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/introductory/pyplot.py",
+      "score": 37.11032615590483,
+      "tokens_if_included": 19910
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/mpl_toolkits/mplot3d/axis3d.py",
+      "score": 37.079125420277514,
+      "tokens_if_included": 21957
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/mpl_toolkits/axisartist/angle_helper.py",
+      "score": 36.92294058101323,
+      "tokens_if_included": 19307
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/axes/_base.py",
+      "score": 36.5882006800605,
+      "tokens_if_included": 62129
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/memleak.py",
+      "score": 36.23119849181996,
+      "tokens_if_included": 16282
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/text.py",
+      "score": 35.635255290611916,
+      "tokens_if_included": 33562
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_svg.py",
+      "score": 35.443759174529475,
+      "tokens_if_included": 29121
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/tri/_trirefine.py",
+      "score": 35.384282384012664,
+      "tokens_if_included": 18329
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/make_icons.py",
+      "score": 35.31414617031863,
+      "tokens_if_included": 15882
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/colorbar.py",
+      "score": 35.27432246953292,
+      "tokens_if_included": 31886
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/patches.py",
+      "score": 35.26985770837739,
+      "tokens_if_included": 58717
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/statistics/boxplot_demo.py",
+      "score": 34.892326120946656,
+      "tokens_if_included": 17595
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/units.py",
+      "score": 34.8333758942644,
+      "tokens_if_included": 16247
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/statistics/time_series_histogram.py",
+      "score": 34.73447053478633,
+      "tokens_if_included": 16004
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/scale.py",
+      "score": 34.71940678066585,
+      "tokens_if_included": 21772
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/spines.py",
+      "score": 34.627402197179514,
+      "tokens_if_included": 20505
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/subplots_axes_and_figures/figure_size_units.py",
+      "score": 34.57617890810729,
+      "tokens_if_included": 15462
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/text/usetex.py",
+      "score": 34.47256855922826,
+      "tokens_if_included": 16610
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/subplots_axes_and_figures/mosaic.py",
+      "score": 34.163853689918014,
+      "tokens_if_included": 18027
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/toolkits/axisartist.py",
+      "score": 34.134079724064605,
+      "tokens_if_included": 20303
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/lines_bars_and_markers/markevery_demo.py",
+      "score": 33.896326476158855,
+      "tokens_if_included": 15740
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/images_contours_and_fields/contourf_demo.py",
+      "score": 33.773613921831036,
+      "tokens_if_included": 16061
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/embed_js.py",
+      "score": 33.69822424607174,
+      "tokens_if_included": 15717
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/triage_tests.py",
+      "score": 33.5488477430751,
+      "tokens_if_included": 18362
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/intermediate/artists.py",
+      "score": 33.48058326390443,
+      "tokens_if_included": 23632
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/visualize_tests.py",
+      "score": 33.293304362655206,
+      "tokens_if_included": 15928
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/colors/colormaps.py",
+      "score": 32.66962040858533,
+      "tokens_if_included": 20206
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/sankey.py",
+      "score": 32.56829918314941,
+      "tokens_if_included": 24002
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/subset.py",
+      "score": 32.545425035992885,
+      "tokens_if_included": 21282
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/tri/_trifinder.py",
+      "score": 32.47442151186287,
+      "tokens_if_included": 15564
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/widgets.py",
+      "score": 32.371904922428456,
+      "tokens_if_included": 54973
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/intermediate/imshow_extent.py",
+      "score": 32.13724864015521,
+      "tokens_if_included": 17771
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/showcase/mandelbrot.py",
+      "score": 31.96813256259393,
+      "tokens_if_included": 15623
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/colors/colors.py",
+      "score": 31.772536047096903,
+      "tokens_if_included": 17548
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_qt.py",
+      "score": 31.71261622494235,
+      "tokens_if_included": 25757
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/text/annotations.py",
+      "score": 31.63100814269266,
+      "tokens_if_included": 22854
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/intermediate/constrainedlayout_guide.py",
+      "score": 31.575547272224565,
+      "tokens_if_included": 22667
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/backends/backend_cairo.py",
+      "score": 31.50715432863426,
+      "tokens_if_included": 20236
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/markers.py",
+      "score": 31.491101645248147,
+      "tokens_if_included": 25975
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/lines_bars_and_markers/fill_between_demo.py",
+      "score": 31.23587520608609,
+      "tokens_if_included": 16319
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/statistics/barchart_demo.py",
+      "score": 31.13417261294752,
+      "tokens_if_included": 16029
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/table.py",
+      "score": 30.93401801047494,
+      "tokens_if_included": 22105
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tools/github_stats.py",
+      "score": 30.89395129656338,
+      "tokens_if_included": 17160
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "tutorials/text/text_props.py",
+      "score": 30.706135417522496,
+      "tokens_if_included": 17666
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "lib/matplotlib/axis.py",
+      "score": 30.654997100374388,
+      "tokens_if_included": 42405
+    },
+    {
+      "decision": "included",
+      "path": "lib/matplotlib/backends/backend_wxcairo.py",
+      "score": 30.473269372022592,
+      "tokens_if_included": 15129
+    }
+  ],
+  "included": [
+    {
+      "bytes": 19978,
+      "oid": "7c304173b2e513d6d356d8acb88e1be9dfb75683",
+      "path": "lib/matplotlib/_api/deprecation.py"
+    },
+    {
+      "bytes": 13662,
+      "oid": "afef9262c808c565e1bfee3f1af1f11b1e86c8ca",
+      "path": "setup.py"
+    },
+    {
+      "bytes": 10295,
+      "oid": "10fc21d2187b0d6474e2fe8129d3af52bffa4072",
+      "path": "tutorials/introductory/customizing.py"
+    },
+    {
+      "bytes": 8215,
+      "oid": "5cbf4cfa8b98da0d2f13f9a2a0195016ca923a34",
+      "path": "tutorials/text/pgf.py"
+    },
+    {
+      "bytes": 1468,
+      "oid": "0416a187d0915ac6f35d1dcd9e4a89b820cee147",
+      "path": "lib/matplotlib/backends/backend_wxcairo.py"
+    }
+  ],
+  "instance_id": "matplotlib__matplotlib-24970",
+  "pool": {
+    "counts": {
+      "excluded_non_utf8": 0,
+      "excluded_test": 124,
+      "pool": 778,
+      "py": 902,
+      "tracked": 4464
+    },
+    "non_utf8": []
+  },
+  "ranked_count": 774,
+  "ranked_top100": [
+    {
+      "oid": "2d3072da04de283cce9641f6fba417af08306233",
+      "path": "lib/matplotlib/colors.py",
+      "score": 92.0105510139425
+    },
+    {
+      "oid": "7c304173b2e513d6d356d8acb88e1be9dfb75683",
+      "path": "lib/matplotlib/_api/deprecation.py",
+      "score": 74.71946793900057
+    },
+    {
+      "oid": "afef9262c808c565e1bfee3f1af1f11b1e86c8ca",
+      "path": "setup.py",
+      "score": 73.12088662958087
+    },
+    {
+      "oid": "b279c465163ef50ae72ff1ae01c47a53b56e73cc",
+      "path": "lib/matplotlib/__init__.py",
+      "score": 71.99921536058969
+    },
+    {
+      "oid": "4d41bdd44a89f621d93c8b02c76d6864539784da",
+      "path": "setupext.py",
+      "score": 70.80237824221699
+    },
+    {
+      "oid": "10fc21d2187b0d6474e2fe8129d3af52bffa4072",
+      "path": "tutorials/introductory/customizing.py",
+      "score": 70.49086415609776
+    },
+    {
+      "oid": "ba495f8e3f1a37dbb31302ba0fd45b39bc3c5571",
+      "path": "lib/matplotlib/image.py",
+      "score": 68.46555024779424
+    },
+    {
+      "oid": "5cbf4cfa8b98da0d2f13f9a2a0195016ca923a34",
+      "path": "tutorials/text/pgf.py",
+      "score": 63.63950694364824
+    },
+    {
+      "oid": "75ef7fc4589aa4396c550757818529f271d48869",
+      "path": "lib/matplotlib/path.py",
+      "score": 62.53364978548437
+    },
+    {
+      "oid": "2b5bc9f2bb6fc045391fb42b0caadd7153d0e79a",
+      "path": "doc/conf.py",
+      "score": 62.210362989248914
+    },
+    {
+      "oid": "04b9bdb79ab2d6301e7db0f535893f396c380646",
+      "path": "lib/matplotlib/pyplot.py",
+      "score": 59.18003423428508
+    },
+    {
+      "oid": "5e85a9c1194f0d78d7056e5366518a7df3b30aff",
+      "path": "lib/matplotlib/mlab.py",
+      "score": 58.67005074294933
+    },
+    {
+      "oid": "2c2293e039860cf0402c01cd0299591b40eb07df",
+      "path": "lib/matplotlib/dates.py",
+      "score": 57.16692446280264
+    },
+    {
+      "oid": "49ccabe504ee6da26424a6922ff89f01cf57e66c",
+      "path": "lib/matplotlib/cbook.py",
+      "score": 56.27986211411563
+    },
+    {
+      "oid": "7bd0afc4567b53a3e50b3263e521fa3216c567e3",
+      "path": "lib/matplotlib/backends/backend_pdf.py",
+      "score": 55.894829537032194
+    },
+    {
+      "oid": "c573c369e9e3390dbdf15623a1d4d636bc3af390",
+      "path": "lib/matplotlib/backend_bases.py",
+      "score": 55.06704095844311
+    },
+    {
+      "oid": "7673037c4a9ca1f3fca8497f62eafd4551f2806c",
+      "path": "tutorials/introductory/images.py",
+      "score": 54.01458109332188
+    },
+    {
+      "oid": "d170b7d6b37fac0598e381ee6e6b58d756afc732",
+      "path": "lib/matplotlib/cm.py",
+      "score": 53.82841574494776
+    },
+    {
+      "oid": "a3ec2914a7775d68808fdfc493a5f00b9a3552ef",
+      "path": "lib/matplotlib/axes/_axes.py",
+      "score": 52.73794450111207
+    },
+    {
+      "oid": "6a97d3e3ec77fb8945ddc8e793c958aa26fa062b",
+      "path": "lib/matplotlib/style/core.py",
+      "score": 49.56892108288039
+    },
+    {
+      "oid": "7b273cf9fb81366cb84bee01972b604397f61e7b",
+      "path": "lib/matplotlib/figure.py",
+      "score": 49.34047171124662
+    },
+    {
+      "oid": "8a4b52e96f328881e008016a4bd1f60962cf4fa6",
+      "path": "lib/matplotlib/font_manager.py",
+      "score": 49.12835455466853
+    },
+    {
+      "oid": "cbd3b542a003379152812526160dbbec70b7e3c2",
+      "path": "lib/matplotlib/dviread.py",
+      "score": 48.7399062252761
+    },
+    {
+      "oid": "f9a48136285a383318f6eb72da79ad45194c13dd",
+      "path": "lib/mpl_toolkits/mplot3d/axes3d.py",
+      "score": 48.585784768904794
+    },
+    {
+      "oid": "db593838ea5f961738d430b03d2714d1b1e96b7e",
+      "path": "lib/matplotlib/ticker.py",
+      "score": 47.45366520296743
+    },
+    {
+      "oid": "1d80ed5343acc5d75d9e893fe362d19fefda7339",
+      "path": "lib/matplotlib/quiver.py",
+      "score": 47.31180405767473
+    },
+    {
+      "oid": "8de879a3c02d66e7c8f27c7fb1e624c3605f57fb",
+      "path": "lib/matplotlib/backends/backend_wx.py",
+      "score": 47.18849654913604
+    },
+    {
+      "oid": "bdbbd6ad6c77a5cb6280329789e84719cdcff628",
+      "path": "lib/matplotlib/backends/_backend_tk.py",
+      "score": 47.14066642690545
+    },
+    {
+      "oid": "42096958bb9392f717a9764bb873903b4d97094b",
+      "path": "lib/matplotlib/contour.py",
+      "score": 46.76342291490564
+    },
+    {
+      "oid": "864e180f42bff1029fdaf26496de16aa75a71996",
+      "path": "lib/matplotlib/animation.py",
+      "score": 45.440552177483994
+    },
+    {
+      "oid": "068abb9451815f76384508ba7dd0441f9eec87bd",
+      "path": "lib/matplotlib/_api/__init__.py",
+      "score": 45.43606039855046
+    },
+    {
+      "oid": "293fd679121354e6ea299f1a786c326582c12cd7",
+      "path": "lib/matplotlib/streamplot.py",
+      "score": 45.29839162457918
+    },
+    {
+      "oid": "44c128232235c3ec635439acb024c789b57e5974",
+      "path": "lib/matplotlib/artist.py",
+      "score": 45.294646578049544
+    },
+    {
+      "oid": "0b00d7a12b4a76c15b768198342634ab604b48a5",
+      "path": "tools/boilerplate.py",
+      "score": 44.04459382304128
+    },
+    {
+      "oid": "915cdeb210bb6c8c59af58352eeccf24ef0fc0b6",
+      "path": "lib/matplotlib/backends/backend_template.py",
+      "score": 43.68769285777982
+    },
+    {
+      "oid": "0413cb0016a0973e1564bff299acb6a64a46ea00",
+      "path": "lib/matplotlib/_type1font.py",
+      "score": 43.533258757423205
+    },
+    {
+      "oid": "57cfa311b8f74989ff7e9e15690e2f6739cf2b83",
+      "path": "lib/matplotlib/backends/backend_webagg_core.py",
+      "score": 43.33274074578404
+    },
+    {
+      "oid": "4ac2379ea5f54ea069c5cffdc92ec62e858f1571",
+      "path": "lib/matplotlib/category.py",
+      "score": 42.87665350287769
+    },
+    {
+      "oid": "0ab2b0db3596d8f3d88aefe65e91aa13e7dd20e2",
+      "path": "lib/matplotlib/transforms.py",
+      "score": 42.696525525573044
+    },
+    {
+      "oid": "8b2cbc784bc09d0186e421d253827e0425c14354",
+      "path": "tutorials/colors/colormap-manipulation.py",
+      "score": 42.669147286666316
+    },
+    {
+      "oid": "54d724b328ec6473813bb0b56b1754f17c7d2549",
+      "path": "lib/matplotlib/texmanager.py",
+      "score": 42.626467579512365
+    },
+    {
+      "oid": "0fe0fc40c00bd65f2f266be86f8f23572ea50a02",
+      "path": "lib/matplotlib/backends/backend_agg.py",
+      "score": 42.54951115408593
+    },
+    {
+      "oid": "17c12c0a2f8ec8107e3964c6e80a041437091791",
+      "path": "lib/matplotlib/backends/backend_webagg.py",
+      "score": 42.398396510741556
+    },
+    {
+      "oid": "c942085e215902ea4a550bcc91b5c3f4b1c3dbd6",
+      "path": "lib/matplotlib/sphinxext/plot_directive.py",
+      "score": 42.21268455895979
+    },
+    {
+      "oid": "f873423f50b0ac5949e81af0d822a0b83d364e3e",
+      "path": "examples/images_contours_and_fields/image_annotated_heatmap.py",
+      "score": 42.07392778181563
+    },
+    {
+      "oid": "f843ccd49fee817286242a5e021f15f497530ba1",
+      "path": "lib/matplotlib/lines.py",
+      "score": 42.04860561651776
+    },
+    {
+      "oid": "7312f300a57bd1ac12f4a61afd1c96e726d04c60",
+      "path": "lib/matplotlib/backends/backend_pgf.py",
+      "score": 42.008025981423465
+    },
+    {
+      "oid": "bf88dd2b68a36bd3b6594da2ba9b084513134457",
+      "path": "lib/matplotlib/collections.py",
+      "score": 41.21352996504273
+    },
+    {
+      "oid": "e3abb4425abacbcccddccb2afedb84f3f28e3b9f",
+      "path": "lib/matplotlib/gridspec.py",
+      "score": 41.16221556626669
+    },
+    {
+      "oid": "df276d8c6447a1b07f7a11009638a0919f093b17",
+      "path": "lib/matplotlib/tri/_triinterpolate.py",
+      "score": 40.87171235011094
+    },
+    {
+      "oid": "7c1a45d385cb2ed2cfd1b290aaa9723668f32d5e",
+      "path": "lib/matplotlib/backends/backend_ps.py",
+      "score": 40.43360363155431
+    },
+    {
+      "oid": "14511f4a8c2d85fb858f52e5a78a7b0e7cb1ccae",
+      "path": "lib/mpl_toolkits/mplot3d/art3d.py",
+      "score": 40.02153094734145
+    },
+    {
+      "oid": "22b11f44e8b5a4e7b0e90ea6e22dcaed0bf93b51",
+      "path": "lib/matplotlib/rcsetup.py",
+      "score": 39.55030320520364
+    },
+    {
+      "oid": "e7ca0e61bfc725bba973991c41bb43af6eca2d9a",
+      "path": "tutorials/colors/colormapnorms.py",
+      "score": 39.325184397022255
+    },
+    {
+      "oid": "2caacc5aee2213fd56e4b47db35c21e7309ccd2c",
+      "path": "tutorials/introductory/quick_start.py",
+      "score": 38.65858757677073
+    },
+    {
+      "oid": "3d02d7f9c1d6cdcfc0410ea5e8cba13665163d0e",
+      "path": "lib/matplotlib/_afm.py",
+      "score": 38.58997294202091
+    },
+    {
+      "oid": "3a934c21fd50764515fe4c56810489c50510079b",
+      "path": "lib/matplotlib/_mathtext.py",
+      "score": 38.58322023926236
+    },
+    {
+      "oid": "663671894a74cfa80636707d68594a39ef9ccc0e",
+      "path": "lib/matplotlib/backends/qt_compat.py",
+      "score": 38.287533994083674
+    },
+    {
+      "oid": "7484f858427ca52d10bb3de5c83584a0c264b395",
+      "path": "examples/images_contours_and_fields/image_demo.py",
+      "score": 38.2026662050094
+    },
+    {
+      "oid": "fa03a9c030f7b917882281c1de3fdc18bb5c016b",
+      "path": "lib/matplotlib/tri/_triangulation.py",
+      "score": 38.09229013411274
+    },
+    {
+      "oid": "26b936ef5b956f9d8763e920a7144484298e1f7e",
+      "path": "tutorials/advanced/transforms_tutorial.py",
+      "score": 37.5213274179711
+    },
+    {
+      "oid": "95df58ccf0c4b5278e4ee768285415df35a6a084",
+      "path": "examples/units/basic_units.py",
+      "score": 37.35023522008818
+    },
+    {
+      "oid": "169c08447ad102fd04ff206a18813189705cec49",
+      "path": "examples/specialty_plots/leftventricle_bullseye.py",
+      "score": 37.26786032736497
+    },
+    {
+      "oid": "163c74b5b31ca6fa1dae0a5456384a97aba63e61",
+      "path": "tutorials/introductory/pyplot.py",
+      "score": 37.11032615590483
+    },
+    {
+      "oid": "3d75aabb65eba6a66a11b06c59f428e37b27ee12",
+      "path": "lib/mpl_toolkits/mplot3d/axis3d.py",
+      "score": 37.079125420277514
+    },
+    {
+      "oid": "1786cd70bcdb297de6c17374353cc2a49dfd0ae1",
+      "path": "lib/mpl_toolkits/axisartist/angle_helper.py",
+      "score": 36.92294058101323
+    },
+    {
+      "oid": "d10b4e02005626fc3385c4d4c328486ad09f85a7",
+      "path": "lib/matplotlib/axes/_base.py",
+      "score": 36.5882006800605
+    },
+    {
+      "oid": "9b9da912b7e4c72cfa6577eac9a917f8207bcbfb",
+      "path": "tools/memleak.py",
+      "score": 36.23119849181996
+    },
+    {
+      "oid": "d20e06f204d8b2d3ce5e44337d33dc8ca01c1bee",
+      "path": "lib/matplotlib/text.py",
+      "score": 35.635255290611916
+    },
+    {
+      "oid": "df39e620f888f423cb287b8aa6ec40269fd293a7",
+      "path": "lib/matplotlib/backends/backend_svg.py",
+      "score": 35.443759174529475
+    },
+    {
+      "oid": "a0a57935fb99f8ff46205c63602d79fb6782bf2e",
+      "path": "lib/matplotlib/tri/_trirefine.py",
+      "score": 35.384282384012664
+    },
+    {
+      "oid": "0424c0d03dad3be0ef99b3b3aa68a32573da762e",
+      "path": "tools/make_icons.py",
+      "score": 35.31414617031863
+    },
+    {
+      "oid": "966eb0760b478d3d56912ca87efbcaeacc1c9bee",
+      "path": "lib/matplotlib/colorbar.py",
+      "score": 35.27432246953292
+    },
+    {
+      "oid": "de10fd47daf3b54894db9760c852bd4605d7a5ae",
+      "path": "lib/matplotlib/patches.py",
+      "score": 35.26985770837739
+    },
+    {
+      "oid": "252ca25bd58d0bc5bf97fe99b4300ad5d8011d85",
+      "path": "examples/statistics/boxplot_demo.py",
+      "score": 34.892326120946656
+    },
+    {
+      "oid": "e3480f228bb45cff45ed0566ceabdb1f3dcd53e1",
+      "path": "lib/matplotlib/units.py",
+      "score": 34.8333758942644
+    },
+    {
+      "oid": "a22ceb4e24d49869555801888c7275bd6a48917b",
+      "path": "examples/statistics/time_series_histogram.py",
+      "score": 34.73447053478633
+    },
+    {
+      "oid": "01e09f11b4445bd96bee7db947bb5562218e391e",
+      "path": "lib/matplotlib/scale.py",
+      "score": 34.71940678066585
+    },
+    {
+      "oid": "674ae3e97067014e1e335d6efd041b9154cf873a",
+      "path": "lib/matplotlib/spines.py",
+      "score": 34.627402197179514
+    },
+    {
+      "oid": "94de72c1554cf07fe8c77ec0fcd7f6de6cb4a316",
+      "path": "examples/subplots_axes_and_figures/figure_size_units.py",
+      "score": 34.57617890810729
+    },
+    {
+      "oid": "2b55864b18f6b92cb88cff9894152ef5af4d933f",
+      "path": "tutorials/text/usetex.py",
+      "score": 34.47256855922826
+    },
+    {
+      "oid": "9b77893bb2d6f1c4dd119ae3863cc58faf580611",
+      "path": "examples/subplots_axes_and_figures/mosaic.py",
+      "score": 34.163853689918014
+    },
+    {
+      "oid": "d05087e9f8b2e98f00756c3532a0e00570706634",
+      "path": "tutorials/toolkits/axisartist.py",
+      "score": 34.134079724064605
+    },
+    {
+      "oid": "8dc02f52e28af0564dd3e7684dac16641f8c9e4c",
+      "path": "examples/lines_bars_and_markers/markevery_demo.py",
+      "score": 33.896326476158855
+    },
+    {
+      "oid": "d7b1bbe9c284c19e161689da8d67cd440f454f10",
+      "path": "examples/images_contours_and_fields/contourf_demo.py",
+      "score": 33.773613921831036
+    },
+    {
+      "oid": "571bf80238e98d9014ac58d9fdd341aab6268853",
+      "path": "tools/embed_js.py",
+      "score": 33.69822424607174
+    },
+    {
+      "oid": "fc245fea1a2f1cbd0bad32da2a38cec1a5880896",
+      "path": "tools/triage_tests.py",
+      "score": 33.5488477430751
+    },
+    {
+      "oid": "1a186ccb4222258759a5bce79d16b4abef7dc938",
+      "path": "tutorials/intermediate/artists.py",
+      "score": 33.48058326390443
+    },
+    {
+      "oid": "239c1b53de690e2799b111954b6389c80cdcdd74",
+      "path": "tools/visualize_tests.py",
+      "score": 33.293304362655206
+    },
+    {
+      "oid": "68862d834f68c8e4eb5730a1d1cc562ce59a6b20",
+      "path": "tutorials/colors/colormaps.py",
+      "score": 32.66962040858533
+    },
+    {
+      "oid": "39e8fce98fbba67da778beaa0d86b3eb8d6e0868",
+      "path": "lib/matplotlib/sankey.py",
+      "score": 32.56829918314941
+    },
+    {
+      "oid": "9fdf3789b0df1eb588a4e95a4d9f01924be904a7",
+      "path": "tools/subset.py",
+      "score": 32.545425035992885
+    },
+    {
+      "oid": "e06b84c0d974decce77ac659ccfe43ca030119eb",
+      "path": "lib/matplotlib/tri/_trifinder.py",
+      "score": 32.47442151186287
+    },
+    {
+      "oid": "1dc1dd5f77ae5465420fb784fd59ef13e00ef759",
+      "path": "lib/matplotlib/widgets.py",
+      "score": 32.371904922428456
+    },
+    {
+      "oid": "8065a06714b3520865c0fea1ef0e5aa3afeb1caa",
+      "path": "tutorials/intermediate/imshow_extent.py",
+      "score": 32.13724864015521
+    },
+    {
+      "oid": "6806fc38a5cc3c57fc9917d4e6ce2081eb915dc5",
+      "path": "examples/showcase/mandelbrot.py",
+      "score": 31.96813256259393
+    },
+    {
+      "oid": "224886c20483411203c908d12a1ce2b69ec2c7ed",
+      "path": "tutorials/colors/colors.py",
+      "score": 31.772536047096903
+    },
+    {
+      "oid": "eb08c734af20c133ac47c1d8ee32691417ce0532",
+      "path": "lib/matplotlib/backends/backend_qt.py",
+      "score": 31.71261622494235
+    },
+    {
+      "oid": "bee2e244238d25d823140ca886fd70bc084b2958",
+      "path": "tutorials/text/annotations.py",
+      "score": 31.63100814269266
+    },
+    {
+      "oid": "8852f4067ff4e83f2943d75b4abc23d1161d26af",
+      "path": "tutorials/intermediate/constrainedlayout_guide.py",
+      "score": 31.575547272224565
+    }
+  ],
+  "repo": "matplotlib/matplotlib",
+  "slot": "T2"
+}

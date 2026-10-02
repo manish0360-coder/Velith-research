@@ -1,0 +1,2824 @@
+{
+  "base_commit": "732d89c2940156bdc0e200bb36dc38b5e424bcba",
+  "fit_trace": [
+    {
+      "decision": "included",
+      "path": "astropy/utils/decorators.py",
+      "score": 122.24688460059353,
+      "tokens_if_included": 10516
+    },
+    {
+      "decision": "included",
+      "path": "astropy/units/decorators.py",
+      "score": 120.81788237296385,
+      "tokens_if_included": 12552
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/core.py",
+      "score": 110.427342867843,
+      "tokens_if_included": 46022
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/misc.py",
+      "score": 110.0248842395299,
+      "tokens_if_included": 22720
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "ah_bootstrap.py",
+      "score": 107.95961981006039,
+      "tokens_if_included": 22034
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/parameters.py",
+      "score": 102.31578273363361,
+      "tokens_if_included": 20925
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/quantity.py",
+      "score": 101.85090384892386,
+      "tokens_if_included": 30165
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/wcs.py",
+      "score": 100.63458113847844,
+      "tokens_if_included": 46137
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/util.py",
+      "score": 98.06852865042153,
+      "tokens_if_included": 20960
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/base.py",
+      "score": 97.79579075204994,
+      "tokens_if_included": 27851
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/column.py",
+      "score": 97.28070841441024,
+      "tokens_if_included": 25417
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/hdulist.py",
+      "score": 94.85310680278694,
+      "tokens_if_included": 25775
+    },
+    {
+      "decision": "included",
+      "path": "astropy/nddata/decorators.py",
+      "score": 94.27896497671114,
+      "tokens_if_included": 15157
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/sky_coordinate.py",
+      "score": 93.34981979360515,
+      "tokens_if_included": 38928
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "ez_setup.py",
+      "score": 93.30980792497581,
+      "tokens_if_included": 18823
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/core.py",
+      "score": 93.14253758890877,
+      "tokens_if_included": 35058
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/console.py",
+      "score": 92.82848227266004,
+      "tokens_if_included": 24996
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/ccddata.py",
+      "score": 91.6158423762065,
+      "tokens_if_included": 21046
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/table.py",
+      "score": 89.58867523819455,
+      "tokens_if_included": 42583
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/image.py",
+      "score": 89.25251554182721,
+      "tokens_if_included": 26910
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/data_info.py",
+      "score": 88.66146586923998,
+      "tokens_if_included": 20764
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/iers/iers.py",
+      "score": 88.28096315545842,
+      "tokens_if_included": 23967
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/column.py",
+      "score": 87.88520801774494,
+      "tokens_if_included": 38527
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/earth.py",
+      "score": 87.59722065399582,
+      "tokens_if_included": 23130
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/time/core.py",
+      "score": 87.40941994968242,
+      "tokens_if_included": 36296
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/core.py",
+      "score": 87.33911533366367,
+      "tokens_if_included": 29824
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/ui.py",
+      "score": 86.44128402625572,
+      "tokens_if_included": 24621
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/introspection.py",
+      "score": 86.03214305035956,
+      "tokens_if_included": 18719
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/transformations.py",
+      "score": 85.98997798321234,
+      "tokens_if_included": 28629
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/table.py",
+      "score": 83.22584053196431,
+      "tokens_if_included": 30709
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/baseframe.py",
+      "score": 82.80565015820372,
+      "tokens_if_included": 32128
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/fitting.py",
+      "score": 82.2489464736307,
+      "tokens_if_included": 29644
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/__init__.py",
+      "score": 81.32108143920414,
+      "tokens_if_included": 18158
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/exceptions.py",
+      "score": 81.13064579945834,
+      "tokens_if_included": 30467
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/config/configuration.py",
+      "score": 80.8970118916026,
+      "tokens_if_included": 21556
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/utils.py",
+      "score": 80.84601251385402,
+      "tokens_if_included": 21887
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/convenience.py",
+      "score": 78.93285389760244,
+      "tokens_if_included": 25696
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/fitsrec.py",
+      "score": 78.53296421532683,
+      "tokens_if_included": 28838
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/convolution/convolve.py",
+      "score": 77.91964999040167,
+      "tokens_if_included": 24763
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/attributes.py",
+      "score": 77.82019587851902,
+      "tokens_if_included": 19322
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/logger.py",
+      "score": 76.6029564230673,
+      "tokens_if_included": 20057
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/pprint.py",
+      "score": 76.10345156059505,
+      "tokens_if_included": 22282
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/compressed.py",
+      "score": 75.6537438586838,
+      "tokens_if_included": 36888
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/representation.py",
+      "score": 75.6386387752284,
+      "tokens_if_included": 43385
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/function/core.py",
+      "score": 75.60167543573158,
+      "tokens_if_included": 21582
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/data.py",
+      "score": 74.78054809920846,
+      "tokens_if_included": 28624
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/time/formats.py",
+      "score": 74.61208679961149,
+      "tokens_if_included": 29235
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/cds.py",
+      "score": 73.93276004579332,
+      "tokens_if_included": 18638
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/header.py",
+      "score": 73.74527905529061,
+      "tokens_if_included": 33269
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/mixins/ndarithmetic.py",
+      "score": 73.46023602605989,
+      "tokens_if_included": 21009
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/utils.py",
+      "score": 72.24728617819335,
+      "tokens_if_included": 21713
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/cosmology/core.py",
+      "score": 71.15906716661732,
+      "tokens_if_included": 47630
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/card.py",
+      "score": 70.90895783567166,
+      "tokens_if_included": 27876
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/nduncertainty.py",
+      "score": 70.73573179282845,
+      "tokens_if_included": 21559
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/angles.py",
+      "score": 70.3133191145813,
+      "tokens_if_included": 22386
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/ipac.py",
+      "score": 69.90247191084477,
+      "tokens_if_included": 20769
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/core.py",
+      "score": 69.657544018253,
+      "tokens_if_included": 21227
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/nddata.py",
+      "score": 69.6379979742857,
+      "tokens_if_included": 18055
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/connect.py",
+      "score": 69.446570032894,
+      "tokens_if_included": 19384
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/quantity_helper.py",
+      "score": 69.29488790395638,
+      "tokens_if_included": 23238
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/diff.py",
+      "score": 69.26207151938601,
+      "tokens_if_included": 29794
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/utils.py",
+      "score": 68.9892097724895,
+      "tokens_if_included": 25105
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/funcs.py",
+      "score": 68.59250361546461,
+      "tokens_if_included": 33711
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "docs/conf.py",
+      "score": 68.47258725985095,
+      "tokens_if_included": 17717
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/solar_system.py",
+      "score": 67.71423049059213,
+      "tokens_if_included": 20625
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/registry.py",
+      "score": 67.17126032340869,
+      "tokens_if_included": 20716
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/operations.py",
+      "score": 67.10364669454027,
+      "tokens_if_included": 25480
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/latex.py",
+      "score": 67.08312840896603,
+      "tokens_if_included": 19821
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/file.py",
+      "score": 66.40273876118374,
+      "tokens_if_included": 21336
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/_erfa/erfa_generator.py",
+      "score": 66.05906380435387,
+      "tokens_if_included": 21079
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/timer.py",
+      "score": 65.71501636906665,
+      "tokens_if_included": 18475
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/docstrings.py",
+      "score": 65.4627883948655,
+      "tokens_if_included": 33721
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/compat.py",
+      "score": 65.36111240708026,
+      "tokens_if_included": 17681
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/daophot.py",
+      "score": 65.3264384253966,
+      "tokens_if_included": 19372
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/html.py",
+      "score": 64.85140624033102,
+      "tokens_if_included": 19512
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/angle_utilities.py",
+      "score": 64.34924887380974,
+      "tokens_if_included": 22099
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/metadata.py",
+      "score": 64.20692559233169,
+      "tokens_if_included": 19031
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/index.py",
+      "score": 64.00035202533212,
+      "tokens_if_included": 23037
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/hdf5.py",
+      "score": 63.95747216928214,
+      "tokens_if_included": 18950
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/tree.py",
+      "score": 63.606578906248316,
+      "tokens_if_included": 48197
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/groups.py",
+      "score": 63.59263806017864,
+      "tokens_if_included": 21175
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/meta.py",
+      "score": 61.690835455092056,
+      "tokens_if_included": 18237
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/config/paths.py",
+      "score": 61.68436664129339,
+      "tokens_if_included": 17994
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/xml/writer.py",
+      "score": 61.589657338878865,
+      "tokens_if_included": 17947
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/yaml.py",
+      "score": 61.37183175728433,
+      "tokens_if_included": 18638
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/sextractor.py",
+      "score": 61.162924537151596,
+      "tokens_if_included": 16989
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/table.py",
+      "score": 60.01843410716859,
+      "tokens_if_included": 18612
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/function/logarithmic.py",
+      "score": 59.711715489388894,
+      "tokens_if_included": 18679
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/np_utils.py",
+      "score": 59.708079024601915,
+      "tokens_if_included": 17238
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/utils.py",
+      "score": 59.57516479689922,
+      "tokens_if_included": 16829
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/scripts/fitsdiff.py",
+      "score": 59.0919739649522,
+      "tokens_if_included": 18682
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/sigma_clipping.py",
+      "score": 58.57080427115658,
+      "tokens_if_included": 20053
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/groups.py",
+      "score": 58.03405359374321,
+      "tokens_if_included": 18860
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/sites.py",
+      "score": 57.74440065642361,
+      "tokens_if_included": 16466
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/scripts/fitsheader.py",
+      "score": 57.108252120092054,
+      "tokens_if_included": 18173
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/coordinates/plot_sgr-coordinate-frame.py",
+      "score": 57.10130290832277,
+      "tokens_if_included": 18274
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/ecsv.py",
+      "score": 56.77515398170973,
+      "tokens_if_included": 17618
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/coordinate_helpers.py",
+      "score": 56.5220554538131,
+      "tokens_if_included": 23614
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/blackbody.py",
+      "score": 56.08082551122333,
+      "tokens_if_included": 19003
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/hub.py",
+      "score": 56.04013055096814,
+      "tokens_if_included": 29713
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/skyoffset.py",
+      "score": 56.01991602123754,
+      "tokens_if_included": 17273
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/bayesian_blocks.py",
+      "score": 55.81021483266394,
+      "tokens_if_included": 20601
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/fixedwidth.py",
+      "score": 55.75404574409645,
+      "tokens_if_included": 19234
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/fitstime.py",
+      "score": 55.63281103137781,
+      "tokens_if_included": 21246
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/convolution/core.py",
+      "score": 55.05318982363825,
+      "tokens_if_included": 18256
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/streaming.py",
+      "score": 54.5322128496576,
+      "tokens_if_included": 17170
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/polynomial.py",
+      "score": 53.83268200328795,
+      "tokens_if_included": 30522
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/utils.py",
+      "score": 53.7648013299516,
+      "tokens_if_included": 18356
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/constant.py",
+      "score": 52.65129275367006,
+      "tokens_if_included": 17297
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/name_resolve.py",
+      "score": 51.94110773838447,
+      "tokens_if_included": 16677
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/_numpy_hacks.py",
+      "score": 51.70313092696935,
+      "tokens_if_included": 15945
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/utils.py",
+      "score": 51.41152668699043,
+      "tokens_if_included": 17455
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/codegen.py",
+      "score": 51.33281044021696,
+      "tokens_if_included": 16464
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/galactocentric.py",
+      "score": 51.2723340337421,
+      "tokens_if_included": 19240
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/converters.py",
+      "score": 51.143123355622755,
+      "tokens_if_included": 27423
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/matching.py",
+      "score": 50.76392187948208,
+      "tokens_if_included": 20787
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/scripts/fitscheck.py",
+      "score": 49.30262377645289,
+      "tokens_if_included": 16975
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/biweight.py",
+      "score": 48.65186166329255,
+      "tokens_if_included": 22608
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/basic.py",
+      "score": 48.625934236320624,
+      "tokens_if_included": 18341
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/standard_profile.py",
+      "score": 48.61468169346913,
+      "tokens_if_included": 16587
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/ogip.py",
+      "score": 48.33165495695245,
+      "tokens_if_included": 19642
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/coordinates/plot_obs-planning.py",
+      "score": 48.12363950004811,
+      "tokens_if_included": 17092
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/distances.py",
+      "score": 48.06714071069307,
+      "tokens_if_included": 17365
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/bst.py",
+      "score": 47.86389183825261,
+      "tokens_if_included": 20547
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/__init__.py",
+      "score": 47.8513155941365,
+      "tokens_if_included": 16548
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/functional_models.py",
+      "score": 47.62127503015195,
+      "tokens_if_included": 38020
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/generic_parsetab.py",
+      "score": 47.03045587369933,
+      "tokens_if_included": 20997
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/galactic.py",
+      "score": 46.6648311716248,
+      "tokens_if_included": 16424
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/core.py",
+      "score": 46.56537412905176,
+      "tokens_if_included": 20807
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/verify.py",
+      "score": 46.46470679620224,
+      "tokens_if_included": 16609
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/fastbasic.py",
+      "score": 46.34559133251606,
+      "tokens_if_included": 18959
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/tabular.py",
+      "score": 46.21136392233377,
+      "tokens_if_included": 18341
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/equivalencies.py",
+      "score": 45.93932434563539,
+      "tokens_if_included": 23554
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/serialize.py",
+      "score": 45.92166971046443,
+      "tokens_if_included": 17613
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/info.py",
+      "score": 45.90232133011825,
+      "tokens_if_included": 16267
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "setup.py",
+      "score": 45.881309949659716,
+      "tokens_if_included": 16519
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/histogram.py",
+      "score": 45.88010042904223,
+      "tokens_if_included": 18237
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/setup_package.py",
+      "score": 45.801056254311334,
+      "tokens_if_included": 18571
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/icrs_cirs_transforms.py",
+      "score": 45.74105847649602,
+      "tokens_if_included": 20108
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/matrix_utilities.py",
+      "score": 45.69844015339198,
+      "tokens_if_included": 16520
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/altaz.py",
+      "score": 45.49093159735986,
+      "tokens_if_included": 16475
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/utils.py",
+      "score": 45.47787769194546,
+      "tokens_if_included": 16388
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/circstats.py",
+      "score": 45.46650402794175,
+      "tokens_if_included": 20595
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/pickle_helpers.py",
+      "score": 45.326323479835786,
+      "tokens_if_included": 16135
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/coordinates_map.py",
+      "score": 45.1217583835387,
+      "tokens_if_included": 17013
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/cosmology/funcs.py",
+      "score": 45.00207703651029,
+      "tokens_if_included": 16814
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/calculation.py",
+      "score": 44.958403074406135,
+      "tokens_if_included": 17534
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/xml/iterparser.py",
+      "score": 44.503247985945094,
+      "tokens_if_included": 16665
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/funcs.py",
+      "score": 44.31523294512045,
+      "tokens_if_included": 18000
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/template/example-template.py",
+      "score": 43.81196256898137,
+      "tokens_if_included": 16026
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/scripts/showtable.py",
+      "score": 43.1993906656877,
+      "tokens_if_included": 16783
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/coordinates/plot_galactocentric-frame.py",
+      "score": 43.185341289757204,
+      "tokens_if_included": 17558
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/spatial.py",
+      "score": 42.89458305836402,
+      "tokens_if_included": 19180
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/client.py",
+      "score": 42.56634721836117,
+      "tokens_if_included": 21352
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/lockfile_helpers.py",
+      "score": 42.43356696853677,
+      "tokens_if_included": 17501
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/cds_parsetab.py",
+      "score": 41.93207448568881,
+      "tokens_if_included": 17577
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/integrated_client.py",
+      "score": 41.60094774552548,
+      "tokens_if_included": 19747
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/ogip_parsetab.py",
+      "score": 41.3878965545689,
+      "tokens_if_included": 19455
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/errors.py",
+      "score": 41.3606087988419,
+      "tokens_if_included": 16468
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/generic.py",
+      "score": 40.817696138673085,
+      "tokens_if_included": 19678
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/fk4.py",
+      "score": 40.65053339373449,
+      "tokens_if_included": 17503
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/mixins/ndslicing.py",
+      "score": 40.62302865092359,
+      "tokens_if_included": 16239
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/row.py",
+      "score": 40.518930369452136,
+      "tokens_if_included": 16843
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/nonstandard.py",
+      "score": 40.32613451507798,
+      "tokens_if_included": 16322
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/formatter_locator.py",
+      "score": 40.0941804948237,
+      "tokens_if_included": 19833
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/coordinates/rv-to-gsr.py",
+      "score": 39.823597973538945,
+      "tokens_if_included": 16237
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/ucd.py",
+      "score": 39.798762316634374,
+      "tokens_if_included": 16795
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/rotations.py",
+      "score": 39.703243592444586,
+      "tokens_if_included": 18995
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/convolution/kernels.py",
+      "score": 39.612064523271414,
+      "tokens_if_included": 24145
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/interval.py",
+      "score": 39.30369568353212,
+      "tokens_if_included": 17706
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/misc.py",
+      "score": 39.115030611854316,
+      "tokens_if_included": 16433
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/transforms.py",
+      "score": 38.90639427383691,
+      "tokens_if_included": 17774
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/angle_parsetab.py",
+      "score": 38.80154473356254,
+      "tokens_if_included": 17970
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/earth_orientation.py",
+      "score": 38.685270775342545,
+      "tokens_if_included": 22529
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/hub_script.py",
+      "score": 38.36264212713886,
+      "tokens_if_included": 16661
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/ecliptic_transforms.py",
+      "score": 38.34449868685448,
+      "tokens_if_included": 16714
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/info_theory.py",
+      "score": 38.1831038351056,
+      "tokens_if_included": 20092
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/base.py",
+      "score": 38.008216374017834,
+      "tokens_if_included": 15758
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/cds.py",
+      "score": 37.65795049809599,
+      "tokens_if_included": 18230
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/lsr.py",
+      "score": 37.61522125893076,
+      "tokens_if_included": 17202
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/table_helpers.py",
+      "score": 37.39773759382823,
+      "tokens_if_included": 16859
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/validator/result.py",
+      "score": 36.910136144378576,
+      "tokens_if_included": 18386
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/fits.py",
+      "score": 36.525639327523365,
+      "tokens_if_included": 16715
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/_statistics.py",
+      "score": 36.27029573307192,
+      "tokens_if_included": 20270
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/time/utils.py",
+      "score": 36.23741407235322,
+      "tokens_if_included": 16389
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/xmlutil.py",
+      "score": 36.21957165142968,
+      "tokens_if_included": 16375
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/ticklabels.py",
+      "score": 36.1568428031168,
+      "tokens_if_included": 17251
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/convolution/utils.py",
+      "score": 36.05831932827976,
+      "tokens_if_included": 18599
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/misc.py",
+      "score": 35.94529244455629,
+      "tokens_if_included": 15749
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/vounit.py",
+      "score": 35.9432169242611,
+      "tokens_if_included": 17469
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/optimizers.py",
+      "score": 35.71833445981571,
+      "tokens_if_included": 17179
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/main.py",
+      "score": 35.61603718885962,
+      "tokens_if_included": 17298
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/lupton_rgb.py",
+      "score": 35.56094913680489,
+      "tokens_if_included": 18875
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/time/time.py",
+      "score": 35.51585662668859,
+      "tokens_if_included": 16501
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/sorted_array.py",
+      "score": 35.479698231295366,
+      "tokens_if_included": 17735
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/codata2010.py",
+      "score": 34.940714667486766,
+      "tokens_if_included": 16984
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/scripts/fits2bitmap.py",
+      "score": 34.78398014919994,
+      "tokens_if_included": 17263
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/patches.py",
+      "score": 34.68848336401007,
+      "tokens_if_included": 16096
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/stretch.py",
+      "score": 34.273115526840456,
+      "tokens_if_included": 19433
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/io/skip_create-large-fits.py",
+      "score": 34.23128410849468,
+      "tokens_if_included": 16454
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/connect.py",
+      "score": 33.86120565732317,
+      "tokens_if_included": 16780
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/setup_package.py",
+      "score": 33.83679700927798,
+      "tokens_if_included": 16611
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/util.py",
+      "score": 33.77996904742509,
+      "tokens_if_included": 17144
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/__init__.py",
+      "score": 33.688701555376596,
+      "tokens_if_included": 15594
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/cds.py",
+      "score": 33.26604718171337,
+      "tokens_if_included": 17633
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/projections.py",
+      "score": 33.17136894889982,
+      "tokens_if_included": 33645
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/scripts/fitsinfo.py",
+      "score": 32.145527621745906,
+      "tokens_if_included": 15716
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/latex.py",
+      "score": 32.12588457113465,
+      "tokens_if_included": 16286
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/mpl_normalize.py",
+      "score": 32.07408836980897,
+      "tokens_if_included": 17444
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/codata2014.py",
+      "score": 31.80928921255393,
+      "tokens_if_included": 16938
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/utils.py",
+      "score": 31.731782545342465,
+      "tokens_if_included": 16665
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/axislabels.py",
+      "score": 31.650308797345946,
+      "tokens_if_included": 16716
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/exceptions.py",
+      "score": 31.51010480747594,
+      "tokens_if_included": 15580
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/__init__.py",
+      "score": 31.49483020658857,
+      "tokens_if_included": 16042
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/mappings.py",
+      "score": 31.470386961702268,
+      "tokens_if_included": 16773
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/cirs_observed_transforms.py",
+      "score": 30.912975498081494,
+      "tokens_if_included": 17103
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/gcrs.py",
+      "score": 30.825781034482677,
+      "tokens_if_included": 16592
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/_erfa/setup_package.py",
+      "score": 30.825676890857853,
+      "tokens_if_included": 16312
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/powerlaws.py",
+      "score": 30.5818985230298,
+      "tokens_if_included": 20342
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/web_profile.py",
+      "score": 30.55137422041218,
+      "tokens_if_included": 16747
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/jsviewer.py",
+      "score": 30.08048806977398,
+      "tokens_if_included": 17303
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/jackknife.py",
+      "score": 30.046874614550365,
+      "tokens_if_included": 17179
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/astrophys.py",
+      "score": 29.787693013203345,
+      "tokens_if_included": 17195
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/mpl_style.py",
+      "score": 29.715515968325455,
+      "tokens_if_included": 16047
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/coordinate_range.py",
+      "score": 29.591004278547828,
+      "tokens_if_included": 16682
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/state.py",
+      "score": 29.14002253621021,
+      "tokens_if_included": 15664
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/units.py",
+      "score": 28.938939403691403,
+      "tokens_if_included": 15971
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/fast_impl.py",
+      "score": 28.840434050981745,
+      "tokens_if_included": 16823
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/imperial.py",
+      "score": 28.6543179819793,
+      "tokens_if_included": 16760
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/physical.py",
+      "score": 28.607922159000594,
+      "tokens_if_included": 16618
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/coordinates/frames.py",
+      "score": 28.438542502755467,
+      "tokens_if_included": 16687
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/hub_proxy.py",
+      "score": 28.25573866888338,
+      "tokens_if_included": 16838
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/__init__.py",
+      "score": 28.104461365617833,
+      "tokens_if_included": 15534
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/frame.py",
+      "score": 28.074397439028086,
+      "tokens_if_included": 17416
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/required_by_vounit.py",
+      "score": 27.64175351777617,
+      "tokens_if_included": 15796
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/__init__.py",
+      "score": 27.536434057042865,
+      "tokens_if_included": 16062
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/utils.py",
+      "score": 27.256643522439557,
+      "tokens_if_included": 16911
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/nddata_base.py",
+      "score": 27.03645493131219,
+      "tokens_if_included": 15646
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/fastchi2_impl.py",
+      "score": 26.90793756738876,
+      "tokens_if_included": 16920
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "docs/wcs/examples/from_file.py",
+      "score": 26.666347403716266,
+      "tokens_if_included": 15633
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/function/units.py",
+      "score": 26.62754342659277,
+      "tokens_if_included": 15620
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/separable.py",
+      "score": 26.515160930098087,
+      "tokens_if_included": 17596
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/__init__.py",
+      "score": 26.476340079388347,
+      "tokens_if_included": 15497
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/intermediate_rotation_transforms.py",
+      "score": 26.26811594079613,
+      "tokens_if_included": 16918
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/ecliptic.py",
+      "score": 26.226988343289282,
+      "tokens_if_included": 16593
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/cosmology/parameters.py",
+      "score": 26.15538648241352,
+      "tokens_if_included": 17073
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/fk4_fk5_transforms.py",
+      "score": 25.987007211730923,
+      "tokens_if_included": 16373
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/validator/main.py",
+      "score": 25.38651987913743,
+      "tokens_if_included": 16642
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/nddata_withmixins.py",
+      "score": 24.966295005547,
+      "tokens_if_included": 15969
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/slow_impl.py",
+      "score": 24.794958627035676,
+      "tokens_if_included": 16577
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/io/modify-fits-header.py",
+      "score": 24.75684113315281,
+      "tokens_if_included": 15899
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/fk5.py",
+      "score": 24.694456593332696,
+      "tokens_if_included": 15763
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/validator/html.py",
+      "score": 24.34774313013325,
+      "tokens_if_included": 18145
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/flag_collection.py",
+      "score": 24.291482866386524,
+      "tokens_if_included": 15592
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/unicode_format.py",
+      "score": 24.047217871275084,
+      "tokens_if_included": 15683
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/function/magnitude_zero_points.py",
+      "score": 23.896855769407473,
+      "tokens_if_included": 15816
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/si.py",
+      "score": 23.89262497871771,
+      "tokens_if_included": 17670
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/scipy_impl.py",
+      "score": 23.78597843858658,
+      "tokens_if_included": 15971
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/utils.py",
+      "score": 23.556683066256486,
+      "tokens_if_included": 15886
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/supergalactic.py",
+      "score": 23.409785953585864,
+      "tokens_if_included": 15897
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/ticks.py",
+      "score": 23.252959219383847,
+      "tokens_if_included": 16998
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "docs/wcs/examples/programmatic.py",
+      "score": 22.884650379690193,
+      "tokens_if_included": 15672
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/__init__.py",
+      "score": 22.216398118905772,
+      "tokens_if_included": 15799
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/deprecated.py",
+      "score": 22.04858206247749,
+      "tokens_if_included": 15817
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/orbital_elements.py",
+      "score": 22.023371845069125,
+      "tokens_if_included": 19788
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/__init__.py",
+      "score": 21.687111992981166,
+      "tokens_if_included": 15709
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/mle.py",
+      "score": 21.580372136984757,
+      "tokens_if_included": 16216
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/__init__.py",
+      "score": 20.849056713501806,
+      "tokens_if_included": 15328
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/transform/projections.py",
+      "score": 20.66477800879668,
+      "tokens_if_included": 17841
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/chi2_impl.py",
+      "score": 20.52766960176688,
+      "tokens_if_included": 16123
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/baseradec.py",
+      "score": 20.483095452010634,
+      "tokens_if_included": 15682
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/hcrs.py",
+      "score": 20.42232316514846,
+      "tokens_if_included": 15601
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/xml/validate.py",
+      "score": 20.34912820598324,
+      "tokens_if_included": 15646
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/transform/polynomial.py",
+      "score": 20.32371682271724,
+      "tokens_if_included": 16491
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/grid_paths.py",
+      "score": 19.924150248628106,
+      "tokens_if_included": 16375
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/transform/basic.py",
+      "score": 19.656839917748595,
+      "tokens_if_included": 16595
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/itrs.py",
+      "score": 19.527896566311714,
+      "tokens_if_included": 15552
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/rst.py",
+      "score": 19.320600608189537,
+      "tokens_if_included": 15677
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/_docutil.py",
+      "score": 19.16655515305959,
+      "tokens_if_included": 15705
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/transform/compound.py",
+      "score": 19.09908316548846,
+      "tokens_if_included": 16578
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/io/fits-tables.py",
+      "score": 18.954022599602247,
+      "tokens_if_included": 15685
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/xml/check.py",
+      "score": 18.899603692373788,
+      "tokens_if_included": 15991
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/cds_lextab.py",
+      "score": 18.52544303850167,
+      "tokens_if_included": 15703
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/collections.py",
+      "score": 18.40325895556335,
+      "tokens_if_included": 15592
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/generic_lextab.py",
+      "score": 18.382289462507536,
+      "tokens_if_included": 15835
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/ogip_lextab.py",
+      "score": 18.350544974209075,
+      "tokens_if_included": 15856
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/io/create-mef.py",
+      "score": 18.3139022232609,
+      "tokens_if_included": 15602
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/extension.py",
+      "score": 18.244637102857794,
+      "tokens_if_included": 15817
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/function/mixin.py",
+      "score": 18.222801353296326,
+      "tokens_if_included": 15378
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/mixins/ndio.py",
+      "score": 18.175258503336174,
+      "tokens_if_included": 15498
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/numpycompat.py",
+      "score": 17.65388051602347,
+      "tokens_if_included": 15616
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/numpy/lib/stride_tricks.py",
+      "score": 17.314273065986615,
+      "tokens_if_included": 15553
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/hist.py",
+      "score": 16.893252393740223,
+      "tokens_if_included": 15694
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/setup_package.py",
+      "score": 16.705485171839275,
+      "tokens_if_included": 16040
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/utils.py",
+      "score": 16.518489042516695,
+      "tokens_if_included": 16113
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/__init__.py",
+      "score": 16.291046615295116,
+      "tokens_if_included": 15448
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/icrs_fk5_transforms.py",
+      "score": 16.236551861691137,
+      "tokens_if_included": 15780
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/format/console.py",
+      "score": 16.150592729396955,
+      "tokens_if_included": 15946
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/cirs.py",
+      "score": 16.085506000631746,
+      "tokens_if_included": 15471
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/cgs.py",
+      "score": 16.06270341450217,
+      "tokens_if_included": 16253
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/angle_lextab.py",
+      "score": 16.01310300420424,
+      "tokens_if_included": 16775
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/wcsaxes/__init__.py",
+      "score": 15.954624888036513,
+      "tokens_if_included": 15465
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/io/split-jpeg-to-fits.py",
+      "score": 15.863760987229567,
+      "tokens_if_included": 15936
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/types.py",
+      "score": 15.744035422689885,
+      "tokens_if_included": 15688
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "examples/io/plot_fits-image.py",
+      "score": 15.719168225217635,
+      "tokens_if_included": 15648
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/iau2012.py",
+      "score": 15.038458148494989,
+      "tokens_if_included": 16169
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/transform/tabular.py",
+      "score": 14.71170347381309,
+      "tokens_if_included": 15961
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/coordinates/representation.py",
+      "score": 14.505407964460506,
+      "tokens_if_included": 15573
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/argparse.py",
+      "score": 14.069136579366386,
+      "tokens_if_included": 15606
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/connect.py",
+      "score": 14.037870698845452,
+      "tokens_if_included": 15970
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/__init__.py",
+      "score": 13.94390250837789,
+      "tokens_if_included": 15652
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/fits/fits.py",
+      "score": 13.78081197994939,
+      "tokens_if_included": 15971
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/__init__.py",
+      "score": 13.766455063709286,
+      "tokens_if_included": 15488
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/iau2015.py",
+      "score": 13.724630885513047,
+      "tokens_if_included": 16472
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/galactic_transforms.py",
+      "score": 13.706180432222746,
+      "tokens_if_included": 15846
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/icrs.py",
+      "score": 13.505753294409686,
+      "tokens_if_included": 15452
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/unit/quantity.py",
+      "score": 13.461840362245376,
+      "tokens_if_included": 15537
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/table/table.py",
+      "score": 12.27763940596109,
+      "tokens_if_included": 15929
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/models.py",
+      "score": 12.235662072556371,
+      "tokens_if_included": 15875
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/statistic.py",
+      "score": 12.077073295985773,
+      "tokens_if_included": 15523
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/transform.py",
+      "score": 11.915507544062164,
+      "tokens_if_included": 15486
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/units/function/__init__.py",
+      "score": 11.891641146363789,
+      "tokens_if_included": 15275
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/__init__.py",
+      "score": 11.436770730584186,
+      "tokens_if_included": 15307
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/numpy/core/multiarray.py",
+      "score": 10.980778570663563,
+      "tokens_if_included": 15376
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/transform/__init__.py",
+      "score": 10.895903337026128,
+      "tokens_if_included": 15282
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/setup_package.py",
+      "score": 10.250268015454042,
+      "tokens_if_included": 16185
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/xml/setup_package.py",
+      "score": 10.197009457919451,
+      "tokens_if_included": 15679
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/unit/unit.py",
+      "score": 10.049814497450878,
+      "tokens_if_included": 15432
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/wcs/wcslint.py",
+      "score": 9.212172760792937,
+      "tokens_if_included": 15341
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/volint.py",
+      "score": 8.891206531704471,
+      "tokens_if_included": 15335
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/config/affiliated.py",
+      "score": 8.697439834675919,
+      "tokens_if_included": 15234
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/scripts/__init__.py",
+      "score": 8.367552627101784,
+      "tokens_if_included": 15259
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/pandas.py",
+      "score": 8.278653102065649,
+      "tokens_if_included": 16041
+    },
+    {
+      "decision": "included",
+      "path": "astropy/io/__init__.py",
+      "score": 8.14430965677058,
+      "tokens_if_included": 15227
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/coordinates/angle.py",
+      "score": 7.684235929828217,
+      "tokens_if_included": 15663
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/errors.py",
+      "score": 7.525735472523408,
+      "tokens_if_included": 15448
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/__init__.py",
+      "score": 7.138905383147298,
+      "tokens_if_included": 15455
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/constants.py",
+      "score": 7.0698656330682095,
+      "tokens_if_included": 15524
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/setup_package.py",
+      "score": 6.775023032443785,
+      "tokens_if_included": 15613
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/xml/unescaper.py",
+      "score": 6.584447364642489,
+      "tokens_if_included": 15778
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/numpy/__init__.py",
+      "score": 6.317573599813002,
+      "tokens_if_included": 15353
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/__init__.py",
+      "score": 6.2921062278097395,
+      "tokens_if_included": 15571
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/config/__init__.py",
+      "score": 6.138053176944844,
+      "tokens_if_included": 15325
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/table/setup_package.py",
+      "score": 5.542877333887723,
+      "tokens_if_included": 15416
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/connect.py",
+      "score": 5.221251754632378,
+      "tokens_if_included": 15321
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/setup_package.py",
+      "score": 4.769171101252789,
+      "tokens_if_included": 15441
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/cgs.py",
+      "score": 4.620468518514878,
+      "tokens_if_included": 15440
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/si.py",
+      "score": 4.619815166534473,
+      "tokens_if_included": 15430
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/modeling/__init__.py",
+      "score": 4.302127433707533,
+      "tokens_if_included": 15351
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/astropyconst20.py",
+      "score": 4.200128887551433,
+      "tokens_if_included": 15395
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/constants/astropyconst13.py",
+      "score": 3.7358991965802875,
+      "tokens_if_included": 15397
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/fits/setup_package.py",
+      "score": 3.2681606377423185,
+      "tokens_if_included": 15353
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/convolution/__init__.py",
+      "score": 2.8693711184406774,
+      "tokens_if_included": 15356
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/__init__.py",
+      "score": 2.3654133541602356,
+      "tokens_if_included": 15307
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/futures/__init__.py",
+      "score": 2.343884161132051,
+      "tokens_if_included": 15325
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/compat/funcsigs.py",
+      "score": 2.337263407272111,
+      "tokens_if_included": 15344
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/cosmology/__init__.py",
+      "score": 2.147700366377598,
+      "tokens_if_included": 15352
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/setup_package.py",
+      "score": 2.1398749960594676,
+      "tokens_if_included": 15501
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/__init__.py",
+      "score": 2.07627188724423,
+      "tokens_if_included": 15331
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/ascii/__init__.py",
+      "score": 1.9613627218808003,
+      "tokens_if_included": 15618
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/_erfa/__init__.py",
+      "score": 1.9332355462827986,
+      "tokens_if_included": 15318
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/samp/setup_package.py",
+      "score": 1.791633293742009,
+      "tokens_if_included": 15338
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/builtin_frames/supergalactic_transforms.py",
+      "score": 1.6664110092167388,
+      "tokens_if_included": 15534
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/setup_package.py",
+      "score": 1.6332424122091271,
+      "tokens_if_included": 15296
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/coordinates/setup_package.py",
+      "score": 1.6275626349423005,
+      "tokens_if_included": 15324
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/nddata/setup_package.py",
+      "score": 1.5761784825069018,
+      "tokens_if_included": 15306
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/config/setup_package.py",
+      "score": 1.5754810153807086,
+      "tokens_if_included": 15309
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/__init__.py",
+      "score": 1.2394020499984204,
+      "tokens_if_included": 15324
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/stats/lombscargle/implementations/__init__.py",
+      "score": 0.697827619997355,
+      "tokens_if_included": 15380
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/fits/hdu/__init__.py",
+      "score": 0.6101658498373529,
+      "tokens_if_included": 15491
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/time/__init__.py",
+      "score": 0.5750836103977284,
+      "tokens_if_included": 15284
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/votable/validator/__init__.py",
+      "score": 0.5739800670848643,
+      "tokens_if_included": 15312
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/utils/iers/__init__.py",
+      "score": 0.3261133870578791,
+      "tokens_if_included": 15266
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/visualization/scripts/__init__.py",
+      "score": 0.20806991428166546,
+      "tokens_if_included": 15278
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/__init__.py",
+      "score": 0.20779296292932073,
+      "tokens_if_included": 15297
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/coordinates/__init__.py",
+      "score": 0.20779296292932073,
+      "tokens_if_included": 15301
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/fits/__init__.py",
+      "score": 0.20779296292932073,
+      "tokens_if_included": 15301
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/table/__init__.py",
+      "score": 0.20779296292932073,
+      "tokens_if_included": 15301
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/time/__init__.py",
+      "score": 0.20779296292932073,
+      "tokens_if_included": 15301
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "astropy/io/misc/asdf/tags/unit/__init__.py",
+      "score": 0.20779296292932073,
+      "tokens_if_included": 15301
+    }
+  ],
+  "included": [
+    {
+      "bytes": 38694,
+      "oid": "1e6d788a0d58e25876199d7044e33f54157d764b",
+      "path": "astropy/utils/decorators.py"
+    },
+    {
+      "bytes": 8637,
+      "oid": "8bece5a85072aa84cb640d263048a1a966a60489",
+      "path": "astropy/units/decorators.py"
+    },
+    {
+      "bytes": 11701,
+      "oid": "9ba86ea992176bf28c9fa578aa31249aa147e77f",
+      "path": "astropy/nddata/decorators.py"
+    },
+    {
+      "bytes": 180,
+      "oid": "29db62b9ced08059e8afcb07a17f03b74e35ece1",
+      "path": "astropy/io/__init__.py"
+    }
+  ],
+  "instance_id": "astropy__astropy-7336",
+  "pool": {
+    "counts": {
+      "excluded_non_utf8": 0,
+      "excluded_test": 311,
+      "excluded_vendored": 14,
+      "pool": 385,
+      "py": 710,
+      "tracked": 1811
+    },
+    "non_utf8": []
+  },
+  "ranked_count": 380,
+  "ranked_top100": [
+    {
+      "oid": "1e6d788a0d58e25876199d7044e33f54157d764b",
+      "path": "astropy/utils/decorators.py",
+      "score": 122.24688460059353
+    },
+    {
+      "oid": "8bece5a85072aa84cb640d263048a1a966a60489",
+      "path": "astropy/units/decorators.py",
+      "score": 120.81788237296385
+    },
+    {
+      "oid": "03e936d1cbb4e38b20f1c0e3eb00dc55d24aaede",
+      "path": "astropy/modeling/core.py",
+      "score": 110.427342867843
+    },
+    {
+      "oid": "c3cbad4c78a09e04e19ea10d0146750a6749a487",
+      "path": "astropy/utils/misc.py",
+      "score": 110.0248842395299
+    },
+    {
+      "oid": "65c38eabd006cb38fd4dfc5afe01481c3edf819d",
+      "path": "ah_bootstrap.py",
+      "score": 107.95961981006039
+    },
+    {
+      "oid": "d5089e18ce5e9cb9b1ae81f11fd38eee26cb0f0f",
+      "path": "astropy/modeling/parameters.py",
+      "score": 102.31578273363361
+    },
+    {
+      "oid": "3bdda4a6370ea8fe8f09fcfcf209b11ef9270cf3",
+      "path": "astropy/units/quantity.py",
+      "score": 101.85090384892386
+    },
+    {
+      "oid": "7469c1cbec3bdc229097430a68e55c0d6e780479",
+      "path": "astropy/wcs/wcs.py",
+      "score": 100.63458113847844
+    },
+    {
+      "oid": "9899b2121196553d13933fe0d912726c8c4d3484",
+      "path": "astropy/io/fits/util.py",
+      "score": 98.06852865042153
+    },
+    {
+      "oid": "4af52b055a3e9e8b217eb56f532fae83d13bf8dc",
+      "path": "astropy/io/fits/hdu/base.py",
+      "score": 97.79579075204994
+    },
+    {
+      "oid": "942a3d7b3c58e0ee93ac41b2d994e5145e1ed91a",
+      "path": "astropy/table/column.py",
+      "score": 97.28070841441024
+    },
+    {
+      "oid": "71ae187f8aa2aa10ebc7ee8105e420b5877c65f7",
+      "path": "astropy/io/fits/hdu/hdulist.py",
+      "score": 94.85310680278694
+    },
+    {
+      "oid": "9ba86ea992176bf28c9fa578aa31249aa147e77f",
+      "path": "astropy/nddata/decorators.py",
+      "score": 94.27896497671114
+    },
+    {
+      "oid": "988776fd12d3dec87a885a895dcb90aa7077b6f1",
+      "path": "astropy/coordinates/sky_coordinate.py",
+      "score": 93.34981979360515
+    },
+    {
+      "oid": "800c31ef6b05fc23c82a1edef77edafcd399114d",
+      "path": "ez_setup.py",
+      "score": 93.30980792497581
+    },
+    {
+      "oid": "097bc775227cb7c7021ec905a14c5425ee04e74b",
+      "path": "astropy/units/core.py",
+      "score": 93.14253758890877
+    },
+    {
+      "oid": "bc7824b3f3c15f96e4cbe97a408d071b08cd29a8",
+      "path": "astropy/utils/console.py",
+      "score": 92.82848227266004
+    },
+    {
+      "oid": "0bad255e85ee0f6b8682d4fb1242a583a407a0a9",
+      "path": "astropy/nddata/ccddata.py",
+      "score": 91.6158423762065
+    },
+    {
+      "oid": "8237cdf2f0171cb870b7b90f9ba5cbbbfabb5ff5",
+      "path": "astropy/table/table.py",
+      "score": 89.58867523819455
+    },
+    {
+      "oid": "9c9615210b21cee6527517244822c9f26dbe6bb7",
+      "path": "astropy/io/fits/hdu/image.py",
+      "score": 89.25251554182721
+    },
+    {
+      "oid": "babb46319631a4ba1888666fa4bad0b5783a75c6",
+      "path": "astropy/utils/data_info.py",
+      "score": 88.66146586923998
+    },
+    {
+      "oid": "4375dce45fa02095a9cb54b77c7b65b9a35c129c",
+      "path": "astropy/utils/iers/iers.py",
+      "score": 88.28096315545842
+    },
+    {
+      "oid": "2a69cb8a32b5358dcc9c63defc2e23ec5a02f0a2",
+      "path": "astropy/io/fits/column.py",
+      "score": 87.88520801774494
+    },
+    {
+      "oid": "dd810b58ef5794ed5e2a66018d233bb28496ed2b",
+      "path": "astropy/coordinates/earth.py",
+      "score": 87.59722065399582
+    },
+    {
+      "oid": "63f4c6ed589b2d589af5e6e1a8b5f0d52a17af5a",
+      "path": "astropy/time/core.py",
+      "score": 87.40941994968242
+    },
+    {
+      "oid": "c9b9c26cce84ae79c807906b6c041cc9d4039c61",
+      "path": "astropy/io/ascii/core.py",
+      "score": 87.33911533366367
+    },
+    {
+      "oid": "b3c12009f8fb98392b3c5e279c5edcd6af4d3e12",
+      "path": "astropy/io/ascii/ui.py",
+      "score": 86.44128402625572
+    },
+    {
+      "oid": "2d1c0b572e5f6f4f807923651708e06496914b67",
+      "path": "astropy/utils/introspection.py",
+      "score": 86.03214305035956
+    },
+    {
+      "oid": "e1bdb22b365f0bb253b7044b02d2d6238d474c84",
+      "path": "astropy/coordinates/transformations.py",
+      "score": 85.98997798321234
+    },
+    {
+      "oid": "7bddc56952e5d1d96ee4a319ff715d6c101b7e64",
+      "path": "astropy/io/fits/hdu/table.py",
+      "score": 83.22584053196431
+    },
+    {
+      "oid": "3cd6fbb14ef2ebfbd6b5f37f00a5ac4f33f6e4d2",
+      "path": "astropy/coordinates/baseframe.py",
+      "score": 82.80565015820372
+    },
+    {
+      "oid": "dd3d9c2428dd645114f4de05b47994a5b6c79dc6",
+      "path": "astropy/modeling/fitting.py",
+      "score": 82.2489464736307
+    },
+    {
+      "oid": "8deaacb414f76531617d431b433eba824dbcf8b4",
+      "path": "astropy/__init__.py",
+      "score": 81.32108143920414
+    },
+    {
+      "oid": "d479d70133e61b4bb67899b2874f7ebba4632d2c",
+      "path": "astropy/io/votable/exceptions.py",
+      "score": 81.13064579945834
+    },
+    {
+      "oid": "7b9f3e0759f6736d3305242964aeba33d77eb286",
+      "path": "astropy/config/configuration.py",
+      "score": 80.8970118916026
+    },
+    {
+      "oid": "351f9e1a80b8ae425f25b9c19b0633a2bfb1cf41",
+      "path": "astropy/wcs/utils.py",
+      "score": 80.84601251385402
+    },
+    {
+      "oid": "1d2bdc1aa5326684f810683d94aece1235560379",
+      "path": "astropy/io/fits/convenience.py",
+      "score": 78.93285389760244
+    },
+    {
+      "oid": "3e1bceb98aa9add0e71ede0488d47594df5e19ba",
+      "path": "astropy/io/fits/fitsrec.py",
+      "score": 78.53296421532683
+    },
+    {
+      "oid": "ae353d559c32ba98ae2c40af47e0f351a8eb89af",
+      "path": "astropy/convolution/convolve.py",
+      "score": 77.91964999040167
+    },
+    {
+      "oid": "ae2ca8353d29bedc251be0edb4e537429d07e600",
+      "path": "astropy/coordinates/attributes.py",
+      "score": 77.82019587851902
+    },
+    {
+      "oid": "d6f3d3f7756a57348cd367332158ff082e04654c",
+      "path": "astropy/logger.py",
+      "score": 76.6029564230673
+    },
+    {
+      "oid": "2d5c9c44f53a7369730c4e951b825902c621c4c1",
+      "path": "astropy/table/pprint.py",
+      "score": 76.10345156059505
+    },
+    {
+      "oid": "41e0dad1bc7d4166137eedb4f2f1f5a9ec9df5f0",
+      "path": "astropy/io/fits/hdu/compressed.py",
+      "score": 75.6537438586838
+    },
+    {
+      "oid": "3f261124a317034d05045f09a560998460e05e43",
+      "path": "astropy/coordinates/representation.py",
+      "score": 75.6386387752284
+    },
+    {
+      "oid": "d150bc5bc1fd3cdf2f71d72b1235ad07cd1a3f95",
+      "path": "astropy/units/function/core.py",
+      "score": 75.60167543573158
+    },
+    {
+      "oid": "2404038444af44e7c04d725be5185931913aa4e1",
+      "path": "astropy/utils/data.py",
+      "score": 74.78054809920846
+    },
+    {
+      "oid": "647446593779026415284b519bfd9572f1b3d753",
+      "path": "astropy/time/formats.py",
+      "score": 74.61208679961149
+    },
+    {
+      "oid": "3e264aaa79d8d3b011739ea8a5847a2ceecb8443",
+      "path": "astropy/io/ascii/cds.py",
+      "score": 73.93276004579332
+    },
+    {
+      "oid": "aa65c5c2247d48dc2a3a70850383a0ae923a6e7d",
+      "path": "astropy/io/fits/header.py",
+      "score": 73.74527905529061
+    },
+    {
+      "oid": "419c74b357e265f83da3a2c28ee5cec0a6ffe5e5",
+      "path": "astropy/nddata/mixins/ndarithmetic.py",
+      "score": 73.46023602605989
+    },
+    {
+      "oid": "f651ff90bfa392266cb691daeeaaf5e0624b9626",
+      "path": "astropy/modeling/utils.py",
+      "score": 72.24728617819335
+    },
+    {
+      "oid": "2cfec73848915dcc510caca48a8e12c35397c00e",
+      "path": "astropy/cosmology/core.py",
+      "score": 71.15906716661732
+    },
+    {
+      "oid": "8f1cad1c32d9afc1c8acd0188effb03474256d91",
+      "path": "astropy/io/fits/card.py",
+      "score": 70.90895783567166
+    },
+    {
+      "oid": "c829caf6ea22673d2270c858b1b40be2703a3ce8",
+      "path": "astropy/nddata/nduncertainty.py",
+      "score": 70.73573179282845
+    },
+    {
+      "oid": "906e3ececbadd5b6517dab27ee192066000110e9",
+      "path": "astropy/coordinates/angles.py",
+      "score": 70.3133191145813
+    },
+    {
+      "oid": "47b738f71d751ad970ffa349b82394fd2f61e9dc",
+      "path": "astropy/io/ascii/ipac.py",
+      "score": 69.90247191084477
+    },
+    {
+      "oid": "8e8ab7c1d3842bff07b4b7771538a67ddfbbfac5",
+      "path": "astropy/visualization/wcsaxes/core.py",
+      "score": 69.657544018253
+    },
+    {
+      "oid": "5759ecc62abd3be87262bf3ed3ba6fb1ee472e6a",
+      "path": "astropy/nddata/nddata.py",
+      "score": 69.6379979742857
+    },
+    {
+      "oid": "cf3505e7424a90b8f6082cfcc794c600255c1079",
+      "path": "astropy/io/fits/connect.py",
+      "score": 69.446570032894
+    },
+    {
+      "oid": "c2f6b8a7b8101ea8960da1e6777a77cf335f5a2d",
+      "path": "astropy/units/quantity_helper.py",
+      "score": 69.29488790395638
+    },
+    {
+      "oid": "92885f485e0cc400fa2cc2226e13e53080fc6bcc",
+      "path": "astropy/io/fits/diff.py",
+      "score": 69.26207151938601
+    },
+    {
+      "oid": "e67141c21233bbd69f10e9043602f8b9ebcfcdea",
+      "path": "astropy/nddata/utils.py",
+      "score": 68.9892097724895
+    },
+    {
+      "oid": "1b37945484066ed985a4c1eb15086f18749fab02",
+      "path": "astropy/stats/funcs.py",
+      "score": 68.59250361546461
+    },
+    {
+      "oid": "d3f0a5ba4a6e86ca7d2f40622dcde128d06a4a4a",
+      "path": "docs/conf.py",
+      "score": 68.47258725985095
+    },
+    {
+      "oid": "7b8689be1ab1f1d371635aa8eb14869cdabd0d9b",
+      "path": "astropy/coordinates/solar_system.py",
+      "score": 67.71423049059213
+    },
+    {
+      "oid": "cca3fd0cb47a537fb5961907fd168af052f5fea9",
+      "path": "astropy/io/registry.py",
+      "score": 67.17126032340869
+    },
+    {
+      "oid": "dea57bc2a721f0e949f6d3b9a5e62eb2c2469d49",
+      "path": "astropy/table/operations.py",
+      "score": 67.10364669454027
+    },
+    {
+      "oid": "4e642c8581abf633f2575b4a4e0afeb7224550c1",
+      "path": "astropy/io/ascii/latex.py",
+      "score": 67.08312840896603
+    },
+    {
+      "oid": "580fd9a75878fffb044b7cf3ade21f2982d58888",
+      "path": "astropy/io/fits/file.py",
+      "score": 66.40273876118374
+    },
+    {
+      "oid": "2b7a1044770096d5c55d1a579a1c4cf2f49f508a",
+      "path": "astropy/_erfa/erfa_generator.py",
+      "score": 66.05906380435387
+    },
+    {
+      "oid": "adc5ce25cd3d7ffb0200fdeea4c6383675c8481d",
+      "path": "astropy/utils/timer.py",
+      "score": 65.71501636906665
+    },
+    {
+      "oid": "63be6751b0a7d25b6b8cbe3a9be1abbba8414aab",
+      "path": "astropy/wcs/docstrings.py",
+      "score": 65.4627883948655
+    },
+    {
+      "oid": "2f25e450f580c8832396aac2c1da0b2453e9963e",
+      "path": "astropy/nddata/compat.py",
+      "score": 65.36111240708026
+    },
+    {
+      "oid": "5c2367b7c6e351876867ff49e5ff90d04b85f845",
+      "path": "astropy/io/ascii/daophot.py",
+      "score": 65.3264384253966
+    },
+    {
+      "oid": "7ab5977a98e687988a538b5dd599ef21f7d6e3dd",
+      "path": "astropy/io/ascii/html.py",
+      "score": 64.85140624033102
+    },
+    {
+      "oid": "4c5e04cc23fa165e7bba661540b25bad0ea1e855",
+      "path": "astropy/coordinates/angle_utilities.py",
+      "score": 64.34924887380974
+    },
+    {
+      "oid": "f5cc22aa36681d86832bf46a75d042dba21659dd",
+      "path": "astropy/utils/metadata.py",
+      "score": 64.20692559233169
+    },
+    {
+      "oid": "20328c6b8979e541c3e97894354b30417292e115",
+      "path": "astropy/table/index.py",
+      "score": 64.00035202533212
+    },
+    {
+      "oid": "506f9de8bd816ab5733796f408b54b029879d267",
+      "path": "astropy/io/misc/hdf5.py",
+      "score": 63.95747216928214
+    },
+    {
+      "oid": "d9bf228d658d151f581ce61d989bbd203aee8c7d",
+      "path": "astropy/io/votable/tree.py",
+      "score": 63.606578906248316
+    },
+    {
+      "oid": "636031e33d6a93b0214a32a0d6673c3ff3de36f0",
+      "path": "astropy/io/fits/hdu/groups.py",
+      "score": 63.59263806017864
+    },
+    {
+      "oid": "e64bac9583f4d3eab13eeb30a43ecdd8e63e8f7e",
+      "path": "astropy/table/meta.py",
+      "score": 61.690835455092056
+    },
+    {
+      "oid": "aa0e8af8250146002c0b81d9112d928ab16ad22e",
+      "path": "astropy/config/paths.py",
+      "score": 61.68436664129339
+    },
+    {
+      "oid": "1efac49b4ee0592da1598c8a50b55f1f38879de4",
+      "path": "astropy/utils/xml/writer.py",
+      "score": 61.589657338878865
+    },
+    {
+      "oid": "056c0e949e89f4a5070e57546f1c6b55a0aadd82",
+      "path": "astropy/io/misc/yaml.py",
+      "score": 61.37183175728433
+    },
+    {
+      "oid": "d033ac6fb01f19cf8e66c2ea31bab52a135549a3",
+      "path": "astropy/io/ascii/sextractor.py",
+      "score": 61.162924537151596
+    },
+    {
+      "oid": "14ea53e6b0623b8799990bc77be71da283657c94",
+      "path": "astropy/io/votable/table.py",
+      "score": 60.01843410716859
+    },
+    {
+      "oid": "27f6ac75d720bd3d389afc972fcb0f4bbf42ef0f",
+      "path": "astropy/units/function/logarithmic.py",
+      "score": 59.711715489388894
+    },
+    {
+      "oid": "1ee73c48592fbb3d094bfb8273d9854c57eb45c3",
+      "path": "astropy/table/np_utils.py",
+      "score": 59.708079024601915
+    },
+    {
+      "oid": "3645f95b9d6ef6ef6c08f52823a3d3b81c9d5a08",
+      "path": "astropy/units/format/utils.py",
+      "score": 59.57516479689922
+    },
+    {
+      "oid": "1a10ff22508bfa08a4ca0322c8dcf2772fbe6984",
+      "path": "astropy/io/fits/scripts/fitsdiff.py",
+      "score": 59.0919739649522
+    },
+    {
+      "oid": "d342318e222b7f86144b347f12dde0315ab3fbd4",
+      "path": "astropy/stats/sigma_clipping.py",
+      "score": 58.57080427115658
+    },
+    {
+      "oid": "2b61a290dbf6f10c2662eab2e406d780c25b9190",
+      "path": "astropy/table/groups.py",
+      "score": 58.03405359374321
+    },
+    {
+      "oid": "03521c1e39099ec12d25f7b2e5d1a9e047a07334",
+      "path": "astropy/coordinates/sites.py",
+      "score": 57.74440065642361
+    },
+    {
+      "oid": "3f11a02a83657feafa9fa08b406aee7849b81ed6",
+      "path": "astropy/io/fits/scripts/fitsheader.py",
+      "score": 57.108252120092054
+    },
+    {
+      "oid": "7698783be6d851eacc508c0e750ce3db631f2503",
+      "path": "examples/coordinates/plot_sgr-coordinate-frame.py",
+      "score": 57.10130290832277
+    },
+    {
+      "oid": "09fe8afc4c5750d1e7d61f33f27f7f50704d35ae",
+      "path": "astropy/io/ascii/ecsv.py",
+      "score": 56.77515398170973
+    },
+    {
+      "oid": "39f40f26073aca2915c5fc09cf2593cdab41967a",
+      "path": "astropy/visualization/wcsaxes/coordinate_helpers.py",
+      "score": 56.5220554538131
+    },
+    {
+      "oid": "9f4d8506a27c25517935df71dc0ad1994910bb25",
+      "path": "astropy/modeling/blackbody.py",
+      "score": 56.08082551122333
+    },
+    {
+      "oid": "2bd6bdf6542b002e30c313a8d2ad9316f95ae12b",
+      "path": "astropy/samp/hub.py",
+      "score": 56.04013055096814
+    }
+  ],
+  "repo": "astropy/astropy",
+  "slot": "T4"
+}

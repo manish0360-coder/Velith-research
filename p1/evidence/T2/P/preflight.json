@@ -1,0 +1,48 @@
+{
+  "admissible": true,
+  "b_prompt": 15232,
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "files_included": 5,
+  "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+  "identity": "fe8e73c9bc08ac4e68d965f5a6b0fbb3b88cd3cc7591d5abd7c19635a1eb6683",
+  "inadmissible_reasons": [],
+  "instance_id": "matplotlib__matplotlib-24970",
+  "predicted_prompt_eval_count": 15129,
+  "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+  "problem_statement_sha256": "5ae160cc5420b0587fc3a4d567fb1d76d86d4d20de526eaaaeb95759ea568dbf",
+  "prompt_bytes": 56484,
+  "prompt_chars": 56484,
+  "retrieval": {
+    "algorithm": "okapi-bm25",
+    "b": 0.75,
+    "idf": "ln(1+(N-df+0.5)/(df+0.5))",
+    "k": 5,
+    "k1": 1.2,
+    "query_terms": "distinct",
+    "token_re": "[A-Za-z0-9_]+",
+    "vendored": [
+      "_externals",
+      "_vendor",
+      "build",
+      "cextern",
+      "dist",
+      "extern",
+      "externals",
+      "third_party",
+      "vendor",
+      "vendored"
+    ]
+  },
+  "seed": 6363229982489726258,
+  "slot": "T2",
+  "spec_sha256": "1d01f6b13d76191468d40e8bcb2ecd0a663e6ad3fb746655e8a14dc6882b578c",
+  "tokenizer": {
+    "commit": "e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11",
+    "offset": 1,
+    "rendering": "messages_branch|add_special_tokens=False",
+    "repo": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "tokenizer_json_sha256": "091b9dadb9845f0e8386c38bdb87e98db8adc7b0aacf36cb9257c00d0a668714",
+    "tokenizers_version": "0.23.2"
+  },
+  "tokens_without_files": 767
+}

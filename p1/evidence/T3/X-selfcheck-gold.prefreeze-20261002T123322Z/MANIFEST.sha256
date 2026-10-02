@@ -1,0 +1,12 @@
+d5817716b27b4e3b12589c9c8fa1033861c884cedcd9d5ab1df662ba4b0ea9a8  ./run/baseline/junit.xml
+a7bd78985c669fe23f89b8dbbd908eb00482d2dd6e812cc200f128c9f52e665c  ./run/baseline/stdout.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./run/baseline/velith/candidate.patch
+02bf90dd6bbfa52b1b60b627a9f7648eb3026dfc6f511d496992e3c1d980723f  ./run/baseline/velith/run.sh
+b73cf349fbf082664eac43c91879ba6d7fb63ae64bf24e8cb75d7f8190a132e9  ./run/baseline/velith/test.patch
+1d53785e692b99d76cd060686439715d66272b5e7628459daaa51ec8e2c4947e  ./run/candidate/junit.xml
+f7e6fa4e2b468357368acf73cdba72b9f92adbf3d18e7e5ddb0fd986947d3d9c  ./run/candidate/stdout.txt
+ca103b1d37b3bb1413176609382daee9c33ae0c2bde2dc05300a2bd5287cd8cd  ./run/candidate/velith/candidate.patch
+02bf90dd6bbfa52b1b60b627a9f7648eb3026dfc6f511d496992e3c1d980723f  ./run/candidate/velith/run.sh
+b73cf349fbf082664eac43c91879ba6d7fb63ae64bf24e8cb75d7f8190a132e9  ./run/candidate/velith/test.patch
+12d4614c8b7678570920325f3e8db51f5766714e3fb787975a938217e68da131  ./run/evidence.json
+ce6fe467b7c1da58337381e7cef7e075d06cdfaf81b1daf639194661c65e9e5c  ./selfcheck.json

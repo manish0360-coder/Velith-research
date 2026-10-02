@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "gold_hunk_lines": {
+      "needles": 2,
+      "needles_found": 1,
+      "non_exempt": [],
+      "occurrences_by_region": {
+        "file": 1
+      }
+    },
+    "gold_patch_full_text": false,
+    "hints_windows_41": {
+      "needles": 27,
+      "needles_found": 0,
+      "non_exempt": [],
+      "occurrences_by_region": {}
+    },
+    "test_ids": {
+      "needles": 340,
+      "needles_found": 0,
+      "non_exempt": [],
+      "occurrences_by_region": {}
+    },
+    "test_patch_full_text": false,
+    "test_patch_hunk_lines": {
+      "needles": 54,
+      "needles_found": 6,
+      "non_exempt": [],
+      "occurrences_by_region": {
+        "file": 74,
+        "issue": 2
+      }
+    },
+    "test_patch_paths_in_pool": [],
+    "test_patch_paths_in_prompt": []
+  },
+  "hints_text_sha256": "cca59f2b61b9eb6f350d40ffc51d0fa27cbdb9cc7944543a97c260370c5ffe0d",
+  "verdict": "PASS"
+}

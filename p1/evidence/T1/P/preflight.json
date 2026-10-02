@@ -1,0 +1,48 @@
+{
+  "admissible": true,
+  "b_prompt": 15232,
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "files_included": 5,
+  "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+  "identity": "e2671b01f018f025d04a3b1c5b708cd5eb27ce3c2b75d82a09b93cbf6e2253f8",
+  "inadmissible_reasons": [],
+  "instance_id": "pallets__flask-5014",
+  "predicted_prompt_eval_count": 15197,
+  "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+  "problem_statement_sha256": "f77d8eab7dd608172aa78b3b50dfa7e0e9b3a6a1c52d14a1cb02417eb5a0ab00",
+  "prompt_bytes": 56233,
+  "prompt_chars": 56233,
+  "retrieval": {
+    "algorithm": "okapi-bm25",
+    "b": 0.75,
+    "idf": "ln(1+(N-df+0.5)/(df+0.5))",
+    "k": 5,
+    "k1": 1.2,
+    "query_terms": "distinct",
+    "token_re": "[A-Za-z0-9_]+",
+    "vendored": [
+      "_externals",
+      "_vendor",
+      "build",
+      "cextern",
+      "dist",
+      "extern",
+      "externals",
+      "third_party",
+      "vendor",
+      "vendored"
+    ]
+  },
+  "seed": 940057046043497027,
+  "slot": "T1",
+  "spec_sha256": "4863ecdfb9f1c83c1d472e020cfba6938541eaa6bafdd1e790b09656185bdfde",
+  "tokenizer": {
+    "commit": "e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11",
+    "offset": 1,
+    "rendering": "messages_branch|add_special_tokens=False",
+    "repo": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "tokenizer_json_sha256": "091b9dadb9845f0e8386c38bdb87e98db8adc7b0aacf36cb9257c00d0a668714",
+    "tokenizers_version": "0.23.2"
+  },
+  "tokens_without_files": 222
+}

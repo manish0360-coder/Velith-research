@@ -1,0 +1,182 @@
+{
+  "budget": {
+    "b_prompt": 15232,
+    "margin": 128,
+    "r_out": 1024
+  },
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "frozen_utc": "2026-10-02T12:45:05Z",
+  "gen_sha256": "c84a614c04e6925f0c27b2e490d8acb239a2784aecee9af404e0bceefd1ac1c5",
+  "generation_route": {
+    "host": "http://host.docker.internal:11434",
+    "image": "velith-verifier:m0",
+    "image_id": "sha256:36c4c00bc85bf99203e3aa277540e8b68926b8bf183edd07af8ea84e46afcfab",
+    "module_sha256": {
+      "velith/agent/proposer.py": "91d32296ab5e0c02f2a41ae0b843053d86cb0674c61adfb0aab5035e08b3b113",
+      "velith/batch/provenance.py": "2106797f7fde7dd6907c48e85767be13727affec2615616f326897b979bfa504",
+      "velith/llm/client.py": "cb6572eed9bb333aeb27f7b5901a46e6cf3dacaba307974f3b7f3c454558ee37",
+      "velith/task.py": "f40c978f1412f2da3882284f3c90a26cd328b7ceb4ad698c421dc9fbd0926a43"
+    },
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+  "model": {
+    "client_timeout_s": 1800.0,
+    "manifest_digest": "e196dcd918e4f54307db79c9fada1ff261c564e1df1624e20ae65d1ff0a4c45c",
+    "name": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+    "num_ctx": 16384,
+    "num_predict": 1024,
+    "stop": [
+      "\nUser:",
+      "\nAssistant:"
+    ],
+    "temperature": 0.0
+  },
+  "pilot": "M2-PV-P1",
+  "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+  "spec_doc_sha256": "d99840d56b93481a1d9e5c641b79cf2a0d1d6a6ca05a3beb15c785bfaa4f7dbc",
+  "task_order": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "tasks": [
+    {
+      "admissible": true,
+      "base_commit": "7ee9ceb71e868944a46e1ff00b506772a53a4f1d",
+      "digest": "sha256:eaf597005c159361cb8ee26018fb3741b320f331065f0c95726d83ccf2f1fba4",
+      "files_included": 5,
+      "identity": "e2671b01f018f025d04a3b1c5b708cd5eb27ce3c2b75d82a09b93cbf6e2253f8",
+      "image": "swebench/sweb.eval.x86_64.pallets_1776_flask-5014",
+      "inadmissible_reasons": [],
+      "instance_id": "pallets__flask-5014",
+      "material_sha256": "825c4bfc3f9cecdaa792a06a863a57f31199c055d271ddeab64e67726698b656",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": 15197,
+      "prepare_manifest_sha256": "714819d2f41d34d31e13c8c641ddc54fda60b94054ec2a30f7c9c46d875658c8",
+      "protected_paths": [
+        "pyproject.toml",
+        "tests/conftest.py",
+        "tests/test_blueprints.py",
+        "tox.ini"
+      ],
+      "repo": "pallets/flask",
+      "seed": 940057046043497027,
+      "slot": "T1",
+      "spec": "~/velith-prototype/flask-5014.json",
+      "spec_sha256": "4863ecdfb9f1c83c1d472e020cfba6938541eaa6bafdd1e790b09656185bdfde",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "admissible": true,
+      "base_commit": "a3011dfd1aaa2487cce8aa7369475533133ef777",
+      "digest": "sha256:a38f22a0f44eab9328d76624c27667b807bb7b0e994dd537f7a2b5919b4e8800",
+      "files_included": 5,
+      "identity": "fe8e73c9bc08ac4e68d965f5a6b0fbb3b88cd3cc7591d5abd7c19635a1eb6683",
+      "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24970",
+      "inadmissible_reasons": [],
+      "instance_id": "matplotlib__matplotlib-24970",
+      "material_sha256": "937094137fd176e581df3422d8d29fd806f7a9d8172ff0b85e5090bd5acbcc10",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": 15129,
+      "prepare_manifest_sha256": "bdb76e14c5b49ba8f3f870c31239e334925dcdb0353d3a2575d0bfc29efeffd3",
+      "protected_paths": [
+        "lib/matplotlib/tests/conftest.py",
+        "lib/matplotlib/tests/test_colors.py",
+        "pyproject.toml",
+        "pytest.ini",
+        "setup.cfg",
+        "tox.ini"
+      ],
+      "repo": "matplotlib/matplotlib",
+      "seed": 6363229982489726258,
+      "slot": "T2",
+      "spec": "stage0/p1env/results/admission-T2R1R1R1R1R1/T2R1R1R1R1R1.spec.json",
+      "spec_sha256": "1d01f6b13d76191468d40e8bcb2ecd0a663e6ad3fb746655e8a14dc6882b578c",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "admissible": true,
+      "base_commit": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a",
+      "digest": "sha256:de0579911863656a0331adc8d2dd6080ccc2543d0a5fd2bd68d753c8df1ec7c8",
+      "files_included": 5,
+      "identity": "115f516e2519e2acbb4cae28b43bb2857da70bd2e9e9f1f34516f13402cbcb48",
+      "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14629",
+      "inadmissible_reasons": [],
+      "instance_id": "scikit-learn__scikit-learn-14629",
+      "material_sha256": "3be749893fc38bca8fff05064f142c6ead8388cd6e6155a7f9b6ba2cec6077e4",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": 14892,
+      "prepare_manifest_sha256": "5bf08189f96aab2ec84822af90f972f1a633d93e4dfcd2cb773ef845999e8d53",
+      "protected_paths": [
+        "conftest.py",
+        "setup.cfg",
+        "sklearn/conftest.py",
+        "sklearn/tests/test_multioutput.py"
+      ],
+      "repo": "scikit-learn/scikit-learn",
+      "seed": 5174882623180139665,
+      "slot": "T3",
+      "spec": "stage0/p1env/results/admission-T3/T3.spec.json",
+      "spec_sha256": "f61ebb959ac7a4376aa0c78eade7d866bec49e669eb40766a32fc19617a270fe",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "admissible": true,
+      "base_commit": "732d89c2940156bdc0e200bb36dc38b5e424bcba",
+      "digest": "sha256:481ebd12ef496853db01765b1dd57d9aebdedd056c22656b9f483fc1c8379da9",
+      "files_included": 4,
+      "identity": "4d82ad4344dd94e4d2664fb8688e8cd78d15e226a4b7bde0e79919ce0ae886f7",
+      "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-7336",
+      "inadmissible_reasons": [],
+      "instance_id": "astropy__astropy-7336",
+      "material_sha256": "1f55ebee7a5d9f0bd3157a16783b00b034e18d42c10156caa12166721e01e105",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": 15227,
+      "prepare_manifest_sha256": "c5ec1ab3fc9c72e9c67f21b45b72ec42ac4130aa75b1eca92fc1928e9660367c",
+      "protected_paths": [
+        "astropy/conftest.py",
+        "astropy/units/tests/test_quantity_annotations.py",
+        "astropy/units/tests/test_quantity_decorator.py",
+        "conftest.py",
+        "setup.cfg"
+      ],
+      "repo": "astropy/astropy",
+      "seed": 2676707852901449598,
+      "slot": "T4",
+      "spec": "stage0/p1env/results/admission-T4/T4.spec.json",
+      "spec_sha256": "8f88cc700f71c94b91d1ffe8e7721cf0e93cea904308e7c41d8ad619c55f97fc",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "admissible": true,
+      "base_commit": "41fef6f1352be994cd90056d47440fe9aa4c068f",
+      "digest": "sha256:15d79e643a94b7fba2a8138cdc5daf011bc2d99f61a7ce30508689a90ab9042f",
+      "files_included": 5,
+      "identity": "c3109b06e90f948038e972811605c6f054e5de834d59288f79d099a453ebb392",
+      "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-7393",
+      "inadmissible_reasons": [],
+      "instance_id": "pydata__xarray-7393",
+      "material_sha256": "ffe61f53bb186d5dbb500752f4129176423f0c63b97f9af4f8a0f41070a4eba7",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": 14953,
+      "prepare_manifest_sha256": "499354f0563db3b20d4199b8465ec8f928a9d0812835895539322387cb91daf8",
+      "protected_paths": [
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "xarray/tests/conftest.py",
+        "xarray/tests/test_indexes.py"
+      ],
+      "repo": "pydata/xarray",
+      "seed": 5007947557582598968,
+      "slot": "T5",
+      "spec": "stage0/p1env/results/admission-T5R1/T5R1.spec.json",
+      "spec_sha256": "bd3d6017a7fbf6612c1bc45a6dfe68e636403d69713a6e2f9733ec4214aa1153",
+      "stage_x_timeout_s": 1800.0
+    }
+  ]
+}

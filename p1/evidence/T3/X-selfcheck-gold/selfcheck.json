@@ -1,0 +1,33 @@
+{
+  "admission_evidence": "stage0/p1env/results/admission-T3/A/evidence.json",
+  "compare_vs_admission": {
+    "candidate_patch_sha256": [
+      "ca103b1d37b3bb1413176609382daee9c33ae0c2bde2dc05300a2bd5287cd8cd",
+      "ca103b1d37b3bb1413176609382daee9c33ae0c2bde2dc05300a2bd5287cd8cd"
+    ],
+    "classification": [
+      "PASSED",
+      "PASSED"
+    ],
+    "detail": [
+      "27/27",
+      "27/27"
+    ],
+    "image_id": [
+      "sha256:de0579911863656a0331adc8d2dd6080ccc2543d0a5fd2bd68d753c8df1ec7c8",
+      "sha256:de0579911863656a0331adc8d2dd6080ccc2543d0a5fd2bd68d753c8df1ec7c8"
+    ],
+    "protected_set_sha256": [
+      "fc0742bdccf04c685a5ec8db196c1931e186308f02cfc00c77d8fc740b77fbe4",
+      "fc0742bdccf04c685a5ec8db196c1931e186308f02cfc00c77d8fc740b77fbe4"
+    ],
+    "reason": [
+      "ALL_REQUIRED_PASSED",
+      "ALL_REQUIRED_PASSED"
+    ]
+  },
+  "per_test_outcomes_equal": true,
+  "spec_sha256": "f61ebb959ac7a4376aa0c78eade7d866bec49e669eb40766a32fc19617a270fe",
+  "utc": "2026-10-02T12:57:59Z",
+  "verdict": "PASS"
+}

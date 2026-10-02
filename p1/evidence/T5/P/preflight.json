@@ -1,0 +1,48 @@
+{
+  "admissible": true,
+  "b_prompt": 15232,
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "files_included": 5,
+  "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+  "identity": "c3109b06e90f948038e972811605c6f054e5de834d59288f79d099a453ebb392",
+  "inadmissible_reasons": [],
+  "instance_id": "pydata__xarray-7393",
+  "predicted_prompt_eval_count": 14953,
+  "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+  "problem_statement_sha256": "7a754d9fc6c6c54623c0bbff6a45db2b812026258275ff61e8fa85d1c4f81f40",
+  "prompt_bytes": 48123,
+  "prompt_chars": 48111,
+  "retrieval": {
+    "algorithm": "okapi-bm25",
+    "b": 0.75,
+    "idf": "ln(1+(N-df+0.5)/(df+0.5))",
+    "k": 5,
+    "k1": 1.2,
+    "query_terms": "distinct",
+    "token_re": "[A-Za-z0-9_]+",
+    "vendored": [
+      "_externals",
+      "_vendor",
+      "build",
+      "cextern",
+      "dist",
+      "extern",
+      "externals",
+      "third_party",
+      "vendor",
+      "vendored"
+    ]
+  },
+  "seed": 5007947557582598968,
+  "slot": "T5",
+  "spec_sha256": "bd3d6017a7fbf6612c1bc45a6dfe68e636403d69713a6e2f9733ec4214aa1153",
+  "tokenizer": {
+    "commit": "e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11",
+    "offset": 1,
+    "rendering": "messages_branch|add_special_tokens=False",
+    "repo": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "tokenizer_json_sha256": "091b9dadb9845f0e8386c38bdb87e98db8adc7b0aacf36cb9257c00d0a668714",
+    "tokenizers_version": "0.23.2"
+  },
+  "tokens_without_files": 1108
+}

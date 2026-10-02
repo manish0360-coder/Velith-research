@@ -1,0 +1,980 @@
+{
+  "base_commit": "41fef6f1352be994cd90056d47440fe9aa4c068f",
+  "fit_trace": [
+    {
+      "decision": "included",
+      "path": "xarray/util/print_versions.py",
+      "score": 248.2114499283587,
+      "tokens_if_included": 2665
+    },
+    {
+      "decision": "included",
+      "path": "doc/conf.py",
+      "score": 210.70505602404887,
+      "tokens_if_included": 7503
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/dataarray.py",
+      "score": 179.69655453632564,
+      "tokens_if_included": 78911
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/dataset.py",
+      "score": 167.74745203887593,
+      "tokens_if_included": 101682
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/api.py",
+      "score": 150.40858494201882,
+      "tokens_if_included": 24846
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/common.py",
+      "score": 149.16606255017243,
+      "tokens_if_included": 25880
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/variable.py",
+      "score": 135.1475201370178,
+      "tokens_if_included": 38586
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/computation.py",
+      "score": 125.21613407627842,
+      "tokens_if_included": 30145
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/combine.py",
+      "score": 123.88074664379378,
+      "tokens_if_included": 18426
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/plot/utils.py",
+      "score": 121.58470446322701,
+      "tokens_if_included": 24985
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/groupby.py",
+      "score": 119.4648581802931,
+      "tokens_if_included": 20771
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/alignment.py",
+      "score": 109.05696505673332,
+      "tokens_if_included": 18254
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/rolling.py",
+      "score": 107.40623483784442,
+      "tokens_if_included": 18751
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/conventions.py",
+      "score": 101.54091276171512,
+      "tokens_if_included": 15816
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/indexing.py",
+      "score": 101.15729409332094,
+      "tokens_if_included": 23401
+    },
+    {
+      "decision": "included",
+      "path": "xarray/util/generate_aggregations.py",
+      "score": 100.91800273089818,
+      "tokens_if_included": 12463
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/duck_array_ops.py",
+      "score": 99.5020492982882,
+      "tokens_if_included": 19614
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/cftime_offsets.py",
+      "score": 99.24513371097997,
+      "tokens_if_included": 24866
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/netCDF4_.py",
+      "score": 95.91799673553773,
+      "tokens_if_included": 18103
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/cftimeindex.py",
+      "score": 95.18396274328214,
+      "tokens_if_included": 21305
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/missing.py",
+      "score": 94.97572074101515,
+      "tokens_if_included": 20419
+    },
+    {
+      "decision": "included",
+      "path": "ci/min_deps_check.py",
+      "score": 94.59680630607147,
+      "tokens_if_included": 14491
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/plot/dataarray_plot.py",
+      "score": 94.17538073725943,
+      "tokens_if_included": 40911
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/zarr.py",
+      "score": 93.57139287909189,
+      "tokens_if_included": 23248
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/tutorial.py",
+      "score": 93.5264274750275,
+      "tokens_if_included": 17424
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/utils.py",
+      "score": 90.15696679535462,
+      "tokens_if_included": 24821
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/accessor_str.py",
+      "score": 89.31351321778963,
+      "tokens_if_included": 38234
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/merge.py",
+      "score": 88.45110136685827,
+      "tokens_if_included": 25710
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/accessor_dt.py",
+      "score": 87.76741441239429,
+      "tokens_if_included": 21145
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/indexes.py",
+      "score": 87.16995027113097,
+      "tokens_if_included": 29062
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/concat.py",
+      "score": 85.08391713545258,
+      "tokens_if_included": 21440
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/parallel.py",
+      "score": 84.31130855585769,
+      "tokens_if_included": 20894
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/rasterio_.py",
+      "score": 84.05571282210016,
+      "tokens_if_included": 18399
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/resample_cftime.py",
+      "score": 79.09917842822806,
+      "tokens_if_included": 19974
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/file_manager.py",
+      "score": 78.76411650735243,
+      "tokens_if_included": 17612
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/scipy_.py",
+      "score": 78.10212809487679,
+      "tokens_if_included": 17509
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/coordinates.py",
+      "score": 77.73463157533789,
+      "tokens_if_included": 18883
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/options.py",
+      "score": 77.60541935048695,
+      "tokens_if_included": 17642
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/times.py",
+      "score": 76.82138521445002,
+      "tokens_if_included": 22412
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/common.py",
+      "score": 75.31093074197868,
+      "tokens_if_included": 18013
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/plot/facetgrid.py",
+      "score": 75.23145115556433,
+      "tokens_if_included": 25095
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/plot/dataset_plot.py",
+      "score": 74.70739107617032,
+      "tokens_if_included": 24041
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/h5netcdf_.py",
+      "score": 69.59644437901962,
+      "tokens_if_included": 18435
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/weighted.py",
+      "score": 67.81940339981021,
+      "tokens_if_included": 20088
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/types.py",
+      "score": 67.35216347467063,
+      "tokens_if_included": 16531
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/_aggregations.py",
+      "score": 66.79044451989284,
+      "tokens_if_included": 93383
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/resample.py",
+      "score": 65.87533271337551,
+      "tokens_if_included": 18206
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/formatting.py",
+      "score": 65.06877975664706,
+      "tokens_if_included": 23285
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/locks.py",
+      "score": 63.68761398700268,
+      "tokens_if_included": 16065
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/variables.py",
+      "score": 61.68019586601126,
+      "tokens_if_included": 17922
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/nputils.py",
+      "score": 61.42687837895838,
+      "tokens_if_included": 16878
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/testing.py",
+      "score": 59.87986029334183,
+      "tokens_if_included": 18917
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/calendar_ops.py",
+      "score": 58.99147619330356,
+      "tokens_if_included": 18552
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/rolling_exp.py",
+      "score": 57.89801347699449,
+      "tokens_if_included": 16276
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/netcdf3.py",
+      "score": 56.538762571286625,
+      "tokens_if_included": 15815
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/extensions.py",
+      "score": 56.28956042699635,
+      "tokens_if_included": 15442
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/plugins.py",
+      "score": 54.462311554443986,
+      "tokens_if_included": 16492
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/strings.py",
+      "score": 54.326471887225786,
+      "tokens_if_included": 16892
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/ops.py",
+      "score": 52.71828896446845,
+      "tokens_if_included": 17447
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/pydap_.py",
+      "score": 52.70032381230752,
+      "tokens_if_included": 16186
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/coding/frequencies.py",
+      "score": 50.25999063185902,
+      "tokens_if_included": 17209
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/formatting_html.py",
+      "score": 48.27512342646301,
+      "tokens_if_included": 17934
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "asv_bench/benchmarks/dataset_io.py",
+      "score": 47.908875030107275,
+      "tokens_if_included": 19505
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/dask_array_ops.py",
+      "score": 45.44620138488802,
+      "tokens_if_included": 15519
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/dtypes.py",
+      "score": 43.785951036190525,
+      "tokens_if_included": 15998
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/util/generate_ops.py",
+      "score": 43.51581471712747,
+      "tokens_if_included": 17523
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/util/deprecation_helpers.py",
+      "score": 43.38398024194564,
+      "tokens_if_included": 15630
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/convert.py",
+      "score": 42.75714642483915,
+      "tokens_if_included": 17590
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/cfgrib_.py",
+      "score": 39.846406576208864,
+      "tokens_if_included": 15830
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/backends/pynio_.py",
+      "score": 39.8458492157428,
+      "tokens_if_included": 15857
+    },
+    {
+      "decision": "skipped_does_not_fit",
+      "path": "xarray/core/pycompat.py",
+      "score": 38.74147501993297,
+      "tokens_if_included": 15233
+    },
+    {
+      "decision": "included",
+      "path": "doc/gallery/plot_rasterio.py",
+      "score": 38.525201075836854,
+      "tokens_if_included": 14953
+    }
+  ],
+  "included": [
+    {
+      "bytes": 5321,
+      "oid": "d53f1aab65e0ff028415903ee7eadb35bf246ddd",
+      "path": "xarray/util/print_versions.py"
+    },
+    {
+      "bytes": 14937,
+      "oid": "b5e08b81b46be95a224338e08cc2dc5490925487",
+      "path": "doc/conf.py"
+    },
+    {
+      "bytes": 16551,
+      "oid": "bc4893543fbc8e75540c9f79b89e4993e2a17780",
+      "path": "xarray/util/generate_aggregations.py"
+    },
+    {
+      "bytes": 6541,
+      "oid": "23621c55560fe87846c044ae78c262399c60629b",
+      "path": "ci/min_deps_check.py"
+    },
+    {
+      "bytes": 1339,
+      "oid": "853923a38bdb05de10da758451954dcae01a7f2f",
+      "path": "doc/gallery/plot_rasterio.py"
+    }
+  ],
+  "instance_id": "pydata__xarray-7393",
+  "pool": {
+    "counts": {
+      "excluded_non_utf8": 0,
+      "excluded_test": 58,
+      "pool": 116,
+      "py": 174,
+      "tracked": 322
+    },
+    "non_utf8": []
+  },
+  "ranked_count": 110,
+  "ranked_top100": [
+    {
+      "oid": "d53f1aab65e0ff028415903ee7eadb35bf246ddd",
+      "path": "xarray/util/print_versions.py",
+      "score": 248.2114499283587
+    },
+    {
+      "oid": "b5e08b81b46be95a224338e08cc2dc5490925487",
+      "path": "doc/conf.py",
+      "score": 210.70505602404887
+    },
+    {
+      "oid": "dc8dcbd3776e6b98fcb55d5a1e3a1a09dc2643c5",
+      "path": "xarray/core/dataarray.py",
+      "score": 179.69655453632564
+    },
+    {
+      "oid": "3d4bf0a9a20e240422887add8057e0b5d6341144",
+      "path": "xarray/core/dataset.py",
+      "score": 167.74745203887593
+    },
+    {
+      "oid": "1f1ff0711aa51a55bfcbffdc6dbe0ac5469cd7b5",
+      "path": "xarray/backends/api.py",
+      "score": 150.40858494201882
+    },
+    {
+      "oid": "783847cd60df693c39879f8626503b76ad40ccbb",
+      "path": "xarray/core/common.py",
+      "score": 149.16606255017243
+    },
+    {
+      "oid": "118e7c486267ed04cc4b5e505c010f415d8f153d",
+      "path": "xarray/core/variable.py",
+      "score": 135.1475201370178
+    },
+    {
+      "oid": "c0aa36aa3d204bab3814512283b432c4b47fa330",
+      "path": "xarray/core/computation.py",
+      "score": 125.21613407627842
+    },
+    {
+      "oid": "d470dcb6192b894fd1e29d3d13763029df276b41",
+      "path": "xarray/core/combine.py",
+      "score": 123.88074664379378
+    },
+    {
+      "oid": "46d180447d848bfc248521dac08040b5a691e4b0",
+      "path": "xarray/plot/utils.py",
+      "score": 121.58470446322701
+    },
+    {
+      "oid": "a6516611efc7b77903d09f24a516004c3c6648a5",
+      "path": "xarray/core/groupby.py",
+      "score": 119.4648581802931
+    },
+    {
+      "oid": "1f00eecfdbe5ccf76a0a50cdb55209b4075112f0",
+      "path": "xarray/core/alignment.py",
+      "score": 109.05696505673332
+    },
+    {
+      "oid": "c06a2b40b21e544195215f81b4e88f6b243b3061",
+      "path": "xarray/core/rolling.py",
+      "score": 107.40623483784442
+    },
+    {
+      "oid": "082c20c6b625b2a911af44ede701e00c2be5037c",
+      "path": "xarray/conventions.py",
+      "score": 101.54091276171512
+    },
+    {
+      "oid": "ba937183d24185105fa2590a478e2b26df5540e8",
+      "path": "xarray/core/indexing.py",
+      "score": 101.15729409332094
+    },
+    {
+      "oid": "bc4893543fbc8e75540c9f79b89e4993e2a17780",
+      "path": "xarray/util/generate_aggregations.py",
+      "score": 100.91800273089818
+    },
+    {
+      "oid": "6aba6617c37cfb490a7df11669530e00e64c5573",
+      "path": "xarray/core/duck_array_ops.py",
+      "score": 99.5020492982882
+    },
+    {
+      "oid": "801fbbf705250090e7e4ecefca14e7ae60a6b09b",
+      "path": "xarray/coding/cftime_offsets.py",
+      "score": 99.24513371097997
+    },
+    {
+      "oid": "f1ca560dee12ffa33e280b9c2c6ca917634f22ee",
+      "path": "xarray/backends/netCDF4_.py",
+      "score": 95.91799673553773
+    },
+    {
+      "oid": "7227ba9edb66d648711f25690973edf8b915e301",
+      "path": "xarray/coding/cftimeindex.py",
+      "score": 95.18396274328214
+    },
+    {
+      "oid": "3676db9a4877d0424eab16117447f50caae0792c",
+      "path": "xarray/core/missing.py",
+      "score": 94.97572074101515
+    },
+    {
+      "oid": "23621c55560fe87846c044ae78c262399c60629b",
+      "path": "ci/min_deps_check.py",
+      "score": 94.59680630607147
+    },
+    {
+      "oid": "f1e41478d4c891644fdd8411e55d75ce2592ab53",
+      "path": "xarray/plot/dataarray_plot.py",
+      "score": 94.17538073725943
+    },
+    {
+      "oid": "e30e7e9f4d831005044f062355cc6a49850dd850",
+      "path": "xarray/backends/zarr.py",
+      "score": 93.57139287909189
+    },
+    {
+      "oid": "fca22aaf5afe2106473cc7d8cfc0a51cd9ae0505",
+      "path": "xarray/tutorial.py",
+      "score": 93.5264274750275
+    },
+    {
+      "oid": "86c644de5f0cc4db2bf9e52eab677aaaf9348d22",
+      "path": "xarray/core/utils.py",
+      "score": 90.15696679535462
+    },
+    {
+      "oid": "2e96abf9d474f8cb0b9c45954374428adee6efa0",
+      "path": "xarray/core/accessor_str.py",
+      "score": 89.31351321778963
+    },
+    {
+      "oid": "77cfb9bed75750f33ee713fa65fbb9846df61f8c",
+      "path": "xarray/core/merge.py",
+      "score": 88.45110136685827
+    },
+    {
+      "oid": "5c67af16d991fe8f5e0759e0de0228d7787b417e",
+      "path": "xarray/core/accessor_dt.py",
+      "score": 87.76741441239429
+    },
+    {
+      "oid": "f3f03c9495bd7d78aef2653eb4d5fff211af16ca",
+      "path": "xarray/core/indexes.py",
+      "score": 87.16995027113097
+    },
+    {
+      "oid": "2eea2ecb3eeb5834d5fd294f4812f103e238beb8",
+      "path": "xarray/core/concat.py",
+      "score": 85.08391713545258
+    },
+    {
+      "oid": "92d1f7777056f5174cd798895592f539bca89a99",
+      "path": "xarray/core/parallel.py",
+      "score": 84.31130855585769
+    },
+    {
+      "oid": "15006dee5f183a02c5f4d075a12a07da0b27f567",
+      "path": "xarray/backends/rasterio_.py",
+      "score": 84.05571282210016
+    },
+    {
+      "oid": "7fdd372ec74afd9e602afc255116675a81be7b18",
+      "path": "xarray/core/resample_cftime.py",
+      "score": 79.09917842822806
+    },
+    {
+      "oid": "478419b9bbb8e486a07460729641e3af48138b91",
+      "path": "xarray/backends/file_manager.py",
+      "score": 78.76411650735243
+    },
+    {
+      "oid": "12f88b02f47558c7b6b9a1739319423b4ae83c90",
+      "path": "xarray/backends/scipy_.py",
+      "score": 78.10212809487679
+    },
+    {
+      "oid": "986b4cab4433d91e8a64187c01bd192df4885841",
+      "path": "xarray/core/coordinates.py",
+      "score": 77.73463157533789
+    },
+    {
+      "oid": "eb0c56c7ee0f327c1cb924d34fdd1b398c6de956",
+      "path": "xarray/core/options.py",
+      "score": 77.60541935048695
+    },
+    {
+      "oid": "b5d553df2c73d4371475d1241a586a084d6cb27b",
+      "path": "xarray/coding/times.py",
+      "score": 76.82138521445002
+    },
+    {
+      "oid": "47b50ddc064f42b67a87f9d34f6c3844829c3b50",
+      "path": "xarray/backends/common.py",
+      "score": 75.31093074197868
+    },
+    {
+      "oid": "c510b0767ba3b04ce7ce63687b454a8ada74a210",
+      "path": "xarray/plot/facetgrid.py",
+      "score": 75.23145115556433
+    },
+    {
+      "oid": "88d05b34a2b4e5f6e7db7edd21e1a57a13b6a039",
+      "path": "xarray/plot/dataset_plot.py",
+      "score": 74.70739107617032
+    },
+    {
+      "oid": "69acd6202c14d37ad3f2eccec3feeb5e8ecf19cc",
+      "path": "xarray/backends/h5netcdf_.py",
+      "score": 69.59644437901962
+    },
+    {
+      "oid": "fc6f280b59673e7357e2d451e166e258dce374f1",
+      "path": "xarray/core/weighted.py",
+      "score": 67.81940339981021
+    },
+    {
+      "oid": "220aeb8da7a3aca6d0948ab108326dad3cf1a9c6",
+      "path": "xarray/core/types.py",
+      "score": 67.35216347467063
+    },
+    {
+      "oid": "34732810b24c700baf5ad65baf07f9fdd455f2d7",
+      "path": "xarray/core/_aggregations.py",
+      "score": 66.79044451989284
+    },
+    {
+      "oid": "8b66aac5042b25df5674d3194e445efc2fc0643e",
+      "path": "xarray/core/resample.py",
+      "score": 65.87533271337551
+    },
+    {
+      "oid": "1473d513a01bc402230d1005d536764d832c38ea",
+      "path": "xarray/core/formatting.py",
+      "score": 65.06877975664706
+    },
+    {
+      "oid": "1de8fc8f7b8883a299543918d3261d180f15e2df",
+      "path": "xarray/backends/locks.py",
+      "score": 63.68761398700268
+    },
+    {
+      "oid": "286c44a327433c3df71e9171319f7406b15ceb26",
+      "path": "xarray/coding/variables.py",
+      "score": 61.68019586601126
+    },
+    {
+      "oid": "80c988ebd4f18b739e55bec2a4c3d0465c5a6c5b",
+      "path": "xarray/core/nputils.py",
+      "score": 61.42687837895838
+    },
+    {
+      "oid": "481a23340fd97a63759f9974ec3add78db5dbf47",
+      "path": "xarray/testing.py",
+      "score": 59.87986029334183
+    },
+    {
+      "oid": "06f577576199b978979cccdd1be2ea859cb80e4b",
+      "path": "xarray/coding/calendar_ops.py",
+      "score": 58.99147619330356
+    },
+    {
+      "oid": "faf81c8de1359502647bc7e9f4ac93b2ba0e5047",
+      "path": "xarray/core/rolling_exp.py",
+      "score": 57.89801347699449
+    },
+    {
+      "oid": "ef389eefc90293e324325db438330fa582a1c455",
+      "path": "xarray/backends/netcdf3.py",
+      "score": 56.538762571286625
+    },
+    {
+      "oid": "efe00718a79b2c5c99a1b4b9f9a9c2548661e55f",
+      "path": "xarray/core/extensions.py",
+      "score": 56.28956042699635
+    },
+    {
+      "oid": "bae1dcd222571e5ef3f799883ea4031e8e0a6750",
+      "path": "xarray/backends/plugins.py",
+      "score": 54.462311554443986
+    },
+    {
+      "oid": "61b3ab7c46c171a2f7990756e1c9b5ab9cb1e3e3",
+      "path": "xarray/coding/strings.py",
+      "score": 54.326471887225786
+    },
+    {
+      "oid": "009616c5f12f1f1caa9eff2e668f4c261352200a",
+      "path": "xarray/core/ops.py",
+      "score": 52.71828896446845
+    },
+    {
+      "oid": "cba31d7e69771565f224d5fa4e63384d7654faa9",
+      "path": "xarray/backends/pydap_.py",
+      "score": 52.70032381230752
+    },
+    {
+      "oid": "fef2f5a8319cd6246302fe596d5cf8db99d2c79a",
+      "path": "xarray/coding/frequencies.py",
+      "score": 50.25999063185902
+    },
+    {
+      "oid": "d8d20a9e2c09f3b0a458afa3055ce89786f2037d",
+      "path": "xarray/core/formatting_html.py",
+      "score": 48.27512342646301
+    },
+    {
+      "oid": "6c2e15c54e9196bc270141ba6d5f00f3dfc8f96a",
+      "path": "asv_bench/benchmarks/dataset_io.py",
+      "score": 47.908875030107275
+    },
+    {
+      "oid": "d2d3e4a6d1cfa775333a9f0014bcd1e7306df4e5",
+      "path": "xarray/core/dask_array_ops.py",
+      "score": 45.44620138488802
+    },
+    {
+      "oid": "4d8583cfe65e8be2fca4e953a7f133ac5d9c6c4d",
+      "path": "xarray/core/dtypes.py",
+      "score": 43.785951036190525
+    },
+    {
+      "oid": "0ca5954b056ec7645828e2f37dff4b63116e1e0f",
+      "path": "xarray/util/generate_ops.py",
+      "score": 43.51581471712747
+    },
+    {
+      "oid": "c4c58356672eab930a85994d60fad10edb8f95f1",
+      "path": "xarray/util/deprecation_helpers.py",
+      "score": 43.38398024194564
+    },
+    {
+      "oid": "629f18ed6b925db9b040f06cb2359734b8e1e2e8",
+      "path": "xarray/convert.py",
+      "score": 42.75714642483915
+    },
+    {
+      "oid": "4ab4c73ed07a04db90ebd88bbec6a618e13aaddd",
+      "path": "xarray/backends/cfgrib_.py",
+      "score": 39.846406576208864
+    },
+    {
+      "oid": "611ea9789903c24c0c20a0de63f024c8b89c848b",
+      "path": "xarray/backends/pynio_.py",
+      "score": 39.8458492157428
+    },
+    {
+      "oid": "fa788821b4facb3be6b12fecad8fb3a22d11f6a8",
+      "path": "xarray/core/pycompat.py",
+      "score": 38.74147501993297
+    },
+    {
+      "oid": "853923a38bdb05de10da758451954dcae01a7f2f",
+      "path": "doc/gallery/plot_rasterio.py",
+      "score": 38.525201075836854
+    },
+    {
+      "oid": "fc8bf2c81b30de0fba02f1fbc2006c8eebf06cc4",
+      "path": "xarray/backends/pseudonetcdf_.py",
+      "score": 38.06011995834571
+    },
+    {
+      "oid": "d8f5e73ee5608e846a3eb52ac44baa7661093d8c",
+      "path": "doc/gallery/plot_cartopy_facetgrid.py",
+      "score": 36.102051050408235
+    },
+    {
+      "oid": "022de845c4cf4e190429f7202a3b8111cd89ca39",
+      "path": "xarray/core/nanops.py",
+      "score": 35.58432552247803
+    },
+    {
+      "oid": "15212ec0c6120c802b9920540a64aaf4c28b5a74",
+      "path": "asv_bench/benchmarks/indexing.py",
+      "score": 35.55327428507747
+    },
+    {
+      "oid": "490c2ccbd4c4192ebdd6188fd081597c354f6a38",
+      "path": "asv_bench/benchmarks/groupby.py",
+      "score": 35.44769708754551
+    },
+    {
+      "oid": "c60ef3fc6b31f4b8fe9d208c1521fab704015603",
+      "path": "xarray/backends/lru_cache.py",
+      "score": 32.55566410037994
+    },
+    {
+      "oid": "912224ac13207d6e75b5d69d1740903876b36e1f",
+      "path": "doc/gallery/plot_rasterio_rgb.py",
+      "score": 32.488935569788275
+    },
+    {
+      "oid": "5b2cf38ee2e642df4906541836357a1021079274",
+      "path": "xarray/core/arithmetic.py",
+      "score": 31.974959185441623
+    },
+    {
+      "oid": "043de35bdf7439c319a878911e2feb617da2e397",
+      "path": "asv_bench/benchmarks/merge.py",
+      "score": 30.616220320710035
+    },
+    {
+      "oid": "d064502c20b861803f82295a9627ff2794fbe745",
+      "path": "xarray/__init__.py",
+      "score": 30.310176348963594
+    },
+    {
+      "oid": "1b2845cd8a9a75ed67ee0aa49d4ad230fac61f87",
+      "path": "doc/gallery/plot_lines_from_2d.py",
+      "score": 26.836107092738303
+    },
+    {
+      "oid": "62a0240022233313704df59902be5195f05ef95e",
+      "path": "xarray/plot/accessor.py",
+      "score": 25.750462363478967
+    },
+    {
+      "oid": "1d3713f19bf47dfbc5f01036f0e77b721de9a339",
+      "path": "asv_bench/benchmarks/rolling.py",
+      "score": 24.104094772835392
+    },
+    {
+      "oid": "4b6691bcc0a76762434835f243a9230911e6ee31",
+      "path": "asv_bench/benchmarks/interp.py",
+      "score": 23.634349546051283
+    },
+    {
+      "oid": "aa600c88003114bac7ce0bea7bc7986fac9b5bfa",
+      "path": "asv_bench/benchmarks/__init__.py",
+      "score": 23.598617773261783
+    },
+    {
+      "oid": "7a4b3c405ae05a1a48f767f470617779593dc532",
+      "path": "xarray/core/pdcompat.py",
+      "score": 23.495818900919925
+    },
+    {
+      "oid": "dc8bc3307c3042f13413a6673e0fa339d363a72d",
+      "path": "asv_bench/benchmarks/unstacking.py",
+      "score": 22.259960288552918
+    },
+    {
+      "oid": "c0674aeac0bed6e20cac8b5f423f95dd702594bd",
+      "path": ".github/workflows/parse_logs.py",
+      "score": 21.364148554157783
+    },
+    {
+      "oid": "da3447a1f25ffbba7710a0e6271888a0c6eb2a0a",
+      "path": "doc/gallery/plot_colorbar_center.py",
+      "score": 20.633708963813337
+    },
+    {
+      "oid": "4bf2ace352da4481dd1914383d7664f3b37e0e0a",
+      "path": "asv_bench/benchmarks/repr.py",
+      "score": 18.59649968503571
+    },
+    {
+      "oid": "d8a6e300fc0717fcc893efe2f1be57b492c7dc13",
+      "path": "xarray/core/npcompat.py",
+      "score": 18.37417998747044
+    },
+    {
+      "oid": "a4f8db2786bb9fec2e0faf22a8ecf5a7bb5ba9ab",
+      "path": "asv_bench/benchmarks/combine.py",
+      "score": 17.97197569856495
+    },
+    {
+      "oid": "8fb8d7f8be6c6b5fff17321c0443df2587fa9e55",
+      "path": "doc/gallery/plot_control_colorbar.py",
+      "score": 17.66745024486381
+    },
+    {
+      "oid": "9d0767fc3b3ad8f0bf2c6dc69fe6644821804f86",
+      "path": "asv_bench/benchmarks/reindexing.py",
+      "score": 16.062705360808394
+    },
+    {
+      "oid": "8aaa515d41725f208eed8a8f05fdf35e8cccedf7",
+      "path": "asv_bench/benchmarks/pandas.py",
+      "score": 15.757408271362511
+    },
+    {
+      "oid": "9df6701d9544bd0878bbca6e051d945b3e64b79a",
+      "path": "xarray/backends/memory.py",
+      "score": 15.608031091197407
+    },
+    {
+      "oid": "429ffa19baa5d7344ccd62a47489f8a73fb60d27",
+      "path": "asv_bench/benchmarks/polyfit.py",
+      "score": 15.588685060395907
+    },
+    {
+      "oid": "c4359d29e73d93a5e98bca4df9ff8a38bfea9abb",
+      "path": ".github/workflows/configure-testpypi-version.py",
+      "score": 13.866439885989431
+    }
+  ],
+  "repo": "pydata/xarray",
+  "slot": "T5"
+}
