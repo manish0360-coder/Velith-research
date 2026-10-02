@@ -1,0 +1,9 @@
+{
+  "replaced": "matplotlib__matplotlib-24570",
+  "reason": "Case A INFRA_ERROR RESULT_MAPPING (truncated test id)",
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "pool_size": 98,
+  "rule": "next eligible, same repo",
+  "chosen": "matplotlib__matplotlib-26466",
+  "task_line": "T2R1|matplotlib__matplotlib-26466|swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-26466|sha256:35be1078dc800d0bfcb32fef52650b1915480bca8778f2ed0a5528d4b6929784|3151212426|900"
+}

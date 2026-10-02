@@ -1,0 +1,4 @@
+base_commit=732d89c2940156bdc0e200bb36dc38b5e424bcba; test files=['astropy/units/tests/test_quantity_annotations.py', 'astropy/units/tests/test_quantity_decorator.py']; existing protected-config=['astropy/conftest.py', 'conftest.py', 'setup.cfg']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/stage0/p1env/results/admission-T4/T4.spec.json
+required tests: 1 F2P + 339 P2P
+protected paths: ['astropy/conftest.py', 'astropy/units/tests/test_quantity_annotations.py', 'astropy/units/tests/test_quantity_decorator.py', 'conftest.py', 'setup.cfg']

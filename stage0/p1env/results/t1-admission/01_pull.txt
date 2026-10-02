@@ -1,0 +1,34 @@
+docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-5014@sha256:eaf597005c159361cb8ee26018fb3741b320f331065f0c95726d83ccf2f1fba4: Pulling from swebench/sweb.eval.x86_64.pallets_1776_flask-5014
+4f4fb700ef54: Pulling fs layer
+0ddda5039dab: Pulling fs layer
+39a945af8df2: Pulling fs layer
+fd3f01088aa8: Pulling fs layer
+407de719c2d3: Pulling fs layer
+360f7d768fa7: Pulling fs layer
+53752545c9b2: Pulling fs layer
+a8bb24be4796: Pulling fs layer
+40a6daff0f1b: Pulling fs layer
+079027039e9d: Pulling fs layer
+4f4fb700ef54: Already exists
+4f4fb700ef54: Pull complete
+407de719c2d3: Download complete
+0ddda5039dab: Download complete
+53752545c9b2: Download complete
+a8bb24be4796: Download complete
+40a6daff0f1b: Download complete
+39a945af8df2: Download complete
+39a945af8df2: Pull complete
+fd3f01088aa8: Download complete
+fd3f01088aa8: Pull complete
+079027039e9d: Download complete
+079027039e9d: Pull complete
+407de719c2d3: Pull complete
+0ddda5039dab: Pull complete
+53752545c9b2: Pull complete
+360f7d768fa7: Download complete
+a8bb24be4796: Pull complete
+360f7d768fa7: Pull complete
+40a6daff0f1b: Pull complete
+Digest: sha256:eaf597005c159361cb8ee26018fb3741b320f331065f0c95726d83ccf2f1fba4
+Status: Downloaded newer image for swebench/sweb.eval.x86_64.pallets_1776_flask-5014@sha256:eaf597005c159361cb8ee26018fb3741b320f331065f0c95726d83ccf2f1fba4
+docker.io/swebench/sweb.eval.x86_64.pallets_1776_flask-5014@sha256:eaf597005c159361cb8ee26018fb3741b320f331065f0c95726d83ccf2f1fba4

@@ -1,0 +1,4 @@
+base_commit=8f0003ae902952372824c9917975fb372c026a42; test files=['lib/matplotlib/tests/test_offsetbox.py']; existing protected-config=['lib/matplotlib/tests/conftest.py', 'pyproject.toml', 'pytest.ini', 'setup.cfg', 'tox.ini']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/stage0/p1env/results/admission-T2/T2.spec.json
+required tests: 2 F2P + 267 P2P
+protected paths: ['lib/matplotlib/tests/conftest.py', 'lib/matplotlib/tests/test_offsetbox.py', 'pyproject.toml', 'pytest.ini', 'setup.cfg', 'tox.ini']

@@ -1,0 +1,4 @@
+base_commit=4aded39b5663d943f6a4809abacfa9cae3d7fb6a; test files=['sklearn/tests/test_multioutput.py']; existing protected-config=['conftest.py', 'setup.cfg', 'sklearn/conftest.py']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/stage0/p1env/results/admission-T3/T3.spec.json
+required tests: 1 F2P + 26 P2P
+protected paths: ['conftest.py', 'setup.cfg', 'sklearn/conftest.py', 'sklearn/tests/test_multioutput.py']

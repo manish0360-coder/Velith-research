@@ -1,0 +1,16 @@
+docker.io/swebench/sweb.eval.x86_64.pydata_1776_xarray-6721@sha256:58c7f4ada7f3cbcfcde50e0b55157701100cf694faa87978c672e368c0531898: Pulling from swebench/sweb.eval.x86_64.pydata_1776_xarray-6721
+4f4fb700ef54: Pulling fs layer
+fce0ac328f98: Pulling fs layer
+66178a8e8588: Pulling fs layer
+71c86efe9fb4: Pulling fs layer
+4f4fb700ef54: Already exists
+4f4fb700ef54: Pull complete
+71c86efe9fb4: Download complete
+fce0ac328f98: Download complete
+66178a8e8588: Download complete
+71c86efe9fb4: Pull complete
+66178a8e8588: Pull complete
+fce0ac328f98: Pull complete
+Digest: sha256:58c7f4ada7f3cbcfcde50e0b55157701100cf694faa87978c672e368c0531898
+Status: Downloaded newer image for swebench/sweb.eval.x86_64.pydata_1776_xarray-6721@sha256:58c7f4ada7f3cbcfcde50e0b55157701100cf694faa87978c672e368c0531898
+docker.io/swebench/sweb.eval.x86_64.pydata_1776_xarray-6721@sha256:58c7f4ada7f3cbcfcde50e0b55157701100cf694faa87978c672e368c0531898

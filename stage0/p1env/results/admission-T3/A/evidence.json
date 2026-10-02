@@ -1,0 +1,165 @@
+{
+  "deterministic": {
+    "base_commit": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "eb6f369813728a490ea354f6d137783cc5fd29e9",
+      "mapped_required": 27,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "sklearn/tests/test_multioutput.py::test_base_chain_crossval_fit_and_predict": "passed",
+        "sklearn/tests/test_multioutput.py::test_base_chain_fit_and_predict": "passed",
+        "sklearn/tests/test_multioutput.py::test_base_chain_fit_and_predict_with_sparse_data_and_cv": "passed",
+        "sklearn/tests/test_multioutput.py::test_base_chain_random_order": "passed",
+        "sklearn/tests/test_multioutput.py::test_classifier_chain_fit_and_predict_with_linear_svc": "passed",
+        "sklearn/tests/test_multioutput.py::test_classifier_chain_fit_and_predict_with_sparse_data": "passed",
+        "sklearn/tests/test_multioutput.py::test_classifier_chain_vs_independent_models": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator0]": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator1]": "failed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator2]": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit_no_first_classes_exception": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit_parallelism": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit_sample_weights": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_sample_weights": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_exceptions": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_predict_proba": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_regression": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_regression_one_target": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_regression_partial_fit": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sample_weight_partial_fit": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sample_weights": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sample_weights_api": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sparse_regression": "passed",
+        "sklearn/tests/test_multioutput.py::test_multiclass_multioutput_estimator": "passed",
+        "sklearn/tests/test_multioutput.py::test_multiclass_multioutput_estimator_predict_proba": "passed"
+      },
+      "parent": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "598e23a03c3552833e13f04e494a061da6643ff9532fb7460d4d3e20875f6273  conftest.py",
+        "1928ff4b53e8111fd57980068c3f47872d6896b7e365f382b2624cee0a4d53ba  setup.cfg",
+        "080ac411fdfae7c93cd469989e8425d5229142a4e6b07d54d29a6dee44b1d22b  sklearn/conftest.py",
+        "c54eda124e52ff38d77be1b081f0e34c5bcbfb5fd1d489a97ff8e7189cff59ad  sklearn/tests/test_multioutput.py"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "eb6f369813728a490ea354f6d137783cc5fd29e9",
+      "mapped_required": 27,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "sklearn/tests/test_multioutput.py::test_base_chain_crossval_fit_and_predict": "passed",
+        "sklearn/tests/test_multioutput.py::test_base_chain_fit_and_predict": "passed",
+        "sklearn/tests/test_multioutput.py::test_base_chain_fit_and_predict_with_sparse_data_and_cv": "passed",
+        "sklearn/tests/test_multioutput.py::test_base_chain_random_order": "passed",
+        "sklearn/tests/test_multioutput.py::test_classifier_chain_fit_and_predict_with_linear_svc": "passed",
+        "sklearn/tests/test_multioutput.py::test_classifier_chain_fit_and_predict_with_sparse_data": "passed",
+        "sklearn/tests/test_multioutput.py::test_classifier_chain_vs_independent_models": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator0]": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator1]": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classes_[estimator2]": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit_no_first_classes_exception": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit_parallelism": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_partial_fit_sample_weights": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_classification_sample_weights": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_exceptions": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_output_predict_proba": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_regression": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_regression_one_target": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_regression_partial_fit": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sample_weight_partial_fit": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sample_weights": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sample_weights_api": "passed",
+        "sklearn/tests/test_multioutput.py::test_multi_target_sparse_regression": "passed",
+        "sklearn/tests/test_multioutput.py::test_multiclass_multioutput_estimator": "passed",
+        "sklearn/tests/test_multioutput.py::test_multiclass_multioutput_estimator_predict_proba": "passed"
+      },
+      "parent": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a",
+      "pytest_exit": "0",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "598e23a03c3552833e13f04e494a061da6643ff9532fb7460d4d3e20875f6273  conftest.py",
+        "1928ff4b53e8111fd57980068c3f47872d6896b7e365f382b2624cee0a4d53ba  setup.cfg",
+        "080ac411fdfae7c93cd469989e8425d5229142a4e6b07d54d29a6dee44b1d22b  sklearn/conftest.py",
+        "c54eda124e52ff38d77be1b081f0e34c5bcbfb5fd1d489a97ff8e7189cff59ad  sklearn/tests/test_multioutput.py"
+      ],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "ca103b1d37b3bb1413176609382daee9c33ae0c2bde2dc05300a2bd5287cd8cd",
+    "case": "A",
+    "classification": "PASSED",
+    "detail": "27/27",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:de0579911863656a0331adc8d2dd6080ccc2543d0a5fd2bd68d753c8df1ec7c8",
+    "fault_cmd": null,
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14629",
+    "image_id": "sha256:de0579911863656a0331adc8d2dd6080ccc2543d0a5fd2bd68d753c8df1ec7c8",
+    "instance_id": "scikit-learn__scikit-learn-14629",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 900.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "conftest.py",
+      "setup.cfg",
+      "sklearn/conftest.py",
+      "sklearn/tests/test_multioutput.py"
+    ],
+    "protected_set_sha256": "fc0742bdccf04c685a5ec8db196c1931e186308f02cfc00c77d8fc740b77fbe4",
+    "reason": "ALL_REQUIRED_PASSED",
+    "repo": "scikit-learn/scikit-learn",
+    "tamper": false,
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "sklearn/tests/test_multioutput.py"
+    ],
+    "test_patch_sha256": "b73cf349fbf082664eac43c91879ba6d7fb63ae64bf24e8cb75d7f8190a132e9",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "16e252a45fa55a8fe63f261b270a9e0d51efdd2468b8207aa8d5548f38e32581",
+      "duration_seconds": 12.852
+    },
+    "candidate": {
+      "container": "bd8c5bcda989da8960e418939fd2493d6a6d26be2f52356be16070deb42aaa5a",
+      "duration_seconds": 11.52
+    }
+  },
+  "note": "M2 container prototype feasibility evidence -- NOT a verdict of record",
+  "production_mapping": "returned as the frozen Verdict (see verdict_projection)",
+  "verdict_projection": {
+    "duration_seconds": 11.52,
+    "flaky": false,
+    "output": "ALL_REQUIRED_PASSED",
+    "secondary_passed": null,
+    "state": "PASSED"
+  }
+}

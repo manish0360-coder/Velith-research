@@ -1,0 +1,9 @@
+{
+  "replaced": "pydata__xarray-6721",
+  "reason": "Case A INFRA_ERROR RESULT_MAPPING (truncated test id)",
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "pool_size": 98,
+  "rule": "next eligible, same repo",
+  "chosen": "pydata__xarray-7393",
+  "task_line": "T5R1|pydata__xarray-7393|swebench/sweb.eval.x86_64.pydata_1776_xarray-7393|sha256:15d79e643a94b7fba2a8138cdc5daf011bc2d99f61a7ce30508689a90ab9042f|1901968753|900"
+}

@@ -1,0 +1,7 @@
+{
+  "case": "A",
+  "classification": "PASSED",
+  "reason": "ALL_REQUIRED_PASSED",
+  "detail": "254/254",
+  "evidence": "/mnt/e/Projects/OpenSourceLab/repos/Velith-research/stage0/p1env/results/admission-T2R1R1R1R1R1/A/evidence.json"
+}

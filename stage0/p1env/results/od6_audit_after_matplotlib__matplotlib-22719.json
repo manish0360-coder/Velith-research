@@ -1,0 +1,212 @@
+{
+  "revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "repo": "matplotlib/matplotlib",
+  "after": "matplotlib__matplotlib-22719",
+  "frozen_order": [
+    "matplotlib__matplotlib-24570",
+    "matplotlib__matplotlib-26466",
+    "matplotlib__matplotlib-26342",
+    "matplotlib__matplotlib-24149",
+    "matplotlib__matplotlib-22719",
+    "matplotlib__matplotlib-24970",
+    "matplotlib__matplotlib-25960",
+    "matplotlib__matplotlib-24637",
+    "matplotlib__matplotlib-26113",
+    "matplotlib__matplotlib-25287",
+    "matplotlib__matplotlib-22871",
+    "matplotlib__matplotlib-25332",
+    "matplotlib__matplotlib-24627",
+    "matplotlib__matplotlib-20676",
+    "matplotlib__matplotlib-26291",
+    "matplotlib__matplotlib-24177",
+    "matplotlib__matplotlib-24026",
+    "matplotlib__matplotlib-20488",
+    "matplotlib__matplotlib-13989",
+    "matplotlib__matplotlib-20859",
+    "matplotlib__matplotlib-21568",
+    "matplotlib__matplotlib-23314",
+    "matplotlib__matplotlib-23476",
+    "matplotlib__matplotlib-22865",
+    "matplotlib__matplotlib-20826",
+    "matplotlib__matplotlib-23412",
+    "matplotlib__matplotlib-26208",
+    "matplotlib__matplotlib-25311",
+    "matplotlib__matplotlib-23299"
+  ],
+  "remaining": [
+    {
+      "n": 1,
+      "instance_id": "matplotlib__matplotlib-24970",
+      "f2p": 1,
+      "p2p": 253,
+      "suspicious_info_only": 0,
+      "amd64_digest": "sha256:a38f22a0f44eab9328d76624c27667b807bb7b0e994dd537f7a2b5919b4e8800",
+      "compressed_bytes": 3140267215
+    },
+    {
+      "n": 2,
+      "instance_id": "matplotlib__matplotlib-25960",
+      "f2p": 1,
+      "p2p": 137,
+      "suspicious_info_only": 4,
+      "amd64_digest": "sha256:d90a47f41a49e07b1c9c2cbd47879e69d0a664a3539fea58d307c050724ddf64",
+      "compressed_bytes": 3148712462
+    },
+    {
+      "n": 3,
+      "instance_id": "matplotlib__matplotlib-24637",
+      "f2p": 1,
+      "p2p": 29,
+      "suspicious_info_only": 9,
+      "amd64_digest": "sha256:4b23025de00447a61c1a4e88d1a4a5511f45663a8bd81142978676999466849d",
+      "compressed_bytes": 3139075843
+    },
+    {
+      "n": 4,
+      "instance_id": "matplotlib__matplotlib-26113",
+      "f2p": 1,
+      "p2p": 812,
+      "suspicious_info_only": 36
+    },
+    {
+      "n": 5,
+      "instance_id": "matplotlib__matplotlib-25287",
+      "f2p": 2,
+      "p2p": 786,
+      "suspicious_info_only": 28
+    },
+    {
+      "n": 6,
+      "instance_id": "matplotlib__matplotlib-22871",
+      "f2p": 1,
+      "p2p": 88,
+      "suspicious_info_only": 2
+    },
+    {
+      "n": 7,
+      "instance_id": "matplotlib__matplotlib-25332",
+      "f2p": 1,
+      "p2p": 181,
+      "suspicious_info_only": 0
+    },
+    {
+      "n": 8,
+      "instance_id": "matplotlib__matplotlib-24627",
+      "f2p": 1,
+      "p2p": 776,
+      "suspicious_info_only": 28
+    },
+    {
+      "n": 9,
+      "instance_id": "matplotlib__matplotlib-20676",
+      "f2p": 2,
+      "p2p": 32,
+      "suspicious_info_only": 0
+    },
+    {
+      "n": 10,
+      "instance_id": "matplotlib__matplotlib-26291",
+      "f2p": 1,
+      "p2p": 49,
+      "suspicious_info_only": 6
+    },
+    {
+      "n": 11,
+      "instance_id": "matplotlib__matplotlib-24177",
+      "f2p": 1,
+      "p2p": 768,
+      "suspicious_info_only": 28
+    },
+    {
+      "n": 12,
+      "instance_id": "matplotlib__matplotlib-24026",
+      "f2p": 2,
+      "p2p": 764,
+      "suspicious_info_only": 28
+    },
+    {
+      "n": 13,
+      "instance_id": "matplotlib__matplotlib-20488",
+      "f2p": 1,
+      "p2p": 111,
+      "suspicious_info_only": 2
+    },
+    {
+      "n": 14,
+      "instance_id": "matplotlib__matplotlib-13989",
+      "f2p": 1,
+      "p2p": 411,
+      "suspicious_info_only": 2
+    },
+    {
+      "n": 15,
+      "instance_id": "matplotlib__matplotlib-20859",
+      "f2p": 1,
+      "p2p": 88,
+      "suspicious_info_only": 0
+    },
+    {
+      "n": 16,
+      "instance_id": "matplotlib__matplotlib-21568",
+      "f2p": 4,
+      "p2p": 73,
+      "suspicious_info_only": 2
+    },
+    {
+      "n": 17,
+      "instance_id": "matplotlib__matplotlib-23314",
+      "f2p": 1,
+      "p2p": 862,
+      "suspicious_info_only": 27
+    },
+    {
+      "n": 18,
+      "instance_id": "matplotlib__matplotlib-23476",
+      "f2p": 1,
+      "p2p": 104,
+      "suspicious_info_only": 4
+    },
+    {
+      "n": 19,
+      "instance_id": "matplotlib__matplotlib-22865",
+      "f2p": 3,
+      "p2p": 57,
+      "suspicious_info_only": 2
+    },
+    {
+      "n": 20,
+      "instance_id": "matplotlib__matplotlib-20826",
+      "f2p": 1,
+      "p2p": 673,
+      "suspicious_info_only": 4
+    },
+    {
+      "n": 21,
+      "instance_id": "matplotlib__matplotlib-23412",
+      "f2p": 1,
+      "p2p": 46,
+      "suspicious_info_only": 2
+    },
+    {
+      "n": 22,
+      "instance_id": "matplotlib__matplotlib-26208",
+      "f2p": 2,
+      "p2p": 813,
+      "suspicious_info_only": 36
+    },
+    {
+      "n": 23,
+      "instance_id": "matplotlib__matplotlib-25311",
+      "f2p": 1,
+      "p2p": 181,
+      "suspicious_info_only": 0
+    },
+    {
+      "n": 24,
+      "instance_id": "matplotlib__matplotlib-23299",
+      "f2p": 1,
+      "p2p": 192,
+      "suspicious_info_only": 26
+    }
+  ]
+}

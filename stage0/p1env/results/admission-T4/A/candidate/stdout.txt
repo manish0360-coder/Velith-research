@@ -1,0 +1,56 @@
+VELITH_HEAD f1bdcc256af128d74589f7adcd59e4929fea5539
+VELITH_PARENT 732d89c2940156bdc0e200bb36dc38b5e424bcba
+VELITH_SURFACE be25ddfa509d2650c90158e1034f7d0236e6fc8dff0a5298a1e34cb75bde4936  astropy/conftest.py
+VELITH_SURFACE 262a417e55354a6c13990fecb8b3a6dcb028ecb031c4e01b8c02d74e36d75bff  astropy/units/tests/test_quantity_annotations.py
+VELITH_SURFACE 5ef4da387f275c281837c2fd2bfea627fe815b06dfe67d6f0b080e68a9fdb6e3  astropy/units/tests/test_quantity_decorator.py
+VELITH_SURFACE 2c630f38c06b25a303ca9298b0a3734ceedca96283a08633dc5ba741c8a7eae5  conftest.py
+VELITH_SURFACE 9d921690f7d561c3c5bda8ed7e2859b79a292a3503ba93b39c7cb6838d01ab7c  setup.cfg
+============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-3.3.1, py-1.11.0, pluggy-0.6.0
+
+Running tests with Astropy version 3.1.dev21682.
+Running tests in astropy/units/tests/test_quantity_annotations.py astropy/units/tests/test_quantity_decorator.py.
+
+Date: 2026-10-02T05:01:35
+
+Platform: Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-debian-bookworm-sid
+
+Executable: /opt/miniconda3/envs/testbed/bin/python
+
+Full Python Version: 
+3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) 
+[GCC 7.5.0]
+
+encodings: sys: utf-8, locale: ANSI_X3.4-1968, filesystem: ascii
+byteorder: little
+float info: dig: 15, mant_dig: 15
+
+Numpy: 1.16.0
+Scipy: not available
+Matplotlib: not available
+h5py: not available
+Pandas: not available
+Cython: 0.27.3
+Using Astropy options: remote_data: none.
+
+rootdir: /testbed, inifile: setup.cfg
+plugins: xdist-1.20.1, remotedata-0.2.0, openfiles-0.2.0, mock-1.6.3, forked-0.2, filter-subpackage-0.1, doctestplus-0.1.2, cov-2.5.1, astropy-header-0.1, arraydiff-0.1, hypothesis-3.44.2
+collected 340 items
+
+astropy/units/tests/test_quantity_annotations.py ....................... [  6%]
+....                                                                     [  7%]
+astropy/units/tests/test_quantity_decorator.py ......................... [ 15%]
+........................................................................ [ 36%]
+........................................................................ [ 57%]
+........................................................................ [ 78%]
+........................................................................ [100%]
+
+------------------ generated xml file: /tmp/velith-junit.xml -------------------
+=============================== warnings summary ===============================
+None
+  Module already imported so cannot be rewritten: astropy.tests.plugins.display
+
+-- Docs: http://doc.pytest.org/en/latest/warnings.html
+==================== 340 passed, 1 warnings in 3.19 seconds ====================
+VELITH_PYTEST_EXIT 0
+VELITH_NET blocked OSError 101

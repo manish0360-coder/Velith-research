@@ -1,0 +1,4 @@
+base_commit=41fef6f1352be994cd90056d47440fe9aa4c068f; test files=['xarray/tests/test_indexes.py']; existing protected-config=['conftest.py', 'pyproject.toml', 'setup.cfg', 'xarray/tests/conftest.py']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/stage0/p1env/results/admission-T5R1/T5R1.spec.json
+required tests: 2 F2P + 71 P2P
+protected paths: ['conftest.py', 'pyproject.toml', 'setup.cfg', 'xarray/tests/conftest.py', 'xarray/tests/test_indexes.py']

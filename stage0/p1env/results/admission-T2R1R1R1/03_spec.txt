@@ -1,0 +1,4 @@
+base_commit=af39f1edffcd828f05cfdd04f2e59506bb4a27bc; test files=['lib/matplotlib/tests/test_axes.py']; existing protected-config=['lib/matplotlib/tests/conftest.py', 'pyproject.toml', 'pytest.ini', 'setup.cfg', 'tox.ini']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/stage0/p1env/results/admission-T2R1R1R1/T2R1R1R1.spec.json
+required tests: 1 F2P + 767 P2P
+protected paths: ['lib/matplotlib/tests/conftest.py', 'lib/matplotlib/tests/test_axes.py', 'pyproject.toml', 'pytest.ini', 'setup.cfg', 'tox.ini']
