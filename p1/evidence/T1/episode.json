@@ -1,0 +1,31 @@
+{
+  "code": "PATCH_DOES_NOT_APPLY",
+  "context_length_assertion": true,
+  "flags": [],
+  "gen_attempts": 1,
+  "identity": "e2671b01f018f025d04a3b1c5b708cd5eb27ce3c2b75d82a09b93cbf6e2253f8",
+  "instance_id": "pallets__flask-5014",
+  "interpretable": true,
+  "measurements": {
+    "latency": 910.2653148589998,
+    "patch_applies": false,
+    "patch_produced": true,
+    "token_count": {
+      "completion_tokens": 87,
+      "prompt_tokens": 15197
+    },
+    "verified_outcome": {
+      "classification": "PATCH_APPLY_FAILED",
+      "detail": "",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY"
+    }
+  },
+  "patch_sha256": "3a4bb3927e0149e00f66b8dc142f49cee02e93e004a7f9a8086ce259ddefe9c0",
+  "pilot_set_sha256": "0f0e8715511ad262c7c50ba7ece857e98077b87a119e7e6c647480b7ead23371",
+  "predicted_prompt_eval_count": 15197,
+  "seed": 940057046043497027,
+  "slot": "T1",
+  "token_count_assertion": true,
+  "utc": "2026-10-02T17:09:11Z",
+  "x_code": "PATCH_DOES_NOT_APPLY"
+}

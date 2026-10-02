@@ -1,0 +1,9 @@
+--- a/src/flask/scaffold.py
++++ b/src/flask/scaffold.py
+@@ -1,5 +1,5 @@
+ import importlib.util
+ import os
+-from collections import defaultdict
++from collections.abc import defaultdict
+ from datetime import timedelta
+ from functools import update_wrapper
