@@ -418,6 +418,29 @@ def test_deterministic_and_resumable(tmp_path: Path) -> None:
     assert s3 == s1 and ("resolve", order[0][0]) not in o3.log[before:]
 
 
+def test_interrupted_partial_state_is_preserved_and_candidate_restarts_fresh(tmp_path: Path
+                                                                             ) -> None:
+    order = five_repo_order(4)
+    cands, ops = world(order)
+    first = tmp_path / "_admission" / f"01-{order[0][0]}"
+    (first / "A").mkdir(parents=True)
+    (first / "A" / "spec.json").write_text("stale partial spec")  # would block fetch-spec
+    (first / "record.json").write_text(json.dumps({"events": ["resolve", "storage_ok", "pull"]}))
+    older = first.with_name(first.name + ".interrupted-1")
+    older.mkdir()
+    (older / "marker").write_text("earlier interruption")
+    s = A.run_phase_a(cands, ops, tmp_path)
+    kept = first.with_name(first.name + ".interrupted-2")  # next free k; nothing overwritten
+    assert (kept / "A" / "spec.json").read_text() == "stale partial spec"
+    assert json.loads((kept / "record.json").read_text()) == {"events": ["resolve", "storage_ok",
+                                                                          "pull"]}
+    assert (older / "marker").read_text() == "earlier interruption"
+    assert ("resolve", order[0][0]) in ops.log and ("case_a", order[0][0]) in ops.log  # fresh
+    fresh = json.loads((tmp_path / "P2-01" / "record.json").read_text())
+    assert fresh["instance_id"] == order[0][0] and fresh["admitted"] is True
+    assert "provenance_written" in fresh["events"] and s["n_admitted"] == 16
+
+
 def test_no_hidden_replacement_no_model_path_in_source() -> None:
     src = Path(A.__file__).read_text(encoding="utf-8")
     tree = ast.parse(src)

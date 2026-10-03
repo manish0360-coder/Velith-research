@@ -296,7 +296,12 @@ def run_phase_a(cands: Sequence[Candidate], ops: Ops, root: Path = EVIDENCE) -> 
             rec = json.loads(done.read_text(encoding="utf-8"))
             if "admitted" in rec and "provenance_written" in rec["events"]:
                 return bool(rec["admitted"])
-        work.mkdir(parents=True, exist_ok=True)
+        if work.exists():  # partial, undecided state: preserve it, never delete, start fresh
+            k = 1
+            while work.with_name(f"{work.name}.interrupted-{k}").exists():
+                k += 1
+            work.rename(work.with_name(f"{work.name}.interrupted-{k}"))
+        work.mkdir(parents=True)
         return bool(admit_candidate(c, ops, work)["admitted"])
 
     admitted, log = L.walk([(c.instance_id, c.repo) for c in cands], admit)
