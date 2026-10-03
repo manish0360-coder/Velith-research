@@ -1,0 +1,483 @@
+{
+  "order": [
+    {
+      "instance_id": "pydata__xarray-2905",
+      "key": "074167726789eedec9407710095212d2909e0f995127e62a1391231c48092ffc",
+      "rank": 1,
+      "repo": "pydata/xarray",
+      "repo_rank": 1
+    },
+    {
+      "instance_id": "astropy__astropy-12907",
+      "key": "0f3caebc15e4d39b9b071e76059783bd896385d7281bccf32669a315e9b4d5b1",
+      "rank": 2,
+      "repo": "astropy/astropy",
+      "repo_rank": 1
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "key": "14887b5d3ec41e6dbad3187a1e2da853b5f5d724bb5d5c54061d0a32ddb06382",
+      "rank": 3,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 1
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14983",
+      "key": "16aed97c6a792f2c6d8f56a7d2aaa1d89262fb7b0cfbc5aa13e963c03d3e7177",
+      "rank": 4,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 2
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "key": "17c54f5639eb0052cbb82d009edf2e35ce407a3bb6f909c4231ac49b59ea4075",
+      "rank": 5,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 3
+    },
+    {
+      "instance_id": "pydata__xarray-4966",
+      "key": "1b101f565b40db04355327fd520b884f3ed7dedf01cc4414cbdcff1373d713b5",
+      "rank": 6,
+      "repo": "pydata/xarray",
+      "repo_rank": 2
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "key": "1ce8365810a95e75a9a265707d15ace82be078934db1e77f4c86a83c4149db84",
+      "rank": 7,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 4
+    },
+    {
+      "instance_id": "astropy__astropy-13579",
+      "key": "27834423d81d6112f12095af7a814fbc2e5daf58c88b09f4434b76f5121bd98e",
+      "rank": 8,
+      "repo": "astropy/astropy",
+      "repo_rank": 2
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "key": "2a9b3520a47ed23a1ead4ddce34d1be639f02cb3ca965a4d3122cfe52d612d27",
+      "rank": 9,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 5
+    },
+    {
+      "instance_id": "pydata__xarray-4075",
+      "key": "2dfd2c0762030d11c61f646521152a4d74d9fdbe787052187d6a621549f43734",
+      "rank": 10,
+      "repo": "pydata/xarray",
+      "repo_rank": 3
+    },
+    {
+      "instance_id": "astropy__astropy-14365",
+      "key": "38149e40fcc8b9a7c6e29dc84f0094bafdf714b9f31f15b91569fa767d8068ba",
+      "rank": 11,
+      "repo": "astropy/astropy",
+      "repo_rank": 3
+    },
+    {
+      "instance_id": "pydata__xarray-6744",
+      "key": "38c46012d5294d1fb92a4f6adba0e4d75ff14f92fe7348e420b55fa01eec7d52",
+      "rank": 12,
+      "repo": "pydata/xarray",
+      "repo_rank": 4
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "key": "3eea39c77b0c9b11449426d726a7f0d2d8de975a4e2c9df0cab9e2fd97b07859",
+      "rank": 13,
+      "repo": "astropy/astropy",
+      "repo_rank": 4
+    },
+    {
+      "instance_id": "pydata__xarray-4695",
+      "key": "3fffa1933f62dcfea1a09f36640d83ccd6648965425403a5337aa671761fdd74",
+      "rank": 14,
+      "repo": "pydata/xarray",
+      "repo_rank": 5
+    },
+    {
+      "instance_id": "pydata__xarray-3151",
+      "key": "41244e5813cbcddd5ffc781d5eebdac6d385d6b708654f0c0da8ebcb4e9da357",
+      "rank": 15,
+      "repo": "pydata/xarray",
+      "repo_rank": 6
+    },
+    {
+      "instance_id": "astropy__astropy-14995",
+      "key": "519b29f038cbc416204608ecdf21b26912469d8374100e68ae5abc34710d400c",
+      "rank": 16,
+      "repo": "astropy/astropy",
+      "repo_rank": 5
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "key": "5292aa985d9d4abf036e40067bcc09bf2c922d8244179f0a6bf4d9dd3f7e2168",
+      "rank": 17,
+      "repo": "pydata/xarray",
+      "repo_rank": 7
+    },
+    {
+      "instance_id": "pydata__xarray-4629",
+      "key": "55d52362dc5ea2c831961f70feb24e6e3c58d18b2e1fd5923cb36521d2ac2a5e",
+      "rank": 18,
+      "repo": "pydata/xarray",
+      "repo_rank": 8
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10908",
+      "key": "565067f2923af10f660b3f1acdbc43f1ee756a60448c69d1db107a7156236884",
+      "rank": 19,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 6
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "key": "61498687a228ddcb40a2131b9032edeb88ccd7cad72bd539bfffe623c7ed528d",
+      "rank": 20,
+      "repo": "pydata/xarray",
+      "repo_rank": 9
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "key": "749a869bc78932c9008ec0b3c12d300d9559ad6acb7e7d63285f1102354081a0",
+      "rank": 21,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 7
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "key": "76467d4d44b1745d3373daa215422a720e675a189234bbc3af05279dce2b200d",
+      "rank": 22,
+      "repo": "matplotlib/matplotlib",
+      "repo_rank": 1
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "key": "7e52e04f8559660e92211f4cd50b672de3ac6c971d799a775ec5559ff1195dd0",
+      "rank": 23,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 8
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25311",
+      "key": "804548d5a2dd1f61bd37d81a640fa087c05e820a5de86ebcc3a05d3e4f9cb1b5",
+      "rank": 24,
+      "repo": "matplotlib/matplotlib",
+      "repo_rank": 2
+    },
+    {
+      "instance_id": "astropy__astropy-7166",
+      "key": "80fdf0369e74b4b80950158b8bad967b8ef36476a3b3ab70c186978419d8cbac",
+      "rank": 25,
+      "repo": "astropy/astropy",
+      "repo_rank": 6
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14087",
+      "key": "81f43164de292b0089671a7f33a5e17a356ee46b40fb8d9bc97c3079b0132d06",
+      "rank": 26,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 9
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "key": "8dd6204324b303d05f32a89c7700eae60987875ac9a7e2401bd86a9731717a81",
+      "rank": 27,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 10
+    },
+    {
+      "instance_id": "astropy__astropy-7671",
+      "key": "924ed06ea52bd9af6aeb49c187e4efff9c6471abaae77a0ed2a3232a8a517cda",
+      "rank": 28,
+      "repo": "astropy/astropy",
+      "repo_rank": 7
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14894",
+      "key": "92af42022df2c42fe8e7aba6c2814e83eb5c91e9f7a9a422200c79db4f1d2214",
+      "rank": 29,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 11
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "key": "98e646e05e48698c626fe53e46421652452af52982660cead0568bd5a4a5c369",
+      "rank": 30,
+      "repo": "pydata/xarray",
+      "repo_rank": 10
+    },
+    {
+      "instance_id": "pydata__xarray-4094",
+      "key": "9c95edd1b1337413aef9a3babc5320d5c1134c88cfc0a983e06f7acb65df8d63",
+      "rank": 31,
+      "repo": "pydata/xarray",
+      "repo_rank": 11
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25332",
+      "key": "9e65312a23670bcfcd195336913cdb18ff9e83d12e248893cece04c689ce79c3",
+      "rank": 32,
+      "repo": "matplotlib/matplotlib",
+      "repo_rank": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12973",
+      "key": "9e8b2b00611af41fb7e15ed95f88091744f90c934e7501f9ae854098a61774d5",
+      "rank": 33,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 12
+    },
+    {
+      "instance_id": "astropy__astropy-8872",
+      "key": "a1658d1e1b6a65ec46e57406237a0dd0b1f4dda27f0979b81359befaecfbdd17",
+      "rank": 34,
+      "repo": "astropy/astropy",
+      "repo_rank": 8
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25973",
+      "key": "a7d8c3a47200249c0826f55ea23fe1cd10c85aef119b4a3eeebe90c0cd2eef25",
+      "rank": 35,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 13
+    },
+    {
+      "instance_id": "pydata__xarray-7229",
+      "key": "a95a48a35f69603c1365fc4330a4ff5a508ba64af684ab80ce91c446f1d15e34",
+      "rank": 36,
+      "repo": "pydata/xarray",
+      "repo_rank": 12
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "key": "aef4cd9187c45e38993992289fe73226822bbad174d0c8677f0d9608ec01a0a6",
+      "rank": 37,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 14
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13135",
+      "key": "b0ef6f6893645130dafeb3b1d3c64b2ce2c03e9047ca890450539a6147230617",
+      "rank": 38,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 15
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14053",
+      "key": "b173eeaf22a0edd5d91a2e907ba3cd162f61382c7ac9eb7e4dbc6419228c00bf",
+      "rank": 39,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 16
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "key": "b433ab29c1ef5fd0ce1946b672682ef9f3d40a20864c918c4c71e4a1a774c024",
+      "rank": 40,
+      "repo": "astropy/astropy",
+      "repo_rank": 9
+    },
+    {
+      "instance_id": "astropy__astropy-14309",
+      "key": "b558f9af9ab59f6225b649970e9e6656d17fc8dd89e9f39d09098867bc1813a9",
+      "rank": 41,
+      "repo": "astropy/astropy",
+      "repo_rank": 10
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "key": "b9a487a3476265e47de5fa27eff88efb5695bf0224506864bb5c5b011a4a0a5b",
+      "rank": 42,
+      "repo": "astropy/astropy",
+      "repo_rank": 11
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "key": "c5cc9c69ab888daf3b8e6930f7b7ba115d38f0d6a7304b808bec119c0265d599",
+      "rank": 43,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 17
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "key": "c7c734746d57f2f6da9a8225354422b165a645aa5f0f0eb7d74d98026c85407b",
+      "rank": 44,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 18
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "key": "cacf0c36996c5a246a242982e86d0668b9da6258ada62448ab103f74cff76a34",
+      "rank": 45,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 19
+    },
+    {
+      "instance_id": "pydata__xarray-6599",
+      "key": "da574d3be11ae9e2216b7e6c6421d09f89bc9facb3d817efbcf2c1f8d04a0dae",
+      "rank": 46,
+      "repo": "pydata/xarray",
+      "repo_rank": 13
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12585",
+      "key": "e6419eb2e5adb1e90627032e0871bf67f6f0a878d07d4f1ceed9ddc193fbce45",
+      "rank": 47,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 20
+    },
+    {
+      "instance_id": "astropy__astropy-13033",
+      "key": "eadad024e6ebbc673edf46c520219700484f801f3b1bde07a51e5bc9eef1adf7",
+      "rank": 48,
+      "repo": "astropy/astropy",
+      "repo_rank": 12
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20676",
+      "key": "ec5e4370f42de82c3e63ba98157f7f6ceccf60eb02104a59da0393789b3c3295",
+      "rank": 49,
+      "repo": "matplotlib/matplotlib",
+      "repo_rank": 4
+    },
+    {
+      "instance_id": "astropy__astropy-14539",
+      "key": "ecbf5d27c9f7cbd3d313053ab73de1609e3e7f65de8db1bcb866997cbcd35544",
+      "rank": 50,
+      "repo": "astropy/astropy",
+      "repo_rank": 13
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "key": "ecdc7ba01ea3c7561854e46d2b309e9a5f2fc204afc07fa5e7094adf13542ee4",
+      "rank": 51,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 21
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11578",
+      "key": "f1f7c1d94d4876a4ddcc9f93d15e5af1d1cd6a4132f718f7a884d6caf6e4d72f",
+      "rank": 52,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 22
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11310",
+      "key": "f6ec18bec242286eb214b8c02e390a10e56ae6df4f6aad1804b4bfbff5beeed0",
+      "rank": 53,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 23
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "key": "ff5b533f9e33996c3186d8fb9de1e971a6bc3943aca9bb571195747b8d29a65b",
+      "rank": 54,
+      "repo": "scikit-learn/scikit-learn",
+      "repo_rank": 24
+    }
+  ],
+  "per_repo_queue": {
+    "astropy/astropy": [
+      "astropy__astropy-12907",
+      "astropy__astropy-13579",
+      "astropy__astropy-14365",
+      "astropy__astropy-13453",
+      "astropy__astropy-14995",
+      "astropy__astropy-7166",
+      "astropy__astropy-7671",
+      "astropy__astropy-8872",
+      "astropy__astropy-14182",
+      "astropy__astropy-14309",
+      "astropy__astropy-7606",
+      "astropy__astropy-13033",
+      "astropy__astropy-14539"
+    ],
+    "matplotlib/matplotlib": [
+      "matplotlib__matplotlib-20859",
+      "matplotlib__matplotlib-25311",
+      "matplotlib__matplotlib-25332",
+      "matplotlib__matplotlib-20676"
+    ],
+    "pallets/flask": [],
+    "pydata/xarray": [
+      "pydata__xarray-2905",
+      "pydata__xarray-4966",
+      "pydata__xarray-4075",
+      "pydata__xarray-6744",
+      "pydata__xarray-4695",
+      "pydata__xarray-3151",
+      "pydata__xarray-7233",
+      "pydata__xarray-4629",
+      "pydata__xarray-3677",
+      "pydata__xarray-6461",
+      "pydata__xarray-4094",
+      "pydata__xarray-7229",
+      "pydata__xarray-6599"
+    ],
+    "scikit-learn/scikit-learn": [
+      "scikit-learn__scikit-learn-13496",
+      "scikit-learn__scikit-learn-14983",
+      "scikit-learn__scikit-learn-25931",
+      "scikit-learn__scikit-learn-14141",
+      "scikit-learn__scikit-learn-14496",
+      "scikit-learn__scikit-learn-10908",
+      "scikit-learn__scikit-learn-13142",
+      "scikit-learn__scikit-learn-9288",
+      "scikit-learn__scikit-learn-14087",
+      "scikit-learn__scikit-learn-13779",
+      "scikit-learn__scikit-learn-14894",
+      "scikit-learn__scikit-learn-12973",
+      "scikit-learn__scikit-learn-25973",
+      "scikit-learn__scikit-learn-10297",
+      "scikit-learn__scikit-learn-13135",
+      "scikit-learn__scikit-learn-14053",
+      "scikit-learn__scikit-learn-13328",
+      "scikit-learn__scikit-learn-13124",
+      "scikit-learn__scikit-learn-25747",
+      "scikit-learn__scikit-learn-12585",
+      "scikit-learn__scikit-learn-10844",
+      "scikit-learn__scikit-learn-11578",
+      "scikit-learn__scikit-learn-11310",
+      "scikit-learn__scikit-learn-13439"
+    ]
+  },
+  "preview_if_every_candidate_admitted": [
+    "pydata__xarray-2905",
+    "astropy__astropy-12907",
+    "scikit-learn__scikit-learn-13496",
+    "scikit-learn__scikit-learn-14983",
+    "scikit-learn__scikit-learn-25931",
+    "pydata__xarray-4966",
+    "scikit-learn__scikit-learn-14141",
+    "astropy__astropy-13579",
+    "pydata__xarray-4075",
+    "astropy__astropy-14365",
+    "pydata__xarray-6744",
+    "astropy__astropy-13453",
+    "matplotlib__matplotlib-20859",
+    "matplotlib__matplotlib-25311",
+    "matplotlib__matplotlib-25332",
+    "matplotlib__matplotlib-20676"
+  ],
+  "preview_note": "NOT a selection. Admission (FG-4) decides; shown only to expose the cap.",
+  "provenance": {
+    "dataset": "SWE-bench/SWE-bench_Verified",
+    "fetched_utc": "2026-10-03T05:35:10Z",
+    "lottery_sha256": "fc6cdf519086b20744db42003721d4e62f56fe7c4586e0719a4a96b5d9a180ca",
+    "p1_equivalence_rows_checked": 110,
+    "p1_lottery_sha256": "7ae70326b794850e91efd882d7262adfc528c8b970b52cbca463db3e53cedf60",
+    "registry_sha256": "37e8fc718e176766e066af0d3db59fbc3836c3683f2a7d61563ff03277961123",
+    "revision_after": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+    "revision_before": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+    "revision_required": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+    "rows_digest_sha256": "974496f3174b6997662f458e9d962b0680e6cdf1bda4b929e9194c34affed578",
+    "rows_fetched": 500,
+    "source": "datasets-server rows API via frozen p1_lottery.rows()",
+    "spec_sha256": "b2d29c5cdfba65b24c514763412c0807704c88f52d39e663f3fc6cc7a6d21c32"
+  },
+  "salt": "|velith-m2pv-p2-pilot-v1",
+  "walk_rule": "FG-4: global order; skip repo at cap 4; continue past inadmissible; stop at n=20 or exhaustion; no backfill"
+}

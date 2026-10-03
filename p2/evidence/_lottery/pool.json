@@ -1,0 +1,347 @@
+{
+  "eligible": [
+    {
+      "instance_id": "astropy__astropy-12907",
+      "repo": "astropy/astropy",
+      "row_sha256": "36373ba1246adbb171a59ae30b6b7fe4a1d437d5cd92cb1e2c3a51bc549b6153"
+    },
+    {
+      "instance_id": "astropy__astropy-13033",
+      "repo": "astropy/astropy",
+      "row_sha256": "4b3a811dba34d07f373de2691e09b3a551f433eec3df0417c6d5ccb27b92c10d"
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "repo": "astropy/astropy",
+      "row_sha256": "6be25fd39a4f9d03411d6ad30c27931bf7c9ebae1509ca710e6f96a922a09458"
+    },
+    {
+      "instance_id": "astropy__astropy-13579",
+      "repo": "astropy/astropy",
+      "row_sha256": "c72c2d2f6663c1dbf73ca0fcb25a2666e1e4a1fb4b5d0ea8b837bb88a812cfd6"
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "repo": "astropy/astropy",
+      "row_sha256": "6b0c70d5762aa66c1f5a713c7aa6453c9b965dcb95c6845fb664c97186d26e4c"
+    },
+    {
+      "instance_id": "astropy__astropy-14309",
+      "repo": "astropy/astropy",
+      "row_sha256": "0fbdaf7260c9dc1aec9767107d94cd29ad18fa97630d76e725b40cfe49e6ad91"
+    },
+    {
+      "instance_id": "astropy__astropy-14365",
+      "repo": "astropy/astropy",
+      "row_sha256": "80597963c3c5af4d920bc9d1d040490c815b61c4f75dd88fd1496626864680a9"
+    },
+    {
+      "instance_id": "astropy__astropy-14539",
+      "repo": "astropy/astropy",
+      "row_sha256": "8e5b26647ea9225ba2c0a0f8e03511d22526c9135857b8de42eb162ee71ecc27"
+    },
+    {
+      "instance_id": "astropy__astropy-14995",
+      "repo": "astropy/astropy",
+      "row_sha256": "60f41b464929f1eb4f84a64912e992f38cb9c7bdd64a5563d1a4940c39e55b34"
+    },
+    {
+      "instance_id": "astropy__astropy-7166",
+      "repo": "astropy/astropy",
+      "row_sha256": "15f2d68d078db5d6b0812230b2750d1202e2d43b144bc028fedc7e0a2d547ada"
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "repo": "astropy/astropy",
+      "row_sha256": "b1d8b58a62eb4490c8d90db25d03e3034afab8c1f83adceff905e8dff0065996"
+    },
+    {
+      "instance_id": "astropy__astropy-7671",
+      "repo": "astropy/astropy",
+      "row_sha256": "1ee1ccd46e38963dd81258fd999bdaafeab2438f288ae71e9be5930e242c549a"
+    },
+    {
+      "instance_id": "astropy__astropy-8872",
+      "repo": "astropy/astropy",
+      "row_sha256": "38aa569635eae925230386ab10e1f6ba11d97553c3d8ec867d66d9f0b97d8c3c"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20676",
+      "repo": "matplotlib/matplotlib",
+      "row_sha256": "7181b2e0df76f531abe68e936f5922bbaa67e09f9f111619cf9206c975871970"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "repo": "matplotlib/matplotlib",
+      "row_sha256": "5c17b47714572c2409385395d4bd3bbfdef213e894e07057005e61bcd1987dc8"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25311",
+      "repo": "matplotlib/matplotlib",
+      "row_sha256": "85776d05766bfa4c77f4d743cac0b8e86618ee98363f35189e97eb35d761ab59"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25332",
+      "repo": "matplotlib/matplotlib",
+      "row_sha256": "d2537629bb0b25d21f968f7b76092f9975cb22a0ff871294bd7e51c128d22276"
+    },
+    {
+      "instance_id": "pydata__xarray-2905",
+      "repo": "pydata/xarray",
+      "row_sha256": "b3e2c8a619a23a0a9b963b6e158312d745919265e9683b648da5addd40b4caec"
+    },
+    {
+      "instance_id": "pydata__xarray-3151",
+      "repo": "pydata/xarray",
+      "row_sha256": "5c8864f4de3007adf6934a527fc298cac3adc8d52e8501e9afd68b9fc769ebb8"
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "repo": "pydata/xarray",
+      "row_sha256": "9142820bc85f0469134e283963729c47eb4430a9c935f9274f801bfeb3d11fab"
+    },
+    {
+      "instance_id": "pydata__xarray-4075",
+      "repo": "pydata/xarray",
+      "row_sha256": "32a8ed4dfa983dedf5fa9bc0e5288b40601fabf704123eba61e770d9c137938b"
+    },
+    {
+      "instance_id": "pydata__xarray-4094",
+      "repo": "pydata/xarray",
+      "row_sha256": "7c67fec1476fbd6dd89340abb19b5b252543cb1099fa84e59fd81cbc59a08823"
+    },
+    {
+      "instance_id": "pydata__xarray-4629",
+      "repo": "pydata/xarray",
+      "row_sha256": "434c34529606154661d43fd2d99c8e6c21b9e33672347835e02e9f91802dce3e"
+    },
+    {
+      "instance_id": "pydata__xarray-4695",
+      "repo": "pydata/xarray",
+      "row_sha256": "a9fe8852fe7747aadc09a95b79bf836a3934359904e2a940040d225aeca88784"
+    },
+    {
+      "instance_id": "pydata__xarray-4966",
+      "repo": "pydata/xarray",
+      "row_sha256": "4dd58766d3ed4ad0afad2f3320bee26c9cf4bef34dd417876f821a5aa64363a3"
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "repo": "pydata/xarray",
+      "row_sha256": "ae4c921e7c91278185d257f7d172818cedf471b990c8af5b3712b39954460709"
+    },
+    {
+      "instance_id": "pydata__xarray-6599",
+      "repo": "pydata/xarray",
+      "row_sha256": "f2034c64a8dcbe06dda6d101818ec57c98b2c655f0a384d1bee5f8ee90324ce8"
+    },
+    {
+      "instance_id": "pydata__xarray-6744",
+      "repo": "pydata/xarray",
+      "row_sha256": "192c0443e54d7f729591444ae8b93a1d701a9e4413b90288bd53342a43bb48ae"
+    },
+    {
+      "instance_id": "pydata__xarray-7229",
+      "repo": "pydata/xarray",
+      "row_sha256": "67d049ffe97c836a9e02aafdcc89600cdd91160067d0cf01cd0a274dbcc57fda"
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "repo": "pydata/xarray",
+      "row_sha256": "c863647c447bdacdfca61a74d295b91e7e35716a82ceffdce8549d113d979a17"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "8b673188521a84ddda21d98adb18568436bfafcb4c66a5b38c8cebd3e35d2c2c"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "2d833d3c2803f74fece94c95445c999674b2cf46b0667be7b679b54255980cf3"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10908",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "a09670cc47e1684ad0c4ac184100f2ed447ea6e4031bb5be116db4a0f82073c6"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11310",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "ba713a09ef2591d921007d864743a1b8a69d886ffbda076ceddab35609852c0d"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11578",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "f3dd46e366dabe06b3a27f4a6ec5d5d9afb97cc7b2562d19221714d3b7491490"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12585",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "a577b9c21f952fcc7210d7e3680f57a73074a5ce183f43e6434a79824d26208e"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12973",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "ff88628297f36be1617970c77927a5b8c9a20015dd4c74d8f8170417a8efcf24"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "3ff88014d46867a8231a1eb8dd6e25def10ce2c5ed64d3e6be8370ef4c870048"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13135",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "516aa093ce313ba473ce7df133fcb95fbe53ba6776f40b171e5402476a0ffb5c"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "bf27a682b5448570676263d570b888a8dbfa257d692c1bd6ef0f75a291279651"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "9dbdb420e9396490200428605a2de47f69c95317119557c67c4f7195b0ceb638"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "7cd68b3afb2881571a764e52a63958a75ebca9c56ec4a606ebe34a8c4c3a0d96"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "9c2499c93e179e678d249937414d4ce41a3934882d9b5dfc19f0f0705bf04029"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "d68e77828427bb4aad712092227bc19af44482fe6f1fe6caa92c2ba0e3942698"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14053",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "ff11e9e2ddc803fbde979cfe03435d0f04957f5ecca96dc5f495b51d34f6b945"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14087",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "ab7c7fccb67bf3c81171b4aadbf194ddeab04604817584b920f351acf7899fb8"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "420e31ce073d592683712f5a1ce89c9d43c28b49e2ac34339dc86a5a7ca8c261"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "6f7b58e91971ce8c1aa207f204ec1ec4bf7c7efce699fa0ab433764a58a9ed8c"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14894",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "4b96a913cdee8ad6972cbf4135dd04204629c999b3621ab1149914d3374f3a32"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14983",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "fbd37f5cc8014d4195120c953a027c9165f1f550006af34c362a26f0d7b7f903"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "282200cdc33c25b16d8ef228afff15856bfe11d024a165dd10e18623d8d2a9dc"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "0d31287cf187c81355b1119d02541a38e15e792338221c03aa90e5db8f8290f9"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25973",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "ad1ee0312be086817fbb46df8ed5965152d4f69c64763817f4969c85fe905b16"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "repo": "scikit-learn/scikit-learn",
+      "row_sha256": "d916d1125afb77eeb71a2000a7bd215f205eb630bbf411cf140bca972645626c"
+    }
+  ],
+  "excluded_registry_ids": [
+    "pallets__flask-5014",
+    "matplotlib__matplotlib-24970",
+    "scikit-learn__scikit-learn-14629",
+    "astropy__astropy-7336",
+    "pydata__xarray-7393",
+    "matplotlib__matplotlib-24570",
+    "matplotlib__matplotlib-26466",
+    "matplotlib__matplotlib-26342",
+    "matplotlib__matplotlib-24149",
+    "matplotlib__matplotlib-22719",
+    "pydata__xarray-6721"
+  ],
+  "filters": "(a)-(e) P1 §7; (g) D4 test-ID screen",
+  "per_repo": {
+    "astropy/astropy": {
+      "d_fail_to_pass_count": 1,
+      "e_gold_not_single_nontest_file": 3,
+      "eligible": 13,
+      "excluded_registry": 1,
+      "g_test_id_screen": 4,
+      "rows": 22
+    },
+    "matplotlib/matplotlib": {
+      "d_fail_to_pass_count": 2,
+      "e_gold_not_single_nontest_file": 3,
+      "eligible": 4,
+      "excluded_registry": 1,
+      "g_test_id_screen": 24,
+      "rows": 34
+    },
+    "pallets/flask": {
+      "excluded_registry": 1,
+      "rows": 1
+    },
+    "pydata/xarray": {
+      "d_fail_to_pass_count": 2,
+      "e_gold_not_single_nontest_file": 4,
+      "eligible": 13,
+      "excluded_registry": 1,
+      "g_test_id_screen": 2,
+      "rows": 22
+    },
+    "scikit-learn/scikit-learn": {
+      "e_gold_not_single_nontest_file": 2,
+      "eligible": 24,
+      "excluded_registry": 1,
+      "g_test_id_screen": 5,
+      "rows": 32
+    }
+  },
+  "provenance": {
+    "dataset": "SWE-bench/SWE-bench_Verified",
+    "fetched_utc": "2026-10-03T05:35:10Z",
+    "lottery_sha256": "fc6cdf519086b20744db42003721d4e62f56fe7c4586e0719a4a96b5d9a180ca",
+    "p1_equivalence_rows_checked": 110,
+    "p1_lottery_sha256": "7ae70326b794850e91efd882d7262adfc528c8b970b52cbca463db3e53cedf60",
+    "registry_sha256": "37e8fc718e176766e066af0d3db59fbc3836c3683f2a7d61563ff03277961123",
+    "revision_after": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+    "revision_before": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+    "revision_required": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+    "rows_digest_sha256": "974496f3174b6997662f458e9d962b0680e6cdf1bda4b929e9194c34affed578",
+    "rows_fetched": 500,
+    "source": "datasets-server rows API via frozen p1_lottery.rows()",
+    "spec_sha256": "b2d29c5cdfba65b24c514763412c0807704c88f52d39e663f3fc6cc7a6d21c32"
+  },
+  "repos": [
+    "pallets/flask",
+    "matplotlib/matplotlib",
+    "scikit-learn/scikit-learn",
+    "astropy/astropy",
+    "pydata/xarray"
+  ]
+}
