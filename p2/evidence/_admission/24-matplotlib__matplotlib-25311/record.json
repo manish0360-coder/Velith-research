@@ -1,0 +1,38 @@
+{
+  "admitted": false,
+  "compressed_bytes": 3145968030,
+  "digest": "sha256:c4c51a9b9c65d3b70250c442a4c267b7d48fea357086ae397332a56a58df8065",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "decision",
+    "provenance_written",
+    "remove"
+  ],
+  "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25311",
+  "image_id": "sha256:c4c51a9b9c65d3b70250c442a4c267b7d48fea357086ae397332a56a58df8065",
+  "instance_id": "matplotlib__matplotlib-25311",
+  "provenance": {
+    "compressed_bytes": 3145968030,
+    "digest": "sha256:c4c51a9b9c65d3b70250c442a4c267b7d48fea357086ae397332a56a58df8065",
+    "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25311",
+    "image_id": "sha256:c4c51a9b9c65d3b70250c442a4c267b7d48fea357086ae397332a56a58df8065",
+    "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25311@sha256:c4c51a9b9c65d3b70250c442a4c267b7d48fea357086ae397332a56a58df8065"
+  },
+  "rank": 24,
+  "reason": "SPEC_FAILED",
+  "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25311@sha256:c4c51a9b9c65d3b70250c442a4c267b7d48fea357086ae397332a56a58df8065",
+  "repo": "matplotlib/matplotlib",
+  "steps": {
+    "case_a_passed": false,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": false,
+    "identity": true,
+    "spec_built": false
+  },
+  "storage_free": 32178704384,
+  "storage_need": 17864920075
+}

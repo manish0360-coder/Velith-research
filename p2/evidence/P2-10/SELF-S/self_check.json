@@ -1,0 +1,21 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "astropy/io/ascii/html.py",
+      "span": [
+        11557,
+        11816
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "c2348828aca621c530ac97b2e62169d04ff9b8fc18582dd9e58236a68d09576d"
+}

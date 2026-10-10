@@ -1,0 +1,4 @@
+base_commit=64619e53e9d0ed417daba287ac0d3a06943a54d5; test files=['lib/matplotlib/tests/test_legend.py']; existing protected-config=['lib/matplotlib/tests/conftest.py', 'pytest.ini', 'tox.ini']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/22-matplotlib__matplotlib-20859/A/spec.json
+required tests: 1 F2P + 88 P2P
+protected paths: ['lib/matplotlib/tests/conftest.py', 'lib/matplotlib/tests/test_legend.py', 'pytest.ini', 'tox.ini']

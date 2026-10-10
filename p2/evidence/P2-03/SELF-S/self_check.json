@@ -1,0 +1,31 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "sklearn/ensemble/_iforest.py",
+      "span": [
+        12538,
+        12764
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 1,
+      "matches": 1,
+      "path": "sklearn/ensemble/_iforest.py",
+      "span": [
+        15696,
+        16202
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "490a5724c425231b0f59150da4a11e943b97d23b373dbb25f7d4c1617930a328"
+}

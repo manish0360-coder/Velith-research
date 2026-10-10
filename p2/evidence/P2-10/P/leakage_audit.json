@@ -1,0 +1,80 @@
+{
+  "S": {
+    "checks": {
+      "gold_hunk_lines": {
+        "needles": 2,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "gold_patch_full_text": false,
+      "hints_windows_41": {
+        "needles": 3497,
+        "needles_found": 283,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "issue": 584
+        }
+      },
+      "test_ids": {
+        "needles": 10,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_full_text": false,
+      "test_patch_hunk_lines": {
+        "needles": 33,
+        "needles_found": 16,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 40,
+          "issue": 42
+        }
+      },
+      "test_patch_paths_in_pool": [],
+      "test_patch_paths_in_prompt": []
+    },
+    "hints_text_sha256": "d46726d3152ff709b6b6ecba161ffde689d2ea1f03b5ed17d22c1088da3a4342",
+    "verdict": "PASS"
+  },
+  "U": {
+    "checks": {
+      "gold_hunk_lines": {
+        "needles": 2,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "gold_patch_full_text": false,
+      "hints_windows_41": {
+        "needles": 3497,
+        "needles_found": 283,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "issue": 584
+        }
+      },
+      "test_ids": {
+        "needles": 10,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_full_text": false,
+      "test_patch_hunk_lines": {
+        "needles": 33,
+        "needles_found": 16,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 40,
+          "issue": 42
+        }
+      },
+      "test_patch_paths_in_pool": [],
+      "test_patch_paths_in_prompt": []
+    },
+    "hints_text_sha256": "d46726d3152ff709b6b6ecba161ffde689d2ea1f03b5ed17d22c1088da3a4342",
+    "verdict": "PASS"
+  }
+}

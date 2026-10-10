@@ -1,0 +1,161 @@
+{
+  "deterministic": {
+    "base_commit": "37522e991a32ee3c0ad1a5ff8afe8e3eb1885550",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "006540f42498f78cca113289ed0fa3f3711c7c72",
+      "mapped_required": 25,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "xarray/tests/test_coding.py::test_CFMaskCoder_decode": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_decode_dask": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_encode_missing_fill_values_conflict[numeric-with-dtype]": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_encode_missing_fill_values_conflict[numeric-without-dtype]": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_encode_missing_fill_values_conflict[times-with-dtype]": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_missing_value": "passed",
+        "xarray/tests/test_coding.py::test_coder_roundtrip": "passed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[1]": "failed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[2]": "failed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[4]": "failed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[8]": "failed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[1]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[2]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[4]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[8]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[f2]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[f4]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[i1]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[i2]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[u1]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[u2]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[0.1-10]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[0.1-scale_factor1]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[add_offset1-10]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[add_offset1-scale_factor1]": "passed"
+      },
+      "parent": "37522e991a32ee3c0ad1a5ff8afe8e3eb1885550",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "956129fdcf63e291c07f1a570770e7b084d887a906ac5cac8627f9fa360d86f6  conftest.py",
+        "e8cec946d41a2d381ac3a38dfb7c317d7f93c77097ee599646e3640857549ab7  pyproject.toml",
+        "ff5bc729304ad016ee76b199a059e9ac81e05719896d4483a3c9b689bf0ba305  setup.cfg",
+        "050c1b436241c2541a69ff5c6ab044b239b1da4a577d8e919fd06e402618e9b3  xarray/tests/test_coding.py"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "006540f42498f78cca113289ed0fa3f3711c7c72",
+      "mapped_required": 25,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "xarray/tests/test_coding.py::test_CFMaskCoder_decode": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_decode_dask": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_encode_missing_fill_values_conflict[numeric-with-dtype]": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_encode_missing_fill_values_conflict[numeric-without-dtype]": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_encode_missing_fill_values_conflict[times-with-dtype]": "passed",
+        "xarray/tests/test_coding.py::test_CFMaskCoder_missing_value": "passed",
+        "xarray/tests/test_coding.py::test_coder_roundtrip": "passed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[1]": "passed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[2]": "passed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[4]": "passed",
+        "xarray/tests/test_coding.py::test_decode_signed_from_unsigned[8]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[1]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[2]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[4]": "passed",
+        "xarray/tests/test_coding.py::test_decode_unsigned_from_signed[8]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[f2]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[f4]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[i1]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[i2]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[u1]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_converts_to_float32[u2]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[0.1-10]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[0.1-scale_factor1]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[add_offset1-10]": "passed",
+        "xarray/tests/test_coding.py::test_scaling_offset_as_list[add_offset1-scale_factor1]": "passed"
+      },
+      "parent": "37522e991a32ee3c0ad1a5ff8afe8e3eb1885550",
+      "pytest_exit": "0",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "956129fdcf63e291c07f1a570770e7b084d887a906ac5cac8627f9fa360d86f6  conftest.py",
+        "e8cec946d41a2d381ac3a38dfb7c317d7f93c77097ee599646e3640857549ab7  pyproject.toml",
+        "ff5bc729304ad016ee76b199a059e9ac81e05719896d4483a3c9b689bf0ba305  setup.cfg",
+        "050c1b436241c2541a69ff5c6ab044b239b1da4a577d8e919fd06e402618e9b3  xarray/tests/test_coding.py"
+      ],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "cb53386602c86509ce13becf894477b5ecc93235cbb5ea8a80d0cdec3397d9be",
+    "case": "A",
+    "classification": "PASSED",
+    "detail": "25/25",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5",
+    "fault_cmd": null,
+    "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4966",
+    "image_id": "sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5",
+    "instance_id": "pydata__xarray-4966",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 1800.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "conftest.py",
+      "pyproject.toml",
+      "setup.cfg",
+      "xarray/tests/test_coding.py"
+    ],
+    "protected_set_sha256": "2c737a572c80faac1f1322121b81fb65d88b03577654eaa9d29b7d151432550c",
+    "reason": "ALL_REQUIRED_PASSED",
+    "repo": "pydata/xarray",
+    "tamper": false,
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "xarray/tests/test_coding.py"
+    ],
+    "test_patch_sha256": "edfb2b5cb581062533dcd9053aeac1e09b71a3ba93764abbb39b9716e87c6cdd",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "7660b11716a700b8df4e8111b068268718918f4d7b936c1c8ae214ce54180643",
+      "duration_seconds": 11.158
+    },
+    "candidate": {
+      "container": "a4d6f7b0b7b105ad6f67230b68629d529c3b4100dd951e029075b6bfb5d46f99",
+      "duration_seconds": 10.671
+    }
+  },
+  "note": "M2 container prototype feasibility evidence -- NOT a verdict of record",
+  "production_mapping": "returned as the frozen Verdict (see verdict_projection)",
+  "verdict_projection": {
+    "duration_seconds": 10.671,
+    "flaky": false,
+    "output": "ALL_REQUIRED_PASSED",
+    "secondary_passed": null,
+    "state": "PASSED"
+  }
+}

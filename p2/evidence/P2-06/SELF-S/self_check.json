@@ -1,0 +1,31 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+      "span": [
+        8990,
+        9189
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 1,
+      "matches": 1,
+      "path": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+      "span": [
+        9284,
+        9593
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "977e49353dd1fcda9b41aedda7f5d525739b29c77f7032c2dee6965a79e8c12d"
+}

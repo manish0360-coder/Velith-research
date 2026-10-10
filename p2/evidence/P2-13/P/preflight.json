@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "e93f45432bcce3e3910fa9b2a5f55ecab8401768fdb5db322f12f0b313245a44",
+  "failure": null,
+  "gold_paths": [
+    "lib/matplotlib/legend.py"
+  ],
+  "identity_s": "47fda21770411795f7a0721f4916a333ed5a30ebe5c39cdb807980bf7b3ec4ff",
+  "identity_u": "41e15c296912f622afa2ed676904b3b885e9caa19dc34032d0413f288c70ff99",
+  "seed": 872075136928456910,
+  "tokens": {
+    "S": 13715,
+    "U": 13726
+  }
+}

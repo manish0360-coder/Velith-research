@@ -1,0 +1,72 @@
+{
+  "admitted": false,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "182/182",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 10.074,
+  "compressed_bytes": 3168313293,
+  "digest": "sha256:8fe08c1a8888990862bbdb9a9ad38c740e0910f08bca0b6cecb87f0bdb012dbc",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "lib/matplotlib/cbook.py": {
+      "base_sha": "c6986b73cba019f501f97a4aad9d75273ac62fae2bb1ae5d8f02ccd27d02add2",
+      "worktree_sha": "c6986b73cba019f501f97a4aad9d75273ac62fae2bb1ae5d8f02ccd27d02add2"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25332",
+  "image_id": "sha256:8fe08c1a8888990862bbdb9a9ad38c740e0910f08bca0b6cecb87f0bdb012dbc",
+  "instance_id": "matplotlib__matplotlib-25332",
+  "provenance": {
+    "compressed_bytes": 3168313293,
+    "digest": "sha256:8fe08c1a8888990862bbdb9a9ad38c740e0910f08bca0b6cecb87f0bdb012dbc",
+    "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25332",
+    "image_id": "sha256:8fe08c1a8888990862bbdb9a9ad38c740e0910f08bca0b6cecb87f0bdb012dbc",
+    "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25332@sha256:8fe08c1a8888990862bbdb9a9ad38c740e0910f08bca0b6cecb87f0bdb012dbc"
+  },
+  "rank": 32,
+  "reason": "F_OVER_BUDGET",
+  "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25332@sha256:8fe08c1a8888990862bbdb9a9ad38c740e0910f08bca0b6cecb87f0bdb012dbc",
+  "repo": "matplotlib/matplotlib",
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "6ce1200db33005b00784717f50fc903dc7e21c20b136791f2e332eda02b19e32",
+    "failure": "F_OVER_BUDGET",
+    "gold_paths": [
+      "lib/matplotlib/cbook.py"
+    ],
+    "identity_s": "1cf302ce084783d4f2dea979777d575f085dd99f018901f6459bbc72670f6232",
+    "identity_u": "f444acb8cf797d8d11fe80a24a99b5fefa976876932ea74f204541dbf85767fa",
+    "seed": 9173524631753062728,
+    "tokens": {
+      "S": 22605,
+      "U": 22616
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 31474769920,
+  "storage_need": 17920783232
+}

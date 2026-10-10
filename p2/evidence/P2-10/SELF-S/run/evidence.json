@@ -1,0 +1,135 @@
+{
+  "deterministic": {
+    "base_commit": "19cc80471739bcb67b7e8099246b391c355023ee",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "40efd4fe39e67cae58a3d1756183519a8d6b6594",
+      "mapped_required": 10,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "astropy/io/ascii/tests/test_html.py::test_htmlinputter_no_bs4": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_listwriter": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_multi_column_write_table_html_fill_values_masked": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_multicolumn_table_html_fill_values": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_multicolumn_write": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_no_multicols": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_formatted_columns": "failed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_html_fill_values": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_html_fill_values_masked": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_html_fill_values_optional_columns": "passed"
+      },
+      "parent": "19cc80471739bcb67b7e8099246b391c355023ee",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "e3970894c3f13086681508803f5f44c92c2fd9b69c5f237606b04099de0ac0dd  astropy/conftest.py",
+        "45e0b57ce2d2ab35ebd215581d4b2c268fbc6b17ee72bd63adbbba34fba4c05b  astropy/io/ascii/tests/test_html.py",
+        "38130b17f976bb6e9362cab7c0b3b3194c6644a357928a4401fd5a46c34d13c7  conftest.py",
+        "ebd9c969f482689b27dd562631f8f18dfdc6f31c52668c6c398464e47aa4ff97  pyproject.toml",
+        "7920cd62c126ec467738ea3bdfb19a6db1a50ead95522a6a86c4ae835c575616  setup.cfg",
+        "fe8635fe47f57f1787297b554c50ec5ce17717acb4aee6b1d16e21a82499c79b  tox.ini"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "40efd4fe39e67cae58a3d1756183519a8d6b6594",
+      "mapped_required": 10,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "astropy/io/ascii/tests/test_html.py::test_htmlinputter_no_bs4": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_listwriter": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_multi_column_write_table_html_fill_values_masked": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_multicolumn_table_html_fill_values": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_multicolumn_write": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_no_multicols": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_formatted_columns": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_html_fill_values": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_html_fill_values_masked": "passed",
+        "astropy/io/ascii/tests/test_html.py::test_write_table_html_fill_values_optional_columns": "passed"
+      },
+      "parent": "19cc80471739bcb67b7e8099246b391c355023ee",
+      "pytest_exit": "0",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "e3970894c3f13086681508803f5f44c92c2fd9b69c5f237606b04099de0ac0dd  astropy/conftest.py",
+        "45e0b57ce2d2ab35ebd215581d4b2c268fbc6b17ee72bd63adbbba34fba4c05b  astropy/io/ascii/tests/test_html.py",
+        "38130b17f976bb6e9362cab7c0b3b3194c6644a357928a4401fd5a46c34d13c7  conftest.py",
+        "ebd9c969f482689b27dd562631f8f18dfdc6f31c52668c6c398464e47aa4ff97  pyproject.toml",
+        "7920cd62c126ec467738ea3bdfb19a6db1a50ead95522a6a86c4ae835c575616  setup.cfg",
+        "fe8635fe47f57f1787297b554c50ec5ce17717acb4aee6b1d16e21a82499c79b  tox.ini"
+      ],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "c2348828aca621c530ac97b2e62169d04ff9b8fc18582dd9e58236a68d09576d",
+    "case": "P2-X-S",
+    "classification": "PASSED",
+    "detail": "10/10",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7",
+    "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+    "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13453",
+    "image_id": "sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7",
+    "instance_id": "astropy__astropy-13453",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 900.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "astropy/conftest.py",
+      "astropy/io/ascii/tests/test_html.py",
+      "conftest.py",
+      "pyproject.toml",
+      "setup.cfg",
+      "tox.ini"
+    ],
+    "protected_set_sha256": "1428ba78b76d613095aa25f3bb16657bc6e734b4cd697f158997e457dbb23390",
+    "reason": "ALL_REQUIRED_PASSED",
+    "repo": "astropy/astropy",
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "astropy/io/ascii/tests/test_html.py"
+    ],
+    "test_patch_sha256": "be7129ea12a3abcbf2b09882ef29e32376c84c7b2e94a08664df0e87a3b88597",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "9cba96c918cedca76f2583fe44b86aeb5e6e849a754146fcd7286d0a91e5e42e",
+      "duration_seconds": 5.858
+    },
+    "candidate": {
+      "container": "d0138dac7da0a74e1150ec429818c6fc12c70c61b72c3ad448669a4dfcb3f406",
+      "duration_seconds": 5.979
+    }
+  },
+  "note": "P1 Stage X via the frozen M2 probe library -- probe-level evidence, NOT a verdict of record",
+  "verdict_projection": {
+    "duration_seconds": 5.979,
+    "flaky": false,
+    "output": "ALL_REQUIRED_PASSED",
+    "secondary_passed": null,
+    "state": "PASSED"
+  }
+}

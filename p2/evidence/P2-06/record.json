@@ -1,0 +1,104 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "41/41",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 9.387,
+  "compressed_bytes": 1134305276,
+  "digest": "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "astropy/wcs/wcsapi/wrappers/sliced_wcs.py": {
+      "base_sha": "89ed2a3746da4c2c99da0eb15c23e3fd48e87c93ea33d4ab590457a99c6d1a3c",
+      "worktree_sha": "89ed2a3746da4c2c99da0eb15c23e3fd48e87c93ea33d4ab590457a99c6d1a3c"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579",
+  "image_id": "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+  "instance_id": "astropy__astropy-13579",
+  "provenance": {
+    "compressed_bytes": 1134305276,
+    "digest": "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+    "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579",
+    "image_id": "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+    "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579@sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863"
+  },
+  "rank": 8,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579@sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+  "repo": "astropy/astropy",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "span": [
+          8990,
+          9189
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 1,
+        "matches": 1,
+        "path": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "span": [
+          9284,
+          9593
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "977e49353dd1fcda9b41aedda7f5d525739b29c77f7032c2dee6965a79e8c12d"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "d7b8c8f5677a16ef4b3aec7f094fbe65d1e25de2d338c137febca0b3c3d766d3",
+    "failure": null,
+    "gold_paths": [
+      "astropy/wcs/wcsapi/wrappers/sliced_wcs.py"
+    ],
+    "identity_s": "748e09db2df46eb2330062c0febb6247fbabd3f1d82a4c9b9df6b70301370880",
+    "identity_u": "a9b513e0c72c7375376b15fe48b1af89bd1c6daa5b51d76e58e1d21e6e42329e",
+    "seed": 6304238383670843086,
+    "tokens": {
+      "S": 5348,
+      "U": 5359
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32465739776,
+  "storage_need": 12835763190
+}

@@ -1,0 +1,144 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "40/40",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 17.629,
+  "compressed_bytes": 1495748723,
+  "digest": "sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "sklearn/cluster/optics_.py": {
+      "base_sha": "c94869f744341df1ce8d7d0d5385790bea99a6134636dc0c7f67d4f4ca8d3c7f",
+      "worktree_sha": "c94869f744341df1ce8d7d0d5385790bea99a6134636dc0c7f67d4f4ca8d3c7f"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14496",
+  "image_id": "sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+  "instance_id": "scikit-learn__scikit-learn-14496",
+  "provenance": {
+    "compressed_bytes": 1495748723,
+    "digest": "sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14496",
+    "image_id": "sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+    "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14496@sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779"
+  },
+  "rank": 9,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14496@sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+  "repo": "scikit-learn/scikit-learn",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "sklearn/cluster/optics_.py",
+        "span": [
+          1691,
+          2022
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 1,
+        "matches": 1,
+        "path": "sklearn/cluster/optics_.py",
+        "span": [
+          14169,
+          14508
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 2,
+        "matches": 1,
+        "path": "sklearn/cluster/optics_.py",
+        "span": [
+          18535,
+          18783
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 3,
+        "matches": 1,
+        "path": "sklearn/cluster/optics_.py",
+        "span": [
+          24456,
+          24848
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 4,
+        "matches": 1,
+        "path": "sklearn/cluster/optics_.py",
+        "span": [
+          26254,
+          26775
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 5,
+        "matches": 1,
+        "path": "sklearn/cluster/optics_.py",
+        "span": [
+          30932,
+          31704
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "2cab2386cb79397a5620ee8d9e9b7416df79c0e8ebd077e552fa44356bfe72ea"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "15fe21b4576cf6ad1ee11e9f39bbf59b24911a8931e36f185c18872c9e91f774",
+    "failure": null,
+    "gold_paths": [
+      "sklearn/cluster/optics_.py"
+    ],
+    "identity_s": "28120aaacebe8a93f08696ffd5a1e0d5d1d734e57d707991124e49933a785f95",
+    "identity_u": "c6d5ff0c7972928134c0d3a5b6d08864404177bfde49ceae5039e897107182f9",
+    "seed": 6338055729591059051,
+    "tokens": {
+      "S": 10927,
+      "U": 10938
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32431878144,
+  "storage_need": 13739371807
+}

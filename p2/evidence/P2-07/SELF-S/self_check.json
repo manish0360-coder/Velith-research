@@ -1,0 +1,71 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "sklearn/cluster/optics_.py",
+      "span": [
+        1691,
+        2022
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 1,
+      "matches": 1,
+      "path": "sklearn/cluster/optics_.py",
+      "span": [
+        14169,
+        14508
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 2,
+      "matches": 1,
+      "path": "sklearn/cluster/optics_.py",
+      "span": [
+        18535,
+        18783
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 3,
+      "matches": 1,
+      "path": "sklearn/cluster/optics_.py",
+      "span": [
+        24456,
+        24848
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 4,
+      "matches": 1,
+      "path": "sklearn/cluster/optics_.py",
+      "span": [
+        26254,
+        26775
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 5,
+      "matches": 1,
+      "path": "sklearn/cluster/optics_.py",
+      "span": [
+        30932,
+        31704
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "2cab2386cb79397a5620ee8d9e9b7416df79c0e8ebd077e552fa44356bfe72ea"
+}

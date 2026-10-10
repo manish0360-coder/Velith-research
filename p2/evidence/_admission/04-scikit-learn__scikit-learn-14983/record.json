@@ -1,0 +1,72 @@
+{
+  "admitted": false,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "107/107",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 4.004,
+  "compressed_bytes": 1496740547,
+  "digest": "sha256:671ab629659e48085e86b54f3d83f6aba03b6183f3d569ff9c417c67dd64f343",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "sklearn/model_selection/_split.py": {
+      "base_sha": "1b876ac6384ef15b6225ee40950021e67183b74e9c895537c028a740bd79e897",
+      "worktree_sha": "1b876ac6384ef15b6225ee40950021e67183b74e9c895537c028a740bd79e897"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14983",
+  "image_id": "sha256:671ab629659e48085e86b54f3d83f6aba03b6183f3d569ff9c417c67dd64f343",
+  "instance_id": "scikit-learn__scikit-learn-14983",
+  "provenance": {
+    "compressed_bytes": 1496740547,
+    "digest": "sha256:671ab629659e48085e86b54f3d83f6aba03b6183f3d569ff9c417c67dd64f343",
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14983",
+    "image_id": "sha256:671ab629659e48085e86b54f3d83f6aba03b6183f3d569ff9c417c67dd64f343",
+    "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14983@sha256:671ab629659e48085e86b54f3d83f6aba03b6183f3d569ff9c417c67dd64f343"
+  },
+  "rank": 4,
+  "reason": "F_OVER_BUDGET",
+  "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14983@sha256:671ab629659e48085e86b54f3d83f6aba03b6183f3d569ff9c417c67dd64f343",
+  "repo": "scikit-learn/scikit-learn",
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "83260265dd3ffa24d96f3ff93158c2b8884d5585642e7f984fdd84dcd2c3f63a",
+    "failure": "F_OVER_BUDGET",
+    "gold_paths": [
+      "sklearn/model_selection/_split.py"
+    ],
+    "identity_s": "d6103d45f2dc1b409a670cc5c12726f91373695c39967ec18b38276c6d4bb67e",
+    "identity_u": "b86d75c73c5809046eb4f783d935770794d27c591183baae9ef4b62b3ee37595",
+    "seed": 4027911725969144146,
+    "tokens": {
+      "S": 23454,
+      "U": 23465
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 33715679232,
+  "storage_need": 13741851367
+}

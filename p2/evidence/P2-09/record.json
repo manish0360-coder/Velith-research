@@ -1,0 +1,104 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "9/9",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 6.41,
+  "compressed_bytes": 1138622054,
+  "digest": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "astropy/io/ascii/qdp.py": {
+      "base_sha": "db64d64d72e032b6975da362dbd55f875f10942fbb9c868b14f96c5de06f2cb7",
+      "worktree_sha": "db64d64d72e032b6975da362dbd55f875f10942fbb9c868b14f96c5de06f2cb7"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365",
+  "image_id": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+  "instance_id": "astropy__astropy-14365",
+  "provenance": {
+    "compressed_bytes": 1138622054,
+    "digest": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+    "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365",
+    "image_id": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+    "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365@sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe"
+  },
+  "rank": 11,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365@sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+  "repo": "astropy/astropy",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "astropy/io/ascii/qdp.py",
+        "span": [
+          1752,
+          2092
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 1,
+        "matches": 1,
+        "path": "astropy/io/ascii/qdp.py",
+        "span": [
+          8927,
+          9155
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "a06e2a0a41074f5b882150af7acaa531318c625427b798047f6d58ac8af88d52"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "08e11b35dcf2abced1b1baf5c35639fed466b9abb589218851deb57cbbb958b7",
+    "failure": null,
+    "gold_paths": [
+      "astropy/io/ascii/qdp.py"
+    ],
+    "identity_s": "e0384b408ba66fff2237e4e6448df56ffda647eb8a69561728f1f2a451343c77",
+    "identity_u": "78ffa6e73d22bf2b804b7ab36a52fd4249196e09dee3b575496cf2c7a014d5f3",
+    "seed": 921857438787387597,
+    "tokens": {
+      "S": 6810,
+      "U": 6821
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32263745536,
+  "storage_need": 12846555135
+}

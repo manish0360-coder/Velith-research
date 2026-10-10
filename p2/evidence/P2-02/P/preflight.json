@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "d68469db9885ba1a882e213b77d5ca4fbf33e98a2991c7332131b9023266cf53",
+  "failure": null,
+  "gold_paths": [
+    "sklearn/ensemble/iforest.py"
+  ],
+  "identity_s": "3232caa217824b444690bee0e05344586c43c1f412c88a3f31bb8d353aade1e4",
+  "identity_u": "2a6d4ae66c306e7da4a248c475037fbe6a0df0b7ee139ce234325f3d4ccf9a62",
+  "seed": 3201017930329064370,
+  "tokens": {
+    "S": 5701,
+    "U": 5712
+  }
+}

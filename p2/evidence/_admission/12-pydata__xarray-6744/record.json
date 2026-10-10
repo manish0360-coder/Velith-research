@@ -1,0 +1,44 @@
+{
+  "admitted": false,
+  "case_a": {
+    "classification": "INFRA_ERROR",
+    "detail": "pass_to_pass_not_passed",
+    "reason": "BASELINE_UNHEALTHY"
+  },
+  "compressed_bytes": 1925678337,
+  "digest": "sha256:81611b35828f9d9f2c39e755d21d53ac74e23b5d24fe5b01516b39d8619d0c93",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "decision",
+    "provenance_written",
+    "remove"
+  ],
+  "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-6744",
+  "image_id": "sha256:81611b35828f9d9f2c39e755d21d53ac74e23b5d24fe5b01516b39d8619d0c93",
+  "instance_id": "pydata__xarray-6744",
+  "provenance": {
+    "compressed_bytes": 1925678337,
+    "digest": "sha256:81611b35828f9d9f2c39e755d21d53ac74e23b5d24fe5b01516b39d8619d0c93",
+    "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-6744",
+    "image_id": "sha256:81611b35828f9d9f2c39e755d21d53ac74e23b5d24fe5b01516b39d8619d0c93",
+    "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-6744@sha256:81611b35828f9d9f2c39e755d21d53ac74e23b5d24fe5b01516b39d8619d0c93"
+  },
+  "rank": 12,
+  "reason": "CASE_A_NOT_PASSED",
+  "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-6744@sha256:81611b35828f9d9f2c39e755d21d53ac74e23b5d24fe5b01516b39d8619d0c93",
+  "repo": "pydata/xarray",
+  "steps": {
+    "case_a_passed": false,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": false,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32259932160,
+  "storage_need": 14814195842
+}

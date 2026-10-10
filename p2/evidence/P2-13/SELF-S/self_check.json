@@ -1,0 +1,31 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "lib/matplotlib/legend.py",
+      "span": [
+        14580,
+        14756
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 1,
+      "matches": 1,
+      "path": "lib/matplotlib/legend.py",
+      "span": [
+        17432,
+        17811
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "2a4398dad2b25521ff0bc07cfd68f1cbf4397bacb34c0c08fe1ebd44c46d761b"
+}

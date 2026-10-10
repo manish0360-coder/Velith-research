@@ -1,0 +1,31 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "astropy/io/ascii/qdp.py",
+      "span": [
+        1752,
+        2092
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "index": 1,
+      "matches": 1,
+      "path": "astropy/io/ascii/qdp.py",
+      "span": [
+        8927,
+        9155
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "a06e2a0a41074f5b882150af7acaa531318c625427b798047f6d58ac8af88d52"
+}

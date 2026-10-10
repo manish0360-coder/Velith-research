@@ -1,0 +1,4 @@
+base_commit=0df94ff7097961e92fd7812036a24b145bc13ca8; test files=['astropy/wcs/wcsapi/wrappers/tests/test_sliced_wcs.py']; existing protected-config=['astropy/conftest.py', 'astropy/wcs/wcsapi/conftest.py', 'conftest.py', 'pyproject.toml', 'setup.cfg', 'tox.ini']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/08-astropy__astropy-13579/A/spec.json
+required tests: 1 F2P + 40 P2P
+protected paths: ['astropy/conftest.py', 'astropy/wcs/wcsapi/conftest.py', 'astropy/wcs/wcsapi/wrappers/tests/test_sliced_wcs.py', 'conftest.py', 'pyproject.toml', 'setup.cfg', 'tox.ini']

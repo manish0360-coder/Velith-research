@@ -1,0 +1,21 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "xarray/core/combine.py",
+      "span": [
+        20225,
+        20936
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "d3609f5fc57dc5f04a56e2239949f8a3acf9f86f6fb4b4c6d531a7161317fed6"
+}

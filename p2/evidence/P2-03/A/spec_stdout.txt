@@ -1,0 +1,4 @@
+base_commit=e3d1f9ac39e4bf0f31430e779acc50fb05fe1b64; test files=['sklearn/ensemble/tests/test_iforest.py']; existing protected-config=['conftest.py', 'pyproject.toml', 'setup.cfg', 'sklearn/conftest.py']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/05-scikit-learn__scikit-learn-25931/A/spec.json
+required tests: 1 F2P + 21 P2P
+protected paths: ['conftest.py', 'pyproject.toml', 'setup.cfg', 'sklearn/conftest.py', 'sklearn/ensemble/tests/test_iforest.py']

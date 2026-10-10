@@ -1,0 +1,21 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "xarray/coding/variables.py",
+      "span": [
+        11541,
+        11837
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "3834947d51e2a8fa765e752e935da9d3f4fa53d0d84addda93000f3e2350da0b"
+}

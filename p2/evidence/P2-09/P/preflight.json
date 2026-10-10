@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "08e11b35dcf2abced1b1baf5c35639fed466b9abb589218851deb57cbbb958b7",
+  "failure": null,
+  "gold_paths": [
+    "astropy/io/ascii/qdp.py"
+  ],
+  "identity_s": "e0384b408ba66fff2237e4e6448df56ffda647eb8a69561728f1f2a451343c77",
+  "identity_u": "78ffa6e73d22bf2b804b7ab36a52fd4249196e09dee3b575496cf2c7a014d5f3",
+  "seed": 921857438787387597,
+  "tokens": {
+    "S": 6810,
+    "U": 6821
+  }
+}

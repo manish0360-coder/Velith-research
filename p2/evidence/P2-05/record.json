@@ -1,0 +1,94 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "3/3",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 4.605,
+  "compressed_bytes": 1495369648,
+  "digest": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "sklearn/utils/_show_versions.py": {
+      "base_sha": "9abc302757c13a663d2b960860666fb030598fce16edc64d37e455aae498c959",
+      "worktree_sha": "9abc302757c13a663d2b960860666fb030598fce16edc64d37e455aae498c959"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141",
+  "image_id": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+  "instance_id": "scikit-learn__scikit-learn-14141",
+  "provenance": {
+    "compressed_bytes": 1495369648,
+    "digest": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141",
+    "image_id": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+    "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141@sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817"
+  },
+  "rank": 7,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141@sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+  "repo": "scikit-learn/scikit-learn",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "sklearn/utils/_show_versions.py",
+        "span": [
+          815,
+          909
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "11476aa67b90601866f79d3ef1f9b65169005c6ad10fb22c2247989547e7baec"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "b1237f7afd3fdf64b0ef298253a11f111f7e15fca917c5a7413db97ea804f4f4",
+    "failure": null,
+    "gold_paths": [
+      "sklearn/utils/_show_versions.py"
+    ],
+    "identity_s": "5df73297191381b814cdab37f2c7ec90d2538a3e12f0ba416693c9b1953de8e8",
+    "identity_u": "0e38813b97b9db11520aa2b318d8b92b4766dade68ffac1cb217f057b3b3c2f8",
+    "seed": 757168357007042086,
+    "tokens": {
+      "S": 1037,
+      "U": 1048
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32466587648,
+  "storage_need": 13738424120
+}

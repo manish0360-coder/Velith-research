@@ -1,0 +1,7 @@
+{
+  "case": "A",
+  "classification": "PASSED",
+  "reason": "ALL_REQUIRED_PASSED",
+  "detail": "41/41",
+  "evidence": "/mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/08-astropy__astropy-13579/A/run/A/evidence.json"
+}

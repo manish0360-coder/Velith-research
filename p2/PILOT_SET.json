@@ -1,0 +1,780 @@
+{
+  "admission_log_sha256": "eba7b68f28c09f9a37793fcb321814ecedb137a54dbb5aaaa347be7011a286c2",
+  "budget": {
+    "b_prompt": 15232
+  },
+  "code_sha256": {
+    "P2_SPEC.md": "b2d29c5cdfba65b24c514763412c0807704c88f52d39e663f3fc6cc7a6d21c32",
+    "p2_admit.py": "b6b4419cf4ce9fc364b4a9d7377de4f006e251181bf8ff75400697a6ade6a1bf",
+    "p2_edits.py": "822b997fa7064c6428a88118f27669baeac5564c6db07f656716bf6780faaf0e",
+    "p2_gen.py": "2486594454752e57d24e2865474168ada03120acf6332f231c173b91b165a6d4",
+    "p2_harness.py": "7b548e3c6f298f6a0206e42137c994a15c45e0ea591646ac2f2482809bfbbd67",
+    "p2_lottery.py": "fc6cdf519086b20744db42003721d4e62f56fe7c4586e0719a4a96b5d9a180ca",
+    "p2_phaseb.py": "9ac6e2903acfce7be7921bf1a3dca4d4090b6bc81ae9a5e3cdab2eb17b518939"
+  },
+  "dataset": "SWE-bench/SWE-bench_Verified",
+  "dataset_revision": "78f471bf655a3137b2e8a75af1501690ec009ec3",
+  "fg3_sha256": {
+    "MANIFEST.sha256": "de977b69e487f8c9423e108d521a48a96933740bc1386f346594ac1a9655a098",
+    "order.json": "d9199f2c9c474f354c21535d699733081a69bc58e1c131219c1c8b5cd4710708",
+    "pool.json": "8c870348ed2a4d0a127c135701095cafd7db76b63e00ac6c20a0ca86fd2ed001"
+  },
+  "frozen_utc": "2026-10-10T10:04:04Z",
+  "gencheck_sha256": "72c3cf8784371ff3ad8816ef9dc41280c84451bdc947835f311f1f66df70b64c",
+  "generation_route": {
+    "host": "http://host.docker.internal:11434",
+    "image": "velith-verifier:m0",
+    "image_id": "sha256:36c4c00bc85bf99203e3aa277540e8b68926b8bf183edd07af8ea84e46afcfab",
+    "module_sha256": {
+      "velith/agent/proposer.py": "91d32296ab5e0c02f2a41ae0b843053d86cb0674c61adfb0aab5035e08b3b113",
+      "velith/batch/provenance.py": "2106797f7fde7dd6907c48e85767be13727affec2615616f326897b979bfa504",
+      "velith/llm/client.py": "cb6572eed9bb333aeb27f7b5901a46e6cf3dacaba307974f3b7f3c454558ee37",
+      "velith/task.py": "f40c978f1412f2da3882284f3c90a26cd328b7ceb4ad698c421dc9fbd0926a43"
+    },
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "model": {
+    "client_timeout_s": 1800.0,
+    "manifest_digest": "e196dcd918e4f54307db79c9fada1ff261c564e1df1624e20ae65d1ff0a4c45c",
+    "name": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+    "num_ctx": 16384,
+    "num_predict": 1024,
+    "stop": [
+      "\nUser:",
+      "\nAssistant:"
+    ],
+    "temperature": 0.0
+  },
+  "n": 13,
+  "p1_harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+  "pilot": "M2-PV-P2",
+  "registry_sha256": "7befdc0b025d60049ac4b8fca51ad637199e1037ce0c9b2e5a1a990d33ad687f",
+  "spec_sha256": "b2d29c5cdfba65b24c514763412c0807704c88f52d39e663f3fc6cc7a6d21c32",
+  "task_order": [
+    "P2-01",
+    "P2-02",
+    "P2-03",
+    "P2-04",
+    "P2-05",
+    "P2-06",
+    "P2-07",
+    "P2-08",
+    "P2-09",
+    "P2-10",
+    "P2-11",
+    "P2-12",
+    "P2-13"
+  ],
+  "tasks": [
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+      "case_a_candidate_seconds": 7.695,
+      "common_identity": "183e2c6038430fd434720e8e1a9cfd9c7d43012e19f75a3fc5d8ae6b9237366d",
+      "compressed_bytes": 1133596395,
+      "digest": "sha256:7485c1e3c8861efd0c6a4a78b952857592e541031039000d25e9481f045dc4a3",
+      "gold_paths": [
+        "astropy/modeling/separable.py"
+      ],
+      "identity": {
+        "S": "79461274a8e714a4cffe25a3a669a4e6a4ce32766b8a0d01015fa363af0533a1",
+        "U": "4fe4ac1377855ee9cadbd79927b8695f53d273a5abea3b94ab9fb24c573dd9fe"
+      },
+      "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-12907",
+      "image_id": "sha256:7485c1e3c8861efd0c6a4a78b952857592e541031039000d25e9481f045dc4a3",
+      "instance_id": "astropy__astropy-12907",
+      "leakage_audit_sha256": "e6ff59e8991ccac3fb2588979bf9aaf7aca0d1e16c2fde09ff90766736889726",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 3486,
+        "U": 3497
+      },
+      "prompt_sha256": {
+        "S": "79461274a8e714a4cffe25a3a669a4e6a4ce32766b8a0d01015fa363af0533a1",
+        "U": "4fe4ac1377855ee9cadbd79927b8695f53d273a5abea3b94ab9fb24c573dd9fe"
+      },
+      "protected_paths": [
+        "astropy/conftest.py",
+        "astropy/modeling/tests/test_separable.py",
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "tox.ini"
+      ],
+      "rank": 2,
+      "record_sha256": "f7ee034499ff93d522f20deb0587e7f8e0238ffaec08a56897ad4deb28c7cf5d",
+      "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-12907@sha256:7485c1e3c8861efd0c6a4a78b952857592e541031039000d25e9481f045dc4a3",
+      "repo": "astropy/astropy",
+      "seed": 286744764162613290,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "6aaa95d72175a7d96a48e09cf1bb42997ba6f0b9dacaa6ed6d2bbd32985ad482"
+      },
+      "slot": "P2-01",
+      "spec": "p2/evidence/P2-01/A/spec.json",
+      "spec_sha256": "6a576c092cec911269e8de45ef173e28126d6381bf17c115853360c857f97b57",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "3aefc834dce72e850bff48689bea3c7dff5f3fad",
+      "case_a_candidate_seconds": 6.824,
+      "common_identity": "d68469db9885ba1a882e213b77d5ca4fbf33e98a2991c7332131b9023266cf53",
+      "compressed_bytes": 1487134435,
+      "digest": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+      "gold_paths": [
+        "sklearn/ensemble/iforest.py"
+      ],
+      "identity": {
+        "S": "3232caa217824b444690bee0e05344586c43c1f412c88a3f31bb8d353aade1e4",
+        "U": "2a6d4ae66c306e7da4a248c475037fbe6a0df0b7ee139ce234325f3d4ccf9a62"
+      },
+      "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496",
+      "image_id": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "leakage_audit_sha256": "c9c6fa6a3aa2ba267254695aca11d850370b24273161156318627edbb9fcd063",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 5701,
+        "U": 5712
+      },
+      "prompt_sha256": {
+        "S": "3232caa217824b444690bee0e05344586c43c1f412c88a3f31bb8d353aade1e4",
+        "U": "2a6d4ae66c306e7da4a248c475037fbe6a0df0b7ee139ce234325f3d4ccf9a62"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "setup.cfg",
+        "sklearn/ensemble/tests/test_iforest.py"
+      ],
+      "rank": 3,
+      "record_sha256": "d45e0e4e5654b4be638d9b7d9e93a709c9566a8e5efc0c071678e879ecfdbe2d",
+      "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496@sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+      "repo": "scikit-learn/scikit-learn",
+      "seed": 3201017930329064370,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "37dc008f4625f2a7b8754f116cdfde609edf7b77896b07c6e889ce349f4675c2"
+      },
+      "slot": "P2-02",
+      "spec": "p2/evidence/P2-02/A/spec.json",
+      "spec_sha256": "91cbc2e7c4a7ce425554b679d029af27297dcff217f62be74ad5e2de0948b725",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "U",
+        "S"
+      ],
+      "base_commit": "e3d1f9ac39e4bf0f31430e779acc50fb05fe1b64",
+      "case_a_candidate_seconds": 7.822,
+      "common_identity": "4449d108558194dc37c7ffee360ed3d9ba69cb2223fc35657a7b9dda412aec52",
+      "compressed_bytes": 1886034667,
+      "digest": "sha256:ddec546aa1fa04ece4083d1d65eee4115ce72d2233b06e58250bb33a7a0c8aa7",
+      "gold_paths": [
+        "sklearn/ensemble/_iforest.py"
+      ],
+      "identity": {
+        "S": "f650cb03c782cab0780547791ad6816ef7346c10ea8ebde4b5113f386fe78e09",
+        "U": "c9a7295e996687c6874fbe03e2bdad2db55825bdc03b1ac287eb57704c8a043a"
+      },
+      "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-25931",
+      "image_id": "sha256:ddec546aa1fa04ece4083d1d65eee4115ce72d2233b06e58250bb33a7a0c8aa7",
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "leakage_audit_sha256": "c3cf2ad3fcc0a70b26a3f0a92505d49489ba4d7aa145c4093f9d86181242be9e",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 6656,
+        "U": 6667
+      },
+      "prompt_sha256": {
+        "S": "f650cb03c782cab0780547791ad6816ef7346c10ea8ebde4b5113f386fe78e09",
+        "U": "c9a7295e996687c6874fbe03e2bdad2db55825bdc03b1ac287eb57704c8a043a"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "sklearn/conftest.py",
+        "sklearn/ensemble/tests/test_iforest.py"
+      ],
+      "rank": 5,
+      "record_sha256": "13f7d1d2c9eec3c5d38d0270caa75bf02429adb390cbc851401bb8fb0949f683",
+      "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-25931@sha256:ddec546aa1fa04ece4083d1d65eee4115ce72d2233b06e58250bb33a7a0c8aa7",
+      "repo": "scikit-learn/scikit-learn",
+      "seed": 2233493787454035170,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "490a5724c425231b0f59150da4a11e943b97d23b373dbb25f7d4c1617930a328"
+      },
+      "slot": "P2-03",
+      "spec": "p2/evidence/P2-03/A/spec.json",
+      "spec_sha256": "2a4f2720cbde9c42037ff3b6fbb2fede68f67eeacc45eb62978f57c3995d7c30",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "U",
+        "S"
+      ],
+      "base_commit": "37522e991a32ee3c0ad1a5ff8afe8e3eb1885550",
+      "case_a_candidate_seconds": 10.671,
+      "common_identity": "eb61ac8d19c96bf29b99eb64a435291b291e732a0c08c1e47196a79054f2aea0",
+      "compressed_bytes": 2050302340,
+      "digest": "sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5",
+      "gold_paths": [
+        "xarray/coding/variables.py"
+      ],
+      "identity": {
+        "S": "0c02f9d255ba0f665db747ed67003652455fbd8ab199c4c19f273c6135bd80e4",
+        "U": "1cfa14845affe9a6560679e54b49be684c8cdaf5c0ed44fc308b2a771d730648"
+      },
+      "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4966",
+      "image_id": "sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5",
+      "instance_id": "pydata__xarray-4966",
+      "leakage_audit_sha256": "32479302efafc1a383a44871225e330bc5c5b728052f000702f272f9f5a92e79",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 5029,
+        "U": 5040
+      },
+      "prompt_sha256": {
+        "S": "0c02f9d255ba0f665db747ed67003652455fbd8ab199c4c19f273c6135bd80e4",
+        "U": "1cfa14845affe9a6560679e54b49be684c8cdaf5c0ed44fc308b2a771d730648"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "xarray/tests/test_coding.py"
+      ],
+      "rank": 6,
+      "record_sha256": "17a18adab72211c9a58386915a91a45a18e1d369f67b29438572198ae934c16a",
+      "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4966@sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5",
+      "repo": "pydata/xarray",
+      "seed": 4592685715104005282,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "3834947d51e2a8fa765e752e935da9d3f4fa53d0d84addda93000f3e2350da0b"
+      },
+      "slot": "P2-04",
+      "spec": "p2/evidence/P2-04/A/spec.json",
+      "spec_sha256": "550d1e63fc0b74999ac13c5c7b228a86782dece852dac5c65ec963e351072670",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "U",
+        "S"
+      ],
+      "base_commit": "3d997697fdd166eff428ea9fd35734b6a8ba113e",
+      "case_a_candidate_seconds": 4.605,
+      "common_identity": "b1237f7afd3fdf64b0ef298253a11f111f7e15fca917c5a7413db97ea804f4f4",
+      "compressed_bytes": 1495369648,
+      "digest": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+      "gold_paths": [
+        "sklearn/utils/_show_versions.py"
+      ],
+      "identity": {
+        "S": "5df73297191381b814cdab37f2c7ec90d2538a3e12f0ba416693c9b1953de8e8",
+        "U": "0e38813b97b9db11520aa2b318d8b92b4766dade68ffac1cb217f057b3b3c2f8"
+      },
+      "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141",
+      "image_id": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "leakage_audit_sha256": "b65b97a4e62654abb919c79d3508b73dde197da2a47c151d80cff1c258aca607",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 1037,
+        "U": 1048
+      },
+      "prompt_sha256": {
+        "S": "5df73297191381b814cdab37f2c7ec90d2538a3e12f0ba416693c9b1953de8e8",
+        "U": "0e38813b97b9db11520aa2b318d8b92b4766dade68ffac1cb217f057b3b3c2f8"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "setup.cfg",
+        "sklearn/conftest.py",
+        "sklearn/utils/tests/test_show_versions.py"
+      ],
+      "rank": 7,
+      "record_sha256": "0a6e088e1f08a558d0530fa49c8be3ced0819c0dd36724a3ea3bb7b13f16ecac",
+      "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141@sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+      "repo": "scikit-learn/scikit-learn",
+      "seed": 757168357007042086,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "11476aa67b90601866f79d3ef1f9b65169005c6ad10fb22c2247989547e7baec"
+      },
+      "slot": "P2-05",
+      "spec": "p2/evidence/P2-05/A/spec.json",
+      "spec_sha256": "d131de9807a9127c7d19307210688000103ccc9e2006b728fdb9163dadff8430",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "U",
+        "S"
+      ],
+      "base_commit": "0df94ff7097961e92fd7812036a24b145bc13ca8",
+      "case_a_candidate_seconds": 9.387,
+      "common_identity": "d7b8c8f5677a16ef4b3aec7f094fbe65d1e25de2d338c137febca0b3c3d766d3",
+      "compressed_bytes": 1134305276,
+      "digest": "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+      "gold_paths": [
+        "astropy/wcs/wcsapi/wrappers/sliced_wcs.py"
+      ],
+      "identity": {
+        "S": "748e09db2df46eb2330062c0febb6247fbabd3f1d82a4c9b9df6b70301370880",
+        "U": "a9b513e0c72c7375376b15fe48b1af89bd1c6daa5b51d76e58e1d21e6e42329e"
+      },
+      "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579",
+      "image_id": "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+      "instance_id": "astropy__astropy-13579",
+      "leakage_audit_sha256": "616178f86cd6f394ee44d2290d5fcbcc9f00be2d1cf4930e6d8bb17a62e27d3e",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 5348,
+        "U": 5359
+      },
+      "prompt_sha256": {
+        "S": "748e09db2df46eb2330062c0febb6247fbabd3f1d82a4c9b9df6b70301370880",
+        "U": "a9b513e0c72c7375376b15fe48b1af89bd1c6daa5b51d76e58e1d21e6e42329e"
+      },
+      "protected_paths": [
+        "astropy/conftest.py",
+        "astropy/wcs/wcsapi/conftest.py",
+        "astropy/wcs/wcsapi/wrappers/tests/test_sliced_wcs.py",
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "tox.ini"
+      ],
+      "rank": 8,
+      "record_sha256": "b89b7e2282eba13d11850487a5e7d0c9fcafa48c1a90b1c64f500a17f08f899d",
+      "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579@sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863",
+      "repo": "astropy/astropy",
+      "seed": 6304238383670843086,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "977e49353dd1fcda9b41aedda7f5d525739b29c77f7032c2dee6965a79e8c12d"
+      },
+      "slot": "P2-06",
+      "spec": "p2/evidence/P2-06/A/spec.json",
+      "spec_sha256": "1dfe990a9a486a5c8ae248312b9dd5ba98ff7b5cf87fe64586f104e8c72dff5d",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "U",
+        "S"
+      ],
+      "base_commit": "d49a6f13af2f22228d430ac64ac2b518937800d0",
+      "case_a_candidate_seconds": 17.629,
+      "common_identity": "15fe21b4576cf6ad1ee11e9f39bbf59b24911a8931e36f185c18872c9e91f774",
+      "compressed_bytes": 1495748723,
+      "digest": "sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+      "gold_paths": [
+        "sklearn/cluster/optics_.py"
+      ],
+      "identity": {
+        "S": "28120aaacebe8a93f08696ffd5a1e0d5d1d734e57d707991124e49933a785f95",
+        "U": "c6d5ff0c7972928134c0d3a5b6d08864404177bfde49ceae5039e897107182f9"
+      },
+      "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14496",
+      "image_id": "sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "leakage_audit_sha256": "afc386744504fe6347d76a5fd46d3e531d502f50328740d6e6cec8326f2704d1",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 10927,
+        "U": 10938
+      },
+      "prompt_sha256": {
+        "S": "28120aaacebe8a93f08696ffd5a1e0d5d1d734e57d707991124e49933a785f95",
+        "U": "c6d5ff0c7972928134c0d3a5b6d08864404177bfde49ceae5039e897107182f9"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "setup.cfg",
+        "sklearn/cluster/tests/test_optics.py",
+        "sklearn/conftest.py"
+      ],
+      "rank": 9,
+      "record_sha256": "91e9332bb979dcd22f3926fefcde3022cdfb52f1519acf1becdfb2b306bb1746",
+      "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14496@sha256:a1d4ade93c453ff019f6007d735ed1a8e02fdff7495cabe8cbdd87b83c910779",
+      "repo": "scikit-learn/scikit-learn",
+      "seed": 6338055729591059051,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "2cab2386cb79397a5620ee8d9e9b7416df79c0e8ebd077e552fa44356bfe72ea"
+      },
+      "slot": "P2-07",
+      "spec": "p2/evidence/P2-07/A/spec.json",
+      "spec_sha256": "f0157317f93dd7ea3c68ec64c66738c06f9117b570acd4447b2a30173fa361f0",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "U",
+        "S"
+      ],
+      "base_commit": "19b088636eb7d3f65ab7a1046ac672e0689371d8",
+      "case_a_candidate_seconds": 20.322,
+      "common_identity": "d4f584bcc7d38f5c0a4f27490ef8239800efc6fa2b35f52a7122372ebaa89060",
+      "compressed_bytes": 2049184246,
+      "digest": "sha256:64cba3e907a0c4fa08652422573abe19a43d12299e15ce08d8ff84a3a1f39a18",
+      "gold_paths": [
+        "xarray/core/weighted.py"
+      ],
+      "identity": {
+        "S": "0541a75b62501299337a26f6193f1a7dda8d6feda63407b520b6c6909ec3b41f",
+        "U": "2efa7246b9cccffc083563d688977901cb2966d0ee903d09ed03a9028ebd0c8e"
+      },
+      "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4075",
+      "image_id": "sha256:64cba3e907a0c4fa08652422573abe19a43d12299e15ce08d8ff84a3a1f39a18",
+      "instance_id": "pydata__xarray-4075",
+      "leakage_audit_sha256": "7b648aa89b7f56ab9c51233c1f6b25b91ad7c6a98eb34f1f8e0cb093a3455cac",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 3399,
+        "U": 3410
+      },
+      "prompt_sha256": {
+        "S": "0541a75b62501299337a26f6193f1a7dda8d6feda63407b520b6c6909ec3b41f",
+        "U": "2efa7246b9cccffc083563d688977901cb2966d0ee903d09ed03a9028ebd0c8e"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "setup.cfg",
+        "xarray/tests/test_weighted.py"
+      ],
+      "rank": 10,
+      "record_sha256": "dcec457fa8a63f580d88213274b31e387df21089de1a2ae2cdb177c374f23a17",
+      "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4075@sha256:64cba3e907a0c4fa08652422573abe19a43d12299e15ce08d8ff84a3a1f39a18",
+      "repo": "pydata/xarray",
+      "seed": 668578926542114426,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "451e32600d7c5513ca36dfa610473d8c2a314514eb8e89e34dbe1732ee4a1090"
+      },
+      "slot": "P2-08",
+      "spec": "p2/evidence/P2-08/A/spec.json",
+      "spec_sha256": "48a9a96bc8a102314665770d2b924e85125f3de9d6ca496223dfeff43e6d9e95",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "7269fa3e33e8d02485a647da91a5a2a60a06af61",
+      "case_a_candidate_seconds": 6.41,
+      "common_identity": "08e11b35dcf2abced1b1baf5c35639fed466b9abb589218851deb57cbbb958b7",
+      "compressed_bytes": 1138622054,
+      "digest": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+      "gold_paths": [
+        "astropy/io/ascii/qdp.py"
+      ],
+      "identity": {
+        "S": "e0384b408ba66fff2237e4e6448df56ffda647eb8a69561728f1f2a451343c77",
+        "U": "78ffa6e73d22bf2b804b7ab36a52fd4249196e09dee3b575496cf2c7a014d5f3"
+      },
+      "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365",
+      "image_id": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+      "instance_id": "astropy__astropy-14365",
+      "leakage_audit_sha256": "22d0734c8f6527cbc33a771103d6107288d7a3f7fba8a3310dda7973d998e5a6",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 6810,
+        "U": 6821
+      },
+      "prompt_sha256": {
+        "S": "e0384b408ba66fff2237e4e6448df56ffda647eb8a69561728f1f2a451343c77",
+        "U": "78ffa6e73d22bf2b804b7ab36a52fd4249196e09dee3b575496cf2c7a014d5f3"
+      },
+      "protected_paths": [
+        "astropy/conftest.py",
+        "astropy/io/ascii/tests/test_qdp.py",
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "tox.ini"
+      ],
+      "rank": 11,
+      "record_sha256": "56d3b706c366325e1f3f7a2c97d16c9757fc2c3fa4497cf811ba44d504dd5172",
+      "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365@sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+      "repo": "astropy/astropy",
+      "seed": 921857438787387597,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "a06e2a0a41074f5b882150af7acaa531318c625427b798047f6d58ac8af88d52"
+      },
+      "slot": "P2-09",
+      "spec": "p2/evidence/P2-09/A/spec.json",
+      "spec_sha256": "5c3fc288ecf2c8c6bf69a4775481d48918de0cb0aeb1d40da485ea37bd2b3fb1",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "19cc80471739bcb67b7e8099246b391c355023ee",
+      "case_a_candidate_seconds": 6.134,
+      "common_identity": "19be24b06221af4e5362d7a911556f1a734fe7b668fb46bfd598118754743dbb",
+      "compressed_bytes": 1134278756,
+      "digest": "sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7",
+      "gold_paths": [
+        "astropy/io/ascii/html.py"
+      ],
+      "identity": {
+        "S": "b085d03df345b8739cb8d95bf925a1df783c159b5b22c3db1c234f570d107df1",
+        "U": "3efde156867ee2878fffbdad5f9f0cff09e108cb9e14baeae8393c56ed2e3652"
+      },
+      "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13453",
+      "image_id": "sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7",
+      "instance_id": "astropy__astropy-13453",
+      "leakage_audit_sha256": "c9f5792093976317355975247a604758e03619876c188689fc5298676fbe7157",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 7464,
+        "U": 7475
+      },
+      "prompt_sha256": {
+        "S": "b085d03df345b8739cb8d95bf925a1df783c159b5b22c3db1c234f570d107df1",
+        "U": "3efde156867ee2878fffbdad5f9f0cff09e108cb9e14baeae8393c56ed2e3652"
+      },
+      "protected_paths": [
+        "astropy/conftest.py",
+        "astropy/io/ascii/tests/test_html.py",
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "tox.ini"
+      ],
+      "rank": 13,
+      "record_sha256": "1ff6f86e400700f6b9d7a85a5a7aa4fa5953ae5bd24e9cd4f1dacaab239a6fc6",
+      "ref": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13453@sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7",
+      "repo": "astropy/astropy",
+      "seed": 4811619940773664831,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "c2348828aca621c530ac97b2e62169d04ff9b8fc18582dd9e58236a68d09576d"
+      },
+      "slot": "P2-10",
+      "spec": "p2/evidence/P2-10/A/spec.json",
+      "spec_sha256": "c3030d8ca036f01b2bf4269cc61a355e06feca251c137eaf8f1afff39c9212e6",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "118f4d996e7711c9aced916e6049af9f28d5ec66",
+      "case_a_candidate_seconds": 6.523,
+      "common_identity": "844b1cf6e3db88e1140b0a224ef4621e7cb64f48f594ca768e796a0681a8a1fa",
+      "compressed_bytes": 2047288413,
+      "digest": "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+      "gold_paths": [
+        "xarray/core/combine.py"
+      ],
+      "identity": {
+        "S": "be53f6449944397aea47a928fd1a54823ebf7fa464812421ba27c8222733b04f",
+        "U": "5cb541c8dd782a44dac940b8ec609ad0565e6dd416b517f7a70e24d7d163ce4e"
+      },
+      "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151",
+      "image_id": "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+      "instance_id": "pydata__xarray-3151",
+      "leakage_audit_sha256": "10fcdf9ff8630581ab20fe88e403fef1f2f013cc1978f9727fe8b5d8e8fd8c8d",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 8585,
+        "U": 8596
+      },
+      "prompt_sha256": {
+        "S": "be53f6449944397aea47a928fd1a54823ebf7fa464812421ba27c8222733b04f",
+        "U": "5cb541c8dd782a44dac940b8ec609ad0565e6dd416b517f7a70e24d7d163ce4e"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "setup.cfg",
+        "xarray/tests/test_combine.py"
+      ],
+      "rank": 15,
+      "record_sha256": "9e091a9a92abdc1f3b431f6bb565d0df674db396b7ccaa0826a8e55649881d8f",
+      "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151@sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+      "repo": "pydata/xarray",
+      "seed": 591537008646498053,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "d3609f5fc57dc5f04a56e2239949f8a3acf9f86f6fb4b4c6d531a7161317fed6"
+      },
+      "slot": "P2-11",
+      "spec": "p2/evidence/P2-11/A/spec.json",
+      "spec_sha256": "6c6a87679a5e31e0adf92f0cc641bd71c380518fdbfd9bec0f8e6d1a3c0274d6",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "51d37d1be95547059251076b3fadaa317750aab3",
+      "case_a_candidate_seconds": 7.904,
+      "common_identity": "49ab31f6cf56db2ca5cb0f09bf901f49a6a76789d89ff142d001c183c4228132",
+      "compressed_bytes": 1901841295,
+      "digest": "sha256:f40e55c21c683a06ba9f1e6d0dda7e83f7561c732e3d7d037e34f591a327d763",
+      "gold_paths": [
+        "xarray/core/rolling.py"
+      ],
+      "identity": {
+        "S": "91d7561035e50237c531928dfe13e8145c35266433333b1f8d23d8aa1c8ce246",
+        "U": "126a7b6389bf1694d229888187cc6ee9450678f5ad401175c319e4045df3e07d"
+      },
+      "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-7233",
+      "image_id": "sha256:f40e55c21c683a06ba9f1e6d0dda7e83f7561c732e3d7d037e34f591a327d763",
+      "instance_id": "pydata__xarray-7233",
+      "leakage_audit_sha256": "3aa9102762642d8761811f207a58069ffa8f0a96e349f7c0c497020bce5c8d2d",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 12007,
+        "U": 12018
+      },
+      "prompt_sha256": {
+        "S": "91d7561035e50237c531928dfe13e8145c35266433333b1f8d23d8aa1c8ce246",
+        "U": "126a7b6389bf1694d229888187cc6ee9450678f5ad401175c319e4045df3e07d"
+      },
+      "protected_paths": [
+        "conftest.py",
+        "pyproject.toml",
+        "setup.cfg",
+        "xarray/tests/conftest.py",
+        "xarray/tests/test_coarsen.py"
+      ],
+      "rank": 17,
+      "record_sha256": "42b78bf4159ecc4b0aefa1b75c2f0670a09351f4090ae2f25e48dbe94c901a24",
+      "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-7233@sha256:f40e55c21c683a06ba9f1e6d0dda7e83f7561c732e3d7d037e34f591a327d763",
+      "repo": "pydata/xarray",
+      "seed": 6816120929198790617,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "aebb9c1446210d9e1889ae22d795ba4c3ae5becf7d0d6540e5d8768e677581f9"
+      },
+      "slot": "P2-12",
+      "spec": "p2/evidence/P2-12/A/spec.json",
+      "spec_sha256": "c6fc033de5b1baa5c056ab1b86d00e6a717df85ba3af482682cb611a1ddf8ddd",
+      "stage_x_timeout_s": 900.0
+    },
+    {
+      "arm_order": [
+        "S",
+        "U"
+      ],
+      "base_commit": "64619e53e9d0ed417daba287ac0d3a06943a54d5",
+      "case_a_candidate_seconds": 20.095,
+      "common_identity": "e93f45432bcce3e3910fa9b2a5f55ecab8401768fdb5db322f12f0b313245a44",
+      "compressed_bytes": 2259141917,
+      "digest": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+      "gold_paths": [
+        "lib/matplotlib/legend.py"
+      ],
+      "identity": {
+        "S": "47fda21770411795f7a0721f4916a333ed5a30ebe5c39cdb807980bf7b3ec4ff",
+        "U": "41e15c296912f622afa2ed676904b3b885e9caa19dc34032d0413f288c70ff99"
+      },
+      "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859",
+      "image_id": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+      "instance_id": "matplotlib__matplotlib-20859",
+      "leakage_audit_sha256": "091299384d00e88bd309e96ffab90e7010f499c693107c9b0d0931e463a38e80",
+      "platform": "linux/amd64",
+      "predicted_prompt_eval_count": {
+        "S": 13715,
+        "U": 13726
+      },
+      "prompt_sha256": {
+        "S": "47fda21770411795f7a0721f4916a333ed5a30ebe5c39cdb807980bf7b3ec4ff",
+        "U": "41e15c296912f622afa2ed676904b3b885e9caa19dc34032d0413f288c70ff99"
+      },
+      "protected_paths": [
+        "lib/matplotlib/tests/conftest.py",
+        "lib/matplotlib/tests/test_legend.py",
+        "pytest.ini",
+        "tox.ini"
+      ],
+      "rank": 22,
+      "record_sha256": "9eda2395d704b90f2a9efc474be1a0734d71e2b77da7d3ec5cdd4b13f5421a24",
+      "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859@sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+      "repo": "matplotlib/matplotlib",
+      "seed": 872075136928456910,
+      "self_check_diagnostic": {
+        "gate": true,
+        "harness_integrity_alarm": false,
+        "no_newline_marker": false,
+        "parse_code": "OK",
+        "resolution_code": "OK",
+        "synthesized_diff_sha256": "2a4398dad2b25521ff0bc07cfd68f1cbf4397bacb34c0c08fe1ebd44c46d761b"
+      },
+      "slot": "P2-13",
+      "spec": "p2/evidence/P2-13/A/spec.json",
+      "spec_sha256": "68fa4eeffcac344a55623c1c8625832b9a08c131cd0084b7a661e4d126229eb3",
+      "stage_x_timeout_s": 900.0
+    }
+  ]
+}

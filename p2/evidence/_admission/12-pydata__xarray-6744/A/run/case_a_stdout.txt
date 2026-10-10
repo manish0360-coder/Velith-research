@@ -1,0 +1,7 @@
+{
+  "case": "A",
+  "classification": "INFRA_ERROR",
+  "reason": "BASELINE_UNHEALTHY",
+  "detail": "pass_to_pass_not_passed",
+  "evidence": "/mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/12-pydata__xarray-6744/A/run/A/evidence.json"
+}

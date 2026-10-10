@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "83260265dd3ffa24d96f3ff93158c2b8884d5585642e7f984fdd84dcd2c3f63a",
+  "failure": null,
+  "gold_paths": [
+    "sklearn/model_selection/_split.py"
+  ],
+  "identity_s": "d6103d45f2dc1b409a670cc5c12726f91373695c39967ec18b38276c6d4bb67e",
+  "identity_u": "b86d75c73c5809046eb4f783d935770794d27c591183baae9ef4b62b3ee37595",
+  "seed": 4027911725969144146,
+  "tokens": {
+    "S": 23454,
+    "U": 23465
+  }
+}

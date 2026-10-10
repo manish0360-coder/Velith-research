@@ -1,0 +1,4 @@
+base_commit=19b088636eb7d3f65ab7a1046ac672e0689371d8; test files=['xarray/tests/test_weighted.py']; existing protected-config=['conftest.py', 'setup.cfg']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/10-pydata__xarray-4075/A/spec.json
+required tests: 2 F2P + 958 P2P
+protected paths: ['conftest.py', 'setup.cfg', 'xarray/tests/test_weighted.py']

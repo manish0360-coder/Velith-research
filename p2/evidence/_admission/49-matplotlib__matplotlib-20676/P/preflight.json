@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "774fde2ce530986930d5eada6543c63353a6a03e718fe74e61f37ca3e365d647",
+  "failure": null,
+  "gold_paths": [
+    "lib/matplotlib/widgets.py"
+  ],
+  "identity_s": "61ac675848249796191a972939f41df8a3447c4f29c48fda1ab76ed640062c2c",
+  "identity_u": "6dbc5a3240680b08938ed4101dd8728564cd8e5ab298a31253ab1e004c05a85a",
+  "seed": 2814815843104635183,
+  "tokens": {
+    "S": 34051,
+    "U": 34062
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "19be24b06221af4e5362d7a911556f1a734fe7b668fb46bfd598118754743dbb",
+  "failure": null,
+  "gold_paths": [
+    "astropy/io/ascii/html.py"
+  ],
+  "identity_s": "b085d03df345b8739cb8d95bf925a1df783c159b5b22c3db1c234f570d107df1",
+  "identity_u": "3efde156867ee2878fffbdad5f9f0cff09e108cb9e14baeae8393c56ed2e3652",
+  "seed": 4811619940773664831,
+  "tokens": {
+    "S": 7464,
+    "U": 7475
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "xarray/core/rolling.py",
+      "span": [
+        33755,
+        34030
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "aebb9c1446210d9e1889ae22d795ba4c3ae5becf7d0d6540e5d8768e677581f9"
+}

@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "15fe21b4576cf6ad1ee11e9f39bbf59b24911a8931e36f185c18872c9e91f774",
+  "failure": null,
+  "gold_paths": [
+    "sklearn/cluster/optics_.py"
+  ],
+  "identity_s": "28120aaacebe8a93f08696ffd5a1e0d5d1d734e57d707991124e49933a785f95",
+  "identity_u": "c6d5ff0c7972928134c0d3a5b6d08864404177bfde49ceae5039e897107182f9",
+  "seed": 6338055729591059051,
+  "tokens": {
+    "S": 10927,
+    "U": 10938
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "admitted": false,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "365/365",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 44.087,
+  "compressed_bytes": 2050050366,
+  "digest": "sha256:1fb7fb411d115d06cf2f34fde3b6f8a33427f2d6f36e1ab8df3b1b977195bd61",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "xarray/core/variable.py": {
+      "base_sha": "43c9aea0e95932e3e98648da8f5e55b6819058ffab96f7901fef5295fe114a4f",
+      "worktree_sha": "43c9aea0e95932e3e98648da8f5e55b6819058ffab96f7901fef5295fe114a4f"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-2905",
+  "image_id": "sha256:1fb7fb411d115d06cf2f34fde3b6f8a33427f2d6f36e1ab8df3b1b977195bd61",
+  "instance_id": "pydata__xarray-2905",
+  "provenance": {
+    "compressed_bytes": 2050050366,
+    "digest": "sha256:1fb7fb411d115d06cf2f34fde3b6f8a33427f2d6f36e1ab8df3b1b977195bd61",
+    "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-2905",
+    "image_id": "sha256:1fb7fb411d115d06cf2f34fde3b6f8a33427f2d6f36e1ab8df3b1b977195bd61",
+    "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-2905@sha256:1fb7fb411d115d06cf2f34fde3b6f8a33427f2d6f36e1ab8df3b1b977195bd61"
+  },
+  "rank": 1,
+  "reason": "F_OVER_BUDGET",
+  "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-2905@sha256:1fb7fb411d115d06cf2f34fde3b6f8a33427f2d6f36e1ab8df3b1b977195bd61",
+  "repo": "pydata/xarray",
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "fb356cf698d8c98b7e858e3edf22c09d39588a6b8a1954de88972683c219d84a",
+    "failure": "F_OVER_BUDGET",
+    "gold_paths": [
+      "xarray/core/variable.py"
+    ],
+    "identity_s": "7766cf80c5dc2adadc095c49f383b2686ba0e9467798590492c5b05b6d50d675",
+    "identity_u": "31de7118a8218b9d34002755ed20e2df681199d8ed228a1685ca9eab7ba88029",
+    "seed": 6179761977380354810,
+    "tokens": {
+      "S": 28189,
+      "U": 28200
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 40411111424,
+  "storage_need": 15125125915
+}

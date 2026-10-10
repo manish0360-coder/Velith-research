@@ -1,0 +1,51 @@
+{
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "89/89",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 19.112,
+  "compressed_bytes": 2259141917,
+  "digest": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "lib/matplotlib/legend.py": {
+      "base_sha": "474687e338beab7fb1965f31a54abe48a3a7f84d0dc56738006ea56568986a10",
+      "worktree_sha": "474687e338beab7fb1965f31a54abe48a3a7f84d0dc56738006ea56568986a10"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859",
+  "image_id": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+  "instance_id": "matplotlib__matplotlib-20859",
+  "provenance": {
+    "compressed_bytes": 2259141917,
+    "digest": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+    "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859",
+    "image_id": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+    "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859@sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02"
+  },
+  "rank": 22,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859@sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+  "repo": "matplotlib/matplotlib",
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32270299136,
+  "storage_need": 15647854792
+}

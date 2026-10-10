@@ -1,0 +1,21 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "xarray/core/weighted.py",
+      "span": [
+        4553,
+        4823
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "451e32600d7c5513ca36dfa610473d8c2a314514eb8e89e34dbe1732ee4a1090"
+}

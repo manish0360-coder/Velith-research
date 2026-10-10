@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "b1237f7afd3fdf64b0ef298253a11f111f7e15fca917c5a7413db97ea804f4f4",
+  "failure": null,
+  "gold_paths": [
+    "sklearn/utils/_show_versions.py"
+  ],
+  "identity_s": "5df73297191381b814cdab37f2c7ec90d2538a3e12f0ba416693c9b1953de8e8",
+  "identity_u": "0e38813b97b9db11520aa2b318d8b92b4766dade68ffac1cb217f057b3b3c2f8",
+  "seed": 757168357007042086,
+  "tokens": {
+    "S": 1037,
+    "U": 1048
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "block_statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "astropy/modeling/separable.py",
+      "span": [
+        7510,
+        7720
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "diagnostic_only": true,
+  "gate": true,
+  "harness_integrity_alarm": false,
+  "no_newline_marker": false,
+  "parse_code": "OK",
+  "resolution_code": "OK",
+  "synthesized_diff_sha256": "6aaa95d72175a7d96a48e09cf1bb42997ba6f0b9dacaa6ed6d2bbd32985ad482"
+}

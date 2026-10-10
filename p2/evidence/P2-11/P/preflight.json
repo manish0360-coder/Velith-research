@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "844b1cf6e3db88e1140b0a224ef4621e7cb64f48f594ca768e796a0681a8a1fa",
+  "failure": null,
+  "gold_paths": [
+    "xarray/core/combine.py"
+  ],
+  "identity_s": "be53f6449944397aea47a928fd1a54823ebf7fa464812421ba27c8222733b04f",
+  "identity_u": "5cb541c8dd782a44dac940b8ec609ad0565e6dd416b517f7a70e24d7d163ce4e",
+  "seed": 591537008646498053,
+  "tokens": {
+    "S": 8585,
+    "U": 8596
+  }
+}

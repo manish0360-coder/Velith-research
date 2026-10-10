@@ -1,0 +1,104 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "89/89",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 20.095,
+  "compressed_bytes": 2259141917,
+  "digest": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "lib/matplotlib/legend.py": {
+      "base_sha": "474687e338beab7fb1965f31a54abe48a3a7f84d0dc56738006ea56568986a10",
+      "worktree_sha": "474687e338beab7fb1965f31a54abe48a3a7f84d0dc56738006ea56568986a10"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859",
+  "image_id": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+  "instance_id": "matplotlib__matplotlib-20859",
+  "provenance": {
+    "compressed_bytes": 2259141917,
+    "digest": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+    "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859",
+    "image_id": "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+    "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859@sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02"
+  },
+  "rank": 22,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859@sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02",
+  "repo": "matplotlib/matplotlib",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "lib/matplotlib/legend.py",
+        "span": [
+          14580,
+          14756
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 1,
+        "matches": 1,
+        "path": "lib/matplotlib/legend.py",
+        "span": [
+          17432,
+          17811
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "2a4398dad2b25521ff0bc07cfd68f1cbf4397bacb34c0c08fe1ebd44c46d761b"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "e93f45432bcce3e3910fa9b2a5f55ecab8401768fdb5db322f12f0b313245a44",
+    "failure": null,
+    "gold_paths": [
+      "lib/matplotlib/legend.py"
+    ],
+    "identity_s": "47fda21770411795f7a0721f4916a333ed5a30ebe5c39cdb807980bf7b3ec4ff",
+    "identity_u": "41e15c296912f622afa2ed676904b3b885e9caa19dc34032d0413f288c70ff99",
+    "seed": 872075136928456910,
+    "tokens": {
+      "S": 13715,
+      "U": 13726
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 32185204736,
+  "storage_need": 15647854792
+}

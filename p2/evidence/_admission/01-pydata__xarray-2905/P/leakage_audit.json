@@ -1,0 +1,78 @@
+{
+  "S": {
+    "checks": {
+      "gold_hunk_lines": {
+        "needles": 3,
+        "needles_found": 1,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 1
+        }
+      },
+      "gold_patch_full_text": false,
+      "hints_windows_41": {
+        "needles": 1345,
+        "needles_found": 101,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "issue": 101
+        }
+      },
+      "test_ids": {
+        "needles": 365,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_full_text": false,
+      "test_patch_hunk_lines": {
+        "needles": 7,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_paths_in_pool": [],
+      "test_patch_paths_in_prompt": []
+    },
+    "hints_text_sha256": "b98919b8bc98534061175a724f618c40ade5ab65cc8150fb99e2d45d53280af1",
+    "verdict": "PASS"
+  },
+  "U": {
+    "checks": {
+      "gold_hunk_lines": {
+        "needles": 3,
+        "needles_found": 1,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 1
+        }
+      },
+      "gold_patch_full_text": false,
+      "hints_windows_41": {
+        "needles": 1345,
+        "needles_found": 101,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "issue": 101
+        }
+      },
+      "test_ids": {
+        "needles": 365,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_full_text": false,
+      "test_patch_hunk_lines": {
+        "needles": 7,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_paths_in_pool": [],
+      "test_patch_paths_in_prompt": []
+    },
+    "hints_text_sha256": "b98919b8bc98534061175a724f618c40ade5ab65cc8150fb99e2d45d53280af1",
+    "verdict": "PASS"
+  }
+}

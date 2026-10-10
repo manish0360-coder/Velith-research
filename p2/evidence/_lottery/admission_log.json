@@ -1,0 +1,247 @@
+{
+  "cap": 4,
+  "n_admitted": 13,
+  "n_min": 10,
+  "per_repo": {
+    "astropy/astropy": 4,
+    "matplotlib/matplotlib": 1,
+    "pallets/flask": 0,
+    "pydata/xarray": 4,
+    "scikit-learn/scikit-learn": 4
+  },
+  "slots": {
+    "P2-01": "astropy__astropy-12907",
+    "P2-02": "scikit-learn__scikit-learn-13496",
+    "P2-03": "scikit-learn__scikit-learn-25931",
+    "P2-04": "pydata__xarray-4966",
+    "P2-05": "scikit-learn__scikit-learn-14141",
+    "P2-06": "astropy__astropy-13579",
+    "P2-07": "scikit-learn__scikit-learn-14496",
+    "P2-08": "pydata__xarray-4075",
+    "P2-09": "astropy__astropy-14365",
+    "P2-10": "astropy__astropy-13453",
+    "P2-11": "pydata__xarray-3151",
+    "P2-12": "pydata__xarray-7233",
+    "P2-13": "matplotlib__matplotlib-20859"
+  },
+  "status": "OK",
+  "target": 20,
+  "walk_log": [
+    {
+      "instance_id": "pydata__xarray-2905",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "astropy__astropy-12907",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14983",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "pydata__xarray-4966",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "astropy__astropy-13579",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "pydata__xarray-4075",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "astropy__astropy-14365",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "pydata__xarray-6744",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "pydata__xarray-4695",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "pydata__xarray-3151",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "astropy__astropy-14995",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "pydata__xarray-7233",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "pydata__xarray-4629",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10908",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "outcome": "admitted"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25311",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "astropy__astropy-7166",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14087",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "astropy__astropy-7671",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14894",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "pydata__xarray-6461",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "pydata__xarray-4094",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25332",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12973",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "astropy__astropy-8872",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25973",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "pydata__xarray-7229",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13135",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14053",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "astropy__astropy-14309",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "astropy__astropy-7606",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "pydata__xarray-6599",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12585",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "astropy__astropy-13033",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20676",
+      "outcome": "inadmissible"
+    },
+    {
+      "instance_id": "astropy__astropy-14539",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11578",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11310",
+      "outcome": "skipped_repo_at_cap"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "outcome": "skipped_repo_at_cap"
+    }
+  ]
+}

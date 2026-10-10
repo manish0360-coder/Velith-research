@@ -1,0 +1,4 @@
+base_commit=d16bfe05a744909de4b27f5875fe0d4ed41ce607; test files=['astropy/modeling/tests/test_separable.py']; existing protected-config=['astropy/conftest.py', 'conftest.py', 'pyproject.toml', 'setup.cfg', 'tox.ini']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/02-astropy__astropy-12907/A/spec.json
+required tests: 2 F2P + 13 P2P
+protected paths: ['astropy/conftest.py', 'astropy/modeling/tests/test_separable.py', 'conftest.py', 'pyproject.toml', 'setup.cfg', 'tox.ini']

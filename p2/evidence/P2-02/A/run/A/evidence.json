@@ -1,0 +1,148 @@
+{
+  "deterministic": {
+    "base_commit": "3aefc834dce72e850bff48689bea3c7dff5f3fad",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "8aeedb68b06d26bcbd1930ca68359451955ae41b",
+      "mapped_required": 20,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "sklearn/ensemble/tests/test_iforest.py::test_behaviour_param": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_deprecation": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_average_path_length": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[0.25-3]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[auto-2]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[0.25-3]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[auto-2]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_error": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_parallel_regression": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_performance": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_sparse": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_subsampled_features": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_warm_start": "failed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_works[0.25]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_works[auto]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_max_samples_attribute": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_max_samples_consistency": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_recalculate_max_depth": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_score_samples": "passed"
+      },
+      "parent": "3aefc834dce72e850bff48689bea3c7dff5f3fad",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "1c0f068a8797ebc8275e060ad4b2baa4b31ef51aeb66c1e65238d82befb91451  conftest.py",
+        "cdc9f447fa3c9c784cd73554401997f797c51da3231960c65c02b376e7508b73  setup.cfg",
+        "bafcb92c19ccda818a158e8040a7ffc68a45ccb1008cdbc08e81686573d8d952  sklearn/ensemble/tests/test_iforest.py"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "8aeedb68b06d26bcbd1930ca68359451955ae41b",
+      "mapped_required": 20,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "sklearn/ensemble/tests/test_iforest.py::test_behaviour_param": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_deprecation": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_average_path_length": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[0.25-3]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[auto-2]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[0.25-3]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[auto-2]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_error": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_parallel_regression": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_performance": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_sparse": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_subsampled_features": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_warm_start": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_works[0.25]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_iforest_works[auto]": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_max_samples_attribute": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_max_samples_consistency": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_recalculate_max_depth": "passed",
+        "sklearn/ensemble/tests/test_iforest.py::test_score_samples": "passed"
+      },
+      "parent": "3aefc834dce72e850bff48689bea3c7dff5f3fad",
+      "pytest_exit": "0",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "1c0f068a8797ebc8275e060ad4b2baa4b31ef51aeb66c1e65238d82befb91451  conftest.py",
+        "cdc9f447fa3c9c784cd73554401997f797c51da3231960c65c02b376e7508b73  setup.cfg",
+        "bafcb92c19ccda818a158e8040a7ffc68a45ccb1008cdbc08e81686573d8d952  sklearn/ensemble/tests/test_iforest.py"
+      ],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "01a911f7883efec86adb960ec5819e5d06a75edbc86fee097d00bad123bdec29",
+    "case": "A",
+    "classification": "PASSED",
+    "detail": "20/20",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+    "fault_cmd": null,
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496",
+    "image_id": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+    "instance_id": "scikit-learn__scikit-learn-13496",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 1800.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "conftest.py",
+      "setup.cfg",
+      "sklearn/ensemble/tests/test_iforest.py"
+    ],
+    "protected_set_sha256": "31ff3bb23aa631ad6d439c96aac489437ce4d0813308b7cebcc71c0da5adaed9",
+    "reason": "ALL_REQUIRED_PASSED",
+    "repo": "scikit-learn/scikit-learn",
+    "tamper": false,
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "sklearn/ensemble/tests/test_iforest.py"
+    ],
+    "test_patch_sha256": "d19944bb26313ad80921a7af040da991ff2f090609271c40b11540e601429b39",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "f77ac8d9d08ccb6df9a6e0f5018c84628bea7dc98dad033b11da9511aff86b1e",
+      "duration_seconds": 6.631
+    },
+    "candidate": {
+      "container": "0f601fc3ca322ece46a2da5120296a363a57af9f4b902c007a64d3d16242f15c",
+      "duration_seconds": 6.824
+    }
+  },
+  "note": "M2 container prototype feasibility evidence -- NOT a verdict of record",
+  "production_mapping": "returned as the frozen Verdict (see verdict_projection)",
+  "verdict_projection": {
+    "duration_seconds": 6.824,
+    "flaky": false,
+    "output": "ALL_REQUIRED_PASSED",
+    "secondary_passed": null,
+    "state": "PASSED"
+  }
+}

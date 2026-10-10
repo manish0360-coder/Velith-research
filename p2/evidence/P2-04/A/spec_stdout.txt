@@ -1,0 +1,4 @@
+base_commit=37522e991a32ee3c0ad1a5ff8afe8e3eb1885550; test files=['xarray/tests/test_coding.py']; existing protected-config=['conftest.py', 'pyproject.toml', 'setup.cfg']
+spec written: /mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/06-pydata__xarray-4966/A/spec.json
+required tests: 4 F2P + 21 P2P
+protected paths: ['conftest.py', 'pyproject.toml', 'setup.cfg', 'xarray/tests/test_coding.py']

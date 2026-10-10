@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="68" time="4.539" timestamp="2026-10-10T08:02:14.240789" hostname="ef428838aaa4"><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_1d" time="0.010" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_2d" time="0.026" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_3d" time="0.048" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_single_dataset" time="0.003" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_redundant_nesting" time="0.009" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_ignore_empty_list" time="0.003" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_uneven_depth_input" time="0.014" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_uneven_length_input" time="0.013" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromNestedList" name="test_infer_from_datasets" time="0.009" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_1d" time="0.002" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_2d" time="0.005" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_no_dimension_coords" time="0.001" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_coord_not_monotonic" time="0.001" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_coord_monotonically_decreasing" time="0.002" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_no_concatenation_needed" time="0.001" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_2d_plus_bystander_dim" time="0.005" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_string_coords" time="0.002" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_lexicographic_sort_string_coords" time="0.002" /><testcase classname="xarray.tests.test_combine.TestTileIDsFromCoords" name="test_datetime_coords" time="0.003" /><testcase classname="xarray.tests.test_combine.TestNewTileIDs" name="test_new_tile_id[old_id0-new_id0]" time="0.001" /><testcase classname="xarray.tests.test_combine.TestNewTileIDs" name="test_new_tile_id[old_id1-new_id1]" time="0.001" /><testcase classname="xarray.tests.test_combine.TestNewTileIDs" name="test_new_tile_id[old_id2-new_id2]" time="0.001" /><testcase classname="xarray.tests.test_combine.TestNewTileIDs" name="test_new_tile_id[old_id3-new_id3]" time="0.001" /><testcase classname="xarray.tests.test_combine.TestNewTileIDs" name="test_new_tile_id[old_id4-new_id4]" time="0.001" /><testcase classname="xarray.tests.test_combine.TestNewTileIDs" name="test_get_new_tile_ids" time="0.012" /><testcase classname="xarray.tests.test_combine.TestCombineND" name="test_concat_once[dim1]" time="0.011" /><testcase classname="xarray.tests.test_combine.TestCombineND" name="test_concat_once[new_dim]" time="0.012" /><testcase classname="xarray.tests.test_combine.TestCombineND" name="test_concat_only_first_dim" time="0.030" /><testcase classname="xarray.tests.test_combine.TestCombineND" name="test_concat_twice[dim1]" time="0.033" /><testcase classname="xarray.tests.test_combine.TestCombineND" name="test_concat_twice[new_dim]" time="0.032" /><testcase classname="xarray.tests.test_combine.TestCheckShapeTileIDs" name="test_check_depths" time="0.003" /><testcase classname="xarray.tests.test_combine.TestCheckShapeTileIDs" name="test_check_lengths" time="0.003" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_manual_concat" time="0.005" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_empty_input" time="0.001" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_manual_concat_too_many_dims_at_once" time="0.002"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_manual_concat_along_new_dim" time="0.003" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_manual_merge" time="0.008" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_concat_multiple_dims" time="0.002" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_concat_name_symmetry" time="0.003" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_concat_one_dim_merge_another" time="0.006" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_auto_combine_2d" time="0.032" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_manual_combine_missing_data_new_dim" time="0.004" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_invalid_hypercube_input" time="0.025" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_merge_one_dim_concat_another" time="0.003" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_combine_concat_over_redundant_nesting" time="0.004" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_manual_combine_but_need_auto_combine" time="0.002" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_combine_nested_fill_value[fill_value0]" time="0.004" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_combine_nested_fill_value[2]" time="0.003" /><testcase classname="xarray.tests.test_combine.TestManualCombine" name="test_combine_nested_fill_value[2.0]" time="0.003" /><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_combine_by_coords" time="0.010" /><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_infer_order_from_coords" time="0.006" /><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_combine_leaving_bystander_dimensions" time="0.003"><failure message="ValueError: Resulting object does not have monotonic global indexes along dimension y">self = &lt;xarray.tests.test_combine.TestCombineAuto object at 0x71bddcdba8c0&gt;
+
+    def test_combine_leaving_bystander_dimensions(self):
+        # Check non-monotonic bystander dimension coord doesn't raise
+        # ValueError on combine (https://github.com/pydata/xarray/issues/3150)
+        ycoord = ['a', 'c', 'b']
+    
+        data = np.random.rand(7, 3)
+    
+        ds1 = Dataset(data_vars=dict(data=(['x', 'y'], data[:3, :])),
+                      coords=dict(x=[1, 2, 3], y=ycoord))
+    
+        ds2 = Dataset(data_vars=dict(data=(['x', 'y'], data[3:, :])),
+                      coords=dict(x=[4, 5, 6, 7], y=ycoord))
+    
+        expected = Dataset(data_vars=dict(data=(['x', 'y'], data)),
+                           coords=dict(x=[1, 2, 3, 4, 5, 6, 7], y=ycoord))
+    
+&gt;       actual = combine_by_coords((ds1, ds2))
+
+xarray/tests/test_combine.py:600: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+datasets = (&lt;xarray.Dataset&gt;
+Dimensions:  (x: 3, y: 3)
+Coordinates:
+  * x        (x) int64 1 2 3
+  * y        (y) &lt;U1 'a' 'c' 'b'...   (y) &lt;U1 'a' 'c' 'b'
+Data variables:
+    data     (x, y) float64 0.9651 0.3494 0.1569 0.624 ... 0.4177 0.6869 0.1741)
+compat = 'no_conflicts', data_vars = 'all', coords = 'different'
+fill_value = &lt;NA&gt;
+
+    def combine_by_coords(datasets, compat='no_conflicts', data_vars='all',
+                          coords='different', fill_value=dtypes.NA):
+        """
+        Attempt to auto-magically combine the given datasets into one by using
+        dimension coordinates.
+    
+        This method attempts to combine a group of datasets along any number of
+        dimensions into a single entity by inspecting coords and metadata and using
+        a combination of concat and merge.
+    
+        Will attempt to order the datasets such that the values in their dimension
+        coordinates are monotonic along all dimensions. If it cannot determine the
+        order in which to concatenate the datasets, it will raise a ValueError.
+        Non-coordinate dimensions will be ignored, as will any coordinate
+        dimensions which do not vary between each dataset.
+    
+        Aligns coordinates, but different variables on datasets can cause it
+        to fail under some scenarios. In complex cases, you may need to clean up
+        your data and use concat/merge explicitly (also see `manual_combine`).
+    
+        Works well if, for example, you have N years of data and M data variables,
+        and each combination of a distinct time period and set of data variables is
+        saved as its own dataset. Also useful for if you have a simulation which is
+        parallelized in multiple dimensions, but has global coordinates saved in
+        each file specifying the positions of points within the global domain.
+    
+        Parameters
+        ----------
+        datasets : sequence of xarray.Dataset
+            Dataset objects to combine.
+        compat : {'identical', 'equals', 'broadcast_equals',
+                  'no_conflicts'}, optional
+            String indicating how to compare variables of the same name for
+            potential conflicts:
+    
+            - 'broadcast_equals': all values must be equal when variables are
+              broadcast against each other to ensure common dimensions.
+            - 'equals': all values and dimensions must be the same.
+            - 'identical': all values, dimensions and attributes must be the
+              same.
+            - 'no_conflicts': only values which are not null in both datasets
+              must be equal. The returned dataset then contains the combination
+              of all non-null values.
+        data_vars : {'minimal', 'different', 'all' or list of str}, optional
+            Details are in the documentation of concat
+        coords : {'minimal', 'different', 'all' or list of str}, optional
+            Details are in the documentation of concat
+        fill_value : scalar, optional
+            Value to use for newly missing values
+    
+        Returns
+        -------
+        combined : xarray.Dataset
+    
+        See also
+        --------
+        concat
+        merge
+        combine_nested
+    
+        Examples
+        --------
+    
+        Combining two datasets using their common dimension coordinates. Notice
+        they are concatenated based on the values in their dimension coordinates,
+        not on their position in the list passed to `combine_by_coords`.
+    
+        &gt;&gt;&gt; x1
+        &lt;xarray.Dataset&gt;
+        Dimensions:         (x: 3)
+        Coords:
+          * position        (x) int64   0 1 2
+        Data variables:
+            temperature     (x) float64 11.04 23.57 20.77 ...
+    
+        &gt;&gt;&gt; x2
+        &lt;xarray.Dataset&gt;
+        Dimensions:         (x: 3)
+        Coords:
+          * position        (x) int64   3 4 5
+        Data variables:
+            temperature     (x) float64 6.97 8.13 7.42 ...
+    
+        &gt;&gt;&gt; combined = xr.combine_by_coords([x2, x1])
+        &lt;xarray.Dataset&gt;
+        Dimensions:         (x: 6)
+        Coords:
+          * position        (x) int64   0 1 2 3 4 5
+        Data variables:
+            temperature     (x) float64 11.04 23.57 20.77 ...
+        """
+    
+        # Group by data vars
+        sorted_datasets = sorted(datasets, key=vars_as_keys)
+        grouped_by_vars = itertools.groupby(sorted_datasets, key=vars_as_keys)
+    
+        # Perform the multidimensional combine on each group of data variables
+        # before merging back together
+        concatenated_grouped_by_data_vars = []
+        for vars, datasets_with_same_vars in grouped_by_vars:
+            combined_ids, concat_dims = _infer_concat_order_from_coords(
+                list(datasets_with_same_vars))
+    
+            _check_shape_tile_ids(combined_ids)
+    
+            # Concatenate along all of concat_dims one by one to create single ds
+            concatenated = _combine_nd(combined_ids, concat_dims=concat_dims,
+                                       data_vars=data_vars, coords=coords,
+                                       fill_value=fill_value)
+    
+            # Check the overall coordinates are monotonically increasing
+            for dim in concatenated.dims:
+                if dim in concatenated:
+                    indexes = concatenated.indexes.get(dim)
+                    if not (indexes.is_monotonic_increasing
+                            or indexes.is_monotonic_decreasing):
+&gt;                       raise ValueError("Resulting object does not have monotonic"
+                                         " global indexes along dimension {}"
+                                         .format(dim))
+E                       ValueError: Resulting object does not have monotonic global indexes along dimension y
+
+xarray/core/combine.py:509: ValueError</failure></testcase><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_combine_by_coords_previously_failed" time="0.004" /><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_combine_by_coords_still_fails" time="0.001" /><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_combine_by_coords_no_concat" time="0.002" /><testcase classname="xarray.tests.test_combine.TestCombineAuto" name="test_check_for_impossible_ordering" time="0.003" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine" time="0.009" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_previously_failed" time="0.006" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_still_fails" time="0.002" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_no_concat" time="0.005" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_order_by_appearance_not_coords" time="0.003" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_fill_value[fill_value0]" time="0.004" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_fill_value[2]" time="0.003" /><testcase classname="xarray.tests.test_combine.TestAutoCombineOldAPI" name="test_auto_combine_fill_value[2.0]" time="0.004" /><testcase classname="xarray.tests.test_combine.TestAutoCombineDeprecation" name="test_auto_combine_with_concat_dim" time="0.002" /><testcase classname="xarray.tests.test_combine.TestAutoCombineDeprecation" name="test_auto_combine_with_merge_and_concat" time="0.003" /><testcase classname="xarray.tests.test_combine.TestAutoCombineDeprecation" name="test_auto_combine_with_coords" time="0.003" /><testcase classname="xarray.tests.test_combine.TestAutoCombineDeprecation" name="test_auto_combine_without_coords" time="0.001" /></testsuite></testsuites>

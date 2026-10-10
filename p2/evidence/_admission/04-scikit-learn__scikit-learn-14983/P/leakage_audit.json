@@ -1,0 +1,86 @@
+{
+  "S": {
+    "checks": {
+      "gold_hunk_lines": {
+        "needles": 4,
+        "needles_found": 2,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 4
+        }
+      },
+      "gold_patch_full_text": false,
+      "hints_windows_41": {
+        "needles": 1344,
+        "needles_found": 22,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 22
+        }
+      },
+      "test_ids": {
+        "needles": 107,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_full_text": false,
+      "test_patch_hunk_lines": {
+        "needles": 9,
+        "needles_found": 1,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 619,
+          "issue": 16,
+          "template": 1
+        }
+      },
+      "test_patch_paths_in_pool": [],
+      "test_patch_paths_in_prompt": []
+    },
+    "hints_text_sha256": "bec58e044fdff17ac0e39a4ce4a2b068c49f4203edac9cdce150cfeb918b21eb",
+    "verdict": "PASS"
+  },
+  "U": {
+    "checks": {
+      "gold_hunk_lines": {
+        "needles": 4,
+        "needles_found": 2,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 4
+        }
+      },
+      "gold_patch_full_text": false,
+      "hints_windows_41": {
+        "needles": 1344,
+        "needles_found": 22,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 22
+        }
+      },
+      "test_ids": {
+        "needles": 107,
+        "needles_found": 0,
+        "non_exempt": [],
+        "occurrences_by_region": {}
+      },
+      "test_patch_full_text": false,
+      "test_patch_hunk_lines": {
+        "needles": 9,
+        "needles_found": 1,
+        "non_exempt": [],
+        "occurrences_by_region": {
+          "file": 619,
+          "issue": 16,
+          "template": 2
+        }
+      },
+      "test_patch_paths_in_pool": [],
+      "test_patch_paths_in_prompt": []
+    },
+    "hints_text_sha256": "bec58e044fdff17ac0e39a4ce4a2b068c49f4203edac9cdce150cfeb918b21eb",
+    "verdict": "PASS"
+  }
+}

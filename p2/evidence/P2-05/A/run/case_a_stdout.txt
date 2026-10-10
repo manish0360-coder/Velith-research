@@ -1,0 +1,7 @@
+{
+  "case": "A",
+  "classification": "PASSED",
+  "reason": "ALL_REQUIRED_PASSED",
+  "detail": "3/3",
+  "evidence": "/mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/07-scikit-learn__scikit-learn-14141/A/run/A/evidence.json"
+}

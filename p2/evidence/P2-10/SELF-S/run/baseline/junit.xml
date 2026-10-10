@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="16" tests="26" time="0.337" timestamp="2026-10-10T07:30:18.230044" hostname="9cba96c918ce"><testcase classname="astropy.io.ascii.tests.test_html" name="test_soupstring" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:29: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_listwriter" time="0.002" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_identify_table" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:60: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_missing_data" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:86: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_rename_cols" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:114: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_no_names" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:136: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_identify_table_fail" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:154: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_backend_parsers" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:174: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_htmlinputter_no_bs4" time="0.002" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_htmlinputter" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:207: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_htmlsplitter" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:250: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_htmlheader_start" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:277: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_htmldata" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:317: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_multicolumn_write" time="0.004" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_multicolumn_write_escape" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BLEACH">/testbed/astropy/io/ascii/tests/test_html.py:429: condition: not HAS_BLEACH</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_write_no_multicols" time="0.003" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_multicolumn_read" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:537: condition: not HAS_BS4</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_raw_html_write" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BLEACH">/testbed/astropy/io/ascii/tests/test_html.py:556: condition: not HAS_BLEACH</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_raw_html_write_clean" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BLEACH">/testbed/astropy/io/ascii/tests/test_html.py:589: condition: not HAS_BLEACH</skipped></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_write_table_html_fill_values" time="0.005" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_write_table_html_fill_values_optional_columns" time="0.004" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_write_table_html_fill_values_masked" time="0.007" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_multicolumn_table_html_fill_values" time="0.007" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_multi_column_write_table_html_fill_values_masked" time="0.013" /><testcase classname="astropy.io.ascii.tests.test_html" name="test_write_table_formatted_columns" time="0.007"><failure message="AssertionError: assert '&lt;html&gt;\n &lt;he...ody&gt;\n&lt;/html&gt;' == '&lt;html&gt;\n &lt;he...ody&gt;\n&lt;/html&gt;'&#10;  Skipping 220 identical leading characters in diff, use -v to show&#10;    &gt;&#10;  -     &lt;td&gt;0001&lt;/td&gt;&#10;  ?         ---&#10;  +     &lt;td&gt;1&lt;/td&gt;&#10;  -     &lt;td&gt;1.23e-11&lt;/td&gt;&#10;  +     &lt;td&gt;1.234567e-11&lt;/td&gt;...&#10;  &#10;  ...Full output truncated (12 lines hidden), use '-vv' to show">def test_write_table_formatted_columns():
+        """
+        Test to make sure that the HTML writer writes out using the
+        supplied formatting.
+        """
+    
+        col1 = [1, 2]
+        col2 = [1.234567e-11, -9.876543e11]
+        formats = {"C1": "04d", "C2": ".2e"}
+        table = Table([col1, col2], names=formats.keys())
+    
+        expected = """\
+    &lt;html&gt;
+     &lt;head&gt;
+      &lt;meta charset="utf-8"/&gt;
+      &lt;meta content="text/html;charset=UTF-8" http-equiv="Content-type"/&gt;
+     &lt;/head&gt;
+     &lt;body&gt;
+      &lt;table&gt;
+       &lt;thead&gt;
+        &lt;tr&gt;
+         &lt;th&gt;C1&lt;/th&gt;
+         &lt;th&gt;C2&lt;/th&gt;
+        &lt;/tr&gt;
+       &lt;/thead&gt;
+       &lt;tr&gt;
+        &lt;td&gt;0001&lt;/td&gt;
+        &lt;td&gt;1.23e-11&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;
+        &lt;td&gt;0002&lt;/td&gt;
+        &lt;td&gt;-9.88e+11&lt;/td&gt;
+       &lt;/tr&gt;
+      &lt;/table&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+        """
+        with StringIO() as sp:
+            table.write(sp, format="html", formats=formats)
+            out = sp.getvalue().strip()
+&gt;       assert out == expected.strip()
+E       AssertionError: assert '&lt;html&gt;\n &lt;he...ody&gt;\n&lt;/html&gt;' == '&lt;html&gt;\n &lt;he...ody&gt;\n&lt;/html&gt;'
+E         Skipping 220 identical leading characters in diff, use -v to show
+E           &gt;
+E         -     &lt;td&gt;0001&lt;/td&gt;
+E         ?         ---
+E         +     &lt;td&gt;1&lt;/td&gt;
+E         -     &lt;td&gt;1.23e-11&lt;/td&gt;
+E         +     &lt;td&gt;1.234567e-11&lt;/td&gt;...
+E         
+E         ...Full output truncated (12 lines hidden), use '-vv' to show
+
+/testbed/astropy/io/ascii/tests/test_html.py:760: AssertionError</failure></testcase><testcase classname="astropy.io.ascii.tests.test_html" name="test_read_html_unicode" time="0.001"><skipped type="pytest.skip" message="condition: not HAS_BS4">/testbed/astropy/io/ascii/tests/test_html.py:763: condition: not HAS_BS4</skipped></testcase></testsuite></testsuites>

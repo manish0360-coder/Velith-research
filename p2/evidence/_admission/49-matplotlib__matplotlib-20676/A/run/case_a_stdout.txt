@@ -1,0 +1,7 @@
+{
+  "case": "A",
+  "classification": "PASSED",
+  "reason": "ALL_REQUIRED_PASSED",
+  "detail": "34/34",
+  "evidence": "/mnt/e/Projects/OpenSourceLab/repos/Velith-research/p2/evidence/_admission/49-matplotlib__matplotlib-20676/A/run/A/evidence.json"
+}

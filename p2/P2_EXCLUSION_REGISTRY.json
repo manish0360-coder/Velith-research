@@ -81,7 +81,135 @@
     }
   ],
   "note": "P2_SPEC.md §11 (Amendment B): initial content is exactly the 11 P1 registry instance IDs, the permanent hold-out set inherited from P1; never altered or removed. Extended once, append-only, at FG-6 with P2 admitted tasks and P2 candidates rejected at admission. Audit/safety registry, not a selection rule outside P2.",
-  "p2_appended": [],
+  "p2_appended": [
+    {
+      "common_identity": "183e2c6038430fd434720e8e1a9cfd9c7d43012e19f75a3fc5d8ae6b9237366d",
+      "instance_id": "astropy__astropy-12907",
+      "slot": "P2-01",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "d68469db9885ba1a882e213b77d5ca4fbf33e98a2991c7332131b9023266cf53",
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "slot": "P2-02",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "4449d108558194dc37c7ffee360ed3d9ba69cb2223fc35657a7b9dda412aec52",
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "slot": "P2-03",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "eb61ac8d19c96bf29b99eb64a435291b291e732a0c08c1e47196a79054f2aea0",
+      "instance_id": "pydata__xarray-4966",
+      "slot": "P2-04",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "b1237f7afd3fdf64b0ef298253a11f111f7e15fca917c5a7413db97ea804f4f4",
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "slot": "P2-05",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "d7b8c8f5677a16ef4b3aec7f094fbe65d1e25de2d338c137febca0b3c3d766d3",
+      "instance_id": "astropy__astropy-13579",
+      "slot": "P2-06",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "15fe21b4576cf6ad1ee11e9f39bbf59b24911a8931e36f185c18872c9e91f774",
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "slot": "P2-07",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "d4f584bcc7d38f5c0a4f27490ef8239800efc6fa2b35f52a7122372ebaa89060",
+      "instance_id": "pydata__xarray-4075",
+      "slot": "P2-08",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "08e11b35dcf2abced1b1baf5c35639fed466b9abb589218851deb57cbbb958b7",
+      "instance_id": "astropy__astropy-14365",
+      "slot": "P2-09",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "19be24b06221af4e5362d7a911556f1a734fe7b668fb46bfd598118754743dbb",
+      "instance_id": "astropy__astropy-13453",
+      "slot": "P2-10",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "844b1cf6e3db88e1140b0a224ef4621e7cb64f48f594ca768e796a0681a8a1fa",
+      "instance_id": "pydata__xarray-3151",
+      "slot": "P2-11",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "49ab31f6cf56db2ca5cb0f09bf901f49a6a76789d89ff142d001c183c4228132",
+      "instance_id": "pydata__xarray-7233",
+      "slot": "P2-12",
+      "status": "admitted"
+    },
+    {
+      "common_identity": "e93f45432bcce3e3910fa9b2a5f55ecab8401768fdb5db322f12f0b313245a44",
+      "instance_id": "matplotlib__matplotlib-20859",
+      "slot": "P2-13",
+      "status": "admitted"
+    },
+    {
+      "evidence": "p2/evidence/_admission/01-pydata__xarray-2905/",
+      "instance_id": "pydata__xarray-2905",
+      "rank": 1,
+      "reason": "F_OVER_BUDGET",
+      "status": "rejected_at_admission (exposed)"
+    },
+    {
+      "evidence": "p2/evidence/_admission/04-scikit-learn__scikit-learn-14983/",
+      "instance_id": "scikit-learn__scikit-learn-14983",
+      "rank": 4,
+      "reason": "F_OVER_BUDGET",
+      "status": "rejected_at_admission (exposed)"
+    },
+    {
+      "evidence": "p2/evidence/_admission/12-pydata__xarray-6744/",
+      "instance_id": "pydata__xarray-6744",
+      "rank": 12,
+      "reason": "CASE_A_NOT_PASSED",
+      "status": "rejected_at_admission (exposed)"
+    },
+    {
+      "evidence": "p2/evidence/_admission/14-pydata__xarray-4695/",
+      "instance_id": "pydata__xarray-4695",
+      "rank": 14,
+      "reason": "PULL_FAILED",
+      "status": "rejected_at_admission (exposed)"
+    },
+    {
+      "evidence": "p2/evidence/_admission/24-matplotlib__matplotlib-25311/",
+      "instance_id": "matplotlib__matplotlib-25311",
+      "rank": 24,
+      "reason": "SPEC_FAILED",
+      "status": "rejected_at_admission (exposed)"
+    },
+    {
+      "evidence": "p2/evidence/_admission/32-matplotlib__matplotlib-25332/",
+      "instance_id": "matplotlib__matplotlib-25332",
+      "rank": 32,
+      "reason": "F_OVER_BUDGET",
+      "status": "rejected_at_admission (exposed)"
+    },
+    {
+      "evidence": "p2/evidence/_admission/49-matplotlib__matplotlib-20676/",
+      "instance_id": "matplotlib__matplotlib-20676",
+      "rank": 49,
+      "reason": "F_OVER_BUDGET",
+      "status": "rejected_at_admission (exposed)"
+    }
+  ],
   "pilot": "M2-PV-P2",
   "registry": "velith-p2-exclusion",
   "source_registry": "p1/PILOT_EXCLUSION_REGISTRY.json",

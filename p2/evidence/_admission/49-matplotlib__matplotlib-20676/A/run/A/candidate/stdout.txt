@@ -1,0 +1,72 @@
+VELITH_HEAD b21b06627139b6a2c43a4c278d9f347f3796e6a6
+VELITH_PARENT 6786f437df54ca7780a047203cbcfaa1db8dc542
+VELITH_SURFACE 42da5d58f5285cbffd17c588cad0dcdfefa1d273e36e8f0f4e88a0eecbc84f56  lib/matplotlib/tests/conftest.py
+VELITH_SURFACE 519930dbfe26c013183d0a4dd81e156859470ff4cbdef3d528580480307c0ecd  lib/matplotlib/tests/test_widgets.py
+VELITH_SURFACE 66ef3b1ea0e8012effb00ad4680856eb6f1fcec858be95c7368d04d1e1190150  pytest.ini
+VELITH_SURFACE 46f89d433c7327a4fbd12aca2af75833df90362f832e9d533e1cba94ad7f9f2c  tox.ini
+============================= test session starts ==============================
+platform linux -- Python 3.8.20, pytest-8.3.4, pluggy-1.5.0
+rootdir: /testbed
+configfile: pytest.ini
+plugins: timeout-2.3.1, cov-5.0.0, xdist-3.6.1, rerunfailures-14.0
+collected 36 items
+
+lib/matplotlib/tests/test_widgets.py F.............................s.... [ 97%]
+.                                                                        [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_rectangle_selector ____________________________
+
+    def test_rectangle_selector():
+        check_rectangle()
+    
+        with pytest.warns(
+            MatplotlibDeprecationWarning,
+                match="Support for drawtype='line' is deprecated"):
+>           check_rectangle(drawtype='line', useblit=False)
+E           matplotlib._api.deprecation.MatplotlibDeprecationWarning: 
+E           The 'drawtype' parameter of __init__() was deprecated in Matplotlib 3.5 and will be removed two minor releases later. If any parameter follows 'drawtype', they should be passed as keyword, not positionally.
+
+lib/matplotlib/tests/test_widgets.py:45: MatplotlibDeprecationWarning
+==================================== PASSES ====================================
+------------------ generated xml file: /tmp/velith-junit.xml -------------------
+=========================== short test summary info ============================
+PASSED lib/matplotlib/tests/test_widgets.py::test_rectangle_drag[True-new_center0]
+PASSED lib/matplotlib/tests/test_widgets.py::test_rectangle_drag[False-new_center1]
+PASSED lib/matplotlib/tests/test_widgets.py::test_ellipse
+PASSED lib/matplotlib/tests/test_widgets.py::test_rectangle_handles
+PASSED lib/matplotlib/tests/test_widgets.py::test_span_selector
+PASSED lib/matplotlib/tests/test_widgets.py::test_span_selector_drag[True]
+PASSED lib/matplotlib/tests/test_widgets.py::test_span_selector_drag[False]
+PASSED lib/matplotlib/tests/test_widgets.py::test_span_selector_direction
+PASSED lib/matplotlib/tests/test_widgets.py::test_tool_line_handle
+PASSED lib/matplotlib/tests/test_widgets.py::test_span_selector_bound[horizontal]
+PASSED lib/matplotlib/tests/test_widgets.py::test_span_selector_bound[vertical]
+PASSED lib/matplotlib/tests/test_widgets.py::test_lasso_selector
+PASSED lib/matplotlib/tests/test_widgets.py::test_CheckButtons
+PASSED lib/matplotlib/tests/test_widgets.py::test_TextBox
+PASSED lib/matplotlib/tests/test_widgets.py::test_check_radio_buttons_image[png]
+PASSED lib/matplotlib/tests/test_widgets.py::test_check_bunch_of_radio_buttons[png]
+PASSED lib/matplotlib/tests/test_widgets.py::test_slider_slidermin_slidermax_invalid
+PASSED lib/matplotlib/tests/test_widgets.py::test_slider_slidermin_slidermax
+PASSED lib/matplotlib/tests/test_widgets.py::test_slider_valmin_valmax
+PASSED lib/matplotlib/tests/test_widgets.py::test_slider_valstep_snapping
+PASSED lib/matplotlib/tests/test_widgets.py::test_slider_horizontal_vertical
+PASSED lib/matplotlib/tests/test_widgets.py::test_range_slider[horizontal]
+PASSED lib/matplotlib/tests/test_widgets.py::test_range_slider[vertical]
+PASSED lib/matplotlib/tests/test_widgets.py::test_polygon_selector
+PASSED lib/matplotlib/tests/test_widgets.py::test_MultiCursor[True-True]
+PASSED lib/matplotlib/tests/test_widgets.py::test_MultiCursor[True-False]
+PASSED lib/matplotlib/tests/test_widgets.py::test_MultiCursor[False-True]
+PASSED lib/matplotlib/tests/test_widgets.py::test_rect_visibility[png]
+PASSED lib/matplotlib/tests/test_widgets.py::test_rect_visibility[pdf]
+PASSED lib/matplotlib/tests/test_widgets.py::test_polygon_selector_remove[1]
+PASSED lib/matplotlib/tests/test_widgets.py::test_polygon_selector_remove[2]
+PASSED lib/matplotlib/tests/test_widgets.py::test_polygon_selector_remove[3]
+PASSED lib/matplotlib/tests/test_widgets.py::test_polygon_selector_remove_first_point
+PASSED lib/matplotlib/tests/test_widgets.py::test_polygon_selector_redraw
+SKIPPED [1] lib/matplotlib/testing/compare.py:274: Don't know how to convert .svg files to png
+FAILED lib/matplotlib/tests/test_widgets.py::test_rectangle_selector - matplo...
+=================== 1 failed, 34 passed, 1 skipped in 17.36s ===================
+VELITH_PYTEST_EXIT 1
+VELITH_NET blocked OSError 101

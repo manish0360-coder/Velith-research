@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "49ab31f6cf56db2ca5cb0f09bf901f49a6a76789d89ff142d001c183c4228132",
+  "failure": null,
+  "gold_paths": [
+    "xarray/core/rolling.py"
+  ],
+  "identity_s": "91d7561035e50237c531928dfe13e8145c35266433333b1f8d23d8aa1c8ce246",
+  "identity_u": "126a7b6389bf1694d229888187cc6ee9450678f5ad401175c319e4045df3e07d",
+  "seed": 6816120929198790617,
+  "tokens": {
+    "S": 12007,
+    "U": 12018
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "admitted": false,
+  "compressed_bytes": 2049462342,
+  "digest": "sha256:93a1265e6fe32cda6fe8d5fb5f8eba4d689fedeaae1228abc7948f2403de98a5",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "pull_retry",
+    "decision",
+    "provenance_written"
+  ],
+  "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4695",
+  "instance_id": "pydata__xarray-4695",
+  "provenance": {
+    "compressed_bytes": 2049462342,
+    "digest": "sha256:93a1265e6fe32cda6fe8d5fb5f8eba4d689fedeaae1228abc7948f2403de98a5",
+    "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4695",
+    "image_id": null,
+    "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4695@sha256:93a1265e6fe32cda6fe8d5fb5f8eba4d689fedeaae1228abc7948f2403de98a5"
+  },
+  "rank": 14,
+  "reason": "PULL_FAILED",
+  "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4695@sha256:93a1265e6fe32cda6fe8d5fb5f8eba4d689fedeaae1228abc7948f2403de98a5",
+  "repo": "pydata/xarray",
+  "steps": {
+    "case_a_passed": false,
+    "f_budget_and_audit": false,
+    "h_base_equals_worktree": false,
+    "identity": false,
+    "spec_built": false
+  },
+  "storage_free": 34033352704,
+  "storage_need": 15123655855
+}

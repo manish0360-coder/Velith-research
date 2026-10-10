@@ -1,0 +1,114 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "20/20",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 6.824,
+  "compressed_bytes": 1487134435,
+  "digest": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "sklearn/ensemble/iforest.py": {
+      "base_sha": "1e339b68311c1a4c583db7c8c24eb2ad447ef19ffe35e1810f2eecdd37139912",
+      "worktree_sha": "1e339b68311c1a4c583db7c8c24eb2ad447ef19ffe35e1810f2eecdd37139912"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496",
+  "image_id": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+  "instance_id": "scikit-learn__scikit-learn-13496",
+  "provenance": {
+    "compressed_bytes": 1487134435,
+    "digest": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496",
+    "image_id": "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+    "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496@sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a"
+  },
+  "rank": 3,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496@sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a",
+  "repo": "scikit-learn/scikit-learn",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "sklearn/ensemble/iforest.py",
+        "span": [
+          4776,
+          4909
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 1,
+        "matches": 1,
+        "path": "sklearn/ensemble/iforest.py",
+        "span": [
+          6910,
+          7144
+        ],
+        "status": "RESOLVED"
+      },
+      {
+        "index": 2,
+        "matches": 1,
+        "path": "sklearn/ensemble/iforest.py",
+        "span": [
+          7368,
+          7578
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "37dc008f4625f2a7b8754f116cdfde609edf7b77896b07c6e889ce349f4675c2"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "d68469db9885ba1a882e213b77d5ca4fbf33e98a2991c7332131b9023266cf53",
+    "failure": null,
+    "gold_paths": [
+      "sklearn/ensemble/iforest.py"
+    ],
+    "identity_s": "3232caa217824b444690bee0e05344586c43c1f412c88a3f31bb8d353aade1e4",
+    "identity_u": "2a6d4ae66c306e7da4a248c475037fbe6a0df0b7ee139ce234325f3d4ccf9a62",
+    "seed": 3201017930329064370,
+    "tokens": {
+      "S": 5701,
+      "U": 5712
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 33730596864,
+  "storage_need": 13717836087
+}

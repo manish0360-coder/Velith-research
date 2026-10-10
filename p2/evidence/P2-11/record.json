@@ -1,0 +1,94 @@
+{
+  "admitted": true,
+  "case_a": {
+    "classification": "PASSED",
+    "detail": "67/67",
+    "reason": "ALL_REQUIRED_PASSED"
+  },
+  "case_a_candidate_seconds": 6.523,
+  "compressed_bytes": 2047288413,
+  "digest": "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+  "events": [
+    "resolve",
+    "storage_ok",
+    "pull",
+    "inspect",
+    "spec",
+    "case_a",
+    "h_check",
+    "stage_p",
+    "decision",
+    "self_check",
+    "provenance_written",
+    "remove"
+  ],
+  "h_check": {
+    "xarray/core/combine.py": {
+      "base_sha": "0ec24e210ca747ec9a89bc8e1b4d64c998bc493aedf56f18faf43b81234f1757",
+      "worktree_sha": "0ec24e210ca747ec9a89bc8e1b4d64c998bc493aedf56f18faf43b81234f1757"
+    }
+  },
+  "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151",
+  "image_id": "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+  "instance_id": "pydata__xarray-3151",
+  "provenance": {
+    "compressed_bytes": 2047288413,
+    "digest": "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+    "image": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151",
+    "image_id": "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+    "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151@sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b"
+  },
+  "rank": 15,
+  "reason": null,
+  "ref": "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151@sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b",
+  "repo": "pydata/xarray",
+  "self_check_diagnostic": {
+    "block_statuses": [
+      {
+        "index": 0,
+        "matches": 1,
+        "path": "xarray/core/combine.py",
+        "span": [
+          20225,
+          20936
+        ],
+        "status": "RESOLVED"
+      }
+    ],
+    "diagnostic_only": true,
+    "gate": true,
+    "harness_integrity_alarm": false,
+    "no_newline_marker": false,
+    "parse_code": "OK",
+    "resolution_code": "OK",
+    "synthesized_diff_sha256": "d3609f5fc57dc5f04a56e2239949f8a3acf9f86f6fb4b4c6d531a7161317fed6"
+  },
+  "stage_p": {
+    "audit": {
+      "S": "PASS",
+      "U": "PASS"
+    },
+    "common_identity": "844b1cf6e3db88e1140b0a224ef4621e7cb64f48f594ca768e796a0681a8a1fa",
+    "failure": null,
+    "gold_paths": [
+      "xarray/core/combine.py"
+    ],
+    "identity_s": "be53f6449944397aea47a928fd1a54823ebf7fa464812421ba27c8222733b04f",
+    "identity_u": "5cb541c8dd782a44dac940b8ec609ad0565e6dd416b517f7a70e24d7d163ce4e",
+    "seed": 591537008646498053,
+    "tokens": {
+      "S": 8585,
+      "U": 8596
+    }
+  },
+  "stage_x_timeout_s": 900.0,
+  "steps": {
+    "case_a_passed": true,
+    "f_budget_and_audit": true,
+    "h_base_equals_worktree": true,
+    "identity": true,
+    "spec_built": true
+  },
+  "storage_free": 33999806464,
+  "storage_need": 15118221032
+}

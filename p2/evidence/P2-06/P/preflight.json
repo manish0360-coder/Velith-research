@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "S": "PASS",
+    "U": "PASS"
+  },
+  "common_identity": "d7b8c8f5677a16ef4b3aec7f094fbe65d1e25de2d338c137febca0b3c3d766d3",
+  "failure": null,
+  "gold_paths": [
+    "astropy/wcs/wcsapi/wrappers/sliced_wcs.py"
+  ],
+  "identity_s": "748e09db2df46eb2330062c0febb6247fbabd3f1d82a4c9b9df6b70301370880",
+  "identity_u": "a9b513e0c72c7375376b15fe48b1af89bd1c6daa5b51d76e58e1d21e6e42329e",
+  "seed": 6304238383670843086,
+  "tokens": {
+    "S": 5348,
+    "U": 5359
+  }
+}
