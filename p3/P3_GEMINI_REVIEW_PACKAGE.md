@@ -49,7 +49,9 @@
   return candidate + "\n"
   ```
   - **Claim:** `.strip()` deletes a final context line consisting of a single space (a blank source line). The hunk is then one line short, and `git apply` reports "corrupt patch".
-  - **Observed in:** P3-01, P3-10, P2-11 (all three apply when only newlines are stripped) and P1-T1 (stripped; applicability not checked).
+  - **Observed in exactly three generations:** P3-01, P3-10, P2-11 (U arm). All three apply when only newlines are stripped.
+  - **Not an F-1 case (erratum, 2026-10-11):** P1-T1 had a stripped trailing line too, but it was surplus beyond its hunk's own count. Its patch fails for an unrelated content reason (four source import lines are missing from its context), and it is an unchanged guard case under the fix.
+  - **Fix landed:** Velith commit `29fd12ffb289defd3a490e6d7c5f16151aa856b7`, governed by DECISIONS.md D32. Frozen pilot results are unchanged.
   - **Real-gate diagnostic:** the un-stripped P3-01 and P3-10 diffs **PASS all required tests** (15/15 and 10/10).
   - **The 6 recorded passes** were re-run in fresh containers: 6/6 identical per-test outcomes.
   - **Is this reasoning correct and complete?** Are there other extractor failure modes?
