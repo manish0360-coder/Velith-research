@@ -41,7 +41,8 @@ API_BASE = "https://api.anthropic.com/v1"
 API_VERSION = "2023-06-01"
 MODEL = "claude-opus-5-5"
 MAX_TOKENS = 1024  # = P2 num_predict (one-variable comparability, D3)
-TEMPERATURE = 0.0
+# A-1 (2026-10-11): the API rejects `temperature` for this model (HTTP 400, before any
+# generation); the parameter is omitted and the provider default sampling applies.
 HTTP_TIMEOUT_S = 600.0
 MAX_GEN_ATTEMPTS = 2
 RETRYABLE_HTTP = frozenset({408, 409, 429, 500, 502, 503, 504, 529})
@@ -54,8 +55,9 @@ class P3Stop(Exception):
 
 # ---- pure rules -------------------------------------------------------------------------------
 def payload(prompt: str) -> dict[str, Any]:
-    """D2/D3: one user message, no system prompt, no tools, no thinking."""
-    return {"model": MODEL, "max_tokens": MAX_TOKENS, "temperature": TEMPERATURE,
+    """D2/D3 + A-1: one user message, no system prompt, no tools, no thinking, no
+    temperature (rejected by the API for this model)."""
+    return {"model": MODEL, "max_tokens": MAX_TOKENS,
             "messages": [{"role": "user", "content": prompt}]}
 
 
@@ -166,7 +168,7 @@ def preflight(api: Api, ops: Ops, pilot: Mapping[str, Any], out: Path = EVIDENCE
     ok = img == route["image_id"] and ex.get("status") == "OK" and ex.get("has_patch") is True \
         and all(isinstance(v, int) for v in tokens.values())
     rec = {"utc": H.p1().utc(), "fg": "FG-2", "verdict": "PASS" if ok else "FAIL",
-           "model": MODEL, "max_tokens": MAX_TOKENS, "temperature": TEMPERATURE,
+           "model": MODEL, "max_tokens": MAX_TOKENS, "temperature": "omitted (A-1)",
            "pilot_set_sha256": PILOT_SHA, "verifier_image_id": img, "extract_check": ex,
            "input_tokens": tokens, "spec_sha256": H.sha256_bytes(SPEC.read_bytes()),
            "harness_sha256": {p.name: H.sha256_bytes(p.read_bytes())
@@ -230,7 +232,8 @@ def run_task(api: Api, ops: Ops, pilot: Mapping[str, Any], task: Mapping[str, An
         raise P3Stop(f"storage gate: free {free} < need {need} before {task['slot']}")
     ep: dict[str, Any] = {"slot": d.name, "p2_slot": task["slot"],
                           "instance_id": task["instance_id"], "model": MODEL,
-                          "pilot_set_sha256": PILOT_SHA}
+                          "pilot_set_sha256": PILOT_SHA,
+                          "harness_sha256": H.sha256_bytes(Path(__file__).read_bytes())}
     pulled = ops.pull(ref) or ops.pull(ref)
     try:
         insp = ops.inspect(ref) if pulled else None

@@ -112,8 +112,8 @@ def env(tmp_path: Path) -> tuple[dict[str, Any], Path, FakeApi, FakeOps]:
 # ---- pure rules -------------------------------------------------------------------------------
 def test_payload_is_one_user_message_no_system_no_tools() -> None:
     p = R.payload("hello")
-    assert p == {"model": "claude-opus-5-5", "max_tokens": 1024, "temperature": 0.0,
-                 "messages": [{"role": "user", "content": "hello"}]}
+    assert p == {"model": "claude-opus-5-5", "max_tokens": 1024,
+                 "messages": [{"role": "user", "content": "hello"}]}  # A-1: no temperature
 
 
 def test_interpret() -> None:

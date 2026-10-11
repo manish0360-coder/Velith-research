@@ -17,7 +17,7 @@ At a verified-success rate of 0, the A0, A1 and A2 memory arms cannot differ (a 
 |---|---|
 | D1 Population | The 13 frozen P2 tasks, slots P2-01 … P2-13, in PILOT_SET `44b88412` order. No admission; no new tasks. |
 | D2 Prompt | `p2/evidence/P2-NN/P/prompt_U.txt`, **byte-identical**, SHA equal to the PILOT_SET `identity.U`. Sent as one user message, with no system prompt. |
-| D3 Generator | Anthropic Messages API, model **`claude-opus-5-5`** (pinned string; the response `model` field is recorded). `temperature` 0, `max_tokens` **1024** (equal to P2 `num_predict`), no tools, no extended thinking. |
+| D3 Generator | Anthropic Messages API, model **`claude-opus-5-5`** (pinned string; the response `model` field is recorded). `temperature` 0 *(superseded by A-1)*, `max_tokens` **1024** (equal to P2 `num_predict`), no tools, no extended thinking. |
 | D4 Extraction | The frozen Velith `_extract_patch`, executed inside `velith-verifier:m0` with `--network none`. The `proposer.py` SHA must equal the PILOT_SET pin `91d32296…`. |
 | D5 Gate and tests | The same frozen probe, via P1 `stage_x` (case label `P3-X`). Stage-X timeout from PILOT_SET. Re-pull by digest, check identity (D7 rule from P2 §12), delete the image afterwards. |
 | D6 Arms | One arm (U, Velith's contract). P2 showed no evidence for S. |
@@ -46,7 +46,7 @@ The threshold 3/13 is an engineering threshold, not a significance test. It says
 - **One generation per task; never rerun.** The raw HTTP response is persisted before interpretation.
 - **Generation retries:** at most one retry, and only when no completion was received (transport error, HTTP 429, 5xx, `overloaded_error`). Never after a completion. Never after `stop_reason = max_tokens`.
 - **Stage-X retry:** P2 §14 rule (at most one fresh container, on INFRA_ERROR before the gate or BASELINE_UNHEALTHY).
-- **Determinism:** the API is not bit-reproducible at temperature 0, and no seed is sent. Single-attempt evidence only.
+- **Determinism:** no seed is sent, and under A-1 no temperature either (provider default sampling). Outputs are not reproducible. Single-attempt evidence only.
 - **Secret handling:** the API key is read only from the `ANTHROPIC_API_KEY` environment variable (set by the RD). It is never written to evidence or logs.
 - **Storage gate:** before every pull, free space must be at least 2.5 × compressed size + 10 GB (P1 per-pull rule).
 
@@ -82,3 +82,16 @@ p3/P3_REPORT.md
 | FG-3 | Commit spec + harness + preflight | Pushed; RD go |
 
 *No model generation before FG-3.*
+
+## Amendment A-1 (2026-10-11, before any generation)
+
+**What happened:** the first `run` call for P3-01 was rejected with HTTP 400 `invalid_request_error`: "`temperature` is deprecated for this model". No completion was produced and no attempt was consumed (`p3/evidence/P3-01/G/fatal-1-*.json`).
+
+**Change:** `temperature` is omitted, so the provider's default sampling applies. Everything else in D3 is unchanged.
+
+**Validity:**
+- The P3 question (does the generator lift the floor) does not depend on greedy decoding.
+- Single-attempt, never-rerun evidence was already required (§5).
+- This is a recorded difference from P2 (temperature 0 there).
+- FG-2 preflight remains valid: `count_tokens` never sent `temperature`, and the extractor is unchanged.
+- Each episode records the harness SHA-256 that produced it.
