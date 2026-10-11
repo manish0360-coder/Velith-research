@@ -1,0 +1,36 @@
+{
+  "extract_check": {
+    "has_patch": true,
+    "patch": "--- a/x.py\n+++ b/x.py\n@@ -1 +1 @@\n-a\n+b\n",
+    "proposer_sha256": "91d32296ab5e0c02f2a41ae0b843053d86cb0674c61adfb0aab5035e08b3b113",
+    "status": "OK"
+  },
+  "fg": "FG-2",
+  "harness_sha256": {
+    "p3_extract.py": "8a27dcc891936f639814c6c4caef1ff80515c2c115986521ee8d008c8fb0a995",
+    "p3_run.py": "0681886a30fe158c1d5b3443887fdce031fb6518ec78559c81c7b673aa41ce2f"
+  },
+  "input_tokens": {
+    "P2-01": 4563,
+    "P2-02": 7487,
+    "P2-03": 8490,
+    "P2-04": 6606,
+    "P2-05": 1298,
+    "P2-06": 6818,
+    "P2-07": 14479,
+    "P2-08": 4504,
+    "P2-09": 8411,
+    "P2-10": 9142,
+    "P2-11": 11535,
+    "P2-12": 15784,
+    "P2-13": 18263
+  },
+  "max_tokens": 1024,
+  "model": "claude-opus-5-5",
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "spec_sha256": "5333a60141f23ff58270e9abe101f2ae6650c319fe802fe4136f1fffe929de12",
+  "temperature": 0.0,
+  "utc": "2026-10-11T05:45:26Z",
+  "verdict": "PASS",
+  "verifier_image_id": "sha256:36c4c00bc85bf99203e3aa277540e8b68926b8bf183edd07af8ea84e46afcfab"
+}
