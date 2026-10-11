@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "completion_text": "```diff\n--- a/sklearn/utils/_show_versions.py\n+++ b/sklearn/utils/_show_versions.py\n@@ -48,6 +48,7 @@\n         \"Cython\",\n         \"pandas\",\n         \"matplotlib\",\n+        \"joblib\",\n     ]\n \n     def get_version(module):\n```",
+  "input_tokens": 1298,
+  "latency_seconds": 3.374,
+  "message_id": "msg_011Cfv1cSdurNeDB8k5sqqk5",
+  "model": "claude-opus-5-5",
+  "output_tokens": 110,
+  "status": "GENERATED",
+  "stop_reason": "end_turn",
+  "utc": "2026-10-11T06:54:55Z"
+}

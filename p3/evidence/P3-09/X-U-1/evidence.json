@@ -1,0 +1,133 @@
+{
+  "deterministic": {
+    "base_commit": "7269fa3e33e8d02485a647da91a5a2a60a06af61",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "7983109b67a87f4293b5b018bff348db0bed9c2b",
+      "mapped_required": 9,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "astropy/io/ascii/tests/test_qdp.py::test_get_lines_from_qdp": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_get_tables_from_qdp_file": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_read_example": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_read_write_simple": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_read_write_simple_specify_name": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[False]": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]": "failed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example_comma": "passed"
+      },
+      "parent": "7269fa3e33e8d02485a647da91a5a2a60a06af61",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "6a5f339183ce60df9b18a9cfd201262a9b5a06590eb69beb57c8e76cfe34f92b  astropy/conftest.py",
+        "27770300868866c8c1102e2e46628da274671a95f1d57f14e57cda23ddfcf481  astropy/io/ascii/tests/test_qdp.py",
+        "5a78048f138b91ad2fd31b70e2134422889f20c5a65918b898c023a452f4e018  conftest.py",
+        "ed215461c564de8e7a1923361c6c859b0d4316b76f2ecbde1ce3b819fd471f4e  pyproject.toml",
+        "e06460f05a5197dc98a001e3618d39dd8190d7786bdd494a8ca0826a85ec87d7  setup.cfg",
+        "5e062554e2c52a48e18a0ecf1bce6661a32c2de9e69985979f97ac835fe655ea  tox.ini"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "7983109b67a87f4293b5b018bff348db0bed9c2b",
+      "mapped_required": 9,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "astropy/io/ascii/tests/test_qdp.py::test_get_lines_from_qdp": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_get_tables_from_qdp_file": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_read_example": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_read_write_simple": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_read_write_simple_specify_name": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[False]": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example": "passed",
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example_comma": "passed"
+      },
+      "parent": "7269fa3e33e8d02485a647da91a5a2a60a06af61",
+      "pytest_exit": "0",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "6a5f339183ce60df9b18a9cfd201262a9b5a06590eb69beb57c8e76cfe34f92b  astropy/conftest.py",
+        "27770300868866c8c1102e2e46628da274671a95f1d57f14e57cda23ddfcf481  astropy/io/ascii/tests/test_qdp.py",
+        "5a78048f138b91ad2fd31b70e2134422889f20c5a65918b898c023a452f4e018  conftest.py",
+        "ed215461c564de8e7a1923361c6c859b0d4316b76f2ecbde1ce3b819fd471f4e  pyproject.toml",
+        "e06460f05a5197dc98a001e3618d39dd8190d7786bdd494a8ca0826a85ec87d7  setup.cfg",
+        "5e062554e2c52a48e18a0ecf1bce6661a32c2de9e69985979f97ac835fe655ea  tox.ini"
+      ],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "7fd067515727d9c14f37ed8fc25e014cc25ef40197c19c392181b4a6f025f5b0",
+    "case": "P3-X",
+    "classification": "PASSED",
+    "detail": "9/9",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+    "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+    "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365",
+    "image_id": "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe",
+    "instance_id": "astropy__astropy-14365",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 900.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "astropy/conftest.py",
+      "astropy/io/ascii/tests/test_qdp.py",
+      "conftest.py",
+      "pyproject.toml",
+      "setup.cfg",
+      "tox.ini"
+    ],
+    "protected_set_sha256": "6b6c09d8c7a21d6523362540ac3f9745adbb4d96185b07ffdaa8695046cfdfcd",
+    "reason": "ALL_REQUIRED_PASSED",
+    "repo": "astropy/astropy",
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "astropy/io/ascii/tests/test_qdp.py"
+    ],
+    "test_patch_sha256": "70b55ca95da68ba8829a50ffd8aba4ad44d2d2e2539ad6b1cc23a6c59d78f528",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "01030583a79a98640922dbe72953b91cb08f3b0acba40a660417d6a3db9a3f87",
+      "duration_seconds": 6.311
+    },
+    "candidate": {
+      "container": "9e2cf45091f2c7ab0c4747dac4ed10e117caba57c2212c491b9f0243d917b06d",
+      "duration_seconds": 6.1
+    }
+  },
+  "note": "P1 Stage X via the frozen M2 probe library -- probe-level evidence, NOT a verdict of record",
+  "verdict_projection": {
+    "duration_seconds": 6.1,
+    "flaky": false,
+    "output": "ALL_REQUIRED_PASSED",
+    "secondary_passed": null,
+    "state": "PASSED"
+  }
+}

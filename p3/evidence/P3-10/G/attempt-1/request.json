@@ -1,0 +1,10 @@
+{
+  "max_tokens": 1024,
+  "messages": [
+    {
+      "content_sha256": "3efde156867ee2878fffbdad5f9f0cff09e108cb9e14baeae8393c56ed2e3652",
+      "role": "user"
+    }
+  ],
+  "model": "claude-opus-5-5"
+}

@@ -1,0 +1,17 @@
+5aa44480063312d95677908faf2e63de999b731600d7acdd4423b91fbdf00154  ./E/extract.json
+504dc23bd0de8e5c726076708b71b6f0f11f8b67375af41cecd1c6b51066729d  ./E/patch.diff
+56ce62409da2bffcb09130fd9200043d068e622a0c82bda322a0b0095f3d99e9  ./G/attempt-1/completion.txt
+8e1e0caf41be7d845b29c3d84c405201d7fd1eb9856c24a28b6f75066c0a6c70  ./G/attempt-1/request.json
+0df7bddd418f08f72452b87afe2869d9e3e435e24e9214e34b6e20fa588b89b0  ./G/attempt-1/response_raw.json
+093f519938e81f77fade155e21eb65ffda2130a343c58d861629bb0a7c356a91  ./G/attempt-1/result.json
+b02d6c6a5b7f6f191d808b2a1b5728eda1f2b485a02a8f0d4289a3c99c3bd549  ./X-U-1/baseline/junit.xml
+c94947e7bacc1f09831da1f90143406ea4e44ee425dcf748ed87b0d8f12bf54b  ./X-U-1/baseline/stdout.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./X-U-1/baseline/velith/candidate.patch
+0f835c7cad5dffaf95e6bdaf918b28f8e1107aff3bc6891106edb24256d32fd7  ./X-U-1/baseline/velith/run.sh
+96450f3e612129889ac2d7b9526082f78224896415ecf5f32c42675268199ea8  ./X-U-1/baseline/velith/test.patch
+b7447ae1d14a96d705549676ace702afc9dc974bfc29c853eb3e0f76213e0ce0  ./X-U-1/candidate/stdout.txt
+504dc23bd0de8e5c726076708b71b6f0f11f8b67375af41cecd1c6b51066729d  ./X-U-1/candidate/velith/candidate.patch
+0f835c7cad5dffaf95e6bdaf918b28f8e1107aff3bc6891106edb24256d32fd7  ./X-U-1/candidate/velith/run.sh
+96450f3e612129889ac2d7b9526082f78224896415ecf5f32c42675268199ea8  ./X-U-1/candidate/velith/test.patch
+f24d5119d41e0fb5d900081324c4ef8a177a8b29956ebd63d4e0d9193dea1960  ./X-U-1/evidence.json
+e5060ff22e62e0599dfa66c6deaf067c8ddbb4316447e92301d33f1e12cedac7  ./episode.json

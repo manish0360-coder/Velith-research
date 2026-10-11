@@ -1,0 +1,9 @@
+{
+  "classification": "PASSED",
+  "detail": "10/10",
+  "diagnostic_only": true,
+  "gate": true,
+  "mode": "extractor-fn",
+  "reason": "ALL_REQUIRED_PASSED",
+  "status": "RAN"
+}

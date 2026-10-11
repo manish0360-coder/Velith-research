@@ -1,0 +1,46 @@
+{
+  "applies": false,
+  "classification": "PATCH_APPLY_FAILED",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20859@sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02"
+      ],
+      "linux/amd64",
+      "sha256:6b3463d153c8d0469b440af8457f1cf3fd3effbbfbb87ef85e062e937e21cb02"
+    ],
+    "pulled": true
+  },
+  "generation": {
+    "attempts": 1,
+    "input_tokens": 18263,
+    "latency_seconds": 4.075,
+    "message_id": "msg_011Cfv8XzhtREHmUpPmaJsPn",
+    "model": "claude-opus-5-5",
+    "output_tokens": 335,
+    "status": "GENERATED",
+    "stop_reason": "end_turn"
+  },
+  "harness_sha256": "69adad6cfbcac77c1853114142bd88c2145c5c25a347087e44db060bc80001cf",
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "matplotlib__matplotlib-20859",
+  "layers": {
+    "L3": "MALFORMED_PATCH",
+    "L4": null,
+    "test_integrity": false
+  },
+  "model": "claude-opus-5-5",
+  "p2_slot": "P2-13",
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+  "slot": "P3-13",
+  "tests": {
+    "fail_to_pass": "0/1",
+    "pass_to_pass": "0/88"
+  },
+  "utc": "2026-10-11T08:26:43Z",
+  "verified_pass": false,
+  "x_attempts": 1
+}

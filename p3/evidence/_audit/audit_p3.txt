@@ -1,0 +1,29 @@
+A: PILOT_SET 44b884125f37  P2 code match=True  p3_run 69adad6cfbca  p3_extract 8a27dcc89193  proposer pin ok
+
+slot   instance                          applies verified L3/L1              L4                 F2P   P2P      stop      out  gold-sim        local-replay                                    P2-U(app/ver) files
+P3-01  astropy__astropy-12907            False   False    MALFORMED_PATCH      None               0/2   0/13     end_turn  196  1.00 IDENTICAL  reject:error: corrupt patch at line 11        True/False    18  unstripped:APPLIES
+P3-02  scikit-learn__scikit-learn-13496  False   False    MALFORMED_PATCH      None               0/1   0/19     end_turn  438  1.00            reject:error: corrupt patch at line 17        False/False   17  unstripped:rejects
+P3-03  scikit-learn__scikit-learn-25931  False   False    MALFORMED_PATCH      None               0/1   0/21     end_turn  675  0.68            reject:error: corrupt patch at line 44        True/False    17  unstripped:rejects
+P3-04  pydata__xarray-4966               True    True     GATE_PASS            CANDIDATE_PASSED   4/4   21/21    end_turn  363  1.00 IDENTICAL  apply                                         False/False   18  unstripped:-
+P3-05  scikit-learn__scikit-learn-14141  True    True     GATE_PASS            CANDIDATE_PASSED   1/1   2/2      end_turn  110  1.00 IDENTICAL  apply                                         False/False   18  unstripped:-
+P3-06  astropy__astropy-13579            False   False    MALFORMED_PATCH      None               0/1   0/40     end_turn  411  1.00            reject:error: corrupt patch at line 10        True/False    17  unstripped:rejects
+P3-07  scikit-learn__scikit-learn-14496  True    True     GATE_PASS            CANDIDATE_PASSED   1/1   39/39    end_turn  483  0.46            apply                                         False/False   18  unstripped:-
+P3-08  pydata__xarray-4075               True    True     GATE_PASS            CANDIDATE_PASSED   2/2   958/958  end_turn  323  1.00 IDENTICAL  apply                                         False/False   18  unstripped:-
+P3-09  astropy__astropy-14365            True    True     GATE_PASS            CANDIDATE_PASSED   1/1   8/8      end_turn  475  1.00 IDENTICAL  apply                                         False/False   18  unstripped:-
+P3-10  astropy__astropy-13453            False   False    MALFORMED_PATCH      None               0/1   0/9      end_turn  550  1.00 IDENTICAL  reject:error: corrupt patch at line 16        False/False   17  unstripped:APPLIES
+P3-11  pydata__xarray-3151               True    True     GATE_PASS            CANDIDATE_PASSED   1/1   66/66    end_turn  234  0.25            apply                                         False/False   18  unstripped:-
+P3-12  pydata__xarray-7233               False   False    MALFORMED_PATCH      None               0/1   0/189    end_turn  254  1.00 IDENTICAL  reject:error: corrupt patch at line 15        False/False   17  unstripped:rejects
+P3-13  matplotlib__matplotlib-20859      False   False    MALFORMED_PATCH      None               0/1   0/88     end_turn  335  0.98            reject:error: corrupt patch at line 27        False/False   17  unstripped:rejects
+
+F: k_verified=6 applies=6 n_v=13 decision=P3-A report_agrees=True
+B: A-1 fatal record: fatal-1-1791698138.json
+F: changed lines identical to the gold patch: 7/13 ['P3-01', 'P3-04', 'P3-05', 'P3-08', 'P3-09', 'P3-10', 'P3-12']
+
+DEVIATIONS: 1
+  - P3-10: model emitted 363 thinking tokens / content ['thinking', 'text'] although none was requested (D3 'no extended thinking' not enforced by the request)
+
+FINDINGS: 2
+  - P3-01: extractor false negative — the model's fenced diff applies, but _extract_patch's .strip() removed a trailing whitespace-only context line, making it a corrupt patch
+  - P3-10: extractor false negative — the model's fenced diff applies, but _extract_patch's .strip() removed a trailing whitespace-only context line, making it a corrupt patch
+
+DEFECTS: 0

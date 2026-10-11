@@ -1,0 +1,145 @@
+{
+  "deterministic": {
+    "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "d350420dae50c80ca33b845734c31428d62af0a8",
+      "mapped_required": 15,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "astropy/modeling/tests/test_separable.py::test_arith_oper": "passed",
+        "astropy/modeling/tests/test_separable.py::test_cdot": "passed",
+        "astropy/modeling/tests/test_separable.py::test_coord_matrix": "passed",
+        "astropy/modeling/tests/test_separable.py::test_cstack": "passed",
+        "astropy/modeling/tests/test_separable.py::test_custom_model_separable": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model0-result0]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model1-result1]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model2-result2]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model3-result3]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model4-result4]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model5-result5]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]": "failed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model7-result7]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model8-result8]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]": "failed"
+      },
+      "parent": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "e3970894c3f13086681508803f5f44c92c2fd9b69c5f237606b04099de0ac0dd  astropy/conftest.py",
+        "0ae714eb12e29aca35bae693b3e7f594f47e12135fca5e6b1f749b331430c762  astropy/modeling/tests/test_separable.py",
+        "38130b17f976bb6e9362cab7c0b3b3194c6644a357928a4401fd5a46c34d13c7  conftest.py",
+        "8675c6a91dc623bb0680a767bed66ab507ff595e799d92374d8cd7c10a15d312  pyproject.toml",
+        "85d8a249de360ac07c02b40dc14390a750ba3af7f2145cd34efa198bf2b821d2  setup.cfg",
+        "1121446a64615eefa02aec6c8551a5c2c07eb9e8994ef48eacb424fa2386936a  tox.ini"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "d350420dae50c80ca33b845734c31428d62af0a8",
+      "mapped_required": 15,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "astropy/modeling/tests/test_separable.py::test_arith_oper": "passed",
+        "astropy/modeling/tests/test_separable.py::test_cdot": "passed",
+        "astropy/modeling/tests/test_separable.py::test_coord_matrix": "passed",
+        "astropy/modeling/tests/test_separable.py::test_cstack": "passed",
+        "astropy/modeling/tests/test_separable.py::test_custom_model_separable": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model0-result0]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model1-result1]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model2-result2]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model3-result3]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model4-result4]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model5-result5]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model7-result7]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model8-result8]": "passed",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]": "passed"
+      },
+      "parent": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+      "pytest_exit": "0",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "e3970894c3f13086681508803f5f44c92c2fd9b69c5f237606b04099de0ac0dd  astropy/conftest.py",
+        "0ae714eb12e29aca35bae693b3e7f594f47e12135fca5e6b1f749b331430c762  astropy/modeling/tests/test_separable.py",
+        "38130b17f976bb6e9362cab7c0b3b3194c6644a357928a4401fd5a46c34d13c7  conftest.py",
+        "8675c6a91dc623bb0680a767bed66ab507ff595e799d92374d8cd7c10a15d312  pyproject.toml",
+        "85d8a249de360ac07c02b40dc14390a750ba3af7f2145cd34efa198bf2b821d2  setup.cfg",
+        "1121446a64615eefa02aec6c8551a5c2c07eb9e8994ef48eacb424fa2386936a  tox.ini"
+      ],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "be5d268e28215bdcde3e6c837278303398f6d564d36300fd5fab018ea9684d31",
+    "case": "P3-X",
+    "classification": "PASSED",
+    "detail": "15/15",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:7485c1e3c8861efd0c6a4a78b952857592e541031039000d25e9481f045dc4a3",
+    "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+    "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-12907",
+    "image_id": "sha256:7485c1e3c8861efd0c6a4a78b952857592e541031039000d25e9481f045dc4a3",
+    "instance_id": "astropy__astropy-12907",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 900.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "astropy/conftest.py",
+      "astropy/modeling/tests/test_separable.py",
+      "conftest.py",
+      "pyproject.toml",
+      "setup.cfg",
+      "tox.ini"
+    ],
+    "protected_set_sha256": "2c235ffa8edc88beff5fa69ff847fc3a33e75f3950723dc718c55188dae641fe",
+    "reason": "ALL_REQUIRED_PASSED",
+    "repo": "astropy/astropy",
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "astropy/modeling/tests/test_separable.py"
+    ],
+    "test_patch_sha256": "5ef90b640ffce4590bb61ef2ea0e3256416dddf41b45bf4f2c3610a6e8c53718",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "d52f3eb511a3c2c50daac0e50d6162fa29df82f2ada63c5f84466227b8c55ac2",
+      "duration_seconds": 4.054
+    },
+    "candidate": {
+      "container": "c8d034f10245772813561081db99c91589c2c8546b123a003ef5512799d8385a",
+      "duration_seconds": 4.135
+    }
+  },
+  "note": "P1 Stage X via the frozen M2 probe library -- probe-level evidence, NOT a verdict of record",
+  "verdict_projection": {
+    "duration_seconds": 4.135,
+    "flaky": false,
+    "output": "ALL_REQUIRED_PASSED",
+    "secondary_passed": null,
+    "state": "PASSED"
+  }
+}

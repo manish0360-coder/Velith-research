@@ -1,0 +1,218 @@
+{
+  "applies": 6,
+  "decision": "P3-A",
+  "infra_unresolved": 0,
+  "k_verified": 6,
+  "n": 13,
+  "n_v": 13,
+  "per_task": [
+    {
+      "applies": false,
+      "instance_id": "astropy__astropy-12907",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-01",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/2",
+        "pass_to_pass": "0/13"
+      },
+      "verified": false
+    },
+    {
+      "applies": false,
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-02",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/1",
+        "pass_to_pass": "0/19"
+      },
+      "verified": false
+    },
+    {
+      "applies": false,
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-03",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/1",
+        "pass_to_pass": "0/21"
+      },
+      "verified": false
+    },
+    {
+      "applies": true,
+      "instance_id": "pydata__xarray-4966",
+      "layers": {
+        "L3": "GATE_PASS",
+        "L4": "CANDIDATE_PASSED",
+        "test_integrity": false
+      },
+      "slot": "P3-04",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "4/4",
+        "pass_to_pass": "21/21"
+      },
+      "verified": true
+    },
+    {
+      "applies": true,
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "layers": {
+        "L3": "GATE_PASS",
+        "L4": "CANDIDATE_PASSED",
+        "test_integrity": false
+      },
+      "slot": "P3-05",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "1/1",
+        "pass_to_pass": "2/2"
+      },
+      "verified": true
+    },
+    {
+      "applies": false,
+      "instance_id": "astropy__astropy-13579",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-06",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/1",
+        "pass_to_pass": "0/40"
+      },
+      "verified": false
+    },
+    {
+      "applies": true,
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "layers": {
+        "L3": "GATE_PASS",
+        "L4": "CANDIDATE_PASSED",
+        "test_integrity": false
+      },
+      "slot": "P3-07",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "1/1",
+        "pass_to_pass": "39/39"
+      },
+      "verified": true
+    },
+    {
+      "applies": true,
+      "instance_id": "pydata__xarray-4075",
+      "layers": {
+        "L3": "GATE_PASS",
+        "L4": "CANDIDATE_PASSED",
+        "test_integrity": false
+      },
+      "slot": "P3-08",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "2/2",
+        "pass_to_pass": "958/958"
+      },
+      "verified": true
+    },
+    {
+      "applies": true,
+      "instance_id": "astropy__astropy-14365",
+      "layers": {
+        "L3": "GATE_PASS",
+        "L4": "CANDIDATE_PASSED",
+        "test_integrity": false
+      },
+      "slot": "P3-09",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "1/1",
+        "pass_to_pass": "8/8"
+      },
+      "verified": true
+    },
+    {
+      "applies": false,
+      "instance_id": "astropy__astropy-13453",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-10",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/1",
+        "pass_to_pass": "0/9"
+      },
+      "verified": false
+    },
+    {
+      "applies": true,
+      "instance_id": "pydata__xarray-3151",
+      "layers": {
+        "L3": "GATE_PASS",
+        "L4": "CANDIDATE_PASSED",
+        "test_integrity": false
+      },
+      "slot": "P3-11",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "1/1",
+        "pass_to_pass": "66/66"
+      },
+      "verified": true
+    },
+    {
+      "applies": false,
+      "instance_id": "pydata__xarray-7233",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-12",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/1",
+        "pass_to_pass": "0/189"
+      },
+      "verified": false
+    },
+    {
+      "applies": false,
+      "instance_id": "matplotlib__matplotlib-20859",
+      "layers": {
+        "L3": "MALFORMED_PATCH",
+        "L4": null,
+        "test_integrity": false
+      },
+      "slot": "P3-13",
+      "stop_reason": "end_turn",
+      "tests": {
+        "fail_to_pass": "0/1",
+        "pass_to_pass": "0/88"
+      },
+      "verified": false
+    }
+  ]
+}

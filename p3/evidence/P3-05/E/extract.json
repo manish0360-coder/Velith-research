@@ -1,0 +1,6 @@
+{
+  "has_patch": true,
+  "patch": "--- a/sklearn/utils/_show_versions.py\n+++ b/sklearn/utils/_show_versions.py\n@@ -48,6 +48,7 @@\n         \"Cython\",\n         \"pandas\",\n         \"matplotlib\",\n+        \"joblib\",\n     ]\n \n     def get_version(module):\n",
+  "proposer_sha256": "91d32296ab5e0c02f2a41ae0b843053d86cb0674c61adfb0aab5035e08b3b113",
+  "status": "OK"
+}

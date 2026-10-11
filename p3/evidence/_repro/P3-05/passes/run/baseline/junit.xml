@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="10361a597857" name="pytest" skipped="0" tests="3" time="1.503" timestamp="2026-10-11T09:36:23.688818"><testcase classname="sklearn.utils.tests.test_show_versions" name="test_get_sys_info" time="0.020" /><testcase classname="sklearn.utils.tests.test_show_versions" name="test_get_deps_info" time="0.966"><failure message="AssertionError: assert 'joblib' in {'Cython': '0.29.24', 'matplotlib': '3.3.4', 'numpy': '1.19.2', 'pandas': '1.1.5', ...}">def test_get_deps_info():
+        deps_info = _get_deps_info()
+    
+        assert 'pip' in deps_info
+        assert 'setuptools' in deps_info
+        assert 'sklearn' in deps_info
+        assert 'numpy' in deps_info
+        assert 'scipy' in deps_info
+        assert 'Cython' in deps_info
+        assert 'pandas' in deps_info
+        assert 'matplotlib' in deps_info
+&gt;       assert 'joblib' in deps_info
+E       AssertionError: assert 'joblib' in {'Cython': '0.29.24', 'matplotlib': '3.3.4', 'numpy': '1.19.2', 'pandas': '1.1.5', ...}
+
+sklearn/utils/tests/test_show_versions.py:26: AssertionError</failure></testcase><testcase classname="sklearn.utils.tests.test_show_versions" name="test_show_versions_with_blas" time="0.313" /></testsuite></testsuites>

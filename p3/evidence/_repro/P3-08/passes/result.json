@@ -1,0 +1,13 @@
+{
+  "classification": "PASSED",
+  "detail": "960/960",
+  "diagnostic_only": false,
+  "gate": true,
+  "mode": "passes",
+  "outcome_diffs": {},
+  "reason": "ALL_REQUIRED_PASSED",
+  "reproduced": true,
+  "same_classification": true,
+  "same_patch": true,
+  "status": "RAN"
+}

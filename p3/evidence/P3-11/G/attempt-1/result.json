@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "completion_text": "```diff\n--- a/xarray/core/combine.py\n+++ b/xarray/core/combine.py\n@@ -501,7 +501,7 @@ def combine_by_coords(datasets, compat='no_conflicts', data_vars='all',\n                                    fill_value=fill_value)\n \n         # Check the overall coordinates are monotonically increasing\n-        for dim in concatenated.dims:\n-            if dim in concatenated:\n+        for dim in concat_dims:\n+            if dim in concatenated:\n                 indexes = concatenated.indexes.get(dim)\n                 if not (indexes.is_monotonic_increasing\n                         or indexes.is_monotonic_decreasing):\n```",
+  "input_tokens": 11535,
+  "latency_seconds": 4.135,
+  "message_id": "msg_011Cfv6YUgutvkFNDPehv4d8",
+  "model": "claude-opus-5-5",
+  "output_tokens": 234,
+  "status": "GENERATED",
+  "stop_reason": "end_turn",
+  "utc": "2026-10-11T07:59:36Z"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "completion_text": "```diff\n--- a/astropy/io/ascii/html.py\n+++ b/astropy/io/ascii/html.py\n@@ -349,11 +349,13 @@\n         cols = list(table.columns.values())\n \n         self.data.header.cols = cols\n+        self.data.cols = cols\n \n         if isinstance(self.data.fill_values, tuple):\n             self.data.fill_values = [self.data.fill_values]\n \n         self.data._set_fill_values(cols)\n+        self.data._set_col_formats()\n \n         lines = []\n \n```",
+  "input_tokens": 9142,
+  "latency_seconds": 6.771,
+  "message_id": "msg_011Cfv5PbY3JTH2BcWRrz7rR",
+  "model": "claude-opus-5-5",
+  "output_tokens": 550,
+  "status": "GENERATED",
+  "stop_reason": "end_turn",
+  "utc": "2026-10-11T07:44:32Z"
+}

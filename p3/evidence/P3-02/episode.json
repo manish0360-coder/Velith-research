@@ -1,0 +1,46 @@
+{
+  "applies": false,
+  "classification": "PATCH_APPLY_FAILED",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496@sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a"
+      ],
+      "linux/amd64",
+      "sha256:50a7f61f8c04f76a665865e6431306d64e741a9447fb9ee23edfac0fad72e00a"
+    ],
+    "pulled": true
+  },
+  "generation": {
+    "attempts": 1,
+    "input_tokens": 7487,
+    "latency_seconds": 5.652,
+    "message_id": "msg_011CfuxkpFYUXsXZt8KarvHt",
+    "model": "claude-opus-5-5",
+    "output_tokens": 438,
+    "status": "GENERATED",
+    "stop_reason": "end_turn"
+  },
+  "harness_sha256": "69adad6cfbcac77c1853114142bd88c2145c5c25a347087e44db060bc80001cf",
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "scikit-learn__scikit-learn-13496",
+  "layers": {
+    "L3": "MALFORMED_PATCH",
+    "L4": null,
+    "test_integrity": false
+  },
+  "model": "claude-opus-5-5",
+  "p2_slot": "P2-02",
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+  "slot": "P3-02",
+  "tests": {
+    "fail_to_pass": "0/1",
+    "pass_to_pass": "0/19"
+  },
+  "utc": "2026-10-11T06:17:46Z",
+  "verified_pass": false,
+  "x_attempts": 1
+}

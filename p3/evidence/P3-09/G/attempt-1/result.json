@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "completion_text": "Compile with re.IGNORECASE. But \"NO\" for new/data — with ignorecase, \"no\" would match, and data parsing checks `v == \"NO\"`; make that case-insensitive too, to be consistent with the regex. Also \"nan\" matching NaN works with float anyway.\n\n```diff\n--- a/astropy/io/ascii/qdp.py\n+++ b/astropy/io/ascii/qdp.py\n@@ -68,7 +68,7 @@\n     _new_re = rf\"NO({sep}NO)+\"\n     _data_re = rf\"({_decimal_re}|NO|[-+]?nan)({sep}({_decimal_re}|NO|[-+]?nan))*)\"\n     _type_re = rf\"^\\s*((?P<command>{_command_re})|(?P<new>{_new_re})|(?P<data>{_data_re})?\\s*(\\!(?P<comment>.*))?\\s*$\"\n-    _line_type_re = re.compile(_type_re)\n+    _line_type_re = re.compile(_type_re, re.IGNORECASE)\n     line = line.strip()\n     if not line:\n         return \"comment\"\n@@ -306,7 +306,7 @@\n \n             values = []\n             for v in line.split(delimiter):\n-                if v == \"NO\":\n+                if v.upper() == \"NO\":\n                     values.append(np.ma.masked)\n                 else:\n                     # Understand if number is int or float\n```",
+  "input_tokens": 8411,
+  "latency_seconds": 5.819,
+  "message_id": "msg_011Cfv4pZWbGYcxC5P1HQ4XX",
+  "model": "claude-opus-5-5",
+  "output_tokens": 475,
+  "status": "GENERATED",
+  "stop_reason": "end_turn",
+  "utc": "2026-10-11T07:37:02Z"
+}
