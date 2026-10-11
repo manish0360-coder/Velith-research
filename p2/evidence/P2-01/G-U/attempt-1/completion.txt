@@ -1,0 +1,15 @@
+ ```diff
+--- a/astropy/modeling/separable.py
++++ b/astropy/modeling/separable.py
+@@ -119,7 +119,7 @@ def _separable(transform):
+     if (transform_matrix := transform._calculate_separability_matrix()) is not NotImplemented:
+         return transform_matrix
+     elif isinstance(transform, CompoundModel):
+-        sepleft = _separable(transform.left)
++        sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+         sepright = _separable(transform.right)
+         return _operators[transform.op](sepleft, sepright)
+     elif isinstance(transform, Model):
+```
+
+This diff ensures that if the left or right model in a compound model is not separable, the corresponding outputs are marked as not separable in the separability matrix.

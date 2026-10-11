@@ -1,0 +1,70 @@
+{
+  "arm_order": [
+    "S",
+    "U"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "S_MALFORMED_BLOCK",
+      "applies": false,
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "c2661d8db44eed10cbcf66543ec1b4b98cb7dd4e59f51623ccfddb7f70f66995",
+        "completion_tokens": 636,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 645.3867486979943,
+        "predicted_prompt_tokens": 8585,
+        "prompt_tokens": 8585,
+        "status": "GENERATED"
+      },
+      "verified_pass": false
+    },
+    "U": {
+      "L1": "OUTPUT",
+      "L3": "MALFORMED_PATCH",
+      "L4": null,
+      "applies": false,
+      "classification": "PATCH_APPLY_FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "64787513bdb0ba0ac89d523ae005ad7c6d0671fa9c21d5b9d49c318f24580bca",
+        "completion_tokens": 188,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 499.1362466509963,
+        "predicted_prompt_tokens": 8596,
+        "prompt_tokens": 8596,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "da35607f8a969a7440838929edd901bebd85e48eeb14312863727492e65a162b",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    }
+  },
+  "common_identity": "844b1cf6e3db88e1140b0a224ef4621e7cb64f48f594ca768e796a0681a8a1fa",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.pydata_1776_xarray-3151@sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b"
+      ],
+      "linux/amd64",
+      "sha256:320eea88d5a1b8553e7bf3f51c705b2230936800bac59f9cc0acd920a5d44d6b"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "pydata__xarray-3151",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 591537008646498053,
+  "slot": "P2-11",
+  "utc": "2026-10-10T17:04:00Z"
+}

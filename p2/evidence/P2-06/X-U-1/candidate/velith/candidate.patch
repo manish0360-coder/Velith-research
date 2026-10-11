@@ -1,0 +1,11 @@
+--- a/astropy/wcs/wcsapi/wrappers/sliced_wcs.py
++++ b/astropy/wcs/wcsapi/wrappers/sliced_wcs.py
+@@ -122,7 +122,7 @@ class SlicedLowLevelWCS(BaseWCSWrapper):
+         world_arrays_new = []
+         iworld_curr = -1
+         for iworld in range(self._wcs.world_n_dim):
+-            if iworld in self._world_keep:
++            if iworld in self._world_keep and not isinstance(self._slices_pixel[iworld], numbers.Integral):
+                 iworld_curr += 1
+                 world_arrays_new.append(world_arrays[iworld_curr])
+             else:

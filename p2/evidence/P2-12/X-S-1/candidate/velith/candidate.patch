@@ -1,0 +1,18 @@
+diff --git a/xarray/core/rolling.py b/xarray/core/rolling.py
+index c194ec08..22ef65af 100644
+--- a/xarray/core/rolling.py
++++ b/xarray/core/rolling.py
+@@ -169,8 +169,12 @@ class Rolling(Generic[T_Xarray]):
+         result = self.sum(keep_attrs=False, **kwargs) / self.count(
+             keep_attrs=False
+         ).astype(self.obj.dtype, copy=False)
+-        if keep_attrs:
++        if keep_attrs is True:
+             result.attrs = self.obj.attrs
++        elif keep_attrs is False:
++            result.attrs = {}
++        else:
++            result.attrs = _get_keep_attrs(default=True)
+         return result
+ 
+     _mean.__doc__ = _ROLLING_REDUCE_DOCSTRING_TEMPLATE.format(name="mean")

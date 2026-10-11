@@ -1,0 +1,19 @@
+{
+  "code": "OK",
+  "edited_paths": [
+    "sklearn/ensemble/iforest.py"
+  ],
+  "statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "sklearn/ensemble/iforest.py",
+      "span": [
+        7039,
+        7578
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "synthesized_diff_sha256": "cc1b327ae834bb9872985d3bfa3d0b82fad4b6d73e223787f9def16cbde2ba36"
+}

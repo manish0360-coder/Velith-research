@@ -1,0 +1,13 @@
+ ```diff
+--- a/xarray/core/combine.py
++++ b/xarray/core/combine.py
+@@ -229,7 +229,7 @@ def combine_by_coords(datasets, compat='no_conflicts', data_vars='all',
+     # Perform the multidimensional combine on each group of data variables
+     # before merging back together
+     concatenated_grouped_by_data_vars = []
+-    for vars, datasets_with_same_vars in grouped_by_vars:
++    for vars, datasets_with_same_vars in itertools.groupby(sorted_datasets, key=vars_as_keys):
+         combined_ids, concat_dims = _infer_concat_order_from_coords(
+             list(datasets_with_same_vars))
+ 
+```

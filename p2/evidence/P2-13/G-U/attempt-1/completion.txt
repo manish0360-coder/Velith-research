@@ -1,0 +1,13 @@
+ ```diff
+--- a/lib/matplotlib/legend.py
++++ b/lib/matplotlib/legend.py
+@@ -433,7 +433,7 @@ class Legend(Artist):
+         """
+         Place a legend on the axes at location loc.
+         """
+-        if isinstance(parent, Axes):
++        if isinstance(parent, (Axes, Figure)):
+             self.isaxes = True
+             self.axes = parent
+             self.set_figure(parent.figure)
+```

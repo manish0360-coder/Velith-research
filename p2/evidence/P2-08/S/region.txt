@@ -1,0 +1,9 @@
+<<<<<<< SEARCH xarray/core/weighted.py
+        if skipna or (skipna is None and da.dtype.kind in "cfO"):
+            da = da.fillna(0.0)
+=======
+        if skipna or (skipna is None and da.dtype.kind in "cfO"):
+            da = da.fillna(0.0)
+        if dim is None:
+            dim = ...
+>>>>>>> REPLACE

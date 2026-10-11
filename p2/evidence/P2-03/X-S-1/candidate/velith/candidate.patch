@@ -1,0 +1,14 @@
+diff --git a/sklearn/ensemble/_iforest.py b/sklearn/ensemble/_iforest.py
+index 4d6c1c3f0..cb0034ed5 100644
+--- a/sklearn/ensemble/_iforest.py
++++ b/sklearn/ensemble/_iforest.py
+@@ -302,6 +302,9 @@ class IsolationForest(OutlierMixin, BaseBagging):
+ 
+         if isinstance(self.max_samples, str) and self.max_samples == "auto":
+             max_samples = min(256, n_samples)
++        if self.contamination == "auto":
++            self.offset_ = -0.5
++            return self
+ 
+         elif isinstance(self.max_samples, numbers.Integral):
+             if self.max_samples > n_samples:

@@ -1,0 +1,5 @@
+{
+  "blocks": [],
+  "error": "line 1: expected SEARCH line",
+  "parse_code": "S_MALFORMED_BLOCK"
+}

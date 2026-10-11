@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "index": 0,
+      "path": "xarray/core/weighted.py",
+      "replace_sha256": "8214ec036ea3e3c0049f96413eb7da4109ab5860b127278fa154781ecfd4f9c4",
+      "search_sha256": "ee1312cf3ae145913b8cb716b12c67c3cfed97824e52dd457dc6cd2e776a3082"
+    }
+  ],
+  "error": "",
+  "parse_code": "OK"
+}

@@ -1,0 +1,77 @@
+{
+  "arm_order": [
+    "U",
+    "S"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "OK",
+      "L3": "GATE_PASS",
+      "L4": "CANDIDATE_FAILED",
+      "applies": true,
+      "classification": "FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "9e5df62a3fe5d2b574b53ae55f07f7a7e475c8fa00ccda719586343e21e24711",
+        "completion_tokens": 130,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 196.61478669500138,
+        "predicted_prompt_tokens": 6656,
+        "prompt_tokens": 6656,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "c02f9d603f7103e8b3e4e4dc13017b9f0a99e079bb59f91b549ce3d5d8875a43",
+      "reason": "REQUIRED_TESTS_NOT_PASSED",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    },
+    "U": {
+      "L1": "OUTPUT",
+      "L3": "GATE_PASS",
+      "L4": "CANDIDATE_FAILED",
+      "applies": true,
+      "classification": "FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "3cc40d7e326532866d7b0f94ba135c71bd21ec9a1819fb4548d7a5364e09b9fd",
+        "completion_tokens": 169,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 253.3901392709995,
+        "predicted_prompt_tokens": 6667,
+        "prompt_tokens": 6667,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "d43c30089d8b28098ecc2b8c354fdf61dfde6029ddbc1a7a66195972e1a23677",
+      "reason": "REQUIRED_TESTS_NOT_PASSED",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    }
+  },
+  "common_identity": "4449d108558194dc37c7ffee360ed3d9ba69cb2223fc35657a7b9dda412aec52",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-25931@sha256:ddec546aa1fa04ece4083d1d65eee4115ce72d2233b06e58250bb33a7a0c8aa7"
+      ],
+      "linux/amd64",
+      "sha256:ddec546aa1fa04ece4083d1d65eee4115ce72d2233b06e58250bb33a7a0c8aa7"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "scikit-learn__scikit-learn-25931",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 2233493787454035170,
+  "slot": "P2-03",
+  "utc": "2026-10-10T13:50:13Z"
+}

@@ -1,0 +1,19 @@
+{
+  "code": "OK",
+  "edited_paths": [
+    "xarray/core/rolling.py"
+  ],
+  "statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "xarray/core/rolling.py",
+      "span": [
+        5189,
+        5352
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "synthesized_diff_sha256": "03596e1a2cc7914e3d6a2bfd86f85a08b1fae4839b2f2cb03949ceb69932fafb"
+}

@@ -1,0 +1,40 @@
+VELITH_HEAD f863dd9c48aee1eb395e5ca64e675a765cea44a9
+VELITH_PARENT 3d997697fdd166eff428ea9fd35734b6a8ba113e
+VELITH_SURFACE 4df8222d4917f8287f2e8c755adc9e3d970b081175f9a3dc3d04147762573d2e  conftest.py
+VELITH_SURFACE 1928ff4b53e8111fd57980068c3f47872d6896b7e365f382b2624cee0a4d53ba  setup.cfg
+VELITH_SURFACE 080ac411fdfae7c93cd469989e8425d5229142a4e6b07d54d29a6dee44b1d22b  sklearn/conftest.py
+VELITH_SURFACE e4434b144857995f7a3db355a848c9f7b64b5cb32330f2fb615d044a29cf402f  sklearn/utils/tests/test_show_versions.py
+============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-6.2.4, py-1.11.0, pluggy-0.13.1
+rootdir: /testbed, configfile: setup.cfg
+collected 3 items
+
+sklearn/utils/tests/test_show_versions.py .F.                            [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_get_deps_info ______________________________
+
+    def test_get_deps_info():
+        deps_info = _get_deps_info()
+    
+        assert 'pip' in deps_info
+        assert 'setuptools' in deps_info
+        assert 'sklearn' in deps_info
+        assert 'numpy' in deps_info
+        assert 'scipy' in deps_info
+        assert 'Cython' in deps_info
+        assert 'pandas' in deps_info
+        assert 'matplotlib' in deps_info
+>       assert 'joblib' in deps_info
+E       AssertionError: assert 'joblib' in {'Cython': '0.29.24', 'matplotlib': '3.3.4', 'numpy': '1.19.2', 'pandas': '1.1.5', ...}
+
+sklearn/utils/tests/test_show_versions.py:26: AssertionError
+==================================== PASSES ====================================
+------------------ generated xml file: /tmp/velith-junit.xml -------------------
+=========================== short test summary info ============================
+PASSED sklearn/utils/tests/test_show_versions.py::test_get_sys_info
+PASSED sklearn/utils/tests/test_show_versions.py::test_show_versions_with_blas
+FAILED sklearn/utils/tests/test_show_versions.py::test_get_deps_info - Assert...
+========================= 1 failed, 2 passed in 0.84s ==========================
+VELITH_PYTEST_EXIT 1
+VELITH_NET blocked OSError 101

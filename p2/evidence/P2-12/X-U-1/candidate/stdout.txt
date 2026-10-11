@@ -1,0 +1,4 @@
+VELITH_HEAD 24fa87354c1d68bd79c7a2907aeed82b1ec38a83
+VELITH_PARENT 51d37d1be95547059251076b3fadaa317750aab3
+error: patch failed: xarray/core/rolling.py:499
+error: xarray/core/rolling.py: patch does not apply

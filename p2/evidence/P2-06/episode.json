@@ -1,0 +1,70 @@
+{
+  "arm_order": [
+    "U",
+    "S"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "S_MALFORMED_BLOCK",
+      "applies": false,
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "3e4cc4b41c220888dbcbff04941a491b98860ff0c357b35436e94a1514b9bea3",
+        "completion_tokens": 853,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 300.7459510640001,
+        "predicted_prompt_tokens": 5348,
+        "prompt_tokens": 5348,
+        "status": "GENERATED"
+      },
+      "verified_pass": false
+    },
+    "U": {
+      "L1": "OUTPUT",
+      "L3": "GATE_PASS",
+      "L4": "CANDIDATE_FAILED",
+      "applies": true,
+      "classification": "FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "be10cc2d0cf6ee55066d2a08b8e9c006eeb4d14482853be10dc77b426380c7b1",
+        "completion_tokens": 198,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 189.99337635699703,
+        "predicted_prompt_tokens": 5359,
+        "prompt_tokens": 5359,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "c0f90e60bab9eda570faefc6cab96b15e5c3a6d693e2f0b5b6a7ffbd3310e60e",
+      "reason": "REQUIRED_TESTS_NOT_PASSED",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    }
+  },
+  "common_identity": "d7b8c8f5677a16ef4b3aec7f094fbe65d1e25de2d338c137febca0b3c3d766d3",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579@sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863"
+      ],
+      "linux/amd64",
+      "sha256:3a4b8059992d3eed81046bd4b3bd3450993a237a909c2298ce69b59bb5b9c863"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "astropy__astropy-13579",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 6304238383670843086,
+  "slot": "P2-06",
+  "utc": "2026-10-10T14:37:45Z"
+}

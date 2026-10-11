@@ -1,0 +1,11 @@
+--- a/xarray/core/weighted.py
++++ b/xarray/core/weighted.py
+@@ -129,7 +129,7 @@ class Weighted:
+         if skipna or (skipna is None and da.dtype.kind in "cfO"):
+             da = da.fillna(0.0)
+
+-        return dot(da, weights, dims=dim)
++        return dot(da, weights * 1, dims=dim)
+
+     def _sum_of_weights(
+         self,

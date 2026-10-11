@@ -1,0 +1,26 @@
+ ```diff
+--- a/sklearn/ensemble/iforest.py
++++ b/sklearn/ensemble/iforest.py
+@@ -109,6 +109,7 @@ class IsolationForest(BaseBagging, OutlierMixin):
+         behaviour : str, default='old'
+             Behaviour of the ``decision_function`` which can be either 'old' or
+             'new'. Passing ``behaviour='new'`` makes the ``decision_function``
++            change to match other anomaly detection algorithm API which will be
++            the default behaviour in the future. As explained in details in the
++            ``offset_`` attribute documentation, the ``decision_function`` becomes
++            dependent on the contamination parameter, in such a way that 0 becomes
++            its natural threshold to detect outliers.
+             in such a way that 0 becomes
+             its natural threshold to detect outliers.
+         random_state : int, RandomState instance or None, optional (default=None)
+@@ -131,6 +138,7 @@ class IsolationForest(BaseBagging, OutlierMixin):
+             present for API consistency by convention.
+ 
+         Returns
++        -------
++        self : object
++        """
+         if self.contamination == "legacy":
+             warn('default contamination parameter 0.1 will change '
+                  'in version 0.22 to "auto". This will change the '
+```

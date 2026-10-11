@@ -1,0 +1,28 @@
+ ```python
+<<<<<<< SEARCH xarray/core/weighted.py
+        if skipna or (skipna is None and da.dtype.kind in "cfO"):
+            da = da.fillna(0.0)
+=======
+        if skipna or (skipna is None and da.dtype.kind in "cfO"):
+            da = da.fillna(0.0)
+        if dim is None:
+            dim = ...
+>>>>>>> REPLACE
+```
+```python
+<<<<<<< SEARCH xarray/core/weighted.py
+        return dot(da, weights, dims=dim)
+=======
+        return dot(da, weights * 1, dims=dim)
+>>>>>>> REPLACE
+```
+```python
+<<<<<<< SEARCH xarray/core/weighted.py
+=======
+        sum_of_weights = self._reduce(mask, self.weights, dim=dim, skipna=False)
+
+        valid_weights = sum_of_weights != 0.0
+
+        return sum_of_weights.where(valid_weights)
+>>>>>>> REPLACE
+```

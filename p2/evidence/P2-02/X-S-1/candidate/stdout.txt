@@ -1,0 +1,55 @@
+VELITH_HEAD 8aeedb68b06d26bcbd1930ca68359451955ae41b
+VELITH_PARENT 3aefc834dce72e850bff48689bea3c7dff5f3fad
+VELITH_SURFACE 1c0f068a8797ebc8275e060ad4b2baa4b31ef51aeb66c1e65238d82befb91451  conftest.py
+VELITH_SURFACE cdc9f447fa3c9c784cd73554401997f797c51da3231960c65c02b376e7508b73  setup.cfg
+VELITH_SURFACE bafcb92c19ccda818a158e8040a7ffc68a45ccb1008cdbc08e81686573d8d952  sklearn/ensemble/tests/test_iforest.py
+============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-6.2.4, py-1.11.0, pluggy-0.13.1
+rootdir: /testbed, configfile: setup.cfg
+collected 20 items
+
+sklearn/ensemble/tests/test_iforest.py .............F......              [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_iforest_warm_start ____________________________
+
+    @pytest.mark.filterwarnings('ignore:default contamination')
+    @pytest.mark.filterwarnings('ignore:behaviour="old"')
+    def test_iforest_warm_start():
+        """Test iterative addition of iTrees to an iForest """
+    
+        rng = check_random_state(0)
+        X = rng.randn(20, 2)
+    
+        # fit first 10 trees
+        clf = IsolationForest(n_estimators=10, max_samples=20,
+>                             random_state=rng, warm_start=True)
+E       TypeError: __init__() got an unexpected keyword argument 'warm_start'
+
+sklearn/ensemble/tests/test_iforest.py:308: TypeError
+==================================== PASSES ====================================
+------------------ generated xml file: /tmp/velith-junit.xml -------------------
+=========================== short test summary info ============================
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_sparse
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_error
+PASSED sklearn/ensemble/tests/test_iforest.py::test_recalculate_max_depth
+PASSED sklearn/ensemble/tests/test_iforest.py::test_max_samples_attribute
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_parallel_regression
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_performance
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_works[0.25]
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_works[auto]
+PASSED sklearn/ensemble/tests/test_iforest.py::test_max_samples_consistency
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_subsampled_features
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_average_path_length
+PASSED sklearn/ensemble/tests/test_iforest.py::test_score_samples
+PASSED sklearn/ensemble/tests/test_iforest.py::test_deprecation
+PASSED sklearn/ensemble/tests/test_iforest.py::test_behaviour_param
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[0.25-3]
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[auto-2]
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[0.25-3]
+PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[auto-2]
+FAILED sklearn/ensemble/tests/test_iforest.py::test_iforest_warm_start - Type...
+========================= 1 failed, 19 passed in 4.67s =========================
+VELITH_PYTEST_EXIT 1
+VELITH_NET blocked OSError 101

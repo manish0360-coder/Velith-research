@@ -1,0 +1,3 @@
+VELITH_HEAD 006540f42498f78cca113289ed0fa3f3711c7c72
+VELITH_PARENT 37522e991a32ee3c0ad1a5ff8afe8e3eb1885550
+error: patch fragment without header at line 15: @@ -315,6 +319,10 @@ class VariableCoder:

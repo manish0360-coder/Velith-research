@@ -1,0 +1,17 @@
+Here are the necessary edits to the `_show_versions.py` file to address the issue:
+
+<<<<<<< SEARCH sklearn/utils/_show_versions.py
+        deps_info[modname] = ver
+        except ImportError:
+            deps_info[modname] = None
+
+    return deps_info
+=======
+        except ImportError:
+            deps_info[modname] = None
+
+    deps_info['joblib'] = 'Not Found' if 'joblib' not in deps_info else deps_info['joblib']
+    return deps_info
+>>>>>>> REPLACE
+
+This change ensures that `joblib` is included in the dependencies listed in the `show_versions` function, even if it is not found. If `joblib` is not found, it will be marked as 'Not Found' in the output.

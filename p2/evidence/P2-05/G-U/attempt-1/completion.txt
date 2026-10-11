@@ -1,0 +1,11 @@
+ ```diff
+--- a/sklearn/utils/_show_versions.py
++++ b/sklearn/utils/_show_versions.py
+@@ -37,6 +37,7 @@
+         ("machine", platform.platform()),
+     ]
+ 
++    deps.append("joblib")
+     def get_version(module):
+         return module.__version__
+```

@@ -1,0 +1,13 @@
+{
+  "code": "S_SEARCH_NOT_FOUND",
+  "edited_paths": [],
+  "statuses": [
+    {
+      "index": 0,
+      "matches": 0,
+      "path": "astropy/io/ascii/qdp.py",
+      "status": "S_SEARCH_NOT_FOUND"
+    }
+  ],
+  "synthesized_diff_sha256": null
+}

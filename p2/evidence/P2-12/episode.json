@@ -1,0 +1,77 @@
+{
+  "arm_order": [
+    "S",
+    "U"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "OK",
+      "L3": "GATE_PASS",
+      "L4": "CANDIDATE_FAILED",
+      "applies": true,
+      "classification": "FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "da6ec170c06f60ae40675bfc26091ed0012f07de222e77b880acc853a12b0503",
+        "completion_tokens": 162,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 742.1496356620046,
+        "predicted_prompt_tokens": 12007,
+        "prompt_tokens": 12007,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "03596e1a2cc7914e3d6a2bfd86f85a08b1fae4839b2f2cb03949ceb69932fafb",
+      "reason": "REQUIRED_TESTS_NOT_PASSED",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    },
+    "U": {
+      "L1": "OUTPUT",
+      "L3": "PATCH_DOES_NOT_APPLY",
+      "L4": null,
+      "applies": false,
+      "classification": "PATCH_APPLY_FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "7d4a8c85cefaf4957d57ecd0c52e53b8ab458a22820cd7e204eed5615e252e08",
+        "completion_tokens": 175,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 734.6759627509964,
+        "predicted_prompt_tokens": 12018,
+        "prompt_tokens": 12018,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "39c94080052ab4f2df686bf8633200e9b3f75ada5ca69da2b4f71e2124ba79a4",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    }
+  },
+  "common_identity": "49ab31f6cf56db2ca5cb0f09bf901f49a6a76789d89ff142d001c183c4228132",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.pydata_1776_xarray-7233@sha256:f40e55c21c683a06ba9f1e6d0dda7e83f7561c732e3d7d037e34f591a327d763"
+      ],
+      "linux/amd64",
+      "sha256:f40e55c21c683a06ba9f1e6d0dda7e83f7561c732e3d7d037e34f591a327d763"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "pydata__xarray-7233",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 6816120929198790617,
+  "slot": "P2-12",
+  "utc": "2026-10-10T17:42:58Z"
+}

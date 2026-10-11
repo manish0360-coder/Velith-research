@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "index": 0,
+      "path": "xarray/core/rolling.py",
+      "replace_sha256": "25117b1e9bd0b5793447c2d129d69680db8d02dffbf09286b806acca377e01b8",
+      "search_sha256": "0236f85036c339662fe8604dfffa4f605cf89099442864e36564b285b9b95aa6"
+    }
+  ],
+  "error": "",
+  "parse_code": "OK"
+}

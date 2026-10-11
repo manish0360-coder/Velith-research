@@ -1,0 +1,85 @@
+ ```diff
+--- a/astropy/io/ascii/html.py
++++ b/astropy/io/ascii/html.py
+@@ -129,6 +129,7 @@ class HTML(core.BaseReader):
+         """
+         self.outputter = HTMLOutputter()
+         return super().read(table)
++
+     def write(self, table):
+         """
+         Return data in ``table`` converted to HTML as a list of strings.
+@@ -136,6 +137,7 @@ class HTML(core.BaseReader):
+         # Check that table has only 1-d or 2-d columns. Above that fails.
+         self._check_multidim_table(table)
+ 
++
+         cols = list(table.columns.values())
+ 
+         self.data.header.cols = cols
+@@ -143,6 +145,7 @@ class HTML(core.BaseReader):
+         if isinstance(self.data.fill_values, tuple):
+             self.data.fill_values = [self.data.fill_values]
+ 
++
+         self.data._set_fill_values(cols)
+ 
+         lines = []
+@@ -150,6 +153,7 @@ class HTML(core.BaseReader):
+         # Set HTML escaping to False for any column in the raw_html_cols input
+         raw_html_cols = self.html.get('raw_html_cols', [])
+         if isinstance(raw_html_cols, str):
++            raw_html_cols = [raw_html_cols]  # Allow for a single string as input
+             raw_html_cols = [raw_html_cols]
+         cols_escaped = [col.info.name not in raw_html_cols for col in cols]
+ 
+@@ -157,6 +161,7 @@ class HTML(core.BaseReader):
+         # Use XMLWriter to output HTML to lines
+         w = writer.XMLWriter(ListWriter(lines))
+ 
++
+         with w.tag('html'):
+             with w.tag('head'):
+                 # Declare encoding and set CSS style for table
+@@ -166,6 +171,7 @@ class HTML(core.BaseReader):
+                     pass
+                 if 'cssfiles' in self.html:
+                     for filename in self.html['cssfiles']:
++                        with w.tag('link', rel="stylesheet", href=filename, type='text/css'):
+                             pass
+                 if 'js' in self.html:
+                     with w.xml_cleaning_method('none'):
+@@ -173,6 +179,7 @@ class HTML(core.BaseReader):
+                     pass
+ 
+                 if 'table_class' in self.html:
++                    html_table_class = self.html['table_class']
+                     attrib = {"class": html_table_class}
+                 else:
+                     attrib = {}
+@@ -180,6 +187,7 @@ class HTML(core.BaseReader):
+                     with w.tag('thead'):
+                         with w.tag('tr'):
+                             for col in cols:
++                                if len(col.shape) > 1 and self.html['multicol']:
+                                     # Set colspan attribute for multicolumns
+                                     w.start('th', colspan=col.shape[1])
+                                 else:
+@@ -187,6 +195,7 @@ class HTML(core.BaseReader):
+                                 w.end(indent=False)
+                         col_str_iters = []
+                         new_cols_escaped = []
++                        new_cols = []
+ 
+                         # Make a container to hold any new_col objects created
+                         # below for multicolumn elements.  This is purely to
+@@ -194,11 +203,13 @@ class HTML(core.BaseReader):
+                         # during subsequent iteration to format column values.  This
+                         # requires that the weakref info._parent be maintained.
+                         for col, col_escaped in zip(cols, cols_escaped):
++                            if len(col.shape) > 1 and self.html['multicol']:
++                                span = col.shape[1]
++                                for i in range(span):
++                                    # Split up multicolumns into separate columns
++                                    new_col = Column([el[i] for el in col])
++                                    new_col

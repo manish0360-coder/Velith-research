@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="15" time="1.121" timestamp="2026-10-10T13:13:51.820548" hostname="ab27152212e5"><testcase classname="astropy.modeling.tests.test_separable" name="test_coord_matrix" time="0.002" /><testcase classname="astropy.modeling.tests.test_separable" name="test_cdot" time="0.002" /><testcase classname="astropy.modeling.tests.test_separable" name="test_cstack" time="0.001" /><testcase classname="astropy.modeling.tests.test_separable" name="test_arith_oper" time="0.002" /><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model0-result0]" time="0.001"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model CompoundModel">compound_model = &lt;CompoundModel(offset_1=1., angle_2=2., offset_3=1., offset_4=1., offset_5=2., offset_6=1.)&gt;
+result = (array([False, False,  True]), array([[ True, False],
+       [ True, False],
+       [False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;CompoundModel(offset_1=1., angle_2=2., offset_3=1.)&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model CompoundModel
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model1-result1]" time="0.001"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model CompoundModel">compound_model = &lt;CompoundModel(offset_0=1., offset_1=2., angle_2=2., c0_0_4=0., c1_0_4=0., c0_1_4=0., c0_0_5=0., c1_0_5=0., c2_0_5=0., c0_1_5=0., c0_2_5=0., c1_1_5=0.)&gt;
+result = (array([False, False]), array([[ True,  True],
+       [ True,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;CompoundModel(offset_0=1., offset_1=2., angle_2=2.)&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model CompoundModel
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model2-result2]" time="0.002"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model Mapping">compound_model = &lt;CompoundModel(angle_1=2., factor_2=1.)&gt;
+result = (array([False, False,  True]), array([[ True, False],
+       [ True, False],
+       [False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;Mapping((0, 0, 1), name='map2')&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model Mapping
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model3-result3]" time="0.001"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model CompoundModel">compound_model = &lt;CompoundModel(offset_0=1., offset_1=2., angle_3=2., factor_4=1.)&gt;
+result = (array([False, False,  True]), array([[ True, False],
+       [ True, False],
+       [False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;CompoundModel(offset_0=1., offset_1=2.)&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model CompoundModel
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model4-result4]" time="0.001" /><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model5-result5]" time="0.001"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model Mapping">compound_model = &lt;CompoundModel(c0_0_1=0., c1_0_1=0., c0_1_1=0., offset_2=1.)&gt;
+result = (array([False,  True]), array([[ True, False],
+       [False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;Mapping((0, 0, 1), name='map2')&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model Mapping
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model6-result6]" time="0.001"><failure message="AssertionError: &#10;Not equal to tolerance rtol=1e-07, atol=0&#10;&#10;Mismatched elements: 2 / 4 (50%)&#10; x: array([False, False, False, False])&#10; y: array([False, False,  True,  True])">compound_model = &lt;CompoundModel(angle_0=2., offset_1=1., offset_2=2.)&gt;
+result = (array([False, False,  True,  True]), array([[ True,  True, False, False],
+       [ True,  True, False, False],
+       [False, False,  True, False],
+       [False, False, False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (&lt;function assert_allclose.&lt;locals&gt;.compare at 0x7246396883a0&gt;, array([False, False, False, False]), array([False, False,  True,  True]))
+kwds = {'equal_nan': True, 'err_msg': '', 'header': 'Not equal to tolerance rtol=1e-07, atol=0', 'verbose': True}
+
+    @wraps(func)
+    def inner(*args, **kwds):
+        with self._recreate_cm():
+&gt;           return func(*args, **kwds)
+E           AssertionError: 
+E           Not equal to tolerance rtol=1e-07, atol=0
+E           
+E           Mismatched elements: 2 / 4 (50%)
+E            x: array([False, False, False, False])
+E            y: array([False, False,  True,  True])
+
+/opt/miniconda3/envs/testbed/lib/python3.9/contextlib.py:79: AssertionError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model7-result7]" time="0.001"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model CompoundModel">compound_model = &lt;CompoundModel(angle_0=2., offset_1=1., offset_2=2.)&gt;
+result = (array([False, False,  True,  True]), array([[ True,  True, False, False],
+       [ True,  True, False, False],
+       [False, False,  True, False],
+       [False, False, False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;CompoundModel(angle_0=2., offset_1=1.)&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model CompoundModel
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model8-result8]" time="0.001"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model CompoundModel">compound_model = &lt;CompoundModel(angle_0=2., offset_1=1., offset_2=2.)&gt;
+result = (array([False, False,  True,  True]), array([[ True,  True, False, False],
+       [ True,  True, False, False],
+       [False, False,  True, False],
+       [False, False, False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;CompoundModel(angle_0=2., offset_1=1.)&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model CompoundModel
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_separable[compound_model9-result9]" time="0.002"><failure message="NotImplementedError: The &quot;separable&quot; property is not defined for model CompoundModel">compound_model = &lt;CompoundModel(angle_0=2., offset_1=1., factor_2=1., factor_3=2.)&gt;
+result = (array([False, False,  True,  True,  True]), array([[ True,  True, False, False, False],
+       [ True,  True, False, ... False,  True, False, False],
+       [False, False, False,  True, False],
+       [False, False, False, False,  True]]))
+
+    @pytest.mark.parametrize(('compound_model', 'result'), compound_models.values())
+    def test_separable(compound_model, result):
+&gt;       assert_allclose(is_separable(compound_model), result[0])
+
+astropy/modeling/tests/test_separable.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+astropy/modeling/separable.py:60: in is_separable
+    separable_matrix = _separable(transform)
+astropy/modeling/separable.py:307: in _separable
+    sepleft = _separable(transform.left) if transform.left.separable else np.ones((transform.left.n_outputs, transform.left.n_inputs), dtype=np.bool_)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;CompoundModel(angle_0=2., offset_1=1.)&gt;
+
+    @property
+    def separable(self):
+        """ A flag indicating whether a model is separable."""
+    
+        if self._separable is not None:
+            return self._separable
+&gt;       raise NotImplementedError(
+            'The "separable" property is not defined for '
+            'model {}'.format(self.__class__.__name__))
+E       NotImplementedError: The "separable" property is not defined for model CompoundModel
+
+astropy/modeling/core.py:1537: NotImplementedError</failure></testcase><testcase classname="astropy.modeling.tests.test_separable" name="test_custom_model_separable" time="0.002" /></testsuite></testsuites>

@@ -1,0 +1,6 @@
+<<<<<<< SEARCH astropy/io/ascii/qdp.py
+        if len(command) < 3:
+=======
+        if len(command) < 3:
+            continue
+>>>>>>> REPLACE

@@ -1,0 +1,77 @@
+The issue described is that the `separability_matrix` function does not correctly compute separability for nested CompoundModels. The function should correctly handle the nested structure of CompoundModels and determine if the outputs are independent.
+
+To fix this issue, we need to ensure that the `separability_matrix` function correctly handles nested CompoundModels. Specifically, we need to ensure that the function correctly computes the separability matrix for nested CompoundModels by recursively checking the separability of the nested components.
+
+Here is the fix:
+
+<<<<<<< SEARCH astropy/modeling/separable.py
+def _separable(transform):
+    """
+    Calculate the separability of outputs.
+
+    Parameters
+    ----------
+    transform : `astropy.modeling.Model`
+        A transform (usually a compound model).
+
+    Returns :
+    is_separable : ndarray of dtype np.bool
+        An array of shape (transform.n_outputs,) of boolean type
+        Each element represents the separablity of the corresponding output.
+    """
+    if (transform_matrix := transform._calculate_separability_matrix()) is not NotImplemented:
+        return transform_matrix
+    elif isinstance(transform, CompoundModel):
+        sepleft = _separable(transform.left)
+        sepright = _separable(transform.right)
+        return _operators[transform.op](sepleft, sepright)
+    elif isinstance(transform, Model):
+        return _coord_matrix(transform, 'left', transform.n_outputs)
+
+# Maps modeling operators to a function computing and represents the
+# relationship of axes as an array of 0-es and 1-s
+_operators = {'&': _cstack, '|': _cdot, '+': _arith_oper, '-': _arith_oper,
+              '*': _arith_oper, '/': _arith_oper, '**': _arith_oper}
+=======
+def _separable(transform):
+    """
+    Calculate the separability of outputs.
+
+    Parameters
+    ----------
+    transform : `astropy.modeling.Model`
+        A transform (usually a compound model).
+
+    Returns :
+    is_separable : ndarray of dtype np.bool
+        An array of shape (transform.n_outputs,) of boolean type
+        Each element represents the separablity of the corresponding output.
+    """
+    if (transform_matrix := transform._calculate_separability_matrix()) is not NotImplemented:
+        return transform_matrix
+    elif isinstance(transform, CompoundModel):
+        sepleft = _separable(transform.left)
+        sepright = _separable(transform.right)
+        # Recursively check the separability of the nested components
+        if transform.op == '&':
+            # For '&' operation, the result should be the sum of the separabilities
+            # of the left and right components, but we need to ensure that the result
+            # is not more separable than the individual components.
+            result = np.zeros((sepleft.shape[0] + sepright.shape[0], sepleft.shape[1] + sepright.shape[1]), dtype=bool)
+            result[:sepleft.shape[0], :sepleft.shape[1]] = sepleft
+            result[sepleft.shape[0]:, sepleft.shape[1]:] = sepright
+            return result
+        elif transform.op == '|':
+            # For '|' operation, the result should be the element-wise OR of the separabilities
+            result = np.zeros((sepleft.shape[0], sepleft.shape[1]), dtype=bool)
+            result[:sepleft.shape[0], :sepleft.shape[1]] |= sepleft
+            result[sepleft.shape[0]:, sepleft.shape[1]:] |= sepright
+            return result
+    elif isinstance(transform, Model):
+        return _coord_matrix(transform, 'left', transform.n_outputs)
+
+# Maps modeling operators to a function computing and represents the
+# relationship of axes as an array of 0-es and 1-s
+_operators = {'&': _cstack, '|': _cdot, '+': _arith_oper, '-': _arith_oper,
+              '*': _arith_oper, '/': _arith_oper, '**': _arith_oper}
+>>>>>>> REPLACE

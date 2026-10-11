@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="20" skipped="0" tests="22" time="1.979" timestamp="2026-10-10T13:50:05.921990" hostname="7878e7fd0aab"><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest[42]" time="0.002"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">global_random_seed = 42
+
+    def test_iforest(global_random_seed):
+        """Check Isolation Forest for various parameter settings."""
+        X_train = np.array([[0, 1], [1, 2]])
+        X_test = np.array([[2, 1], [1, 1]])
+    
+        grid = ParameterGrid(
+            {"n_estimators": [3], "max_samples": [0.5, 1.0, 3], "bootstrap": [True, False]}
+        )
+    
+        with ignore_warnings():
+            for params in grid:
+&gt;               IsolationForest(random_state=global_random_seed, **params).fit(
+                    X_train
+                ).predict(X_test)
+
+sklearn/ensemble/tests/test_iforest.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:373: in predict
+    decision_func = self.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(bootstrap=True, max_samples=0.5, n_estimators=3,
+                random_state=42)
+X = array([[2., 1.],
+       [1., 1.]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_sparse[42]" time="0.003"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">global_random_seed = 42
+
+    def test_iforest_sparse(global_random_seed):
+        """Check IForest for various parameter settings on sparse input."""
+        rng = check_random_state(global_random_seed)
+        X_train, X_test = train_test_split(diabetes.data[:50], random_state=rng)
+        grid = ParameterGrid({"max_samples": [0.5, 1.0], "bootstrap": [True, False]})
+    
+        for sparse_format in [csc_matrix, csr_matrix]:
+            X_train_sparse = sparse_format(X_train)
+            X_test_sparse = sparse_format(X_test)
+    
+            for params in grid:
+                # Trained on sparse format
+                sparse_classifier = IsolationForest(
+                    n_estimators=10, random_state=global_random_seed, **params
+                ).fit(X_train_sparse)
+&gt;               sparse_results = sparse_classifier.predict(X_test_sparse)
+
+sklearn/ensemble/tests/test_iforest.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:373: in predict
+    decision_func = self.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(bootstrap=True, max_samples=0.5, n_estimators=10,
+                random_state=42)
+X = &lt;13x10 sparse matrix of type '&lt;class 'numpy.float32'&gt;'
+	with 130 stored elements in Compressed Sparse Row format&gt;
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_error" time="0.001"><failure message="Failed: DID NOT WARN. No warnings of type (&lt;class 'UserWarning'&gt;,) were emitted.&#10;The list of emitted warnings is: [].">def test_iforest_error():
+        """Test that it gives proper exception on deficient input."""
+        X = iris.data
+    
+        # The dataset has less than 256 samples, explicitly setting
+        # max_samples &gt; n_samples should result in a warning. If not set
+        # explicitly there should be no warning
+        warn_msg = "max_samples will be set to n_samples for estimation"
+        with pytest.warns(UserWarning, match=warn_msg):
+&gt;           IsolationForest(max_samples=1000).fit(X)
+E           Failed: DID NOT WARN. No warnings of type (&lt;class 'UserWarning'&gt;,) were emitted.
+E           The list of emitted warnings is: [].
+
+sklearn/ensemble/tests/test_iforest.py:87: Failed</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_recalculate_max_depth" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute 'estimators_'">def test_recalculate_max_depth():
+        """Check max_depth recalculation when max_samples is reset to n_samples"""
+        X = iris.data
+        clf = IsolationForest().fit(X)
+&gt;       for est in clf.estimators_:
+E       AttributeError: 'IsolationForest' object has no attribute 'estimators_'
+
+sklearn/ensemble/tests/test_iforest.py:104: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_max_samples_attribute" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute 'max_samples_'">def test_max_samples_attribute():
+        X = iris.data
+        clf = IsolationForest().fit(X)
+&gt;       assert clf.max_samples_ == X.shape[0]
+E       AttributeError: 'IsolationForest' object has no attribute 'max_samples_'
+
+sklearn/ensemble/tests/test_iforest.py:111: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_parallel_regression[42]" time="0.002"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">global_random_seed = 42
+
+    def test_iforest_parallel_regression(global_random_seed):
+        """Check parallel regression."""
+        rng = check_random_state(global_random_seed)
+    
+        X_train, X_test = train_test_split(diabetes.data, random_state=rng)
+    
+        ensemble = IsolationForest(n_jobs=3, random_state=global_random_seed).fit(X_train)
+    
+        ensemble.set_params(n_jobs=1)
+&gt;       y1 = ensemble.predict(X_test)
+
+sklearn/ensemble/tests/test_iforest.py:132: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:373: in predict
+    decision_func = self.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(n_jobs=1, random_state=42)
+X = array([[ 0.04534099, -0.04464164, -0.00620595, ...,  0.03430886,
+         0.03243233, -0.0052198 ],
+       [ 0.0925639...4],
+       [ 0.06713621,  0.05068012, -0.03638469, ...,  0.03430886,
+         0.00114758,  0.03205916]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_performance[42]" time="0.002"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">global_random_seed = 42
+
+    def test_iforest_performance(global_random_seed):
+        """Test Isolation Forest performs well"""
+    
+        # Generate train/test data
+        rng = check_random_state(global_random_seed)
+        X = 0.3 * rng.randn(600, 2)
+        X = rng.permutation(np.vstack((X + 2, X - 2)))
+        X_train = X[:1000]
+    
+        # Generate some abnormal novel observations
+        X_outliers = rng.uniform(low=-1, high=1, size=(200, 2))
+        X_test = np.vstack((X[1000:], X_outliers))
+        y_test = np.array([0] * 200 + [1] * 200)
+    
+        # fit the model
+        clf = IsolationForest(max_samples=100, random_state=rng).fit(X_train)
+    
+        # predict scores (the lower, the more normal)
+&gt;       y_pred = -clf.decision_function(X_test)
+
+sklearn/ensemble/tests/test_iforest.py:161: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(max_samples=100,
+                random_state=RandomState(MT19937) at 0x7398611B5940)
+X = array([[-2.53361607e+00, -1.55118668e+00],
+       [ 2.28901291e+00,  2.12383437e+00],
+       [-1.65521801e+00, -2.2109...-1.94471210e-01],
+       [ 7.89285600e-01, -9.99114454e-01],
+       [ 8.02766204e-01, -6.92385972e-01]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_works[42-0.25]" time="0.002"><failure message="ValueError: invalid literal for int() with base 10: 'autoautoautoautoautoautoautoauto'">contamination = 0.25, global_random_seed = 42
+
+    @pytest.mark.parametrize("contamination", [0.25, "auto"])
+    def test_iforest_works(contamination, global_random_seed):
+        # toy sample (the last two samples are outliers)
+        X = [[-2, -1], [-1, -1], [-1, -2], [1, 1], [1, 2], [2, 1], [7, 4], [-5, 9]]
+    
+        # Test IsolationForest
+        clf = IsolationForest(random_state=global_random_seed, contamination=contamination)
+&gt;       clf.fit(X)
+
+sklearn/ensemble/tests/test_iforest.py:174: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(contamination=0.25, random_state=42)
+X = array([[-2., -1.],
+       [-1., -1.],
+       [-1., -2.],
+       [ 1.,  1.],
+       [ 1.,  2.],
+       [ 2.,  1.],
+       [ 7.,  4.],
+       [-5.,  9.]], dtype=float32)
+y = array([0.37454012, 0.95071431, 0.73199394, 0.59865848, 0.15601864,
+       0.15599452, 0.05808361, 0.86617615])
+sample_weight = None
+
+    def fit(self, X, y=None, sample_weight=None):
+        """
+        Fit estimator.
+    
+        Parameters
+        ----------
+        X : {array-like, sparse matrix} of shape (n_samples, n_features)
+            The input samples. Use ``dtype=np.float32`` for maximum
+            efficiency. Sparse matrices are also supported, use sparse
+            ``csc_matrix`` for maximum efficiency.
+    
+        y : Ignored
+            Not used, present for API consistency by convention.
+    
+        sample_weight : array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+    
+        Returns
+        -------
+        self : object
+            Fitted estimator.
+        """
+        self._validate_params()
+        X = self._validate_data(X, accept_sparse=["csc"], dtype=tree_dtype)
+        if issparse(X):
+            # Pre-sort indices to avoid that each individual tree of the
+            # ensemble sorts the indices.
+            X.sort_indices()
+    
+        rnd = check_random_state(self.random_state)
+        y = rnd.uniform(size=X.shape[0])
+    
+        # ensure that max_sample is in [1, n_samples]:
+        n_samples = X.shape[0]
+    
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+        if self.contamination == "auto":
+            self.offset_ = -0.5
+            return self
+    
+        elif isinstance(self.max_samples, numbers.Integral):
+            if self.max_samples &gt; n_samples:
+                warn(
+                    "max_samples (%s) is greater than the "
+                    "total number of samples (%s). max_samples "
+                    "will be set to n_samples for estimation."
+                    % (self.max_samples, n_samples)
+                )
+                max_samples = n_samples
+            else:
+                max_samples = self.max_samples
+        else:  # max_samples is float
+&gt;           max_samples = int(self.max_samples * X.shape[0])
+E           ValueError: invalid literal for int() with base 10: 'autoautoautoautoautoautoautoauto'
+
+sklearn/ensemble/_iforest.py:321: ValueError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_works[42-auto]" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">contamination = 'auto', global_random_seed = 42
+
+    @pytest.mark.parametrize("contamination", [0.25, "auto"])
+    def test_iforest_works(contamination, global_random_seed):
+        # toy sample (the last two samples are outliers)
+        X = [[-2, -1], [-1, -1], [-1, -2], [1, 1], [1, 2], [2, 1], [7, 4], [-5, 9]]
+    
+        # Test IsolationForest
+        clf = IsolationForest(random_state=global_random_seed, contamination=contamination)
+        clf.fit(X)
+&gt;       decision_func = -clf.decision_function(X)
+
+sklearn/ensemble/tests/test_iforest.py:175: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(random_state=42)
+X = array([[-2., -1.],
+       [-1., -1.],
+       [-1., -2.],
+       [ 1.,  1.],
+       [ 1.,  2.],
+       [ 2.,  1.],
+       [ 7.,  4.],
+       [-5.,  9.]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_max_samples_consistency" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute 'max_samples_'">def test_max_samples_consistency():
+        # Make sure validated max_samples in iforest and BaseBagging are identical
+        X = iris.data
+        clf = IsolationForest().fit(X)
+&gt;       assert clf.max_samples_ == clf._max_samples
+E       AttributeError: 'IsolationForest' object has no attribute 'max_samples_'
+
+sklearn/ensemble/tests/test_iforest.py:186: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_subsampled_features" time="0.002"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">def test_iforest_subsampled_features():
+        # It tests non-regression for #5732 which failed at predict.
+        rng = check_random_state(0)
+        X_train, X_test, y_train, y_test = train_test_split(
+            diabetes.data[:50], diabetes.target[:50], random_state=rng
+        )
+        clf = IsolationForest(max_features=0.8)
+        clf.fit(X_train, y_train)
+&gt;       clf.predict(X_test)
+
+sklearn/ensemble/tests/test_iforest.py:197: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:373: in predict
+    decision_func = self.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(max_features=0.8)
+X = array([[ 0.05260606, -0.04464164, -0.02129532, -0.07452744, -0.04009564,
+        -0.0376391 , -0.00658447, -0.03949338....02632753, -0.08962994,
+        -0.09619786,  0.02655027, -0.07639451, -0.04257086, -0.0052198 ]],
+      dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_average_path_length" time="0.002" /><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_score_samples" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: 'autoautoauto'">def test_score_samples():
+        X_train = [[1, 1], [1, 2], [2, 1]]
+&gt;       clf1 = IsolationForest(contamination=0.1).fit(X_train)
+
+sklearn/ensemble/tests/test_iforest.py:222: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(contamination=0.1)
+X = array([[1., 1.],
+       [1., 2.],
+       [2., 1.]], dtype=float32)
+y = array([0.39741898, 0.00706375, 0.97791942]), sample_weight = None
+
+    def fit(self, X, y=None, sample_weight=None):
+        """
+        Fit estimator.
+    
+        Parameters
+        ----------
+        X : {array-like, sparse matrix} of shape (n_samples, n_features)
+            The input samples. Use ``dtype=np.float32`` for maximum
+            efficiency. Sparse matrices are also supported, use sparse
+            ``csc_matrix`` for maximum efficiency.
+    
+        y : Ignored
+            Not used, present for API consistency by convention.
+    
+        sample_weight : array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+    
+        Returns
+        -------
+        self : object
+            Fitted estimator.
+        """
+        self._validate_params()
+        X = self._validate_data(X, accept_sparse=["csc"], dtype=tree_dtype)
+        if issparse(X):
+            # Pre-sort indices to avoid that each individual tree of the
+            # ensemble sorts the indices.
+            X.sort_indices()
+    
+        rnd = check_random_state(self.random_state)
+        y = rnd.uniform(size=X.shape[0])
+    
+        # ensure that max_sample is in [1, n_samples]:
+        n_samples = X.shape[0]
+    
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+        if self.contamination == "auto":
+            self.offset_ = -0.5
+            return self
+    
+        elif isinstance(self.max_samples, numbers.Integral):
+            if self.max_samples &gt; n_samples:
+                warn(
+                    "max_samples (%s) is greater than the "
+                    "total number of samples (%s). max_samples "
+                    "will be set to n_samples for estimation."
+                    % (self.max_samples, n_samples)
+                )
+                max_samples = n_samples
+            else:
+                max_samples = self.max_samples
+        else:  # max_samples is float
+&gt;           max_samples = int(self.max_samples * X.shape[0])
+E           ValueError: invalid literal for int() with base 10: 'autoautoauto'
+
+sklearn/ensemble/_iforest.py:321: ValueError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_warm_start" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute 'estimators_'">def test_iforest_warm_start():
+        """Test iterative addition of iTrees to an iForest"""
+    
+        rng = check_random_state(0)
+        X = rng.randn(20, 2)
+    
+        # fit first 10 trees
+        clf = IsolationForest(
+            n_estimators=10, max_samples=20, random_state=rng, warm_start=True
+        )
+        clf.fit(X)
+        # remember the 1st tree
+&gt;       tree_1 = clf.estimators_[0]
+E       AttributeError: 'IsolationForest' object has no attribute 'estimators_'
+
+sklearn/ensemble/tests/test_iforest.py:249: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_chunks_works1[42-0.25-3]" time="0.002"><failure message="ValueError: invalid literal for int() with base 10: 'autoautoautoautoautoautoautoauto'">mocked_get_chunk = &lt;MagicMock name='get_chunk_n_rows' id='127096004578608'&gt;
+contamination = 0.25, n_predict_calls = 3, global_random_seed = 42
+
+    @patch(
+        "sklearn.ensemble._iforest.get_chunk_n_rows",
+        side_effect=Mock(**{"return_value": 3}),
+    )
+    @pytest.mark.parametrize("contamination, n_predict_calls", [(0.25, 3), ("auto", 2)])
+    def test_iforest_chunks_works1(
+        mocked_get_chunk, contamination, n_predict_calls, global_random_seed
+    ):
+&gt;       test_iforest_works(contamination, global_random_seed)
+
+sklearn/ensemble/tests/test_iforest.py:268: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/tests/test_iforest.py:174: in test_iforest_works
+    clf.fit(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(contamination=0.25, random_state=42)
+X = array([[-2., -1.],
+       [-1., -1.],
+       [-1., -2.],
+       [ 1.,  1.],
+       [ 1.,  2.],
+       [ 2.,  1.],
+       [ 7.,  4.],
+       [-5.,  9.]], dtype=float32)
+y = array([0.37454012, 0.95071431, 0.73199394, 0.59865848, 0.15601864,
+       0.15599452, 0.05808361, 0.86617615])
+sample_weight = None
+
+    def fit(self, X, y=None, sample_weight=None):
+        """
+        Fit estimator.
+    
+        Parameters
+        ----------
+        X : {array-like, sparse matrix} of shape (n_samples, n_features)
+            The input samples. Use ``dtype=np.float32`` for maximum
+            efficiency. Sparse matrices are also supported, use sparse
+            ``csc_matrix`` for maximum efficiency.
+    
+        y : Ignored
+            Not used, present for API consistency by convention.
+    
+        sample_weight : array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+    
+        Returns
+        -------
+        self : object
+            Fitted estimator.
+        """
+        self._validate_params()
+        X = self._validate_data(X, accept_sparse=["csc"], dtype=tree_dtype)
+        if issparse(X):
+            # Pre-sort indices to avoid that each individual tree of the
+            # ensemble sorts the indices.
+            X.sort_indices()
+    
+        rnd = check_random_state(self.random_state)
+        y = rnd.uniform(size=X.shape[0])
+    
+        # ensure that max_sample is in [1, n_samples]:
+        n_samples = X.shape[0]
+    
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+        if self.contamination == "auto":
+            self.offset_ = -0.5
+            return self
+    
+        elif isinstance(self.max_samples, numbers.Integral):
+            if self.max_samples &gt; n_samples:
+                warn(
+                    "max_samples (%s) is greater than the "
+                    "total number of samples (%s). max_samples "
+                    "will be set to n_samples for estimation."
+                    % (self.max_samples, n_samples)
+                )
+                max_samples = n_samples
+            else:
+                max_samples = self.max_samples
+        else:  # max_samples is float
+&gt;           max_samples = int(self.max_samples * X.shape[0])
+E           ValueError: invalid literal for int() with base 10: 'autoautoautoautoautoautoautoauto'
+
+sklearn/ensemble/_iforest.py:321: ValueError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_chunks_works1[42-auto-2]" time="0.002"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">mocked_get_chunk = &lt;MagicMock name='get_chunk_n_rows' id='127096000844176'&gt;
+contamination = 'auto', n_predict_calls = 2, global_random_seed = 42
+
+    @patch(
+        "sklearn.ensemble._iforest.get_chunk_n_rows",
+        side_effect=Mock(**{"return_value": 3}),
+    )
+    @pytest.mark.parametrize("contamination, n_predict_calls", [(0.25, 3), ("auto", 2)])
+    def test_iforest_chunks_works1(
+        mocked_get_chunk, contamination, n_predict_calls, global_random_seed
+    ):
+&gt;       test_iforest_works(contamination, global_random_seed)
+
+sklearn/ensemble/tests/test_iforest.py:268: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/tests/test_iforest.py:175: in test_iforest_works
+    decision_func = -clf.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(random_state=42)
+X = array([[-2., -1.],
+       [-1., -1.],
+       [-1., -2.],
+       [ 1.,  1.],
+       [ 1.,  2.],
+       [ 2.,  1.],
+       [ 7.,  4.],
+       [-5.,  9.]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_chunks_works2[42-0.25-3]" time="0.002"><failure message="ValueError: invalid literal for int() with base 10: 'autoautoautoautoautoautoautoauto'">mocked_get_chunk = &lt;MagicMock name='get_chunk_n_rows' id='127096004644000'&gt;
+contamination = 0.25, n_predict_calls = 3, global_random_seed = 42
+
+    @patch(
+        "sklearn.ensemble._iforest.get_chunk_n_rows",
+        side_effect=Mock(**{"return_value": 10}),
+    )
+    @pytest.mark.parametrize("contamination, n_predict_calls", [(0.25, 3), ("auto", 2)])
+    def test_iforest_chunks_works2(
+        mocked_get_chunk, contamination, n_predict_calls, global_random_seed
+    ):
+&gt;       test_iforest_works(contamination, global_random_seed)
+
+sklearn/ensemble/tests/test_iforest.py:281: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/tests/test_iforest.py:174: in test_iforest_works
+    clf.fit(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(contamination=0.25, random_state=42)
+X = array([[-2., -1.],
+       [-1., -1.],
+       [-1., -2.],
+       [ 1.,  1.],
+       [ 1.,  2.],
+       [ 2.,  1.],
+       [ 7.,  4.],
+       [-5.,  9.]], dtype=float32)
+y = array([0.37454012, 0.95071431, 0.73199394, 0.59865848, 0.15601864,
+       0.15599452, 0.05808361, 0.86617615])
+sample_weight = None
+
+    def fit(self, X, y=None, sample_weight=None):
+        """
+        Fit estimator.
+    
+        Parameters
+        ----------
+        X : {array-like, sparse matrix} of shape (n_samples, n_features)
+            The input samples. Use ``dtype=np.float32`` for maximum
+            efficiency. Sparse matrices are also supported, use sparse
+            ``csc_matrix`` for maximum efficiency.
+    
+        y : Ignored
+            Not used, present for API consistency by convention.
+    
+        sample_weight : array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+    
+        Returns
+        -------
+        self : object
+            Fitted estimator.
+        """
+        self._validate_params()
+        X = self._validate_data(X, accept_sparse=["csc"], dtype=tree_dtype)
+        if issparse(X):
+            # Pre-sort indices to avoid that each individual tree of the
+            # ensemble sorts the indices.
+            X.sort_indices()
+    
+        rnd = check_random_state(self.random_state)
+        y = rnd.uniform(size=X.shape[0])
+    
+        # ensure that max_sample is in [1, n_samples]:
+        n_samples = X.shape[0]
+    
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+        if self.contamination == "auto":
+            self.offset_ = -0.5
+            return self
+    
+        elif isinstance(self.max_samples, numbers.Integral):
+            if self.max_samples &gt; n_samples:
+                warn(
+                    "max_samples (%s) is greater than the "
+                    "total number of samples (%s). max_samples "
+                    "will be set to n_samples for estimation."
+                    % (self.max_samples, n_samples)
+                )
+                max_samples = n_samples
+            else:
+                max_samples = self.max_samples
+        else:  # max_samples is float
+&gt;           max_samples = int(self.max_samples * X.shape[0])
+E           ValueError: invalid literal for int() with base 10: 'autoautoautoautoautoautoautoauto'
+
+sklearn/ensemble/_iforest.py:321: ValueError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_chunks_works2[42-auto-2]" time="0.002"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">mocked_get_chunk = &lt;MagicMock name='get_chunk_n_rows' id='127096000706976'&gt;
+contamination = 'auto', n_predict_calls = 2, global_random_seed = 42
+
+    @patch(
+        "sklearn.ensemble._iforest.get_chunk_n_rows",
+        side_effect=Mock(**{"return_value": 10}),
+    )
+    @pytest.mark.parametrize("contamination, n_predict_calls", [(0.25, 3), ("auto", 2)])
+    def test_iforest_chunks_works2(
+        mocked_get_chunk, contamination, n_predict_calls, global_random_seed
+    ):
+&gt;       test_iforest_works(contamination, global_random_seed)
+
+sklearn/ensemble/tests/test_iforest.py:281: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/tests/test_iforest.py:175: in test_iforest_works
+    decision_func = -clf.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(random_state=42)
+X = array([[-2., -1.],
+       [-1., -1.],
+       [-1., -2.],
+       [ 1.,  1.],
+       [ 1.,  2.],
+       [ 2.,  1.],
+       [ 7.,  4.],
+       [-5.,  9.]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_with_uniform_data" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute '_max_features'">def test_iforest_with_uniform_data():
+        """Test whether iforest predicts inliers when using uniform data"""
+    
+        # 2-d array of all 1s
+        X = np.ones((100, 10))
+        iforest = IsolationForest()
+        iforest.fit(X)
+    
+        rng = np.random.RandomState(0)
+    
+&gt;       assert all(iforest.predict(X) == 1)
+
+sklearn/ensemble/tests/test_iforest.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/ensemble/_iforest.py:373: in predict
+    decision_func = self.decision_function(X)
+sklearn/ensemble/_iforest.py:408: in decision_function
+    return self.score_samples(X) - self.offset_
+sklearn/ensemble/_iforest.py:443: in score_samples
+    return -self._compute_chunked_score_samples(X)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest()
+X = array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       [1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       [1., 1., 1., ... 1.],
+       [1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       [1., 1., 1., 1., 1., 1., 1., 1., 1., 1.]], dtype=float32)
+
+    def _compute_chunked_score_samples(self, X):
+        n_samples = _num_samples(X)
+    
+&gt;       if self._max_features == X.shape[1]:
+E       AttributeError: 'IsolationForest' object has no attribute '_max_features'
+
+sklearn/ensemble/_iforest.py:448: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_with_n_jobs_does_not_segfault" time="1.064" /><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_base_estimator_property_deprecated" time="0.001"><failure message="AttributeError: 'IsolationForest' object has no attribute 'estimator_'">def test_base_estimator_property_deprecated():
+        X = np.array([[1, 2], [3, 4]])
+        y = np.array([1, 0])
+        model = IsolationForest()
+        model.fit(X, y)
+    
+        warn_msg = (
+            "Attribute `base_estimator_` was deprecated in version 1.2 and "
+            "will be removed in 1.4. Use `estimator_` instead."
+        )
+        with pytest.warns(FutureWarning, match=warn_msg):
+&gt;           model.base_estimator_
+
+sklearn/ensemble/tests/test_iforest.py:341: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+sklearn/utils/deprecation.py:103: in wrapped
+    return prop.fget(*args, **kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest()
+
+    @deprecated(  # type: ignore
+        "Attribute `base_estimator_` was deprecated in version 1.2 and will be removed "
+        "in 1.4. Use `estimator_` instead."
+    )
+    @property
+    def base_estimator_(self):
+        """Estimator used to grow the ensemble."""
+&gt;       return self.estimator_
+E       AttributeError: 'IsolationForest' object has no attribute 'estimator_'
+
+sklearn/ensemble/_base.py:184: AttributeError</failure></testcase><testcase classname="sklearn.ensemble.tests.test_iforest" name="test_iforest_preserve_feature_names" time="0.232"><failure message="ValueError: invalid literal for int() with base 10: 'autoautoautoauto'">def test_iforest_preserve_feature_names():
+        """Check that feature names are preserved when contamination is not "auto".
+    
+        Feature names are required for consistency checks during scoring.
+    
+        Non-regression test for Issue #25844
+        """
+        pd = pytest.importorskip("pandas")
+        rng = np.random.RandomState(0)
+    
+        X = pd.DataFrame(data=rng.randn(4), columns=["a"])
+        model = IsolationForest(random_state=0, contamination=0.05)
+    
+        with warnings.catch_warnings():
+            warnings.simplefilter("error", UserWarning)
+&gt;           model.fit(X)
+
+sklearn/ensemble/tests/test_iforest.py:359: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = IsolationForest(contamination=0.05, random_state=0)
+X = array([[1.7640524],
+       [0.4001572],
+       [0.978738 ],
+       [2.2408931]], dtype=float32)
+y = array([0.5488135 , 0.71518937, 0.60276338, 0.54488318])
+sample_weight = None
+
+    def fit(self, X, y=None, sample_weight=None):
+        """
+        Fit estimator.
+    
+        Parameters
+        ----------
+        X : {array-like, sparse matrix} of shape (n_samples, n_features)
+            The input samples. Use ``dtype=np.float32`` for maximum
+            efficiency. Sparse matrices are also supported, use sparse
+            ``csc_matrix`` for maximum efficiency.
+    
+        y : Ignored
+            Not used, present for API consistency by convention.
+    
+        sample_weight : array-like of shape (n_samples,), default=None
+            Sample weights. If None, then samples are equally weighted.
+    
+        Returns
+        -------
+        self : object
+            Fitted estimator.
+        """
+        self._validate_params()
+        X = self._validate_data(X, accept_sparse=["csc"], dtype=tree_dtype)
+        if issparse(X):
+            # Pre-sort indices to avoid that each individual tree of the
+            # ensemble sorts the indices.
+            X.sort_indices()
+    
+        rnd = check_random_state(self.random_state)
+        y = rnd.uniform(size=X.shape[0])
+    
+        # ensure that max_sample is in [1, n_samples]:
+        n_samples = X.shape[0]
+    
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+        if self.contamination == "auto":
+            self.offset_ = -0.5
+            return self
+    
+        elif isinstance(self.max_samples, numbers.Integral):
+            if self.max_samples &gt; n_samples:
+                warn(
+                    "max_samples (%s) is greater than the "
+                    "total number of samples (%s). max_samples "
+                    "will be set to n_samples for estimation."
+                    % (self.max_samples, n_samples)
+                )
+                max_samples = n_samples
+            else:
+                max_samples = self.max_samples
+        else:  # max_samples is float
+&gt;           max_samples = int(self.max_samples * X.shape[0])
+E           ValueError: invalid literal for int() with base 10: 'autoautoautoauto'
+
+sklearn/ensemble/_iforest.py:321: ValueError</failure></testcase></testsuite></testsuites>

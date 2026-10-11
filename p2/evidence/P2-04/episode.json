@@ -1,0 +1,72 @@
+{
+  "arm_order": [
+    "U",
+    "S"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "S_MALFORMED_BLOCK",
+      "applies": false,
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "0beef44220b30ee4b5e12cdfa0d785560aa9b52e0719f1c7d56df195f4f2afd4",
+        "completion_tokens": 1024,
+        "context": "CONFIRMED",
+        "flags": [
+          "GEN_TRUNCATED"
+        ],
+        "gen_ok": true,
+        "latency_seconds": 280.79179577000104,
+        "predicted_prompt_tokens": 5029,
+        "prompt_tokens": 5029,
+        "status": "GENERATED"
+      },
+      "verified_pass": false
+    },
+    "U": {
+      "L1": "OUTPUT",
+      "L3": "MALFORMED_PATCH",
+      "L4": null,
+      "applies": false,
+      "classification": "PATCH_APPLY_FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "f97861dcc0a027849ab277d2d3c4c1ecda64bd39b45fd5aeb74bed4f215fce02",
+        "completion_tokens": 571,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 239.88230754600227,
+        "predicted_prompt_tokens": 5040,
+        "prompt_tokens": 5040,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "10b19880ff11cf403f3c20cfb9a46cf0682bc8d310a3a7f3cb93515c68ae04c9",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    }
+  },
+  "common_identity": "eb61ac8d19c96bf29b99eb64a435291b291e732a0c08c1e47196a79054f2aea0",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.pydata_1776_xarray-4966@sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5"
+      ],
+      "linux/amd64",
+      "sha256:445adac04fe8ac03a165c2e91adc1cfb3f41c20bdfa977ca195698c23d1876e5"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "pydata__xarray-4966",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 4592685715104005282,
+  "slot": "P2-04",
+  "utc": "2026-10-10T14:12:19Z"
+}

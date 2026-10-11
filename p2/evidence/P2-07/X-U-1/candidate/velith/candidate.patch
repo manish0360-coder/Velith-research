@@ -1,0 +1,11 @@
+--- a/sklearn/cluster/optics_.py
++++ b/sklearn/cluster/optics_.py
+@@ -448,7 +448,7 @@
+         if min_samples <= 1:
+             min_samples = max(2, min_samples * n_samples)           # Still a float
+         # Start all points as 'unprocessed' ##
+-        reachability_ = np.empty(n_samples)
++        reachability_ = np.full(n_samples, np.inf)
+         reachability_.fill(np.inf)
+         predecessor_ = np.empty(n_samples, dtype=int)
+         predecessor_.fill(-1)

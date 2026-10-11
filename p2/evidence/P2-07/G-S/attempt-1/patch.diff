@@ -1,0 +1,7 @@
+<<<<<<< SEARCH sklearn/cluster/optics_.py
+    if min_samples <= 1:
+        min_samples = max(2, min_samples * n_samples)           # Still a float
+=======
+    if min_samples <= 1:
+        min_samples = int(round(max(2, min_samples * n_samples)))        # round to get the closest integer
+>>>>>>> REPLACE

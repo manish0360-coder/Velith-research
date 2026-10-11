@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "index": 0,
+      "path": "astropy/io/ascii/qdp.py",
+      "replace_sha256": "675b9456b1448a0938269f66855d2aa613b5b425399797d663ac15f7b5b59c69",
+      "search_sha256": "971f6c27c1a9c1ea3cc86732607e90b06548a143ee08429cba23a19ef423bc95"
+    }
+  ],
+  "error": "",
+  "parse_code": "OK"
+}

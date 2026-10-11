@@ -1,0 +1,12 @@
+ ```python
+<<<<<<< SEARCH sklearn/ensemble/_iforest.py
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+=======
+        if isinstance(self.max_samples, str) and self.max_samples == "auto":
+            max_samples = min(256, n_samples)
+        if self.contamination == "auto":
+            self.offset_ = -0.5
+            return self
+>>>>>>> REPLACE
+```

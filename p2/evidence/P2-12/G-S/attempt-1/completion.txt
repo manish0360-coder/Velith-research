@@ -1,0 +1,19 @@
+ ```python
+<<<<<<< SEARCH xarray/core/rolling.py
+        if keep_attrs:
+            result.attrs = self.obj.attrs
+        return result
+
+    _mean.__doc__ = _ROLLING_REDUCE_DOCSTRING_TEMPLATE.format(name="mean")
+=======
+        if keep_attrs is True:
+            result.attrs = self.obj.attrs
+        elif keep_attrs is False:
+            result.attrs = {}
+        else:
+            result.attrs = _get_keep_attrs(default=True)
+        return result
+
+    _mean.__doc__ = _ROLLING_REDUCE_DOCSTRING_TEMPLATE.format(name="mean")
+>>>>>>> REPLACE
+```

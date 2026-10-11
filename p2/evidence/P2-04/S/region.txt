@@ -1,0 +1,120 @@
+To fix the issue of handling signed bytes from OPeNDAP via pydap, we need to ensure that the `_Unsigned` attribute is handled symmetrically in the `UnsignedIntegerCoder` class. Specifically, we should check if the data type is of the integer kind and if the `_Unsigned` attribute is set to `True` or `False`.
+
+Here are the changes to be made in the `xarray/coding/variables.py` file:
+
+```python
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/variables.py
+=======
+<<<<<<< SEARCH xarray/coding/

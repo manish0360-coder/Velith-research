@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "index": 0,
+      "path": "sklearn/cluster/optics_.py",
+      "replace_sha256": "fc094ec1d28f5febfac6a256ba4e48cee0d60d2d3bc654c328e93894689e0d4d",
+      "search_sha256": "e4c6b189d88b6fc3a950ea865bab22c6f88c47016487df75d9306b28f8b3c8c0"
+    }
+  ],
+  "error": "",
+  "parse_code": "OK"
+}

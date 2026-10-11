@@ -1,0 +1,67 @@
+{
+  "arm_order": [
+    "S",
+    "U"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "S_MALFORMED_BLOCK",
+      "applies": false,
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "76766ef2ef4f5b34e29d42a749d0f52bd64c4d3ef750fa7091b7aae8b187a327",
+        "completion_tokens": 1024,
+        "context": "CONFIRMED",
+        "flags": [
+          "GEN_TRUNCATED"
+        ],
+        "gen_ok": true,
+        "latency_seconds": 673.2699664739994,
+        "predicted_prompt_tokens": 7464,
+        "prompt_tokens": 7464,
+        "status": "GENERATED"
+      },
+      "verified_pass": false
+    },
+    "U": {
+      "L1": "NO_OUTPUT",
+      "applies": false,
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "e8016b302c73cac0c25bfaed542c612a2b2fd06457ee56ff669e11c0f56be94c",
+        "completion_tokens": 1024,
+        "context": "CONFIRMED",
+        "flags": [
+          "GEN_TRUNCATED"
+        ],
+        "gen_ok": true,
+        "latency_seconds": 673.3456495240025,
+        "predicted_prompt_tokens": 7475,
+        "prompt_tokens": 7475,
+        "status": "GENERATED"
+      },
+      "verified_pass": false
+    }
+  },
+  "common_identity": "19be24b06221af4e5362d7a911556f1a734fe7b668fb46bfd598118754743dbb",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13453@sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7"
+      ],
+      "linux/amd64",
+      "sha256:7f4879060f51b675aa1d01cc7a543bce8cbe48cff0e2a3f55b43057b0b6b9bc7"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "astropy__astropy-13453",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 4811619940773664831,
+  "slot": "P2-10",
+  "utc": "2026-10-10T16:02:57Z"
+}

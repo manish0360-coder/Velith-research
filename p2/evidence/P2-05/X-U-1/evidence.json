@@ -1,0 +1,106 @@
+{
+  "deterministic": {
+    "base_commit": "3d997697fdd166eff428ea9fd35734b6a8ba113e",
+    "baseline": {
+      "collection_failures": 0,
+      "exit_code": 0,
+      "head": "f863dd9c48aee1eb395e5ca64e675a765cea44a9",
+      "mapped_required": 3,
+      "net_probe": "blocked OSError 101",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": {
+        "sklearn/utils/tests/test_show_versions.py::test_get_deps_info": "failed",
+        "sklearn/utils/tests/test_show_versions.py::test_get_sys_info": "passed",
+        "sklearn/utils/tests/test_show_versions.py::test_show_versions_with_blas": "passed"
+      },
+      "parent": "3d997697fdd166eff428ea9fd35734b6a8ba113e",
+      "pytest_exit": "1",
+      "removed": [],
+      "status": "RAN",
+      "surface": [
+        "4df8222d4917f8287f2e8c755adc9e3d970b081175f9a3dc3d04147762573d2e  conftest.py",
+        "1928ff4b53e8111fd57980068c3f47872d6896b7e365f382b2624cee0a4d53ba  setup.cfg",
+        "080ac411fdfae7c93cd469989e8425d5229142a4e6b07d54d29a6dee44b1d22b  sklearn/conftest.py",
+        "e4434b144857995f7a3db355a848c9f7b64b5cb32330f2fb615d044a29cf402f  sklearn/utils/tests/test_show_versions.py"
+      ],
+      "tampered": false
+    },
+    "candidate": {
+      "collection_failures": 0,
+      "exit_code": 92,
+      "head": "f863dd9c48aee1eb395e5ca64e675a765cea44a9",
+      "mapped_required": 0,
+      "net_probe": "",
+      "network_mode": "none",
+      "oom_killed": false,
+      "outcomes": null,
+      "parent": "3d997697fdd166eff428ea9fd35734b6a8ba113e",
+      "pytest_exit": "",
+      "removed": [],
+      "status": "PATCH_APPLY_FAILED",
+      "surface": [],
+      "tampered": false
+    },
+    "candidate_patch_sha256": "f4097ad85031cb155d6b4190f162f028b2204de0fb2c1f93341ae5cf9144c197",
+    "case": "P2-X-U",
+    "classification": "PATCH_APPLY_FAILED",
+    "detail": "",
+    "deterministic_env": {
+      "LC_ALL": "C",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "TZ": "UTC"
+    },
+    "digest": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+    "harness_sha256": "c4ad73e3bdad1ebc0f2054c9f55bc89f24d2d1ac959a01c99a4a3f77aa28e963",
+    "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141",
+    "image_id": "sha256:19965ec2d932dc3b25b1e657b1e1d283f630bac03373e4830e1965ccddb61817",
+    "instance_id": "scikit-learn__scikit-learn-14141",
+    "limits": {
+      "cpus": "2",
+      "memory": "4g",
+      "pids": 512,
+      "timeout_seconds": 900.0
+    },
+    "platform": "linux/amd64",
+    "probe_sha256": "560834d559fbf1063c7ad33afa675abac59535e45469bc0d9da3e8254f138e1f",
+    "protected_paths": [
+      "conftest.py",
+      "setup.cfg",
+      "sklearn/conftest.py",
+      "sklearn/utils/tests/test_show_versions.py"
+    ],
+    "protected_set_sha256": "639a51b7fefee03f513c92ce2962894580bb195fa6a1d4ed8b529b26a628f9fb",
+    "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+    "repo": "scikit-learn/scikit-learn",
+    "test_argv": [
+      "/opt/miniconda3/envs/testbed/bin/python",
+      "-m",
+      "pytest",
+      "-rA",
+      "--junitxml=/tmp/velith-junit.xml",
+      "sklearn/utils/tests/test_show_versions.py"
+    ],
+    "test_patch_sha256": "24c7e9c541cbffcca07fc6970fb26e84627095875b9603a586f8b77d1a05c2ff",
+    "velith_commit": "6ca531f5bb69178e4711b9a4be08471717e02a2f"
+  },
+  "diagnostics": {
+    "baseline": {
+      "container": "907eda74019acb88753351dbbcf49d4ac062bc9e394b1336125f990fda118e95",
+      "duration_seconds": 2.578
+    },
+    "candidate": {
+      "container": "4c8585e504fa1c141335bf19512bfad7609854b9bc12843077ebe1eb4cbc6b7b",
+      "duration_seconds": 0.748
+    }
+  },
+  "note": "P1 Stage X via the frozen M2 probe library -- probe-level evidence, NOT a verdict of record",
+  "verdict_projection": {
+    "duration_seconds": 0.748,
+    "flaky": false,
+    "output": "CANDIDATE_PATCH_DID_NOT_APPLY",
+    "secondary_passed": null,
+    "state": "PATCH_APPLY_FAILED"
+  }
+}

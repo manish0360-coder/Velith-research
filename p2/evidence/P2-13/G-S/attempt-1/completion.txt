@@ -1,0 +1,29 @@
+ The issue in the provided code is that the `Legend` class constructor is raising a `TypeError` because it expects either an `Axes` or `Figure` instance as its `parent`, but it is receiving a `SubFigure` instance instead. This is due to the way the `SubFigure` is being used in the provided code snippet.
+
+To fix this issue, we need to modify the `Legend` class constructor to check if the `parent` is either an `Axes` or a `Figure` instance before proceeding with the initialization. If the `parent` is a `SubFigure`, it should raise a `TypeError`.
+
+Here is the corrected code:
+
+<<<<<<< SEARCH lib/matplotlib/legend.py
+        if isinstance(parent, Axes):
+            self.isaxes = True
+            self.axes = parent
+            self.set_figure(parent.figure)
+        elif isinstance(parent, Figure):
+            self.isaxes = False
+            self.set_figure(parent)
+        else:
+            raise TypeError("Legend needs either Axes or Figure as parent")
+=======
+        if isinstance(parent, Axes):
+            self.isaxes = True
+            self.axes = parent
+            self.set_figure(parent.figure)
+        elif isinstance(parent, Figure):
+            self.isaxes = False
+            self.set_figure(parent)
+        elif isinstance(parent, SubFigure):
+            raise TypeError("Legend needs either Axes or Figure as parent")
+>>>>>>> REPLACE
+
+This modification ensures that the `Legend` class correctly handles `SubFigure` instances and raises a `TypeError` if the `parent` is not an `Axes` or a `Figure`.

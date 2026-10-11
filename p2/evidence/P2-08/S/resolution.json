@@ -1,0 +1,19 @@
+{
+  "code": "OK",
+  "edited_paths": [
+    "xarray/core/weighted.py"
+  ],
+  "statuses": [
+    {
+      "index": 0,
+      "matches": 1,
+      "path": "xarray/core/weighted.py",
+      "span": [
+        3984,
+        4082
+      ],
+      "status": "RESOLVED"
+    }
+  ],
+  "synthesized_diff_sha256": "9a0d0682255d1f1db908faee1c8847b5abb13ff0c7a4265c281337f800b862b2"
+}

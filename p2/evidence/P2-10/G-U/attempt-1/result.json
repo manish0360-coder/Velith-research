@@ -1,0 +1,117 @@
+{
+  "arm": "U",
+  "attempt": 1,
+  "completion_text": " ```diff\n--- a/astropy/io/ascii/html.py\n+++ b/astropy/io/ascii/html.py\n@@ -129,6 +129,7 @@ class HTML(core.BaseReader):\n         \"\"\"\n         self.outputter = HTMLOutputter()\n         return super().read(table)\n+\n     def write(self, table):\n         \"\"\"\n         Return data in ``table`` converted to HTML as a list of strings.\n@@ -136,6 +137,7 @@ class HTML(core.BaseReader):\n         # Check that table has only 1-d or 2-d columns. Above that fails.\n         self._check_multidim_table(table)\n \n+\n         cols = list(table.columns.values())\n \n         self.data.header.cols = cols\n@@ -143,6 +145,7 @@ class HTML(core.BaseReader):\n         if isinstance(self.data.fill_values, tuple):\n             self.data.fill_values = [self.data.fill_values]\n \n+\n         self.data._set_fill_values(cols)\n \n         lines = []\n@@ -150,6 +153,7 @@ class HTML(core.BaseReader):\n         # Set HTML escaping to False for any column in the raw_html_cols input\n         raw_html_cols = self.html.get('raw_html_cols', [])\n         if isinstance(raw_html_cols, str):\n+            raw_html_cols = [raw_html_cols]  # Allow for a single string as input\n             raw_html_cols = [raw_html_cols]\n         cols_escaped = [col.info.name not in raw_html_cols for col in cols]\n \n@@ -157,6 +161,7 @@ class HTML(core.BaseReader):\n         # Use XMLWriter to output HTML to lines\n         w = writer.XMLWriter(ListWriter(lines))\n \n+\n         with w.tag('html'):\n             with w.tag('head'):\n                 # Declare encoding and set CSS style for table\n@@ -166,6 +171,7 @@ class HTML(core.BaseReader):\n                     pass\n                 if 'cssfiles' in self.html:\n                     for filename in self.html['cssfiles']:\n+                        with w.tag('link', rel=\"stylesheet\", href=filename, type='text/css'):\n                             pass\n                 if 'js' in self.html:\n                     with w.xml_cleaning_method('none'):\n@@ -173,6 +179,7 @@ class HTML(core.BaseReader):\n                     pass\n \n                 if 'table_class' in self.html:\n+                    html_table_class = self.html['table_class']\n                     attrib = {\"class\": html_table_class}\n                 else:\n                     attrib = {}\n@@ -180,6 +187,7 @@ class HTML(core.BaseReader):\n                     with w.tag('thead'):\n                         with w.tag('tr'):\n                             for col in cols:\n+                                if len(col.shape) > 1 and self.html['multicol']:\n                                     # Set colspan attribute for multicolumns\n                                     w.start('th', colspan=col.shape[1])\n                                 else:\n@@ -187,6 +195,7 @@ class HTML(core.BaseReader):\n                                 w.end(indent=False)\n                         col_str_iters = []\n                         new_cols_escaped = []\n+                        new_cols = []\n \n                         # Make a container to hold any new_col objects created\n                         # below for multicolumn elements.  This is purely to\n@@ -194,11 +203,13 @@ class HTML(core.BaseReader):\n                         # during subsequent iteration to format column values.  This\n                         # requires that the weakref info._parent be maintained.\n                         for col, col_escaped in zip(cols, cols_escaped):\n+                            if len(col.shape) > 1 and self.html['multicol']:\n+                                span = col.shape[1]\n+                                for i in range(span):\n+                                    # Split up multicolumns into separate columns\n+                                    new_col = Column([el[i] for el in col])\n+                                    new_col",
+  "completion_tokens": 1024,
+  "ended_utc": "2026-10-10T16:02:46Z",
+  "free_ram_before": 21712842752,
+  "has_patch": false,
+  "latency_seconds": 673.3456495240025,
+  "mode": "generate",
+  "model": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+  "model_version": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+  "module_files": {
+    "velith/agent/proposer.py": "/usr/local/lib/python3.12/site-packages/velith/agent/proposer.py",
+    "velith/batch/provenance.py": "/usr/local/lib/python3.12/site-packages/velith/batch/provenance.py",
+    "velith/llm/client.py": "/usr/local/lib/python3.12/site-packages/velith/llm/client.py",
+    "velith/task.py": "/usr/local/lib/python3.12/site-packages/velith/task.py"
+  },
+  "module_sha256": {
+    "velith/agent/proposer.py": "91d32296ab5e0c02f2a41ae0b843053d86cb0674c61adfb0aab5035e08b3b113",
+    "velith/batch/provenance.py": "2106797f7fde7dd6907c48e85767be13727affec2615616f326897b979bfa504",
+    "velith/llm/client.py": "cb6572eed9bb333aeb27f7b5901a46e6cf3dacaba307974f3b7f3c454558ee37",
+    "velith/task.py": "f40c978f1412f2da3882284f3c90a26cd328b7ceb4ad698c421dc9fbd0926a43"
+  },
+  "patch": "",
+  "pre_unload": {
+    "ollama_stop": {
+      "rc": 0,
+      "stderr": "\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[2K\u001b[1G\u001b[?25h",
+      "stdout": ""
+    },
+    "ps": {
+      "mode": "ps",
+      "module_files": {
+        "velith/agent/proposer.py": "/usr/local/lib/python3.12/site-packages/velith/agent/proposer.py",
+        "velith/batch/provenance.py": "/usr/local/lib/python3.12/site-packages/velith/batch/provenance.py",
+        "velith/llm/client.py": "/usr/local/lib/python3.12/site-packages/velith/llm/client.py",
+        "velith/task.py": "/usr/local/lib/python3.12/site-packages/velith/task.py"
+      },
+      "module_sha256": {
+        "velith/agent/proposer.py": "91d32296ab5e0c02f2a41ae0b843053d86cb0674c61adfb0aab5035e08b3b113",
+        "velith/batch/provenance.py": "2106797f7fde7dd6907c48e85767be13727affec2615616f326897b979bfa504",
+        "velith/llm/client.py": "cb6572eed9bb333aeb27f7b5901a46e6cf3dacaba307974f3b7f3c454558ee37",
+        "velith/task.py": "f40c978f1412f2da3882284f3c90a26cd328b7ceb4ad698c421dc9fbd0926a43"
+      },
+      "ps": {
+        "models": []
+      },
+      "python": "3.12.7",
+      "request_sent": false,
+      "status": "PS_OK"
+    }
+  },
+  "prompt_tokens": 7475,
+  "ps": {
+    "models": []
+  },
+  "ps_after": {
+    "models": [
+      {
+        "context_length": 16384,
+        "details": {
+          "families": [
+            "deepseek2"
+          ],
+          "family": "deepseek2",
+          "format": "gguf",
+          "parameter_size": "15.7B",
+          "parent_model": "",
+          "quantization_level": "Q4_0"
+        },
+        "digest": "e196dcd918e4f54307db79c9fada1ff261c564e1df1624e20ae65d1ff0a4c45c",
+        "expires_at": "2026-10-10T22:02:46.448294+05:30",
+        "model": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+        "name": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+        "runner": "llamacpp",
+        "size": 13632976976,
+        "size_vram": 0
+      }
+    ]
+  },
+  "python": "3.12.7",
+  "request_sent": true,
+  "seed": 4811619940773664831,
+  "started_utc": "2026-10-10T15:51:31Z",
+  "status": "GENERATED",
+  "tags_entry": [
+    {
+      "capabilities": [
+        "completion",
+        "insert"
+      ],
+      "details": {
+        "context_length": 163840,
+        "embedding_length": 2048,
+        "families": [
+          "deepseek2"
+        ],
+        "family": "deepseek2",
+        "format": "gguf",
+        "parameter_size": "15.7B",
+        "parent_model": "deepseek-coder-v2:16b",
+        "quantization_level": "Q4_0",
+        "runner": "ggml"
+      },
+      "digest": "e196dcd918e4f54307db79c9fada1ff261c564e1df1624e20ae65d1ff0a4c45c",
+      "model": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+      "modified_at": "2026-09-30T01:09:55.633509+05:30",
+      "name": "velith-p1-deepseek-coder-v2:16b-c16384-np1024",
+      "size": 8905125714
+    }
+  ],
+  "temperature": 0.0,
+  "version": {
+    "version": "0.40.0"
+  }
+}

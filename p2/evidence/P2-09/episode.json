@@ -1,0 +1,72 @@
+{
+  "arm_order": [
+    "S",
+    "U"
+  ],
+  "arms": {
+    "S": {
+      "L1": "OUTPUT",
+      "L2": "S_SEARCH_NOT_FOUND",
+      "applies": false,
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "629999582c37cc0aa69129fc92e8bcc9b591cad22acd13df9f7069afc69a9919",
+        "completion_tokens": 53,
+        "context": "CONFIRMED",
+        "flags": [],
+        "gen_ok": true,
+        "latency_seconds": 225.00950166900293,
+        "predicted_prompt_tokens": 6810,
+        "prompt_tokens": 6810,
+        "status": "GENERATED"
+      },
+      "verified_pass": false
+    },
+    "U": {
+      "L1": "OUTPUT",
+      "L3": "MALFORMED_PATCH",
+      "L4": null,
+      "applies": false,
+      "classification": "PATCH_APPLY_FAILED",
+      "generation": {
+        "attempts": 1,
+        "completion_sha256": "23e63ee2370be9fe6cf937f54d3b528bed4d4ff0999df07d52685348dc70155e",
+        "completion_tokens": 1024,
+        "context": "CONFIRMED",
+        "flags": [
+          "GEN_TRUNCATED"
+        ],
+        "gen_ok": true,
+        "latency_seconds": 378.18913889300165,
+        "predicted_prompt_tokens": 6821,
+        "prompt_tokens": 6821,
+        "status": "GENERATED"
+      },
+      "patch_sha256": "36681f2fc1e54c5c697898cd4ba6fc4790b18d8c133c439b0ec3608624424556",
+      "reason": "CANDIDATE_PATCH_DID_NOT_APPLY",
+      "test_integrity": false,
+      "verified_pass": false,
+      "x_attempts": 1
+    }
+  },
+  "common_identity": "08e11b35dcf2abced1b1baf5c35639fed466b9abb589218851deb57cbbb958b7",
+  "d7": {
+    "aborted": false,
+    "inspect": [
+      [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365@sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe"
+      ],
+      "linux/amd64",
+      "sha256:52047c9299800168ed38a1b98b518a62c32f407f8269362c9f381d93c4e69dfe"
+    ],
+    "pulled": true
+  },
+  "image_removed": true,
+  "infra_unresolved": false,
+  "instance_id": "astropy__astropy-14365",
+  "na_reasons": {},
+  "pilot_set_sha256": "44b884125f37ce296dcc59d0fdc29038f15ecece13cc9a393ecbfe2673213305",
+  "seed": 921857438787387597,
+  "slot": "P2-09",
+  "utc": "2026-10-10T15:33:21Z"
+}

@@ -1,0 +1,11 @@
+--- a/xarray/core/rolling.py
++++ b/xarray/core/rolling.py
+@@ -499,7 +499,7 @@ class Coarsen(CoarsenArithmetic, Generic[T_Xarray]):
+         if not window_dim:
+             raise ValueError(
+                 "Either window_dim or window_dim_kwargs need to be specified."
+             )
+-
++        bad_new_dims = tuple(win for win, dims in window_dim.items() if len(dims) != 2 or isinstance(dims, str))
+         if bad_new_dims:
+             raise ValueError(f"Please provide exactly two dimension names for the following coarsening dimensions: {bad_new_dims}")

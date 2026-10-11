@@ -1,0 +1,45 @@
+The issue arises because the `combine_by_coords` function checks if the indexes of the coordinate dimensions are monotonic, and if not, it raises a `ValueError`. The problem is that the function does not correctly handle the case where the coordinates are identical but non-monotonic.
+
+To fix this, we need to modify the `combine_by_coords` function to check if the coordinate values are the same across all datasets before checking for monotonicity. If the values are the same, we can safely ignore the monotonicity check.
+
+Here is the corrected code:
+
+<<<<<<< SEARCH xarray/core/combine.py
+def combine_by_coords(datasets, compat='no_conflicts', data_vars='all',
+                      coords='different', fill_value=dtypes.NA):
+=======
+def combine_by_coords(datasets, compat='no_conflicts', data_vars='all',
+                      coords='different', fill_value=dtypes.NA):
+    # Group by data vars
+    sorted_datasets = sorted(datasets, key=vars_as_keys)
+    grouped_by_vars = itertools.groupby(sorted_datasets, key=vars_as_keys)
+
+    # Perform the multidimensional combine on each group of data variables
+    # before merging back together
+    concatenated_grouped_by_data_vars = []
+    for vars, datasets_with_same_vars in grouped_by_vars:
+        combined_ids, concat_dims = _infer_concat_order_from_coords(
+            list(datasets_with_same_vars))
+
+        _check_shape_tile_ids(combined_ids)
+
+        # Concatenate along all of concat_dims one by one to create single ds
+        concatenated = _combine_nd(combined_ids, concat_dims=concat_dims,
+                                   data_vars=data_vars, coords=coords,
+                                   fill_value=fill_value)
+
+        # Check the overall coordinates are monotonically increasing
+        for dim in concatenated.dims:
+            if dim in concatenated:
+                indexes = concatenated.indexes.get(dim)
+                if not (indexes.is_monotonic_increasing
+                        or indexes.is_monotonic_decreasing):
+                    # Check if the coordinate values are the same across all datasets
+                    values = [ds.coords[dim].values for ds in datasets_with_same_vars]
+                    if not all(np.array_equal(values[0], value) for value in values[1:]):
+                        raise ValueError("Resulting object does not have monotonic"
+                                         " global indexes along dimension {}"
+                                         .format(dim))
+>>>>>>> REPLACE
+
+This modification checks if the coordinate values are the same across all datasets before raising a `ValueError` for non-monotonic coordinates. If the values are the same, it means the coordinates are identical, and the monotonicity check is not necessary.
