@@ -198,11 +198,18 @@ class Fake:
         return ev
 
 
+def pre_freeze_registry() -> bytes:
+    """The FG-1 registry state (the real file was appended once at FG-6)."""
+    reg = json.loads(B.REGISTRY.read_text())
+    reg["p2_appended"] = []
+    return json.dumps(reg).encode()
+
+
 def frozen(tmp: Path, n: int, fake: Fake | None = None) -> tuple[Path, dict[str, Any], str, Fake]:
     root = make_root(tmp, n)
     fake = fake or Fake()
     reg, pilot_path = tmp / "registry.json", tmp / "PILOT_SET.json"
-    reg.write_bytes(B.REGISTRY.read_bytes())
+    reg.write_bytes(pre_freeze_registry())
     B.gencheck(fake, root, root / "_gencheck")
     shas = B.freeze(root, root / "_gencheck", reg, pilot_path)
     pilot = B.check_frozen(pilot_path, shas["PILOT_SET.json"], reg)
@@ -331,7 +338,7 @@ def test_freeze_refuses_changed_code_and_a1_alarm(tmp_path: Path,
     root, fake = make_root(tmp_path, 2), Fake()
     B.gencheck(fake, root, root / "_gencheck")
     reg = tmp_path / "registry.json"
-    reg.write_bytes(B.REGISTRY.read_bytes())
+    reg.write_bytes(pre_freeze_registry())
     rec_path = root / "P2-02" / "record.json"
     rec = json.loads(rec_path.read_text())
     rec["self_check_diagnostic"]["harness_integrity_alarm"] = True

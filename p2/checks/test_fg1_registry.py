@@ -68,7 +68,15 @@ def test_no_duplicates() -> None:
 
 def test_no_ids_outside_frozen_list() -> None:
     assert set(p2_ids()) == set(spec_ids())
-    assert p2()["p2_appended"] == []  # FG-1 state: nothing appended before FG-6
+    appended = p2()["p2_appended"]
+    if appended:  # after FG-6: the single append is exactly the PILOT_SET tasks + rejections
+        pilot = json.loads((ROOT / "p2" / "PILOT_SET.json").read_text(encoding="utf-8"))
+        admitted = [e for e in appended if e["status"] == "admitted"]
+        assert [(e["instance_id"], e["common_identity"]) for e in admitted] == \
+            [(t["instance_id"], t["common_identity"]) for t in pilot["tasks"]]
+        rejected = [e for e in appended if e["status"] != "admitted"]
+        assert all(e["status"] == "rejected_at_admission (exposed)" for e in rejected)
+        assert not set(p2_ids()) & {e["instance_id"] for e in appended}
 
 
 def test_entries_carry_exact_p1_status_and_identity() -> None:
