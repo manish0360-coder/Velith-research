@@ -1,0 +1,4 @@
+# Run outputs are never committed; only a summary manifest with hashes may be added later.
+runs/
+__pycache__/
+*.pyc

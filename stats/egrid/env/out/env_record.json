@@ -1,0 +1,111 @@
+{
+  "base_image_digest": "python@sha256:fd95fa221297a88e1cf49c55ec1828edd7c5a428187e67b5d1805692d11588db",
+  "cgroup_v2": {
+    "cpu.max": "100000 100000",
+    "memory.max": "2147483648",
+    "memory.swap.max": "0",
+    "pids.max": "64"
+  },
+  "controls_observed": {
+    "cgroup_cpu_max_one_cpu": "PASS",
+    "cgroup_memory_max_2gib": "PASS",
+    "deterministic_env_vars": "PASS",
+    "network_only_loopback": "PASS",
+    "network_testnet_connect_fails": "PASS",
+    "non_root_user": "PASS",
+    "rlimit_as_le_2gib": "PASS",
+    "rootfs_readonly": "PASS"
+  },
+  "cpu": {
+    "model": "AMD Ryzen 5 5500U with Radeon Graphics",
+    "nproc_affinity": 12
+  },
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "image_id": "sha256:dbae1d05a21601ef6de1ea2d970237f0d6d86b189b0cc19bbb1f90d9821706cb",
+  "meminfo_total": "MemTotal:       16026252 kB",
+  "network": {
+    "interfaces": [
+      "lo"
+    ],
+    "target": [
+      "192.0.2.1",
+      9
+    ],
+    "testnet_connect": {
+      "errno": 101,
+      "errno_name": "ENETUNREACH",
+      "result": "FAILED"
+    }
+  },
+  "numpy": {
+    "available": true,
+    "blas": {
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "version": "0.3.29"
+    },
+    "lapack": {
+      "name": "scipy-openblas",
+      "version": "0.3.29"
+    },
+    "version": "2.2.6"
+  },
+  "packages": [
+    "mpmath==1.3.0",
+    "numpy==2.2.6",
+    "pip==25.0.1",
+    "scipy==1.15.3"
+  ],
+  "platform": {
+    "os_release": "PRETTY_NAME=\"Debian GNU/Linux 12 (bookworm)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"12\"\nVERSION=\"12 (bookworm)\"\nVERSION_CODENAME=bookworm\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"",
+    "uname": [
+      "Linux",
+      "9fe01b722380",
+      "6.18.33.1-microsoft-standard-WSL2",
+      "#1 SMP PREEMPT_DYNAMIC Fri Jun  5 01:12:21 UTC 2026",
+      "x86_64",
+      ""
+    ]
+  },
+  "python": {
+    "executable": "/usr/local/bin/python",
+    "implementation": "CPython",
+    "version": "3.12.10 (main, May 21 2025, 23:34:56) [GCC 12.2.0]"
+  },
+  "rlimits": {
+    "RLIMIT_AS": [
+      2147483648,
+      2147483648
+    ],
+    "RLIMIT_CPU": [
+      300,
+      300
+    ],
+    "RLIMIT_DATA": [
+      -1,
+      -1
+    ],
+    "RLIMIT_NOFILE": [
+      1048576,
+      1048576
+    ],
+    "RLIMIT_NPROC": [
+      -1,
+      -1
+    ]
+  },
+  "rootfs_write_probe": "NOT_WRITABLE(EROFS)",
+  "schema": "egrid.env_record.v1",
+  "uid_gid": [
+    1000,
+    1000
+  ],
+  "venue": "wsl-docker"
+}
