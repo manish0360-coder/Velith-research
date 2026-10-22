@@ -35,7 +35,7 @@ CENSUS_DIR = HERE.parent / "census"
 PROTOCOL_DOC = HERE.parent / "P4_SIZING_PROBE_PROTOCOL_v0.3.md"
 CENSUS_CODE_SHA = "23e410ca68b087ba25710f77103fe567ac6de04b64fbce8f79aca6897843581d"
 RUN1_MANIFEST_SHA = "e6171986f102167419526aed9a3a3c868ea0f98c52c27c0a0267f10337a897fe"
-FROZEN_PROTOCOL_SHA: str | None = None  # set ONLY at PR-2 by a reviewed edit
+FROZEN_PROTOCOL_SHA: str | None = "f8a7e398609a70b83a2cad9ad29571aad9ebaecc2d56f8aa3e7502df261a4d8d"  # PR-2
 PROTECTED_ROOTS = (Path("/home/manish_raj/p4census/run1"),
                    Path("/mnt/e/Projects/OpenSourceLab/p4census-archive"))
 
