@@ -1,0 +1,92 @@
+--- v0.2 block 2f43cfc1
++++ v0.3 block f8a7e398
+@@ -40,11 +40,41 @@
+ 
+ ### 4.2 Calls
+ 
+-| Call | Parameters |
++**Per-phase page sizes** make every phase's URLs distinct, because the frozen client caches by URL:
++
++| Phase | `per_page` |
+ |---|---|
+-| Size | page 1, P = 100. It also serves as enumeration page 1 |
+-| Page | page k ≥ 2, P = 100 |
+-| Count-only recheck | P = 1. A distinct URL, so it never hits the cache |
++| T_start count | 1 |
++| T_end count | 2 |
++| Per-band recheck | 3 |
++| Calibration | 1, or 4 on retry, with `repo:` queries |
++| Band sizing and pages | 100 |
++| Band re-enumeration | 99 |
++| Sweep sizing and pages | 98 |
++| Sweep re-enumeration | 97 |
++
++- A URL requested in one phase and again in a different phase **STOPs** the run (implementation defect guard).
++- Repeats within a phase are cache-consistent and allowed.
++- Every page satisfies page × per_page ≤ 1,000 because T < 900 for every enumerated band.
++
++### 4.2a Semantic calibration S0 (before any band)
++
++- **Anchor:** the single item X returned by the T_start call. Record k = its stars and d = its creation day (UTC).
++- **Required counts:**
++
++  | Query | Expected count |
++  |---|---|
++  | `repo:X stars:k..k+10` | 1 |
++  | `repo:X stars:k-10..k` | 1 |
++  | `repo:X stars:k..k` | 1 |
++  | `repo:X stars:k+11..k+20` | 0 |
++  | `repo:X created:d..d+1` | 1 |
++  | `repo:X created:d-1..d` | 1 |
++  | `repo:X created:d..d` | 1 |
++  | `repo:X created:d+1..d+2` | 0 |
++
++  Together these verify inclusive endpoints, single-value ranges and sanity, for both partition dimensions.
++- **One retry** with a fresh anchor (P = 4) is allowed, for example because of star drift between calls. A second failure → **STOPPED** (range semantics differ from the protocol's assumption).
+ 
+ ### 4.3 Partition: completeness and disjointness
+ 
+@@ -88,8 +118,9 @@
+ - **HTTP 422** (query rejected): **STOP**. It indicates a protocol defect, and no result is reported.
+ - **Any other recorded failure** after the frozen client's retries makes the affected band **INCOMPLETE**.
+ - **`incomplete_results = true`** on any response makes the band **INCOMPLETE**. There is no silent retry.
+-- **Hard caps:** **200 search requests** and **4.5 h** wall clock. Reaching either stops the probe, and every unfinished band is **INCOMPLETE**.
++- **Hard caps:** **200 network search requests** and **4.5 h** wall clock. Same-phase cache hits make no request; they are counted separately and don't consume the request cap. Reaching either cap stops the probe, and every unfinished band is **INCOMPLETE**.
+ - **Endpoints:** only `GET /search/repositories`. No GraphQL, PRs, compare, clones, builds or models.
++- **Lock (A1):** unless PR-2-authorized (§7), `probe()` refuses any opener not marked as a test double, and replaces `urlopen` with a raising stub. The result is STOPPED (LOCKED), with zero requests.
+ 
+ ### 4.8 Completeness checks (all must pass for the outcome EXACT)
+ 
+@@ -113,9 +144,9 @@
+ 
+ | Class | Condition | What is reported |
+ |---|---|---|
+-| **EXACT** | C0–C6 all pass | M_v, for the union estimand |
++| **EXACT** | S0 passes and C0–C6 all pass | M_v, for the union estimand. **EXACT means protocol completeness:** every final partition was enumerated and every check passed within its stated tolerance. It does **not** mean the search index is complete or the counts are error-free |
+ | **INCOMPLETE** | Any check fails, or a cap is reached | M_v,LB = \|S_W \ B0\| as a **lower bound only**, never presented as exact, plus every failing check |
+-| **STOPPED** | HTTP 422, or a protocol or baseline defect | Nothing |
++| **STOPPED** | HTTP 422, an S0 calibration failure, a cross-phase URL repeat, LOCKED, or a baseline/output-path defect | Nothing |
+ 
+ ### 4.10 Evidence
+ 
+@@ -126,6 +157,8 @@
+   - `MANIFEST.sha256`.
+ - **Then:** a read-only copy, and a `tar.gz` + `.sha256` in `/mnt/e/Projects/OpenSourceLab/p4census-archive/`, with no overwrite.
+ - **Never written:** run 1, its preserved copy, or its archive.
++- **The output directory must not exist, and must not resolve inside any protected root:** the baseline copy, `/home/manish_raj/p4census/run1`, or the archive directory.
++- **Baseline check:** 1,000 items, every id an integer, and unique ids = unique full names (999 expected). Any deviation → STOPPED.
+ 
+ ## 5. Decision rule (replaces the 610 rule; no yield claim)
+ 
+@@ -133,9 +166,9 @@
+ 
+ | Outcome | Condition | Consequence | Basis |
+ |---|---|---|---|
+-| **STOP-RIGOROUS** | EXACT and M_v ≤ 62 | Stop expanding the ≥ 1,000-star slice | Physical maxima: added capped ≤ 4·M_v ≤ 248 < 0.25·996, and added candidate repos ≤ M_v ≤ 62 < 0.25·320. Holds **for any yield** |
++| **STOP-POLICY** | EXACT and M_v ≤ 62 | Stop expanding the ≥ 1,000-star slice | **Policy rule.** Under the cap-4 definition, the unseen pool cannot add 25% to either baseline: capped candidates ≤ 4·M_v ≤ 248 < 0.25·996, and candidate-bearing repos ≤ M_v ≤ 62 < 0.25·320. The bound is arithmetic; the 25% materiality level is policy |
+ | **RD-JUDGMENT** | EXACT and 63 ≤ M_v ≤ 499 | No automatic proposal. RD decides, using §6 as context only | — |
+-| **ELIGIBLE-TO-PROPOSE census v2** | EXACT and M_v ≥ 500 | May propose a separately frozen census v2, with SRC review and an RD freeze. Nothing runs before that | A **measured-count** threshold: at least +50% more repos than run 1 examined. A judgment threshold on the measurement itself. **Not a yield bound** |
++| **ELIGIBLE-TO-PROPOSE census v2** | EXACT and M_v ≥ 500 | May propose a separately frozen census v2, with SRC review and an RD freeze. Nothing runs before that | **Policy threshold** for proposing census v2: at least +50% more repos than run 1 examined. **Not a yield bound and not proof of task sufficiency** |
+ | **INCOMPLETE** | Any check fails | **No proposal by default.** The RD may decide whether a lower bound M_v,LB ≥ 500 suffices (G-6) | A lower bound can support "≥ threshold" but never "≤ threshold" |
+ | **STOPPED** | — | Fix the defect; a new PR-2 is needed | — |
+ 
