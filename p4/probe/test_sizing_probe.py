@@ -353,7 +353,7 @@ def test_baseline_loader_is_read_only(tmp_path: Path) -> None:
 
 
 def test_live_mode_is_locked_and_makes_no_request(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
-    assert P.FROZEN_PROTOCOL_SHA is None
+    monkeypatch.setattr(P, "FROZEN_PROTOCOL_SHA", None)  # lock-state test: holds before and after PR-2
     monkeypatch.setenv("P4_PROBE_PR2", "AUTHORIZED")
     ok, why = P.live_authorized()
     assert not ok and why.startswith("LOCKED")
@@ -382,8 +382,18 @@ def test_protocol_block_sha_is_computable() -> None:
     assert len(P.protocol_block_sha()) == 64
 
 
+def test_frozen_protocol_sha_is_unset_or_the_act_a_block(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The lock is either unset (pre-PR-2) or exactly the Act-A frozen block; live still needs the env."""
+    assert P.FROZEN_PROTOCOL_SHA in (None, "f8a7e398609a70b83a2cad9ad29571aad9ebaecc2d56f8aa3e7502df261a4d8d")
+    if P.FROZEN_PROTOCOL_SHA is not None:
+        assert P.protocol_block_sha() == P.FROZEN_PROTOCOL_SHA
+    monkeypatch.delenv("P4_PROBE_PR2", raising=False)
+    assert not P.live_authorized()[0]
+
+
 # ---- v0.3 pre-freeze audit blockers ------------------------------------------------------------
 def test_library_probe_is_locked_even_with_env_set(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
+    monkeypatch.setattr(P, "FROZEN_PROTOCOL_SHA", None)  # lock-state test: holds before and after PR-2
     monkeypatch.setenv("GITHUB_TOKEN", "dummy-not-a-secret")
     monkeypatch.setenv("P4_PROBE_PR2", "AUTHORIZED")
     attempts: list[str] = []
